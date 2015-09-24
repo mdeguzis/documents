@@ -1,6 +1,11 @@
 # Proper workflow for cleaning fork and squashing commits (example from xbmc-packaging)
 
-1reset your branch on our master
+1. reset your branch on our master
+```
+git remote add upstream /url/to/original/repo
+git fetch origin
+git reset --hard origin/master
+```
 2. assuming you added xbmc-packaging as remote and origin is your own repo: 
 ```
 git fetch xbmc-packaging; git rebase -i xbmc-packaging/master
