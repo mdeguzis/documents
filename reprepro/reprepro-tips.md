@@ -1,9 +1,9 @@
 # Useful links
 * TODO
 
-# sync to remove remote site
+# sync to remove remote site, delete packages not foudn in remote.
 ```
-rsync -avz --delete /home/mikeyd/packaging/SteamOS-Tools/ thelinu2@libregeek.org:/home2/thelinu2/public_html/packages/SteamOS-Tools
+rsync -avz --delete /home/user/packaging/my_repository/ user@host.com:/path/to/directory
 ```
 
 # Adding deb package to pool
