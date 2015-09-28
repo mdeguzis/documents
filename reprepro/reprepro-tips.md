@@ -1,5 +1,5 @@
 # Useful links
-* [How to Use Reprepro for a Secure Package Repository on Ubuntu 14.04 (Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-use-reprepro-for-a-secure-package-repository-on-ubuntu-14-04)
+* [How to Use Reprepro for a Secure Package Repository on Ubuntu 14.04 (Digital Ocean)](https://www.digitalocean.com/community/tutorials/how-to-use-reprepro-for-a-secure-package-repository-on-ubuntu-14-04)
 * [Local corporate APT repositories (Vincent Bernat)](http://vincent.bernat.im/en/blog/2014-local-apt-repositories.html)
 
 # sync to remove remote site, delete packages not foudn in remote.
