@@ -1,0 +1,36 @@
+# Useful links
+* TODO
+
+# sync to remove remote site
+```
+rsync -avz --delete /home/mikeyd/packaging/SteamOS-Tools/ thelinu2@libregeek.org:/home2/thelinu2/public_html/packages/SteamOS-Tools
+```
+
+# Adding deb package to pool
+* dir can be any location
+* Jessie is your release, defined in conf/distributions
+```
+reprepro -V includedeb jessie dir/package.deb
+```
+
+# Adding deb package to pool, but specify the component (such as main, games, etc)
+Say you have have the components main, contriby, mystuff, and games in your pool/ directory. Reprepro will try to guess where to send the package. If it is not guessed automatically, your package will end up in main. Below is how you would specify the component manually. This is very useful for source builds or when you would reather your package reside in a different component.
+
+* dir can be any location
+* Jessie is your release, defined in conf/distributions
+```
+reprepro -C games -V includedeb jessie dir/super-mario.deb
+```
+
+# remove all packages from the testing pool
+Ths is very destructive, and hsould only used if necessary!
+```
+reprepro removefilter release_testing 'Section'
+```
+
+# remove all pacakges matching name in the specified release.
+This is very destructive, and hsould only used if necessary!
+
+```
+reprepro list RELEASE | grep PACKAGE_NAME | cut -d " " -f 2 | xargs reprepro remove RELEASE {}
+```
