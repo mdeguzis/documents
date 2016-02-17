@@ -8,5 +8,5 @@ text with | command_here
 
 command to replace "|" with this
 ```
-sed -e "s|text with \\| command_here|text with this command_here|g"
+sed "s|text with \\| command_here|text with this command_here|g"
 ```
