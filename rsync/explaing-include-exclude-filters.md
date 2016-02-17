@@ -30,6 +30,7 @@ RULE from the MODIFIERS is optional. The PATTERN or FILENAME that fol-
 lows (when present) must come after either a single space or an under-
 score (_). Here are the available rule prefixes:
 
+```
 exclude, – specifies an exclude pattern.  
 include, + specifies an include pattern.  
 merge, . specifies a merge-file to read for more rules.  
@@ -40,6 +41,7 @@ protect, P specifies a pattern for protecting files from dele-
 tion.  
 risk, R files that match the pattern are not protected.  
 clear, ! clears the current include/exclude list (takes no arg)  
+```
 
 When rules are being read from a file, empty lines are ignored, as are
 comment lines that start with a “#”.
@@ -58,4 +60,3 @@ Note also that the –filter, –include, and –exclude options take one
 rule/pattern each. To add multiple ones, you can repeat the options on
 the command-line, use the merge-file syntax of the –filter option, or
 the –include-from/–exclude-from options.
-[/snip]
