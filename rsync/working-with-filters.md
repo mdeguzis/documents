@@ -10,7 +10,8 @@ rsync -arv --filter="merge ${HOME}/.config/SteamOS-Tools/repo-filter.txt" ${buil
 * Directory `, `${build_dir}/` _must_ include the slash to denote the files inside the specified folder
 
 # The filtering file
-In the below filtering text file (see [man rsync](http://linux.die.net/man/1/rsync) under Filter RUles), we denote + or - to include or exclude what we want. Start by saying what we want to include, then exclude everything else. Don't forget the prefex `/` to note files inside the `${build_dir}/` target
+
+In the below filtering text file (see [man rsync](http://linux.die.net/man/1/rsync) under Filter RUles), we denote + or - to include or exclude what we want. Start by saying what we want to include, then exclude everything else. Don't forget the prefex `/` to note files inside the `${build_dir}/` target. Think of it as the same way you would specify a file inside the current directory with `./file.txt`. This syntax seems to be required and should be noted.
 
 ```
 + /*.dsc
