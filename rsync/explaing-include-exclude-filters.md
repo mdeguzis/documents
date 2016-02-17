@@ -1,9 +1,10 @@
 The manual page does include information about exclude files under “FILTER RULES”. Man pages shouldn’t be read in haste. If you don’t read the ENTIRE man page, you will miss numerous references to some very clearly stated information.
 
-[snip src=”rsync(1)” ]
+```
 –exclude=PATTERN
 This option is a simplified form of the –filter option that defaults to an exclude rule and does not allow the full rule-parsing syntax of normal filter rules.See the FILTER RULES section for detailed information on this option.
-…..
+```
+
 FILTER RULES
 The filter rules allow for flexible selection of which files to trans-
 fer (include) and which files to skip (exclude). The rules either
@@ -29,16 +30,16 @@ RULE from the MODIFIERS is optional. The PATTERN or FILENAME that fol-
 lows (when present) must come after either a single space or an under-
 score (_). Here are the available rule prefixes:
 
-exclude, – specifies an exclude pattern.
-include, + specifies an include pattern.
-merge, . specifies a merge-file to read for more rules.
-dir-merge, : specifies a per-directory merge-file.
-hide, H specifies a pattern for hiding files from the transfer.
-show, S files that match the pattern are not hidden.
-protect, P specifies a pattern for protecting files from dele-
-tion.
-risk, R files that match the pattern are not protected.
-clear, ! clears the current include/exclude list (takes no arg)
+exclude, – specifies an exclude pattern.  
+include, + specifies an include pattern.  
+merge, . specifies a merge-file to read for more rules.  
+dir-merge, : specifies a per-directory merge-file.  
+hide, H specifies a pattern for hiding files from the transfer.  
+show, S files that match the pattern are not hidden.  
+protect, P specifies a pattern for protecting files from dele-  
+tion.  
+risk, R files that match the pattern are not protected.  
+clear, ! clears the current include/exclude list (takes no arg)  
 
 When rules are being read from a file, empty lines are ignored, as are
 comment lines that start with a “#”.
