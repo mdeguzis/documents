@@ -160,17 +160,123 @@ MorgueDir: $HOME/packaging/incoming-old
 * `Cleanup`: What should we do after processing? (unused_files, on_error, on_deny)
 * `MorgueDir`: If files are to be deleted by Cleanup, they are instead moved to a subdirectory of the directory given as value to this field (very useful).
 
-In contrast, you can typically include binary packages only with:
+# Using reprepro
+Here are some useful commands I use frequently
+
+## Process an incoming directory
+
+```
+reprepro processincoming [RULE]
+```
+
+## Include binary packages _only_ 
+This works with multiple files, i.e. *.deb
 
 ```
 reprepro includedeb [distribution] [pacakge] [/path/to/package.deb]
 ```
 
-And for including all proper files when packaging source code:
+## Processing all mentioned files in package
+If you wish to include all proper files when packaging source code, you can specify a .changes files produced by your build. This does not work with wildcards, i.e. *.changes
 
 ```
 reprepro include [distribution] [pacakge] [/path/to/package.changes]
 ```
 
+# Extra useful scripts
+***
+
+If you push packages to a testing distribution, some of these notes may help you. Unless told different, or I discover otherwise, dpkg does not seem to like a distibribution (e.g. brewmaster_testing) with an underscore. Because of this, I created this script which processes my packages, and outputs a file list. When packaging, I direct my packages to the proper folder.
+
+
+## process-packages.sh
+```
+# Process default packages
+
+reprepro processincoming default
+
+# Process any testing packages
+# This use the \< and \> before and after anchors for exact matches
+
+if grep brewmaster incoming_testing/*.changes &> /dev/null; then
+
+	# replace exact string (in case this is ran more than once)
+	sed -i "s|\<brewmaaster\>|brewmaster_testing|g" incoming_testing
+	
+fi
+
+# Now process the testing packages
+
+reprepro processincoming testing
+
+```
+
+## sync-pool.sh
+This script syncs the repository to the remove server using an exclusion list to hide sensitive folders and files that should not be shared with the public
+
+```
+# Remove old packages more than 3 months old (optional)
+
+find ../incoming-old -mtime +90 -exec rm {} \:
+
+# Generate package listings (optional)
+
+reprepro list brewmaster | grep "brewmaster|main" > package_lists/brewmaster_main.txt
+reprepro list brewmaster | grep "brewmaster|games" > package_lists/brewmaster_games.txt
+reprepro list brewmaster_testing | grep "brewmaster|main" > package_lists/brewmaster_testing_main.txt
+reprepro list brewmaster_testing | grep "brewmaster|games" > package_lists/brewmaster_testing_games.txt
+
+# Push keyring / repo package files to root for constant link
+
+cp ./pool/main/....my_keyring.deb /main/folder/keyring_latest.deb
+cp ./pool/main/....my_repo.deb /main/folder/repo_latest.deb
+
+# sync local to remote 
+# delete is optional, I use this to ensure my server is synced with my local, no extra files)
+
+rsync -avz --delete --exclude-from=$HOME/packaging/exclude.txt
+
+# Backup files not included publicly
+cp *.sh /path/to/backups
+
+```
+
+Your exclude.txt file may look something like this:
+
+```
+notes.txt
+*.ico
+my_repo/db
+my_repo/incoming
+my_repo/incoming_testing
+my_repo/*.sh
+backups
+exclude.txt
+tools
+```
+
+_Remember_, this file listing is _relative_ to the location of the exclude.txt file placement. In this example, my exclusion list is in the previous directory of my SteamOS-Tools repository, so it servers a global purpose for other folders in my pacakaging directory.
+
+# Resources
+***
+
+Official
+* http://mirrorer.alioth.debian.org/
+* http://nginx.org/
+* http://www.gnupg.org/
+
+Lists with official Mirrors* http://www.debian.org/mirror/list
+* http://www.ubuntu.com/getubuntu/downloadmirrors
+
+Reprepro
+* http://davehall.com.au/blog/dave/2010/02/06/howto-setup-private-package-repository-reprepro-nginx
+* http://www.jejik.com/articles/2006/09/setting_up_and_managing_an_apt_repository_with_reprepro/
+* http://www.debianx.org/repo.html
+* http://www.porcheron.info/setup-your-debianubuntu-repository-with-reprepro/
+* http://www.lostwebsite.net/2008/10/partial-debian-mirrors/
+
+GnuPG
+* http://www.gentoo.org/doc/en/gnupg-user.xml
+* http://irtfweb.ifa.hawaii.edu/~lockhart/gpg/gpg-cs.htm
 
 
