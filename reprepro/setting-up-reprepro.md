@@ -52,7 +52,7 @@ From a Debian-derivitive:
 sudo apt-get install reprepro
 ```
 
-Manually build
+Manually build from another distribution, such as Fedora (using dnf)
 ```
 git clone git://git.debian.org/mirrorer/reprepro.git
 sudo dnf install gcc libdb-devel zlib-devel gpgme-devel libarchive-devel
