@@ -4,6 +4,9 @@
 This document details how to setup reprepro from a basic standpoint. 
 It also details certain things I believe to be helpful in my experiecnes with packaging thus far.
 
+# Important
+Please bookmark and try to read/parse the [man page](https://mirrorer.alioth.debian.org/reprepro.1.html) for this software.
+
 # Important areas of reprepro
 ***
 
@@ -122,12 +125,52 @@ SignWith: 00000000
 * `Description`: Custom SteamOS-Tools Debian repository
 * `Architectures`: i386 amd64 source (self explanatory)
 * `Components`: main games
-* `UDebComponents`:
-* `Contents`:
-* `Update`:
 * `Log`: $HOME/packaging/SteamOS-Tools/log/brewmaster.log
 * `SignWith`: 00000000
 
+
+## conf/options
+This is a simple file with few things required. At the minimum, specify your base directory, so reprepro knows where it is looking for files.
+
+```
+basedir $HOME/packaging/SteamOS-Tools
+
+# Tell reprepro to always be verbose (optional)
+verbose
+```
+
+## conf/incoming
+This is acutally an optional step, but I highly suggest it. Using an incoming "ruleset" will handle packages appropriately, and deal with fallout and processing. 
+
+```
+Name: default
+IncomingDir: incoming
+TempDir: /tmp
+Allow: alchemist brewmaster
+Cleanup: unused_files
+MorgueDir: $HOME/packaging/incoming-old
+```
+
+**Explanations**
+
+* `Name`: The name for the ruleset
+* `IncomingDir`: The directory where reprepro will  search for files with this particular rule.
+* `TempDir`: A directory where the files listed in the processed .changes files are copied into before they are read.
+* `Allow`: Specify which distributions are allow with this rule (useful for multiple distibutions, testing dists)
+* `Cleanup`: What should we do after processing? (unused_files, on_error, on_deny)
+* `MorgueDir`: If files are to be deleted by Cleanup, they are instead moved to a subdirectory of the directory given as value to this field (very useful).
+
+In contrast, you can typically include binary packages only with:
+
+```
+reprepro includedeb [distribution] [pacakge] [/path/to/package.deb]
+```
+
+And for including all proper files when packaging source code:
+
+```
+reprepro include [distribution] [pacakge] [/path/to/package.changes]
+```
 
 
 
