@@ -150,9 +150,9 @@ SignWith: 00000000
 * `Codename`: The codename (such as `jessie` for current Debian stable) of the distribution you are targeting.
 * `Description`: Custom SteamOS-Tools Debian repository
 * `Architectures`: i386 amd64 source (self explanatory)
-* `Components`: main games
+* `Components`:These are sections added by the defined section in your package's debian/control file.
 * `Log`: $HOME/packaging/SteamOS-Tools/log/brewmaster.log
-* `SignWith`: 00000000
+* `SignWith`: This is your private GPG key (shorthand), shown with `gpg --list-secret-keys`, under the `sec` header.
 
 
 ## conf/options
