@@ -187,6 +187,8 @@ MorgueDir: $HOME/packaging/incoming-old
 * `MorgueDir`: If files are to be deleted by Cleanup, they are instead moved to a subdirectory of the directory given as value to this field (very useful).
 
 # Using reprepro
+***
+
 Here are some useful commands I use frequently
 
 ## Process an incoming directory
