@@ -1,3 +1,29 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [Important](#important)
+- [Important areas of reprepro](#important-areas-of-reprepro)
+- [Installing reprepro](#installing-reprepro)
+- [GPG configuration](#gpg-configuration)
+  - [Installing the required software](#installing-the-required-software)
+  - [GPG configuration](#gpg-configuration-1)
+- [Configuring reprepro](#configuring-reprepro)
+  - [conf/distributions](#confdistributions)
+  - [conf/options](#confoptions)
+  - [conf/incoming](#confincoming)
+- [Using reprepro](#using-reprepro)
+  - [Process an incoming directory](#process-an-incoming-directory)
+  - [Include binary packages _only_](#include-binary-packages-_only_)
+  - [Processing all mentioned files in package](#processing-all-mentioned-files-in-package)
+- [Extra useful scripts](#extra-useful-scripts)
+  - [process-packages.sh](#process-packagessh)
+  - [sync-pool.sh](#sync-poolsh)
+- [Resources](#resources)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About
 ***
 
