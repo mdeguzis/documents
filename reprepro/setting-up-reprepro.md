@@ -93,6 +93,41 @@ sudo apt-key add public_key.gpg
 
 If you're so inclined, you can also [make a proepr Debian package](https://github.com/ProfessorKaos64/libregeek-archive-keyring) out of your keyring setup.
 
+# Configuring reprepro
+***
+
+Ok, so this is where things get more technical in how most of this process works. While reprepro is indeed one of the easier ways to maintain your own Debian repository, you still should be aware of key files and configurations. In my below examples, I will be using my [packaging repository](https://github.com/ProfessorKaos64/SteamOS-Tools-Packaging) for SteamOS as an example.
+
+## conf/distributions
+This is the meat of your setup. You define key areas of where your packages originate from, their codename, among other settings.
+
+Given this example:
+```
+Origin: steamos-tools
+Codename: brewmaster
+Description: Custom SteamOS-Tools Debian repository
+Architectures: i386 amd64 source
+Components: main games
+#UDebComponents:
+#Contents:
+#Update:
+Log: $HOME/packaging/SteamOS-Tools/log/brewmaster.log
+SignWith: 00000000
+```
+
+**Explanations**
+
+* `Origin`: The specific name / tag for this repository (key in `/etc/apt/preferences` pinning).
+* `Codename`: The codename (such as `jessie` for current Debian stable) of the distribution you are targeting.
+* `Description`: Custom SteamOS-Tools Debian repository
+* `Architectures`: i386 amd64 source (self explanatory)
+* `Components`: main games
+* `UDebComponents`:
+* `Contents`:
+* `Update`:
+* `Log`: $HOME/packaging/SteamOS-Tools/log/brewmaster.log
+* `SignWith`: 00000000
+
 
 
 
