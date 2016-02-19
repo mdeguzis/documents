@@ -62,6 +62,8 @@ make
 sudo make install
 ```
 
+On Arch you can find reprepro in the [AUR](https://aur.archlinux.org/packages/reprepro/)
+
 # GPG configuration
 ***
 
