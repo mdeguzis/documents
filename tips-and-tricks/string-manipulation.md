@@ -23,3 +23,7 @@ perl -pe 's|OLD|`cat blockoftext`|e'
 perl -pe 's|OLD|`cat blockoftext`|e' -i
 ```
 
+# Delete 'n' lines after match
+```
+sed -e '/pattern/,+5d' file.txt
+```
