@@ -43,12 +43,19 @@ Addresses can be line numbers, the dollar sign or a reg. exp enclosed in //.
 example: s/a/b/g, substitute b for a, globally. Drop the g and you only substitute the first occurrance of a on a line. Add p with the g to print out the line, especially if you are using sed -n.
 example: /but/d, delete any line that says "but", not buts allowed!
 
-## Examples
+
+
+## Match three letter reversal patterns:
+
 ```
-
-Match three letter reversal patterns:
-
 grep '\(.\)\(.\)\(.\)\3\2\1' web2
 Subsitution using sed:
 sed 's/^.*:\*:\([^:]*\).*$/\1/' /etc/passwd
 Try to save old files in a subdirectory.
+```
+
+## Match a line that starts with an indented [TAB] `#` character, that also contains the word "changelog"
+
+```
+sed 's/^\t#.*changelog.*/test/g' file.txt
+```
