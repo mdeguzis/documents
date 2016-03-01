@@ -1,10 +1,8 @@
 # About
-***
 
 The purpose of this page, is to layout the basics of using GitHub. Remember,  you _don't have to use GitHub to work with Git_. GitHub is social way to work with Git projects.
 
 # Guides
-***
 
 I've come across a few very excellent guides for beginners. Rather than reinvent the wheel, here are some that I think are rather excellent at getting you aquainted to GitHub.
 
@@ -14,12 +12,10 @@ I've come across a few very excellent guides for beginners. Rather than reinvent
 * [git - the simple guide [PDF]](http://rogerdudler.github.io/git-guide/files/git_cheat_sheet.pdf)
 
 # Video Guides
-***
 
 * [GitHub Guides Videos](https://www.youtube.com/user/GitHubGuides)
 
 # General workflow
-***
 
 ## Make sure I'm up to date with remote commits first to avoid conflicts
 ```
