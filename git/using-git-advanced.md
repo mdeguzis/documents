@@ -2,8 +2,8 @@
 
 Revert a commit:
 ```
-git revert --no-commit 0766c053..HEAD
-git commit
+git revert --no-commit [COMMIT]..HEAD
+git revert --continue
 ```
 
 # Other notes
