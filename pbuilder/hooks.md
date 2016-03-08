@@ -16,6 +16,8 @@ The convention of hook files are:
 X<digit><digit><whatever-else-you-want-as-name>
 ```
 
+The X defines the hook class followed by 2 digits which define the order of execution within a class.
+
 ##Classes	Description
 
 * **A**	Is for --build target. It is executed before build starts; after unpacking the build system, and unpacking the source, and satisfying the build-dependency.
