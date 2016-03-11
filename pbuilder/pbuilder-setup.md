@@ -8,7 +8,7 @@ sets a number of things:
 * Adds multirarch if missing
 * Installs a few base packages needed for pbuilder environment setup
 * Installs keyrings that may be missing
-* Setup GitHub user information globally, as well in $HOME/.bashrc
+* Setup GitHub user information globally, as well in $HOME/.bashrc (See: [git config](http://git-scm.com/docs/git-config))
 * Adds quilt config files
 * Adds pbuilder config files
 * Adds exclusion/inclusion lists for rsync when using build scripts
