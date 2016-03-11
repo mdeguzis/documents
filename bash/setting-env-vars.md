@@ -41,3 +41,5 @@ $EDITOR ~/.login
   
 If you want to make it permanent for all users, you can edit /etc/profile or /etc/environment.
 In this case follow the syntax you see already present in your file.
+
+Source: [stackexchange](http://unix.stackexchange.com/a/117470)
