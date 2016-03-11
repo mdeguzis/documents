@@ -1,3 +1,5 @@
+# How do I set/source/add global vars?
+
 You can add it to the file .profile or .bashrc or your current shell profile file (located in your home directory). Then, each time you open your shell it will be loaded.
 
 To change the environmental variable "permanently" you'll need to consider at least these situations:
