@@ -1,10 +1,14 @@
 # Having issues with pbuilder?
 
-## pbuilder creation
-
 Try using the debug paramater (example):
 ```
 sudo DIST=jessie ARCH=amd64 pbuilder create --debug
+```
+
+You could also invoke the `-x` bash option to show debug output from bash itself. pbuilder invokes `.pbuilderrc` with bash.
+
+```
+bash -x /usr/sbin/pbuilder create --debug
 ```
 
 # reprepro complains about the generated pbuilder md5
