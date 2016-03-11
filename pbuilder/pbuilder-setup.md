@@ -18,4 +18,4 @@ If you do not use this script, take note of the `.pbuilderrc` file
 
 # Also see:
 
-[devscripts/dch](http://manpages.ubuntu.com/manpages/precise/man1/dch.1.html)
+* [devscripts/dch](http://manpages.ubuntu.com/manpages/precise/man1/dch.1.html)
