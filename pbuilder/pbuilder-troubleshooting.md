@@ -1,3 +1,12 @@
+# Having issues with pbuilder?
+
+## pbuilder creation
+
+Try using the debug paramater (example):
+```
+sudo DIST=jessie ARCH=amd64 pbuilder create --debug
+```
+
 # reprepro complains about the generated pbuilder md5
 
 Link:
