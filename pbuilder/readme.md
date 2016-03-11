@@ -12,7 +12,6 @@
     - [Variables to understand](#variables-to-understand)
     - [Directories](#directories)
     - [Adding options for debuild](#adding-options-for-debuild)
-    - [](#)
 - [Links](#links)
 - [i386 building](#i386-building)
 
@@ -102,8 +101,6 @@ PBUILDERROOTCMD="sudo -E"
 # always be verbose:
 DH_VERBOSE=1
 ```
-
-### 
 
 # Links
 * [Manual](http://pbuilder.alioth.debian.org/)
