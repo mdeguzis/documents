@@ -32,10 +32,20 @@ First, please take the time to read these documents:
 
 * [manual page for pbuilder](http://manpages.ubuntu.com/manpages/lucid/man8/pbuilder.8.html)
 * [manual for pbuilderrc](manpages.ubuntu.com/manpages/precise/man5/pbuilderrc.5.html)
+* [manual for debootstrap](http://linux.die.net/man/8/debootstrap)
+
+### Variables to understand
+
+* `PBUILDERSATISFYDEPENDSCMD`: Specifys which pbuilder helper will be used to satisfy build-time dependencies. See [pbuilderrc](manpages.ubuntu.com/manpages/precise/man5/pbuilderrc.5.html)
+* `USENETWORK`: Allows use of network resources at build-time. Leave this off unless needed.
+* `${DISTRIBUTION}_SUITES`: space-seperated list of distributions for a given suite.
+* `${DISTRIBUTION}_MIRROR`: defines the mirror used for a given suite of distributions.
+* `COMPONENTS`: Within a suite's configuration, list which components you wish to use from the pool.
+* ` DEBOOTSTRAPOPTS` Defines optiosn for debootstrap. Use a quoted string, such as `("--arch" "$ARCH" "${DEBOOTSTRAPOPTS[@]}")`. Using `"${DEBOOTSTRAPOPTS[@]}"` allows previously set options not explicitly defined.
 
 ### Directories
 
-You can set these how you see fit. This is not applicable if you use some sort of wrapper script that sets these for you. Not all of these fields are required, but in building packages, I have found these to be very useful.
+You can set these how you see fit. This is not applicable if you use some sort of wrapper script that sets these for you. Not all of these fields are required, but in building packages, I have found these to be very useful. You can reference this information noted, from the SteamOS-Tools-Packaging [.pbuilderrc](https://github.com/ProfessorKaos64/SteamOS-Tools-Packaging/blob/brewmaster/setup-files/.pbuilderrc) file.
 
 ```
 # Set locations
@@ -47,6 +57,30 @@ BUILDRESULT="$build_dir"                        # (optinal) custom var used for 
 BUILDPLACE="${BASEDIR}/build"                   # The directory where in-progress chroot builds go
 APTCACHE="${BASEDIR}/${DIST}/aptcache/"         # The directory where apt package cache is stored
 HOOKDIR="${BASEDIR}/hooks"                      # (optional) Directory where scripts hooks are stored
+```
+
+### Adding options for debuild
+When building with debuild and pbuilder, these options (which can be appended to `.pbuilderrc`), can be useful:
+
+```
+#for pbuilder debuild (sudo -E keeps the environment as-is)
+BUILDSOURCEROOTCMD="fakeroot"
+PBUILDERROOTCMD="sudo -E"
+
+# use cowbuilder for pdebuild
+#PDEBUILD_PBUILDER="cowbuilder"
+
+#Command-line option passed on to dpkg-buildpackage.
+#DEBBUILDOPTS="-IXXX -iXXX"
+
+# create sources only
+#DEBBUILDOPTS="-S -sa"
+
+# create binary AND sources
+#DEBBUILDOPTS="-us -uc"
+
+# always be verbose:
+DH_VERBOSE=1
 ```
 
 ### 
