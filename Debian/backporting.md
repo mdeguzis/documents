@@ -15,3 +15,5 @@ DIST=stretch ARCH=amd64 pbuilder build --debbuildopts "-sa -v1.7.0+bsos1" rust.d
 # Links
 
 * [Building formal backports](https://wiki.debian.org/BuildingFormalBackports)
+* [git-pbuilder](https://wiki.debian.org/git-pbuilder)
+* [Packaging with git](https://wiki.debian.org/PackagingWithGit)
