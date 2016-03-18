@@ -7,6 +7,7 @@ not set during the build phase (or as it seems). While `sudo -E` is set in my pe
 This assumes you have a var in your build script to set the builder dynamically. Otherwise, remove the conditional statement, and leave the export line below.
 
 Example `debian/rules`
+
 ```
 #!/usr/bin/make -f
 
@@ -26,4 +27,4 @@ override_dh_auto_build:
 	cargo build --release
 ```
 
-**Please note:** This workaround is _not_needed if you are using local building (e.g. debuild).
+**Please note:** This workaround is _not_ needed if you are using local building (e.g. debuild).
