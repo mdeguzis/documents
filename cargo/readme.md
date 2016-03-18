@@ -24,4 +24,6 @@ endif
 override_dh_auto_build:
 	cargo fetch
 	cargo build --release
-	```
+```
+
+**Please note:** This workaround is _not_needed if you are using local building (e.g. debuild).
