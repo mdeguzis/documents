@@ -3,8 +3,8 @@ Helpful info for cargo (Rust package manager)
 
 # Requirements
 
-* `cargo` [[Debain](https://packages.debian.org/search?keywords=cargo) | [SteamOS-Tools](http://packages.libregeek.org/SteamOS-Tools/pool/main/c/cargo/)]
-* `rustc` [[Debain](https://packages.debian.org/search?keywords=rustc) | [SteamOS-Tools] (http://packages.libregeek.org/SteamOS-Tools/pool/main/r/rustc/)]
+* `cargo` [ [Debian](https://packages.debian.org/search?keywords=cargo) | [SteamOS-Tools](http://packages.libregeek.org/SteamOS-Tools/pool/main/c/cargo/) ]
+* `rustc` [ [Debian](https://packages.debian.org/search?keywords=rustc) | [SteamOS-Tools] (http://packages.libregeek.org/SteamOS-Tools/pool/main/r/rustc/) ]
 
 # Packaging using pbuilder
 Make sure you implement the following code in `debian/rules`, or 'cargo fetch` will fail. This seems to require $HOME being available, something that is
