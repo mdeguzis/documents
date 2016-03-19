@@ -8,3 +8,4 @@ Useful information about GPG / GNUPG
 # Links
 
 * [Exchanging keys](https://www.gnupg.org/gph/en/manual/x56.html)
+* [GPG Cheat Sheet](http://irtfweb.ifa.hawaii.edu/~lockhart/gpg/gpg-cs.html)
