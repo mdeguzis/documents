@@ -6,6 +6,12 @@ Info for items specific to The Linux distirbution, Fedora.
 * [How to create an RPM pacakge](https://fedoraproject.org/wiki/How_to_create_an_RPM_package)
 * [Third party repositories](https://fedoraproject.org/wiki/Third_party_repositories)
 * [RPM Fusion](http://rpmfusion.org/)
+* [OBS (Open Build System)](https://build.opensuse.org/)
+
+# Open Build System
+
+* [Main site](https://build.opensuse.org/)
+* [Tutorial](https://en.opensuse.org/openSUSE:Build_Service_Tutorial)
 
 # Misc
 
