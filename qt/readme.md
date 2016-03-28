@@ -8,3 +8,5 @@ Some info about Qt
 * [Configure options](http://doc.qt.io/qt-5/configure-options.html)
 * [Creating plugins](http://doc.qt.io/qt-5/plugins-howto.html)
 * [QT package / module hierarchy](http://pkg-kde.alioth.debian.org/images/qt5_build_deps.png)
+* [QT package deps main page](http://pkg-kde.alioth.debian.org/qt5-build-deps.html)
+* [QT deps](http://anonscm.debian.org/cgit/pkg-kde/qt)
