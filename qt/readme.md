@@ -13,6 +13,8 @@ Some info about Qt
 
 # Help and dev
 
+* [KDE FAQ](http://pkg-kde.alioth.debian.org/faq.html)
+
 IRC:
 
 \#debian-kde on irc-debian.org
