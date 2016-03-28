@@ -15,6 +15,8 @@ Some info about Qt
 
 * [KDE FAQ](http://pkg-kde.alioth.debian.org/faq.html)
 
+# Discussion
+
 IRC:
 
 \#debian-kde on irc-debian.org
