@@ -1,5 +1,7 @@
 ### About
-Source from: [ruslo/hunter](https://github.com/ruslo/hunter/wiki/pkg.qt)
+Sourced from: [ruslo/hunter](https://github.com/ruslo/hunter/wiki/pkg.qt)
+
+### Links
 
 * [Official](http://qt.io)
 * [Example](https://github.com/ruslo/hunter/blob/develop/examples/qt-widgets/CMakeLists.txt)
