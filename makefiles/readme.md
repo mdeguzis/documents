@@ -6,7 +6,7 @@ Some tips regarding debian/rules
 * [GNU make manual](https://www.gnu.org/software/make/manual/html_node/index.html#SEC_Contents)
 * [Using phony targets](https://www.gnu.org/software/make/manual/html_node/Phony-Targets.html)
 
-## Determing theads/cores for make -j flags
+# Determing theads/cores for make -j flags
 
 Note:  
 See [this article](http://www.math-linux.com/linux/tip-of-the-day/article/speedup-gnu-make-build-and-compilation-process) for more
