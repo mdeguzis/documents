@@ -31,7 +31,7 @@ A good hint, and practice, if say, using Arch Linux with pbuilder, is to use `-n
 Example:
 
 ```
---debuildopts -nc
+--debbuildopts -nc
 ```
 
 ## Your user environment
