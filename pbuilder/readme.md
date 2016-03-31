@@ -4,6 +4,7 @@
 
 - [About](#about)
 - [Useful notes about pbuilder](#useful-notes-about-pbuilder)
+  - [Bulding on distros other than the one you are packaging for](#Bulding-on-distros-other-than-the-one-you-are-packaging-for)
   - [Your user environment](#your-user-environment)
   - [The .pbuilderrc setup file](#the-pbuilderrc-setup-file)
   - [How does pbuilder evaluate .pbuilderrc?](#how-does-pbuilder-evaluate-pbuilderrc)
@@ -22,6 +23,16 @@ Useful info for pbuilder
 
 # Useful notes about pbuilder
 This section has some useful info not found in the links below
+
+## Bulding on distros other than the one you are packaging for
+
+A good hint, and practice, if say, using Arch Linux with pbuilder, is to use `-nc` with debbuildopts to avoid running dh_clean ahead of the chroot being unpacked. dh_auto_clean and dh_clean run ahead of pbuilder and* of course inside the build environment.
+
+Example:
+
+```
+--debuildopts -nc
+```
 
 ## Your user environment
 The first thing pbuilder does is activate `set -e` which means that your .pbuilderrc has to be written in a way so that any commands that fail are handled so that they don't cause bash to exit. 
