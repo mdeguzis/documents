@@ -5,6 +5,6 @@ Some tips regarding debian/rules
 
 ```
 NB_CORES=$(grep -c '^processor' /proc/cpuinfo)
-export MAKEFLAGS="-j$((NB_CORES+1)) -l${NB_CORES}"
+export MAKEFLAGS="-j$(NB_CORES) -l$(NB_CORES)"
 make
 ```
