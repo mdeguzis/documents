@@ -4,7 +4,7 @@
 
 - [About](#about)
 - [Useful notes about pbuilder](#useful-notes-about-pbuilder)
-  - [Bulding on distros other than the one you are packaging for](#Bulding-on-distros-other-than-the-one-you-are-packaging-for)
+  - [Bulding on distros other than the one you are packaging for](#bulding-on-distros-other-than-the-one-you-are-packaging-for)
   - [Your user environment](#your-user-environment)
   - [The .pbuilderrc setup file](#the-pbuilderrc-setup-file)
   - [How does pbuilder evaluate .pbuilderrc?](#how-does-pbuilder-evaluate-pbuilderrc)
