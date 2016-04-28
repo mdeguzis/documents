@@ -43,3 +43,17 @@ This is very destructive, and hsould only used if necessary!
 ```
 reprepro list RELEASE | grep PACKAGE_NAME | cut -d " " -f 2 | xargs reprepro remove RELEASE {}
 ```
+
+# Remove packages that are unreferced
+
+This is very useful when you have incorrectly added a package, and a now there are 2 package deb files in a folder, when only one is really active and refenced by the database. It's a good command to know when you "dun goofed" :) This will not delete debian files added via 'includedeb'. 
+
+Show unerefenced files
+```
+reprepro dumpunreferenced
+```
+
+Delete unerefenced files
+```
+reprepro deleteunreferenced
+```
