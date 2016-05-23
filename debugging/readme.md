@@ -9,3 +9,7 @@ Some notes about debugging
 # gdb
 
  * [gdb backtrace](https://sourceware.org/gdb/onlinedocs/gdb/Backtrace.html)
+
+# General guidelines
+
+* [Arch Linux wiki](https://wiki.archlinux.org/index.php/Step-by-step_debugging_guide)
