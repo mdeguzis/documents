@@ -1,6 +1,8 @@
 # About
 
-Below is an easy to parse list to help find out what should be built in what order to provide what pacakage. The requires list for each package build only lists qt packages. For the complete list, reference the debian/control files in the [pacakging repository](https://github.com/ProfessorKaos64/LibreGeek-Packaging/)
+Below is an easy to parse list to help find out what should be built in what order to provide what Qt5 pacakage. The requires list for each package build only lists qt packages. For the complete list, reference the debian/control files in the [pacakging repository](https://github.com/ProfessorKaos64/LibreGeek-Packaging/)
+
+\* The below main items are listed in build order. All require at a version of >= 5.6.0
 
 # qtbase-opensource-src
  - **requires**
@@ -21,6 +23,24 @@ Below is an easy to parse list to help find out what should be built in what ord
   - libqt5sql5-sqlite
   - libqt5sql5-tds
   - libqt5sql5-ibase
+  - libqt5xml5
+  - libqt5dbus5
+  - libqt5test5
+  - libqt5concurrent5
+  - libqt5widgets5
+  - libqt5printsupport5
+  - qtbase5-dev
+  - qtbase5-private-dev
+  - libqt5opengl5-dev
+  - qtbase5-dev-tools
+  - qt5-qmake
+  - qtbase5-examples
+  - qtbase5-dbg
+  - qtbase5-dev-tools-dbg
+  - qtbase5-examples-dbg
+  - qt5-default
+  - qtbase5-doc
+  - qtbase5-doc-html
 
 # qtxmlpatterns-opensource-src
  - **requires**
@@ -32,3 +52,30 @@ Below is an easy to parse list to help find out what should be built in what ord
   - qtxmlpatterns5-examples
   - qtxmlpatterns5-doc
   - qtxmlpatterns5-doc-html
+
+# qtwebchannel
+ - **requires**
+  - libqt5concurrent5 
+  - libqt5dbus5 
+  - libqt5libqgtk2
+  - libqt5opengl5-dev
+  - libqt5opengl5
+  - libqt5printsupport5
+  - libqt5test5
+  - libqt5widgets5
+  - libqt5xml5
+  - qtdeclarative5-dev
+  - qtdeclarative5-dev-tools
+  - qt5-default
+  - qt5-qmake
+  - qtbase5-private-dev
+ - **provides*
+  - libqt5-qtwebchannel-dev
+  - libqt5-qtwebchannel-examples
+  - libqt5-qtwebchannel-imports
+  - libqt5-qtwebchannel-private-dev
+
+# qtwebengine
+ - **requires**
+  - qtbase5-private-dev
+ - **provides*
