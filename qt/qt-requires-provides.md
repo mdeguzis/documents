@@ -70,6 +70,17 @@ Below is an easy to parse list to help find out what should be built in what ord
   - qml-module-qtquick-particles2
   - qml-module-qtquick2
   - qml-module-qt-labs-settings
+  - qml-module-qttest
+  - qml-module-qtquick-window2
+  - qml-module-qtquick-xmllistmodel
+  - qtdeclarative5-dev
+  - qtdeclarative5-private-dev
+  - qmlscene
+  - qml
+  - qtdeclarative5-examples
+  - qtdeclarative5-dbg
+  - qtdeclarative5-doc
+  - qtdeclarative5-doc-html
 
 # qtwebchannel
  - **requires**
@@ -95,5 +106,34 @@ Below is an easy to parse list to help find out what should be built in what ord
 
 # qtwebengine
  - **requires**
-  - qtbase5-private-dev
+  - libqt5concurrent5
+  - libqt5dbus5
+  - libqt5libqgtk2
+  - libqt5opengl5-dev
+  - libqt5opengl5
+  - libqt5printsupport
+  - libqt5qml5
+  - libqt5quick5
+  - libqt5quickparticles5
+  - libqt5quicktest5
+  - libqt5quickwidgets5
+  - libqt5sql5
+  - libqt5widgets5
+  - libqt5-qtwebchannel-dev
+  - libqt5-qtwebchannel-imports
+  - libqt5xml5
+  - libqt5xmlpatterns5-dev
+  - qtdeclarative5-dev
+  - qtdeclarative5-dev-tools
+  - qtdeclarative5-private-dev
+  - qt5-qmltooling-plugin
+  - qt5-default
+  - qt5-qmake
+  - qtbase5-dev-tools
+  - qtbase5-private-de
  - **provides*
+  - libqt5-qtwebengine
+  - libqt5-qtwebengine-dev
+  - libqt5-qtwebengine-private-dev
+  - libqt5-qtwebengine-examples
+  
