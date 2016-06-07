@@ -2,7 +2,7 @@
 
 Below is an easy to parse list to help find out what should be built in what order to provide what Qt5 pacakage. The requires list for each package build only lists qt packages. For the complete list, reference the debian/control files in the [pacakging repository](https://github.com/ProfessorKaos64/LibreGeek-Packaging/)
 
-\* The below main items are listed in build order. All require at a version of >= 5.6.0
+\* The below main items are listed in build order. All require at a version of >= 5.6.0 and `pkg-kde-tools`.
 
 # qtbase-opensource-src
  - **requires**
@@ -52,6 +52,24 @@ Below is an easy to parse list to help find out what should be built in what ord
   - qtxmlpatterns5-examples
   - qtxmlpatterns5-doc
   - qtxmlpatterns5-doc-html
+
+# qtdeclaritive-opensource-src
+ - **requires**
+  - libqt5xmlpatterns5-dev
+ - **provides**
+  - libqt5qml5
+  - libqt5quick5
+  - libqt5quickparticles5
+  - libqt5quicktest5
+  - libqt5quickwidgets5
+  - qt5-qmltooling-plugins
+  - qml-module-qt-labs-folderlistmodel
+  - qml-module-qtquick-localstorage
+  - qml-module-qtqml-models2
+  - qml-module-qtqml-statemachine
+  - qml-module-qtquick-particles2
+  - qml-module-qtquick2
+  - qml-module-qt-labs-settings
 
 # qtwebchannel
  - **requires**
