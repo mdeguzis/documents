@@ -1,0 +1,82 @@
+From: https://cmake.org/pipermail/cmake/2011-November/047186.html
+
+
+What you have here is the sequence
+
+SET(gtest_force_shared_crt ON)
+OPTION(gtest_force_shared_crt "..." OFF)
+
+with OPTION() being effectively the same as:
+
+SET(gtest_force_shared_crt OFF CACHE BOOL "...")
+
+After the project's initial configuration, you will end up with:
+
+gtest_force_shared_crt == ON in top-level directory
+gtest_force_shared_crt == OFF in gtest subdirectory
+gtest_force_shared_crt == OFF in cache
+
+Due to the empty cache, OPTION() writes to the cache and, thus, to the
+current scope. After the project's reconfiguration, you'll end up with:
+
+gtest_force_shared_crt == ON in top-level directory
+gtest_force_shared_crt == ON in gtest subdirectory
+gtest_force_shared_crt == OFF in cache
+
+This is because OPTION() is a no-op if the variable has already a value
+in the current scope and a typed value in the cache, even if the values
+differ. The scope's ON value is inherited from the top-level directory,
+and the OFF value in the cache stems from the initial configuration.
+
+Reconfigure the project with -Dgtest_force_shared_crt=ON/OFF:
+
+gtest_force_shared_crt == ON in top-level directory
+gtest_force_shared_crt == ON/OFF in gtest subdirectory (*)
+gtest_force_shared_crt == ON/OFF in cache
+
+Reconfigure with -Dgtest_force_shared_crt:BOOL=ON/OFF:
+
+gtest_force_shared_crt == ON in top-level directory
+gtest_force_shared_crt == ON in gtest subdirectory (*)
+gtest_force_shared_crt == ON/OFF in cache
+
+Compare the (*) lines; this is because OPTION() *does* write to the
+current scope if the variable's type in the cache is UNINITIALIZED,
+but if the type is defined and there's a value in the current scope,
+the latter is left alone. IMO, this is critical as it might result
+in different configurations, depending on whether -D<VARIABLE> or
+-D<VARIABLE>:<TYPE> is used on the CMake command line.
+
+As you can see, the SET/OPTION() commands bear some subtleties; see
+[1] for an overview, or give the following exemplary project a try:
+
+# CMakeLists.txt:
+CMAKE_MINIMUM_REQUIRED(VERSION 2.8 FATAL_ERROR)
+PROJECT(FLAG NONE)
+MESSAGE("FLAG[toplevel(0)]: ${FLAG}(scope), $CACHE{FLAG}(cache)")
+SET(FLAG ON)
+MESSAGE("FLAG[toplevel(1)]: ${FLAG}(scope), $CACHE{FLAG}(cache)")
+ADD_SUBDIRECTORY(subdir)
+MESSAGE("FLAG[toplevel(2)]: ${FLAG}(scope), $CACHE{FLAG}(cache)")
+
+# subdir/CMakeLists.txt:
+MESSAGE("FLAG[subdir(1)]: ${FLAG}(scope), $CACHE{FLAG}(cache)")
+OPTION(FLAG "Flag" OFF)
+MESSAGE("FLAG[subdir(2)]: ${FLAG}(scope), $CACHE{FLAG}(cache)")
+
+In order to avoid confusion, the rule of thumb is: Use a variable
+*either* for the current scope *or* for the cache, but not for both.
+Consequently, if you have OPTION(VAR ...), i.e. VAR is used for the
+cache, you should not have SET(VAR ...) without the CACHE modifier.
+
+'hope that helps.
+
+Regards,
+
+Michael
+
+[1] http://www.mail-archive.com/cmake@cmake.org/msg29869.html
+Previous message: [CMake] How the heck does one set options?
+Next message: [CMake] How the heck does one set options?
+Messages sorted by: [ date ] [ thread ] [ subject ] [ author ]
+More information about the CMake mailing list
