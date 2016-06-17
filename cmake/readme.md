@@ -1,4 +1,5 @@
 # Cmake
+* [Cmake documentation](https://cmake.org/documentation/)
 * [Cmake official Wiki](https://cmake.org/Wiki/CMake)
 * [Getting started with cmake](http://mathnathan.com/2010/07/getting-started-with-cmake/)
 * [Cmake - An introduction](http://www.cs.swarthmore.edu/~adanner/tips/cmake.php)
