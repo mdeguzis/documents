@@ -42,6 +42,17 @@ Below is an easy to parse list to help find out what should be built in what ord
   - qtbase5-doc
   - qtbase5-doc-html
 
+# qtx11extras-opensource-src
+ - **requires**
+  - qtbase5-dev (>= 5.6.1+dfsg~),
+  - qtbase5-private-dev
+ - **provides**
+  - libqt5x11extras5
+  - libqt5x11extras5-dev
+  - qtx11extras5-dbg
+  - qtx11extras5-doc
+  - qtx11extras5-doc-html
+
 # qtxmlpatterns-opensource-src
  - **requires**
   - qtbase5-private-dev
