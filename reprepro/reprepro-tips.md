@@ -32,7 +32,7 @@ reprepro -C games -V includedeb jessie dir/super-mario.deb
 ```
 
 # remove all packages from the testing pool
-Ths is very destructive, and hsould only used if necessary!
+This is very destructive, and should only used if necessary!
 ```
 reprepro removefilter release_testing 'Section'
 ```
