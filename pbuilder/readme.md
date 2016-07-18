@@ -144,3 +144,11 @@ DIST=saucy pdebuild
 # environment under the i386 architecture
 DIST=saucy ARCH=i386 pdebuild
 ```
+
+# Building form a .dsc file
+
+example (with full source):
+```
+sudo -E BUILD_DIR=result/ DIST=brewmaster STEAMOS_TOOLS_BETA_HOOK="true" pbuilder --build llvm-toolchain-3.8_3.8-2.dsc 
+--distribution=brewmaster --debbuildopts -sa
+```
