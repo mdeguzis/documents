@@ -146,9 +146,11 @@ DIST=saucy pdebuild
 DIST=saucy ARCH=i386 pdebuild
 ```
 
-# Building form a .dsc file
+# Building from a .dsc file
 
 example (with full source):
 ```
 rm -rf result/* && mkdir result && sudo -E BUILD_DIR=result/ DIST=brewmaster STEAMOS_TOOLS_BETA_HOOK="true" pbuilder --build llvm-toolchain-3.8_3.8-2.dsc --distribution=brewmaster --debbuildopts -sa
 ```
+
+Ignore the steamos-tools beta line (for general building). This also depends on your `.pbuilderrc` setup.
