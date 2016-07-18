@@ -150,7 +150,8 @@ DIST=saucy ARCH=i386 pdebuild
 
 example (with full source):
 ```
-rm -rf result/* && mkdir result && sudo -E BUILD_DIR=result/ DIST=brewmaster STEAMOS_TOOLS_BETA_HOOK="true" pbuilder --build llvm-toolchain-3.8_3.8-2.dsc --distribution=brewmaster --debbuildopts -sa
+DSC_URL="http://http.debian.net/debian/pool/main/l/llvm-toolchain-3.8/llvm-toolchain-3.8_3.8-2.dsc"
+dget ${DSC_URL} && rm -rf result/* && mkdir result && sudo -E BUILD_DIR=result/ DIST=brewmaster STEAMOS_TOOLS_BETA_HOOK="true" pbuilder --build llvm-toolchain-3.8_3.8-2.dsc --distribution=brewmaster --debbuildopts -sa
 ```
 
 Ignore the steamos-tools beta line (for general building). This also depends on your `.pbuilderrc` setup.
