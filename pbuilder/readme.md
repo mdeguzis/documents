@@ -151,7 +151,7 @@ DIST=saucy ARCH=i386 pdebuild
 example (with full source):
 ```
 DSC_URL="http://http.debian.net/debian/pool/main/l/llvm-toolchain-3.8/llvm-toolchain-3.8_3.8-2.dsc"
-dget ${DSC_URL} && rm -rf result/* && mkdir result && sudo -E BUILD_DIR=result/ DIST=brewmaster STEAMOS_TOOLS_BETA_HOOK="true" pbuilder --build --distribution=brewmaster --debbuildopts -sa --debbuildopts -nc llvm-toolchain-3.8_3.8-2.ds
+dget ${DSC_URL} && rm -rf result/* && mkdir result && sudo -E BUILD_DIR=result/ DIST=brewmaster STEAMOS_TOOLS_BETA_HOOK="true" pbuilder --build --distribution brewmaster --debbuildopts -sa --debbuildopts -nc llvm-toolchain-3.8_3.8-2.ds
 ```
 
 Ignore the steamos-tools beta line (for general building). This also depends on your `.pbuilderrc` setup. You only need `-nc` above if you are building on other distributions and you don't want dh_clean running before the build.
