@@ -23,6 +23,11 @@ The current `generic-building/backport-debian-pkg.sh` does not support multiple 
 
 **Do not** set BUILD_DIR above manually, as this conflicts with some packages, such as "llvm-toolchain". Instead, use `--buildresult /path/to/result_dir`.
 
+# Boostrapping for packages
+
+Some packages require bootstrapping, such as gcc-5. This may require bootstrapping to sucessfully backport the package.
+
+* [Bootstrapping](https://wiki.debian.org/DebianBootstrap)
 
 # Links
 
