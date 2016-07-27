@@ -8,3 +8,9 @@ This directory contains some useful information for Linux distribution packaging
   * the wrong package
   * too old
 * Case in point, `qtwebengine` with `--system-vpx` (requires >= v 1.5).
+
+# Debian-specific
+
+## Hardening
+
+See: https://wiki.debian.org/Hardening
