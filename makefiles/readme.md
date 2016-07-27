@@ -25,6 +25,31 @@ override_dh_auto_configure:
 	MAKEFLAGS="-j$(TOTAL_THREADS) -l$(TOTAL_THREADS)" ./configure
 ```
 	
+# Variable assignments
+
+
+**Lazy Set**
+
+```
+VARIABLE = value
+Normal setting of a variable - values within it are recursively expanded when the variable is used, not when it's declared
+```
+
+**Immediate Set**
+
+```
+VARIABLE := value
+Setting of a variable with simple expansion of the values inside - values within it are expanded at declaration time.
+```
+**Set If Absent**
+
+VARIABLE ?= value
+Setting of a variable only if it doesn't have a value
+
+**Append**
+
+VARIABLE += value
+	
 # Setting targets
 
 General format to change prefix and destination directory:
