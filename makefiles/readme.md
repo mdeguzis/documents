@@ -24,3 +24,13 @@ Inside the configure override:
 override_dh_auto_configure:
 	MAKEFLAGS="-j$(TOTAL_THREADS) -l$(TOTAL_THREADS)" ./configure
 	```
+	
+# Setting targets
+
+General format to change prefix and destination directory:
+
+```
+$(MAKE) -C engine sv-rel -j4 DESTDIR=$(TOP) PREFIX=/usr install
+```
+
+`-C` tells `make` to run on a specific directory.
