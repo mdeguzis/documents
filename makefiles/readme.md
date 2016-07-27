@@ -41,15 +41,20 @@ Normal setting of a variable - values within it are recursively expanded when th
 VARIABLE := value
 Setting of a variable with simple expansion of the values inside - values within it are expanded at declaration time.
 ```
+
 **Set If Absent**
 
+```
 VARIABLE ?= value
 Setting of a variable only if it doesn't have a value
+```
 
 **Append**
 
+```
 VARIABLE += value
-	
+```
+
 # Setting targets
 
 General format to change prefix and destination directory:
