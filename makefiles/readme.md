@@ -23,7 +23,7 @@ Inside the configure override:
 ```
 override_dh_auto_configure:
 	MAKEFLAGS="-j$(TOTAL_THREADS) -l$(TOTAL_THREADS)" ./configure
-	```
+```
 	
 # Setting targets
 
