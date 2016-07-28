@@ -14,3 +14,10 @@ This directory contains some useful information for Linux distribution packaging
 ## Hardening
 
 See: https://wiki.debian.org/Hardening
+
+# Debian rules
+
+## Tips
+
+* If you only have one target install/binary, using docs/dirs/install etc., vs package.docs/package.dirs/package.install is not necessary.
+* If you only have one target install/binary, having files in debian/package_name or debian/tmp/ will be auto installed by debhelper, unless otherwise overriden.
