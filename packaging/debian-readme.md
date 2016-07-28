@@ -4,6 +4,10 @@
 
 See: https://wiki.debian.org/Hardening
 
+# Modifying the source
+
+* [Chapter 3. Modifying the source](https://www.debian.org/doc/manuals/maint-guide/modify.en.html)
+
 # Debian files
 
 ## debian/rules
