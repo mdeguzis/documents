@@ -1,6 +1,4 @@
-# Debian-specific
-
-## Hardening
+# Hardening
 
 See: https://wiki.debian.org/Hardening
 
