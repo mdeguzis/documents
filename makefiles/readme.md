@@ -27,6 +27,8 @@ override_dh_auto_configure:
 	
 # Variable assignments
 
+* [How to Use Variables (GNU)](https://ftp.gnu.org/old-gnu/Manuals/make-3.79.1/html_chapter/make_6.html)
+
 
 **Lazy Set**
 
