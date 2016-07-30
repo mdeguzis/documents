@@ -17,3 +17,7 @@ dpkg --compare-versions 2.7.6+bsos-1 gt 7:2.7.6-0ubuntu0.15.10.1; echo $?
 1
 ```
 
+# References
+
+* [Guidelines for program installation (pingus)](http://pingus.seul.org/~grumbel/tutorials/game_install/install_dirs-2.html)
+
