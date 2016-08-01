@@ -27,6 +27,10 @@ See: https://wiki.debian.org/Hardening
 
 See: [5.11 install of debian/other](https://www.debian.org/doc/manuals/maint-guide/dother.en.html#install)
 
+## debian/watch
+
+See [How to write a good debian/watch easily | Eriberto Blo](http://eriberto.pro.br/blog/?p=1459)
+
 # Resources
 
 * [Debian New Maintainers Guide](https://www.debian.org/doc/manuals/maint-guide/maint-guide.en.pdf)
