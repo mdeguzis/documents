@@ -93,3 +93,4 @@ In this example we are applying most of the same options but just incrementing t
 * [Advanced Git usage](https://help.github.com/categories/advanced-git/)
 * [Rebasing](https://help.github.com/articles/about-git-rebase/)
 * [Git Submofule (official)](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
+* [Why you can't clone a specific commit](http://stackoverflow.com/a/26135822/2187024)
