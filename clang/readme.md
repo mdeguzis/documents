@@ -28,3 +28,7 @@ SET (CMAKE_RANLIB  "/usr/bin/llvm-ranlib")
 ```
 
 Reference: [Stackoverflow](http://stackoverflow.com/questions/7031126/switching-between-gcc-and-clang-llvm-using-cmake)
+
+# Links
+
+* [Feature parity](http://clang.llvm.org/cxx_status.html)
