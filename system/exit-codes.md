@@ -1,3 +1,27 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [What are exit codes?](#what-are-exit-codes)
+- [What happens if I don't specify an exit code?](#what-happens-if-i-dont-specify-an-exit-code)
+  - [Sample Script:](#sample-script)
+  - [Execution:](#execution)
+  - [Script:](#script)
+  - [Execution:](#execution-1)
+- [Using exit codes in your bash scripts](#using-exit-codes-in-your-bash-scripts)
+- [Testing for exit codes](#testing-for-exit-codes)
+  - [Script:](#script-1)
+  - [Execution:](#execution-2)
+- [Providing your own exit code](#providing-your-own-exit-code)
+  - [Script:](#script-2)
+  - [Execution:](#execution-3)
+- [Using exit codes on the command line](#using-exit-codes-on-the-command-line)
+  - [Bash One Liner:](#bash-one-liner)
+- [More exit codes](#more-exit-codes)
+- [Source and credit:](#source-and-credit)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # What are exit codes?
 
 On Unix and Linux systems, programs can pass a value to their parent process while terminating. This value is referred to as an exit code or exit status. On POSIX systems the standard convention is for the program to pass 0 for successful executions and 1 or higher for failed executions.

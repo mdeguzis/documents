@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+  - [ifeq formatting](#ifeq-formatting)
+- [Links:](#links)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About
 Describes using conditional statments in Makefiles / Debain rules files that use make.
 

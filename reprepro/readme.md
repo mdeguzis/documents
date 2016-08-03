@@ -1,3 +1,11 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Using reprepro](#using-reprepro)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Using reprepro
 * [Setting up a signed repository (Debian)](https://wiki.debian.org/SettingUpSignedAptRepositoryWithReprepro)
 * [Creating a Debian/Ubuntu mirror (What I used initially)](http://www.infrastructureanywhere.com/documentation/additional/mirrors.html)

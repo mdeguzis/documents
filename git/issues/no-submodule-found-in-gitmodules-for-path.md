@@ -1,3 +1,12 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [No submodule found in .gitmodules for path](#no-submodule-found-in-gitmodules-for-path)
+- [rm -rf ../ofc2.local # if HEAD was the only tip with local history](#rm--rf-ofc2local-#-if-head-was-the-only-tip-with-local-history)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # No submodule found in .gitmodules for path
 
 Source: http://stackoverflow.com/questions/4161022/git-how-to-track-untracked-content/4162672#4162672

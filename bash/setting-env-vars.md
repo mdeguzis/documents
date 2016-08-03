@@ -1,3 +1,12 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [How do I set/source/add global vars?](#how-do-i-setsourceadd-global-vars)
+  - [bash](#bash)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # How do I set/source/add global vars?
 
 You can add it to the file .profile or .bashrc or your current shell profile file (located in your home directory). Then, each time you open your shell it will be loaded.

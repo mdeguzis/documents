@@ -1,3 +1,18 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Hardening](#hardening)
+- [Modifying the source](#modifying-the-source)
+- [Debian files](#debian-files)
+  - [debian/rules](#debianrules)
+    - [Tips](#tips)
+  - [debian/install](#debianinstall)
+  - [debian/watch](#debianwatch)
+- [Resources](#resources)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Hardening
 
 See: https://wiki.debian.org/Hardening

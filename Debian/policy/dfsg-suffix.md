@@ -1,3 +1,11 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [What does dfsg in the package name mean?](#what-does-dfsg-in-the-package-name-mean)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # What does dfsg in the package name mean?
 
 >dfsg is a conventional way of naming a package, when upstream software was repackaged, because it contains some non-free elements. 

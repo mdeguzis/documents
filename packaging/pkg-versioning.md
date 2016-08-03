@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Pkg versioning](#pkg-versioning)
+  - [Base release off latest release tag](#base-release-off-latest-release-tag)
+  - [Base release off latest commit (for "unstable packages")](#base-release-off-latest-commit-for-unstable-packages)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 #Pkg versioning
 [Snapshot packages](https://fedoraproject.org/wiki/Packaging:NamingGuidelines#Snapshot_packages) contain data about where the snapshot came from as well as ordering information for rpm. The information about the snapshot will be called %{checkout} in this section.
 

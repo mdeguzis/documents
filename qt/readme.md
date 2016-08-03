@@ -1,3 +1,24 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+    - [About](#about)
+    - [Links](#links)
+- [About](#about-1)
+- [Build status](#build-status)
+- [Configure options sourced in debian/rules via conditional statements](#configure-options-sourced-in-debianrules-via-conditional-statements)
+- [Configure options currently disabled](#configure-options-currently-disabled)
+- [Disabled installs](#disabled-installs)
+- [Build order notes (from README.source)](#build-order-notes-from-readmesource)
+  - [Bootstrapping the docs packages](#bootstrapping-the-docs-packages)
+- [Symbols](#symbols)
+  - [WARNING!](#warning)
+  - [Notes](#notes)
+  - [Updating Symbols:](#updating-symbols)
+  - [Creating Symbols](#creating-symbols)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ### About
 Some info about Qt
 

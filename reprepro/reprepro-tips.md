@@ -1,3 +1,20 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Useful links](#useful-links)
+- [Common reprepro errors/warnings](#common-reprepro-errorswarnings)
+  - [DSC file does not match expectations](#dsc-file-does-not-match-expectations)
+- [Listing pacakge by format](#listing-pacakge-by-format)
+- [sync to remove remote site, delete packages not found in remote.](#sync-to-remove-remote-site-delete-packages-not-found-in-remote)
+- [Adding deb package to pool](#adding-deb-package-to-pool)
+- [Adding deb package to pool, but specify the component (such as main, games, etc)](#adding-deb-package-to-pool-but-specify-the-component-such-as-main-games-etc)
+- [remove all packages from the testing pool](#remove-all-packages-from-the-testing-pool)
+- [remove all pacakges matching name in the specified release.](#remove-all-pacakges-matching-name-in-the-specified-release)
+- [Remove packages that are unreferced](#remove-packages-that-are-unreferced)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Useful links
 * [How to Use Reprepro for a Secure Package Repository on Ubuntu 14.04 (Digital Ocean)](https://www.digitalocean.com/community/tutorials/how-to-use-reprepro-for-a-secure-package-repository-on-ubuntu-14-04)
 * [Local corporate APT repositories (Vincent Bernat)](http://vincent.bernat.im/en/blog/2014-local-apt-repositories.html)

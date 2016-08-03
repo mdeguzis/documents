@@ -1,3 +1,15 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [What happens](#what-happens)
+- [Why this happens](#why-this-happens)
+- [What you can do](#what-you-can-do)
+- [SteamOS-Tools-Packaging specific](#steamos-tools-packaging-specific)
+- [For reference:](#for-reference)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # What happens
 You have uploaded "foo-bar_1.0.0+deb8u1" to your repository and are likely using reprepro. You fire off `reprepro processincoming default` and receive this text:
 

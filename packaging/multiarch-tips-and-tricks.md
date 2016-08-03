@@ -1,3 +1,15 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [Links](#links)
+- [Multiarch](#multiarch)
+  - [dh-exec.](#dh-exec)
+  - [debian/rules](#debianrules)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About
 Useful tips and tricks for packaging under multiarch
 

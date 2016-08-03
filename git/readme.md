@@ -1,3 +1,23 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [Commands](#commands)
+  - [stash](#stash)
+    - [Stash only a specific commit, or set of them.](#stash-only-a-specific-commit-or-set-of-them)
+  - [rebase](#rebase)
+    - [Squashing commits](#squashing-commits)
+  - [submodule](#submodule)
+    - [Updating](#updating)
+    - [Have a sudmodule always track the HEAD of a branch](#have-a-sudmodule-always-track-the-head-of-a-branch)
+    - [Removal](#removal)
+- [Tools / Utilities](#tools--utilities)
+  - [dch](#dch)
+- [Useful links for working with Git/GitHub](#useful-links-for-working-with-gitgithub)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About 
 Useful informatin about using git / GitHub. Also see [getting started with GitHub](https://github.com/ProfessorKaos64/documents/blob/master/git/getting-started-with-github.md).
 

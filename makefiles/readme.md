@@ -1,3 +1,15 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [How to create and use Makefiles](#how-to-create-and-use-makefiles)
+- [Determing theads/cores for make -j flags](#determing-theadscores-for-make--j-flags)
+- [Variable assignments](#variable-assignments)
+- [Setting targets](#setting-targets)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About
 Some tips regarding debian/rules
 

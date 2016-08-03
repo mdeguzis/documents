@@ -1,3 +1,17 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [qtbase-opensource-src](#qtbase-opensource-src)
+- [qtx11extras-opensource-src](#qtx11extras-opensource-src)
+- [qtxmlpatterns-opensource-src](#qtxmlpatterns-opensource-src)
+- [qtdeclaritive-opensource-src](#qtdeclaritive-opensource-src)
+- [qtwebchannel](#qtwebchannel)
+- [qtwebengine](#qtwebengine)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About
 
 Below is an easy to parse list to help find out what should be built in what order to provide what Qt5 pacakage. The requires list for each package build only lists qt packages. For the complete list, reference the debian/control files in the [pacakging repository](https://github.com/ProfessorKaos64/LibreGeek-Packaging/)

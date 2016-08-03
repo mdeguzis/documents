@@ -1,3 +1,14 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Pattern Matching](#pattern-matching)
+  - [Shell globbing](#shell-globbing)
+  - [Match three letter reversal patterns:](#match-three-letter-reversal-patterns)
+  - [Match a line that starts with an indented [TAB] `#` character, that also contains the word "changelog"](#match-a-line-that-starts-with-an-indented-tab-#-character-that-also-contains-the-word-changelog)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 Source: [cs.miami.edu](http://www.cs.miami.edu/home/burt/learning/Csc322.052/notes/pattern-matching.html)
 
 # Pattern Matching

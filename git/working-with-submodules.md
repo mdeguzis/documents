@@ -1,3 +1,15 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [Links](#links)
+- [Quick reminders](#quick-reminders)
+  - [Pull in latest changes for submodule](#pull-in-latest-changes-for-submodule)
+- [Have a sudmodule always track the HEAD of a branch](#have-a-sudmodule-always-track-the-head-of-a-branch)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About
 Tips and tricks for working with submodules
 

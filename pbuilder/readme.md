@@ -15,7 +15,7 @@
     - [Adding options for debuild](#adding-options-for-debuild)
 - [Links](#links)
 - [i386 building](#i386-building)
-- [Building from a .dsc file](#building-form-a-dsc-file)
+- [Building from a .dsc file](#building-from-a-dsc-file)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
