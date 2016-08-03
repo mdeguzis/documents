@@ -2,6 +2,12 @@
 * [How to Use Reprepro for a Secure Package Repository on Ubuntu 14.04 (Digital Ocean)](https://www.digitalocean.com/community/tutorials/how-to-use-reprepro-for-a-secure-package-repository-on-ubuntu-14-04)
 * [Local corporate APT repositories (Vincent Bernat)](http://vincent.bernat.im/en/blog/2014-local-apt-repositories.html)
 
+# Common reprepro errors/warnings
+
+## DSC file does not match expectations
+
+You can still typically run `reprepro export && reprepro dumpunrefernced` This likely is caused by `dpkg-genchanges` being run ahead of the build, typically due to `dh_clean` doing some things before pbuilder kicks off the build. If this happens, try using `--debbuildopts -nc` to tell dpkg not to clean the build before hand. dh_clean will still occur inside the build as expected.
+
 # Listing pacakge by format
 
 See 'man reprepro' for more.
