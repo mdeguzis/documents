@@ -47,4 +47,5 @@ Reference: [Stackoverflow](http://stackoverflow.com/questions/7031126/switching-
 
 # Links
 
+* [Clang manual (4.0)](http://clang.llvm.org/docs/UsersManual.html)
 * [Feature parity](http://clang.llvm.org/cxx_status.html)
