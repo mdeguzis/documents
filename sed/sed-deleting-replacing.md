@@ -8,9 +8,6 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-# About
-Tips and tricks for sed
-
 ## Match on only first occurence
 
 ```
