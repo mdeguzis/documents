@@ -78,7 +78,7 @@ find . -name "build*.sh" -print0 | xargs -0 sed 's/${USER}@${HOST}/${REMOTE_USER
 rm newtext.txt
 ```
 
-Note the \ symbol to escape the quotes on the vars so they are no substitued during this process. In this example, we cat output to a temporary file (note use of `<< EOF` vs `<<- EOF`), and replace a line in all of our build scripts. Dangerous, right!? Even if you test concretely first, it is still risky. "But, I am a risktaker, ass kicker, kung-foo master, you say?" Go ahead and add change `sed` to `sed -i` and add `-i` to the end _very end_ of the `perl ....cat newtext.txt...' line` to do an "in-pace" swap. 
+Note the \ symbol to escape the quotes on the vars so they are no substitued during this process. In this example, we cat output to a temporary file (note use of `<< EOF` vs `<<- EOF`), and replace a line in all of our build scripts. Dangerous, right!? Even if you test concretely first, it is still risky. "But, I am a risktaker, ass kicker, kung-foo master, you say?" Go ahead and add change `sed` to `sed -i` and add `-i` to the end _very end_ of the `perl ....cat newtext.txt...' line` to do an "in-place" swap. 
 
 ```
 # Add new block of cheese, errrrr....text...
