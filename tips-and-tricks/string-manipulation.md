@@ -36,10 +36,26 @@ perl -pe 's|OLD|`cat blockoftext`|e'
 perl -pe 's|OLD|`cat blockoftext`|e' -i
 ```
 
-# Delete 'n' lines after match
+# Delete 'n' lines after match (including match)
 ```
 sed -e '/pattern/,+5d' file.txt
 ```
+
+# Delete 'n' lines after match (excluding match). Increase 'd' for each line after N (the line not to delete)
+
+```
+sed -e '/pattern here/ { N; d; }'
+```
+
+For every line that matches pattern here, the code in the {} gets executed. N takes the next line into the pattern space as well, and then d deletes the whole thing before moving on to the next line. This works in any POSIX-compatible sed.
+
+# Delete between two patterns
+
+Example
+```
+sed -i '/##### DEBIAN PACKAGING SETUP #####/,/##### END DEBIAN PACKAGING SETUP #####/d' "${HOME}/.bashrc"
+```
+
 
 # Replace entire line with block of text, from script.
 
