@@ -12,6 +12,12 @@
 
 Info for clang
 
+# Complete list of flags
+
+```
+clang -cc1 --help
+```
+
 # Use clang vs. gcc
 
 ```
