@@ -9,7 +9,13 @@
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 # About
-Tips and tricks to remove lines, using `sed`
+Tips and tricks for sed
+
+## Match on only first occurence
+
+```
+sed '0,/Matched Keyword/s//Matched Keyword\nNew Inserted Line/' myfile.txt
+```
 
 ## Delete Nth line(s) after match
 
