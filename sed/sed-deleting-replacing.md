@@ -2,9 +2,10 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [About](#about)
+  - [Match on only first occurence](#match-on-only-first-occurence)
   - [Delete Nth line(s) after match](#delete-nth-lines-after-match)
   - [delete n lines after match not including](#delete-n-lines-after-match-not-including)
+- [Replacing "|" pipe](#replacing-%7C-pipe)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

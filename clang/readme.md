@@ -3,6 +3,7 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [About](#about)
+- [Complete list of flags](#complete-list-of-flags)
 - [Use clang vs. gcc](#use-clang-vs-gcc)
 - [Links](#links)
 

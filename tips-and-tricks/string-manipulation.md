@@ -6,7 +6,9 @@
   - [Pass results of find to command](#pass-results-of-find-to-command)
   - [Replace line with contents of file](#replace-line-with-contents-of-file)
   - [Replace line with block of text in file (perl)](#replace-line-with-block-of-text-in-file-perl)
-- [Delete 'n' lines after match](#delete-n-lines-after-match)
+- [Delete 'n' lines after match (including match)](#delete-n-lines-after-match-including-match)
+- [Delete 'n' lines after match (excluding match). Increase 'd' for each line after N (the line not to delete)](#delete-n-lines-after-match-excluding-match-increase-d-for-each-line-after-n-the-line-not-to-delete)
+- [Delete between two patterns](#delete-between-two-patterns)
 - [Replace entire line with block of text, from script.](#replace-entire-line-with-block-of-text-from-script)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
