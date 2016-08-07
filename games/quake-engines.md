@@ -6,7 +6,7 @@
 - [Quake 1](#quake-1)
   - [TyrQuake](#tyrquake)
   - [QuakeSpasm](#quakespasm)
-  - [VkQUake](#vkquake)
+  - [vkQUake](#vkquake)
   - [Darkplaces](#darkplaces)
   - [Quore](#quore)
   - [QuDos Quake Ports](#qudos-quake-ports)
@@ -67,7 +67,7 @@ game GAMENAME - On-the-fly change of game
 ./quakespasm -fitz - Run game in FitzQuake mode
 http://quakespasm.sourceforge.net
 
-## VKquake
+## vkQuake
 
 Port of Quakespasm to the Vulkan API. See: https://github.com/Novum/vkQuake. Packages available at packages.libregeek.org.
 
