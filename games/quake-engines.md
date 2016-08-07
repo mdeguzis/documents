@@ -169,9 +169,99 @@ There are easier options though. TyrQuake and QuakeForge have software clients, 
 
 Next Previous Contents
 
-# Quake 2
+# Engines for Quake sequels
 
-# Quake 3
+Next Previous Contents
+6. Quake Sequels
+
+## Hexen II
+
+Hexen II is a colourful adaption of the Quake engine, and in terms of source code and theme is much closer than Quake II to the original game. Unfortunately, Raven Software released the game with many rough edges... So beautiful, yet so cruel.
+
+Hammer of Thyrion is the main Linux Hexen II port , and has had much work done towards squishing bugs and enhancing the OpenGL graphics. While it is not as widely distributed as Quake, the HoT demo includes some of the game's best levels and is available from the Sourceforge project page.
+
+Mappers should note the Quest world editor, and HexenC compiler FTEQCC.
+
+##  Quake II
+
+Quake II is the sci-fi themed sequel to Quake. Early Linux releases weren't very solid, especially the mouse handling, but there is now a few related projects to choose from.
+
+Open Source Projects
+QuDos' Quake II is the most notable. It is based on Icculus Quake II, and includes some beautiful graphical enhancements - including cell shading - and support for FreeBSD and XMMS plugins. Another project still in development is Quetoo which has speed and security enhancements, but also a very stripped back interface and a few bugs.
+
+Yamagi Quake II, also based on Icculus, is an active Q2 project focusing on single player game and cooperative game modes. **Available in the Debian repos as `yamagi-quake2`**
+
+Qfusion appears an interesting project... that's slipped under my radar till now. An advanced multipurpose engine based on Quake II.
+
+Older projects include Michael Olson's source and binary rpms (which appear to be based on an old Icculus release) and the QuakeForge Quake II project with support for multiple operating systems. On a slightly different note - the Jake2 project is a version of Quake II written in Java.
+
+Notes
+A common command line option is: 
++set vid_ref glx +set gl_driver /usr/lib/libGL.so.1 
+which tells the game to start in OpenGL mode.
+
+See the old version of this how-to for other Quake II troubleshooting tips.
+
+Mods
+Digital Paint 2 is an "original" multiplayer game based on the Quake II engine. It's colourful and fun nature is a departure from the usual dark tone of most Quake games. Being a totally remodeled game, it doesn't require you to have the original Quake II ;->.
+
+Argonium is a slick looking deathmatch mod which is also freely distributable.
+
+## Quake III Arena
+
+Quake III was one of the first games to receive a full Linux commercial release. It's a great game which more than survives. Mods are numerous, and of better visual quality than Quake I or II. For more info about installing the game, try idsoftware's Faq, or Linuxgamer's Quake III How-To.
+
+The retail add-on Quake III Team Arena is supported and, despite getting ordinary reviews, is a great game. Most user mods should work with Linux. The Linux Gamers FAQ reports:
+
+    Yes, ... modifications work in Linux as long as they are compiled to the
+    Quake III ... VM bytecode as advised by id software.  ...  modifications
+    compiled to Windows library files will not work.
+Open Source Projects
+The Icculus Quake III Project which has recently moved to IOQuake. They are adding extra features, including support for Star Trek Voyager: Elite Force Holomatch (multiplayer).
+
+Sourceforge Quake III - Cell Shading
+
+Mods
+Warsow is a cell-shaded cartoon style total conversion using a heavily modified engine. It's interface is very slick, graphics to die for, and gameplay is ok.
+
+World of Padman is a high quality stand-alone conversion. It's set in a miniature suburban world with a bizarre cartoon theme, and is currently multiplayer only but with full bot support.
+
+In Alien Arena you're matched against pin headed martians in unbelievable OpenGL environments.
+
+The Dark Conjunction is an atmospheric Q3 single player conversion.
+
+Try the alien themed Tremulous for an original multiplayer mod.
+
+Links
+The Zerowing installation and known issues guides hosted by id Software.
+
+Linuxgamer's Quake III How-To.
+
+Linux Questions' Quake III forums for Sound and Mouse problems.
+
+All things Quake III at Planet Quake
+
+## Quake IV
+
+Quake IV is an epic FPS from Raven Software. It is based on the Doom-III engine and has high hardware specs: A 2GHz P4 (or AMD equivalent) and 512meg ram are the official minimum requirements. It's a beautiful game which should really be played with the graphical settings set to "medium" or "high". For this reason the author recommends against using entry level cards such as the FX5200.
+
+The game runs well under Linux, but still has a couple of issues:
+
+Quake IV only runs in 32 bpp colours (X11 colour depth 24), so restart X in this mode if you have to. Attempting to run in 16 bpp colours will give you an error message like: Couldn't find matching GLX visual ..... Sys_Error: Unable to initialize OpenGL. Alternatively you can start a new X session with the command:
+startx `which quake4` -- :1 -depth 24
+The Alsa sound libraries are used by default. To start with OSS sound , type:
+quake4 +set s_driver oss
+The Quake IV DVD Edition comes with several promotional movies. Although the movies appear to be Windows executables, they are in fact Bink videos, and can be viewed with the Linux Bink Player.
+Quake IV Links
+The Official Linux Faq
+
+Linux Questions Quake IV bug forums
+
+Quake IV demo
+
+Linux 1.4.2 SDK installer
+
+Next Previous Contents
 
 # Multi-engine
 
