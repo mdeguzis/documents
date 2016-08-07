@@ -3,7 +3,7 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [About](#about)
-  - [Quake 1](#quake-1)
+- [Quake 1](#quake-1)
   - [TyrQuake](#tyrquake)
   - [QuakeSpasm](#quakespasm)
   - [Darkplaces](#darkplaces)
@@ -30,7 +30,7 @@
 Next Previous Contents
 3. Game Engines
 
-## Quake 1
+# Quake 1
 
 ## TyrQuake
 
