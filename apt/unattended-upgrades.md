@@ -8,3 +8,7 @@
 
 # Unattended upgrades
 * Checking for issues: `sudo unattended-upgrade -d`
+
+# Debian origianl unatteneded ugprade file
+
+See: [GitHub Gist](https://gist.github.com/ProfessorKaos64/3b32583ab3aa008934a50b9ec83768d5)
