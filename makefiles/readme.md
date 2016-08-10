@@ -78,3 +78,10 @@ $(MAKE) -C engine sv-rel -j4 DESTDIR=$(TOP) PREFIX=/usr install
 ```
 
 `-C` tells `make` to run on a specific directory.
+
+
+# Printing vars in Makefiles
+
+```
+$(info $$var is [${var}])
+```
