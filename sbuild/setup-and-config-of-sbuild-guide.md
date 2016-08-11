@@ -48,12 +48,12 @@ root @ vs76: ~>
 ## Create File System
 
 ```
-root @ vs76: ~> mkfs.btrfs -f / dev / sda3
+root @ vs76: ~> mkfs.btrfs -f/dev/sda3
 Btrfs v3.17
 See http://btrfs.wiki.kernel.org for more information.
 
 Turning ON incompat feature 'extref': increased hardlink limit per file to 65536
-fs created label (zero) on / dev / sda3
+fs created label (zero) on/dev/sda3
 nodesize 16384 16384 leafsize sector size 4096 size 37.03GiB
 root @ vs76: ~>
 ```
@@ -61,20 +61,20 @@ root @ vs76: ~>
 ## Creating folders and create Subvolume
 
 ```
-root @ vs76: ~> mkdir -p / srv / chroots / sid-amd64-sbuild
-root @ vs76: ~> mount / dev / sda3 / srv / chroots / sid-amd64-sbuild /
-root @ vs76: ~> btrfs subvolume create / srv / chroots / sid-amd64-sbuild / buildd base
-Create Subvolume '/ srv / chroots / sid-amd64-sbuild / buildd base'
-root @ vs76: ~> umount / srv / chroots / sid-amd64-sbuild
-root @ vs76: ~> mount -o SubVol = buildd-base / dev / sda3 / srv / chroots / sid-amd64-sbuild /
-root @ vs76: ~> mkdir / srv / chroots / sid-amd64-sbuild / snapshots
+root @ vs76: ~> mkdir -p /srv/chroots/sid-amd64-sbuild
+root @ vs76: ~> mount/dev/sda3/srv/chroots/sid-amd64-sbuild/
+root @ vs76: ~> btrfs subvolume create/srv/chroots/sid-amd64-sbuild/buildd base
+Create Subvolume '/srv/chroots/sid-amd64-sbuild/buildd base'
+root @ vs76: ~> umount/srv/chroots/sid-amd64-sbuild
+root @ vs76: ~> mount -o SubVol = buildd-base/dev/sda3/srv/chroots/sid-amd64-sbuild/
+root @ vs76: ~> mkdir/srv/chroots/sid-amd64-sbuild/snapshots
 root @ vs76: ~>
 ```
 
 ## chroot creation
 
 ```
-root @ vs76: ~> debootstrap --no-check-gpg --variant = buildd --include = eatmydata unstable / srv / chroots / sid-amd64-sbuild / ftp://ftp.de.debian.org/debian
+root @ vs76: ~> debootstrap --no-check-gpg --variant = buildd --include = eatmydata unstable/srv/chroots/sid-amd64-sbuild/ftp://ftp.de.debian.org/debian
 I: Retrieving Release
 I: Retrieving Packages
 I: Validating Packages
@@ -111,7 +111,7 @@ root @ vs76: ~>
 ##  generate sbuild SSH key
 
 ```
-root @ vs76: ~> mkdir ~ / .gnupg
+root @ vs76: ~> mkdir ~/.gnupg
 root @ vs76: ~> sbuild-update --keygen
 Generating archive key.
 gpg: keyring `/root/.gnupg/secring.gpg 'created
@@ -125,12 +125,12 @@ root @ vs76: ~>
 ## schroot configuration
 
 ```
-root @ vs76: ~> cat /etc/schroot/chroot.d/sid-amd64-sbuild
+root @ vs76: ~> cat/etc/schroot/chroot.d/sid-amd64-sbuild
 [Sid-amd64-sbuild]
 type = btrfs-snapshot
 description = Debian sid btrfs snapshot
-btrfs-source subvolume = / srv / chroots / sid-amd64-sbuild
-btrfs-snapshot-directory = / srv / chroots / sid-amd64-sbuild / snapshots
+btrfs-source subvolume =/srv/chroots/sid-amd64-sbuild
+btrfs-snapshot-directory =/srv/chroots/sid-amd64-sbuild/snapshots
 groups = root, sbuild, glaubitz
 root = root groups, sbuild, glaubitz
 source-root users = glaubitz, sbuild
@@ -141,34 +141,34 @@ root @ vs76: ~>
 ## customize fstab
 
 ```
-root @ vs76: ~> cat / etc / fstab
-# / Etc / fstab: static file system information.
+root @ vs76: ~> cat/etc/fstab
+#/Etc/fstab: static file system information.
 #
 # <File sys> <mountpoint> <type> <options> <dump> <pass>
-UUID = 43c64b32-d7b5-4cca-ae5f-682d5a74c3e3 / ext4 rw 0 1 # device at install: / dev / sda1
-# UUID = 3d418983-22f9-413f-a7a1-1e34200537f9 / local_scratch ext4 rw 0 2 # device at install: / dev / sda3
-UUID = a8e2a2c1-A05B-40CA-9417-825bf2a7939b / var ext4 rw 0 2 # device at install / dev / sda6
-UUID = 8433560c-8a2b-4a75-827e-bf95db8d60ba none swap sw 0 0 # device at install: / dev / sda5
-/ Dev / floppy / media / floppy auto rw, noauto, user 0 0
-/ Dev / cdrom / media / cdrom auto rw, noauto, user 0 0
-/ Dev / usbstick / media / usbstick auto rw, noauto, user 0 0
-none / tmp tmpfs defaults 0 0
-home: / srv / home / home nfs vers = 3, nosuid, nodev, intr, tcp, comment = systemd.automount 0 0
+UUID = 43c64b32-d7b5-4cca-ae5f-682d5a74c3e3/ext4 rw 0 1 # device at install:/dev/sda1
+# UUID = 3d418983-22f9-413f-a7a1-1e34200537f9/local_scratch ext4 rw 0 2 # device at install:/dev/sda3
+UUID = a8e2a2c1-A05B-40CA-9417-825bf2a7939b/var ext4 rw 0 2 # device at install/dev/sda6
+UUID = 8433560c-8a2b-4a75-827e-bf95db8d60ba none swap sw 0 0 # device at install:/dev/sda5
+/Dev/floppy/media/floppy auto rw, noauto, user 0 0
+/Dev/cdrom/media/cdrom auto rw, noauto, user 0 0
+/Dev/usbstick/media/usbstick auto rw, noauto, user 0 0
+none/tmp tmpfs defaults 0 0
+home:/srv/home/home nfs vers = 3, nosuid, nodev, intr, tcp, comment = systemd.automount 0 0
 
 # chroots
-/ Dev / sda3 / srv / chroots / sid-amd64-sbuild btrfs defaults, SubVol = buildd base, noatime, nodiratime 0 0
+/Dev/sda3/srv/chroots/sid-amd64-sbuild btrfs defaults, SubVol = buildd base, noatime, nodiratime 0 0
 
 # Chroot procs
-proc / srv / chroots / sid-amd64-sbuild / proc proc defaults 0 0
-sysfs / srv / chroots / sid-amd64-sbuild / sys sysfs defaults 0 0
-/ Dev / pts / srv / chroots / sid-amd64-sbuild / dev / pts none bind 0 0
+proc/srv/chroots/sid-amd64-sbuild/proc proc defaults 0 0
+sysfs/srv/chroots/sid-amd64-sbuild/sys sysfs defaults 0 0
+/Dev/pts/srv/chroots/sid-amd64-sbuild/dev/pts none bind 0 0
 root @ vs76: ~>
 ```
 
 ## sources.list generate the chroot
 
 ```
-root @ vs76: ~> cat /srv/chroots/sid-amd64-sbuild/etc/apt/sources.list
+root @ vs76: ~> cat/srv/chroots/sid-amd64-sbuild/etc/apt/sources.list
 deb http://deb.physik.fu-berlin.de:9999/debian unstable main contrib non-free
 deb-src http://deb.physik.fu-berlin.de:9999/debian unstable main contrib non-free
 root @ vs76: ~>
@@ -229,14 +229,14 @@ Reading state information ... Done
 THE FOLLOWING NEW packages will be installed:
   binfmt-support qemu-user-static
 0 upgraded, 2 newly installed, 0 to remove and 0 not upgraded.
-Need to get 0 B / 6,961 kB of archives.
+Need to get 0 B/6,961 kB of archives.
 After this surgery, 81.9 MB of additional disk space will be used.
 Selecting Previously unselected package binfmt-support.
 (Reading database ... 81197 files and directories currently installed.)
-Preparing to unpack ... / binfmt-support_2.1.5-1_amd64.deb ...
+Preparing to unpack .../binfmt-support_2.1.5-1_amd64.deb ...
 Unpacking binfmt-support (2.1.5-1) ...
 Selecting Previously unselected package qemu-user-static.
-Preparing to unpack ... / qemu-user-static_2.1 + dfsg-12 + deb8u4_amd64.deb ...
+Preparing to unpack .../qemu-user-static_2.1 + dfsg-12 + deb8u4_amd64.deb ...
 Unpacking qemu-user-static (1: 2.1 + dfsg-12 + deb8u4) ...
 Processing triggers for systemd (215-17 + deb8u2) ...
 Processing triggers for man-db (2.7.0.2-5) ...
@@ -253,8 +253,8 @@ Processing triggers for systemd (215-17 + deb8u2) ...
 root @ vs76: ~>
 After you create the chroot for the desired architecture using the --foreign option, for example, for armhf (architecture of the Raspberry Pi 2):
 
-root @ vs76: / local_scratch> debootstrap --no-check-gpg --variant = buildd --foreign --arch = armhf unstable sid-armhf-sbuild / ftp://ftp.debian.org/debian/
-root @ vs76: / local_scratch> debootstrap --no-check-gpg --variant = buildd --foreign --arch = armhf unstable sid-armhf-sbuild / ftp://ftp.debian.org/debian/
+root @ vs76:/local_scratch> debootstrap --no-check-gpg --variant = buildd --foreign --arch = armhf unstable sid-armhf-sbuild/ftp://ftp.debian.org/debian/
+root @ vs76:/local_scratch> debootstrap --no-check-gpg --variant = buildd --foreign --arch = armhf unstable sid-armhf-sbuild/ftp://ftp.debian.org/debian/
 I: Retrieving Release
 I: Retrieving Packages
 I: Validating Packages
@@ -262,7 +262,7 @@ I: Resolving dependencies of required packages ...
 I: Resolving dependencies of base packages ...
 I: Found additional required dependencies: dmsetup adduser insserv libapparmor1 libaudit1 libaudit-common libbz2-1.0 libcap2 libcap2-bin libcryptsetup4 libdb5.3 libdebconfclient0 libdevmapper1.02.1 libgcrypt20 libgpg-error0 libkmod2 libncursesw5 libseccomp2 libsemanage1 libsemanage-common libsystemd0 libudev1 libustr-1.0-1 systemd systemd -sysv
 I: Found additional base dependencies: binutils bzip2 cpp cpp-5 debian-archive-keyring dpkg-dev g ++ g ++ - 5 gcc gcc-5 gnupg gpgv libapt-pkg4.16 libasan2 libatomic1 libc6-dev libcc1-0 libc-dev-bin libdpkg -perl libgcc-5-dev libgdbm3 libgmp10 libgomp1 libisl13 libmpc3 libmpfr4 libreadline6 libstdc ++ - 5-dev libstdc ++ 6 libubsan0 libusb-0.1-4 linux-libc-dev make patch perl perl-modules readline-common xz-utils
-I: Checking component main on ftp: //ftp.debian.org/debian ...
+I: Checking component main on ftp://ftp.debian.org/debian ...
 I: Retrieving libacl1 2.2.52-2
 I: Validating libacl1 2.2.52-2
 I: Retrieving adduser 3,113 + nmu3
@@ -277,16 +277,16 @@ I: Extracting mount ...
 I: Extracting util-linux ...
 I: Extracting liblzma5 ...
 I: Extracting zlib1g ...
-root @ vs76: / local_scratch>
+root @ vs76:/local_scratch>
 Then you simply copy the statically-linked binary for QEMU ARM in the chroot and then calls ./debootstrap/debootstrap --second-stage on, after being changed with chroot back into the chroot:
 
-root @ vs76: / local_scratch> cd sid-armhf-sbuild /
-root @ vs76: / local_scratch / sid-armhf-sbuild> cp -av / usr / bin / qemu-arm-static usr / bin
-'/ Usr / bin / qemu-arm-static' -> 'usr / bin / qemu-arm-static'
-root @ vs76: / local_scratch / sid-armhf-sbuild> chroot.
+root @ vs76:/local_scratch> cd sid-armhf-sbuild/
+root @ vs76:/local_scratch/sid-armhf-sbuild> cp -av/usr/bin/qemu-arm-static usr/bin
+'/Usr/bin/qemu-arm-static' -> 'usr/bin/qemu-arm-static'
+root @ vs76:/local_scratch/sid-armhf-sbuild> chroot.
 bash: warning: setlocale: LC_ALL: can not change locale (en_US.UTF-8)
-I have no name @ vs76: / # ./debootstrap/debootstrap --second-stage
-I: keyring file not available at /usr/share/keyrings/debian-archive-keyring.gpg; switching to https mirror https://mirrors.kernel.org/debian
+I have no name @ vs76:/# ./debootstrap/debootstrap --second-stage
+I: keyring file not available at/usr/share/keyrings/debian-archive-keyring.gpg; switching to https mirror https://mirrors.kernel.org/debian
 I: Installing core packages ...
 I: Unpacking required packages ...
 I: Unpacking libacl1: armhf ...
@@ -317,7 +317,7 @@ I: Configuring g ++ ...
 I: Configuring build-essential ...
 I: Configuring libc-bin ...
 I: Base system installed successfully.
-I have no name @ vs76: / #
+I have no name @ vs76:/#
 Then described just above a schroot configuration invest for sid-armhf-build and then specify with when building with sbuild simple yet --arch = armhf.
 
 Done.
