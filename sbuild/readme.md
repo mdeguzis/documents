@@ -13,3 +13,4 @@ Useful info for using sbuild (in contrast to pbuilder).
 # Links
 
 * [sbuild (Debian wiki)](https://wiki.debian.org/sbuild)
+* [Space-efficient reproducible builds using schroot, sbuild and LVM](https://www.pseudorandom.co.uk/2007/sbuild/)
