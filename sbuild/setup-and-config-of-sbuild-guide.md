@@ -125,7 +125,7 @@ root @ vs76: ~>
 ## schroot configuration
 
 ```
-root @ vs76: ~> cat/etc/schroot/chroot.d/sid-amd64-sbuild
+root @ vs76: ~> cat /etc/schroot/chroot.d/sid-amd64-sbuild
 [Sid-amd64-sbuild]
 type = btrfs-snapshot
 description = Debian sid btrfs snapshot
@@ -141,7 +141,7 @@ root @ vs76: ~>
 ## customize fstab
 
 ```
-root @ vs76: ~> cat/etc/fstab
+root @ vs76: ~> cat /etc/fstab
 #/Etc/fstab: static file system information.
 #
 # <File sys> <mountpoint> <type> <options> <dump> <pass>
@@ -168,7 +168,7 @@ root @ vs76: ~>
 ## sources.list generate the chroot
 
 ```
-root @ vs76: ~> cat/srv/chroots/sid-amd64-sbuild/etc/apt/sources.list
+root @ vs76: ~> cat /srv/chroots/sid-amd64-sbuild/etc/apt/sources.list
 deb http://deb.physik.fu-berlin.de:9999/debian unstable main contrib non-free
 deb-src http://deb.physik.fu-berlin.de:9999/debian unstable main contrib non-free
 root @ vs76: ~>
