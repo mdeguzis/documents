@@ -6,7 +6,7 @@
 - [Quake 1](#quake-1)
   - [TyrQuake](#tyrquake)
   - [QuakeSpasm](#quakespasm)
-  - [vkQUake](#vkquake)
+  - [vkQuake](#vkquake)
   - [Darkplaces](#darkplaces)
   - [Quore](#quore)
   - [QuDos Quake Ports](#qudos-quake-ports)

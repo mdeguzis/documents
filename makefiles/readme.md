@@ -7,6 +7,7 @@
 - [Determing theads/cores for make -j flags](#determing-theadscores-for-make--j-flags)
 - [Variable assignments](#variable-assignments)
 - [Setting targets](#setting-targets)
+- [Printing vars in Makefiles](#printing-vars-in-makefiles)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

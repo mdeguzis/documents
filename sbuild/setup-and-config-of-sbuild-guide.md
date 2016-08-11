@@ -1,3 +1,22 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [Guide](#guide)
+  - [Create File System](#create-file-system)
+  - [Creating folders and create Subvolume](#creating-folders-and-create-subvolume)
+  - [chroot creation](#chroot-creation)
+  - [sbuild Add User](#sbuild-add-user)
+  - [generate sbuild SSH key](#generate-sbuild-ssh-key)
+  - [schroot configuration](#schroot-configuration)
+  - [customize fstab](#customize-fstab)
+  - [sources.list generate the chroot](#sourceslist-generate-the-chroot)
+  - [test build](#test-build)
+  - [Enable Cross-compilation](#enable-cross-compilation)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About
 
 Transalated from:https://people.debian.org/~glaubitz/sbuildsetup.html (German)
