@@ -13,4 +13,5 @@ Useful info for using sbuild (in contrast to pbuilder).
 # Links
 
 * [sbuild (Debian wiki)](https://wiki.debian.org/sbuild)
+* [sbuild: a source build environment for debian based systems](https://www.christianroessler.net/tech/2016/sbuild-deb-package-build-environment.html)
 * [Space-efficient reproducible builds using schroot, sbuild and LVM](https://www.pseudorandom.co.uk/2007/sbuild/)
