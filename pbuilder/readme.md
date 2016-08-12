@@ -157,3 +157,10 @@ dget ${DSC_URL} && rm -rf result/* && mkdir result && sudo -E DIST=brewmaster ST
 Ignore the steamos-tools beta line (for general building). This also depends on your `.pbuilderrc` setup. You only need `-nc` above if you are building on other distributions and you don't want dh_clean running before the build.
 
 **Do not** set BUILD_DIR above manually, as this conflicts with some packages, such as "llvm-toolchain". Instead, use `--buildresult /path/to/result_dir`.
+
+# Buidling from a standalone script
+
+
+```
+mkdir RESULT_DIR && pbuilder --distribution brewmaster --buildresult RESULT_DIR --execute my_script.sh
+```
