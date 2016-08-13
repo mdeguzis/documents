@@ -14,7 +14,7 @@
 
 # About
 
-Some info on makign distro-agnostic packages
+Some info on makign distro-agnostic packages. The preferred way to handle binaries, is to work with rpath during compile-time. However, launch-script approaches will work, if not a bit "dirty."
 
 # Static linking
 
