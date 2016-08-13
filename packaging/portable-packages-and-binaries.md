@@ -28,7 +28,7 @@ it's something you add to a launcher script.
 
 In contrast, setting `rpath` would be a compiler flag you add.
 
-## compiler approach
+## compiler approach (preferred)
 
 This approach is not as portable, and requiers more effort, due to needed modification of the Makefile or build script.
 
@@ -192,3 +192,4 @@ Source: https://gcc.gnu.org/ml/gcc-help/2005-12/msg00017.html
 # Further reading
 
 * [GCC (GNU) mail thread](https://gcc.gnu.org/ml/gcc-help/2005-12/msg00017.html)
+* [Why LD_LIBRARY_PATH is bad](http://xahlee.info/UnixResource_dir/_/ldpath.html)
