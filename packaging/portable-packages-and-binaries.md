@@ -14,7 +14,7 @@ it's something you add to a launcher script.
 
 In contrast, setting `rpath` would be a compiler flag you add.
 
-## compilter approach
+## compiler approach
 
 This approach is not as portable, and requiers more effort, due to needed modification of the Makefile or build script.
 
