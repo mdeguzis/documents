@@ -59,12 +59,15 @@ gcc -o test test.o -L. -lmylib -Wl,-rpath=.
 ```
 #!/bin/bash
 
-# Set library path to a blank value to avoid using system libs at runtime
-LD_LIBRARY_PATH=""
+# Ensure that no matter where the bash script is called from, the path
+# is correct to where teh script is called from
+cd "$(dirname "${BASH_SOURCE[0]}")"
 
-# Launch executable
-cd /path/to/my/binary
-./my-binary
+# Append our pwd to LD_LIBRARY_PATH to handle the current run-path
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:./
+
+# Call the executable
+./vkquake
 ```
 
 # Why is rpath or -L needed?
