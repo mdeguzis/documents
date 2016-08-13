@@ -160,7 +160,7 @@ dpkg-gensymbols -v${ver} -p${pkg} -P${pkg}_${ver} -Onewsymbols/${pkg}.symbols
 rm -rf ${pkg}_${ver}/
 ```
 
-Or...via a [handy script](https://github.com/ProfessorKaos64/LibreGeek-Packaging/blob/brewmaster/qtbase-opensource-src/create-new-symbols.sh). Please review the script and be careful to backup files/directories beforehand. You have been warned!
+Or...via a [handy script](https://github.com/ProfessorKaos64/LibreGeek-Packaging/blob/brewmaster/tools/create-new-symbols.sh). Please review the script and be careful to backup files/directories beforehand. You have been warned!
 
 Rinse and repeat.
 ```
