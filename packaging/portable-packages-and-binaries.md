@@ -59,7 +59,7 @@ gcc -o test test.o -L. -lmylib -Wl,-rpath=.
 ```
 #!/bin/bash
 
-# Set library path to a blank value to avoid using system libs
+# Set library path to a blank value to avoid using system libs at runtime
 LD_LIBRARY_PATH=""
 
 # Launch executable
