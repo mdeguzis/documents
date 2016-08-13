@@ -16,6 +16,7 @@
 - [Links](#links)
 - [i386 building](#i386-building)
 - [Building from a .dsc file](#building-from-a-dsc-file)
+- [Buidling from a standalone script](#buidling-from-a-standalone-script)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

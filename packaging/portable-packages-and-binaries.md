@@ -1,3 +1,17 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [Static linking](#static-linking)
+- [Shipping binaries](#shipping-binaries)
+  - [compiler approach](#compiler-approach)
+  - [Launch-script approach](#launch-script-approach)
+- [Why is rpath or -L needed?](#why-is-rpath-or--l-needed)
+- [Further reading](#further-reading)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About
 
 Some info on makign distro-agnostic packages
