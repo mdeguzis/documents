@@ -106,6 +106,14 @@ You can check whether shared libraries can be found by running
 env -i ldd foo
 ```
 
+You can check what libaries a binary needs by also running (lddtree provided by pax-utils)
+
+```
+ldd my-binary
+lddtree my-binary
+```
+
+
 (the "env -i" says to ignore any existing environment variables, such
 as LD_LIBRARY_PATH).
 
