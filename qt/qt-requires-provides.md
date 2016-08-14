@@ -5,6 +5,7 @@
 - [About](#about)
 - [qtbase-opensource-src](#qtbase-opensource-src)
 - [qtx11extras-opensource-src](#qtx11extras-opensource-src)
+- [qttools-opensource-src](#qttools-opensource-src)
 - [qtxmlpatterns-opensource-src](#qtxmlpatterns-opensource-src)
 - [qtdeclaritive-opensource-src](#qtdeclaritive-opensource-src)
 - [qtwebchannel](#qtwebchannel)
