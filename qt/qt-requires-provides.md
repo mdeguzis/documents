@@ -67,6 +67,31 @@ Below is an easy to parse list to help find out what should be built in what ord
   - qtx11extras5-doc
   - qtx11extras5-doc-html
 
+# qttools-opensource-src
+ - **requires**
+  - debhelper
+  - libqt5opengl5-dev
+  - libqt5sql5-sqlite
+  - libqt5webkit5-dev
+  - pkg-kde-tools
+  - qtbase5-private-dev
+  - qtdeclarative5-private-dev
+  - zlib1g-dev
+ - **provides**
+  - libqt5clucene5
+  - libqt5designer5
+  - libqt5designercomponents5
+  - libqt5help5
+  - qdbus-qt5
+  - qttools5-dbg
+  - qttools5-dev
+  - qttools5-dev-tools
+  - qttools5-doc
+  - qttools5-doc-html
+  - qttools5-examples
+  - qttools5-examples-dbg
+  - qttools5-private-dev
+  - 
 # qtxmlpatterns-opensource-src
  - **requires**
   - qtbase5-private-dev
