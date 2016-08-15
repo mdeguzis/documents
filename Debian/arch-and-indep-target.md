@@ -12,6 +12,29 @@ Tries to explain how the below are handled:
 Consider the [dpkg-buildpackage manpage](http://man7.org/linux/man-pages/man1/dpkg-buildpackage.1.html)
 
 ```
+       --build=type
+              Specifies the build type from a comma-separated list of
+              components (since dpkg 1.18.5).  Passed to dpkg-genchanges.
+
+              The allowed values are:
+
+              source Builds the source package.  Note: when using this value
+                     standalone and if what you want is simply to (re-)build
+                     the source package, using dpkg-source is always better
+                     as it does not require any build dependencies to be
+                     installed to be able to call the clean target.
+
+              any    Builds the architecture specific binary packages.
+
+              all    Builds the architecture independent binary packages.
+
+              binary Builds the architecture specific and independent binary
+                     packages.  This is an alias for any,all.
+
+              full   Builds everything.  This is an alias for
+                     source,any,all, and the same as the default case when
+                     no build option is specified.
+
        -g     Equivalent to --build=source,all (since dpkg 1.17.11).
 
        -G     Equivalent to --build=source,any (since dpkg 1.17.11).
@@ -23,6 +46,9 @@ Consider the [dpkg-buildpackage manpage](http://man7.org/linux/man-pages/man1/dp
        -A     Equivalent to --build=all.
 
        -S     Equivalent to --build=source.
+
+       -F     Equivalent to --build=full, --build=source,binary or
+              --build=source,any,all (since dpkg 1.15.8).
 ```
 
 # Moral of the story,
