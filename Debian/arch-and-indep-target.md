@@ -7,6 +7,24 @@ Tries to explain how the below are handled:
 * override_dh_auto_install-arch:
 * override_dh_auto_install-indep:
 
+# Need to know
+
+Consider the [dpkg-buildpackage manpage](http://man7.org/linux/man-pages/man1/dpkg-buildpackage.1.html)
+
+```
+       -g     Equivalent to --build=source,all (since dpkg 1.17.11).
+
+       -G     Equivalent to --build=source,any (since dpkg 1.17.11).
+
+       -b     Equivalent to --build=binary or --build=any,all.
+
+       -B     Equivalent to --build=any.
+
+       -A     Equivalent to --build=all.
+
+       -S     Equivalent to --build=source.
+```
+
 # Moral of the story,
 
 First go round, use ` dpkg-buildpackage -B.` in your build process. For pbuilder, that would be options of `--debbuildopts -B`
