@@ -7,6 +7,10 @@ Tries to explain how the below are handled:
 * override_dh_auto_install-arch:
 * override_dh_auto_install-indep:
 
+# Moral of the story,
+
+First go round, use ` dpkg-buildpackage -B.` in your build process. For pbuilder, that would be options of `--debbuildopts -B`
+
 # Explanation
 
 The Difference
