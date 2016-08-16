@@ -53,7 +53,19 @@ Consider the [dpkg-buildpackage manpage](http://man7.org/linux/man-pages/man1/dp
 
 # Moral of the story,
 
-First go round, use ` dpkg-buildpackage -B.` in your build process. For pbuilder, that would be options of `--debbuildopts -B`
+First go round, use ` dpkg-buildpackage -B.` in your build process. 
+
+# Pbiulder
+
+With [pbuilder](http://manpages.ubuntu.com/manpages/trusty/man8/pbuilder.8.html), you **must** use `--binary-arch` over ` --debbuildopts -B`, or that traditional option will be seemingly ignored.
+
+>--binary-arch
+
+>Specify  to  build  architecture specific targets instead of all
+targets.  Setting --debbuildopts after this option  will  re-set
+some parts of the effect.
+
+>Use this option rather than using --debbuildopts -B
 
 # Explanation
 
