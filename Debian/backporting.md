@@ -18,22 +18,30 @@ Helpful hints on backporting Debian packages
 2. locate package at packges.debian.org/PKGNAME
 2. Locate and download the .dsc file
 
-Example for `rustc`
-```
-DIST=stretch ARCH=amd64 pbuilder build --debbuildopts "-sa -v1.7.0+bsos1" rust.dsc
-```
+# Packages with build-indep and build-arch targets
+
+If a pacakge (Qt is a great example), has arch-independent targets, you need to take note that you must build in 2 stages:
+
+1. Build first with `-B` passed to dpkg-buildpackage (for pbuidler, specify `-- --binary-arch`)
+2. Build secondly with normal build options.
+
+# Examples
 
 Example when backporting a package that has multiple archives:
 
+Via pdebuild (BUILD_TMP here is set via $HOME/.pbuilderrc):
 ```
 rm -rf $HOME/temp && mkdir $HOME/temp && cd $HOME/temp &&
-DSC_URL="http://http.debian.net/debian/pool/main/l/llvm-toolchain-3.8/llvm-toolchain-3.8_3.8.1-4.dsc" &&
-dget ${DSC_URL} -d && rm -rf result_dir && mkdir result_dir && sudo -E DIST=brewmaster pbuilder --build --distribution brewmaster --buildresult result_dir --debbuildopts -sa --debbuildopts -nc llvm-toolchain-3.8_3.8.1-4.dsc
+DSC_URL="target-package.dsc" &&
+dget ${DSC_URL} -d && rm -rf result && mkdir result 
+sudo -E DIST=brewmaster BULID_TMP=result pdebuild --debuildopts -nc
 ```
 
-The current `generic-building/backport-debian-pkg.sh` does not support multiple archives yet.  
+Or, via pbuidler directly
 
-**Do not** set BUILD_DIR above manually, as this conflicts with some packages, such as "llvm-toolchain". Instead, use `--buildresult /path/to/result_dir`.
+```
+sudo -E DIST=brewmaster pbuilder --build --distribution brewmaster --buildresult result --debbuildopts -sa --debbuildopts -nc target-package.dsc
+```
 
 # Boostrapping for packages
 
