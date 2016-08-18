@@ -32,6 +32,16 @@ Some info about Qt
 * [QT package deps main page](http://pkg-kde.alioth.debian.org/qt5-build-deps.html)
 * [QT deps](http://anonscm.debian.org/cgit/pkg-kde/qt)
 
+# IMPORTANT
+
+Since Debian experimental is caught up to Qt 5.7.0, newer version will be build using the available .dsc files and pbulider, over cloing the github sources. This is the most hassle free way. This is subject to change. Note that the first pass requires adding `-- --binary-arch`. You can ommit the `--debbuildopts -nc` option if you are buliding on a Debian distribution.
+
+```
+dget qt-something.dsc
+cd qt-something-version/
+rm -rf result && mkdir result && sudo -E DIST=brewmaster BUILD_TMP=result APT_PREFS_HACK="true" STEAMOS_TOOLS_BETA_HOOK="true" pdebuild --debbuildopts -nc
+```
+
 # About
 
 Some info about the build work in progress to get Qt 5.6.0 into SteamOS brewmaster. This is mainly for building PlexMediaPlayer.
