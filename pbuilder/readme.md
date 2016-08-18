@@ -85,13 +85,14 @@ ARCHITECTURE="${ARCH}"                          # Sets the chroot environment to
 DISTRIBUTION="${DIST}"                          # Sets the chroot distribution to $DIST
 BASEDIR="$HOME/pbuilder"                        # This is the base directory invoked for pbuilder
 BASETGZ="${BASEDIR}/${DIST}-${ARCH}-base.tgz"   # The directory for your base chroot 
-BUILDRESULT="$build_dir"                        # (optinal) custom var used for SteamOS-Tools-Packaging
+BUILDRESULT="$BUILD_TMP"                        # (optinal) custom var used for SteamOS-Tools-Packaging
 BUILDPLACE="${BASEDIR}/build"                   # The directory where in-progress chroot builds go
 APTCACHE="${BASEDIR}/${DIST}/aptcache/"         # The directory where apt package cache is stored
 HOOKDIR="${BASEDIR}/hooks"                      # (optional) Directory where scripts hooks are stored
 ```
 
 ### Adding options for debuild
+
 When building with debuild and pbuilder, these options (which can be appended to `.pbuilderrc`), can be useful:
 
 ```
@@ -114,6 +115,23 @@ PBUILDERROOTCMD="sudo -E"
 # always be verbose:
 DH_VERBOSE=1
 ```
+
+### Arch-independent packages
+
+Packages like Qt have lines such as `build-indep` and `build-arch` in them. To build these packages, you will often need to build a set of arch-dependent packages first, to satisfy requirements to build the entire list of packages. If you fail to do so, the build often will not even commence.
+
+Pbuiler handles this a bit differently. Normally, you would pass `-B` or `--debbuildopts -B` to dpkg-buildpackage. However, pbuilder handles this via a different flag to properly implement this. For Pbuilder, you would pass `-- --binary-arch` at the **end** of your build options.  You must pass the `--` to indicate you are done passing options to the previous command (dpkg-buildpackage):
+
+>-- [pbuilder options]
+
+>After the -- symbol, an arbitrary number of pbuilder options can
+be specified.  See pbuilder(8) for a full list of options.
+
+>There is an exception that --buildresult and --debbuildopts need
+to be specified as pdebuild options before the -- in order to be
+effective.
+
+See [arch-and-indep-target](https://github.com/ProfessorKaos64/documents/blob/master/Debian/arch-and-indep-target.md) and [man pbuilder](http://manpages.ubuntu.com/manpages/trusty/man8/pbuilder.8.html) for more.
 
 # Links
 * [Manual](http://pbuilder.alioth.debian.org/)
@@ -149,10 +167,18 @@ DIST=saucy ARCH=i386 pdebuild
 
 # Building from a .dsc file
 
-example (with full source):
+example (with full source) using the pbuilder command:
 ```
 DSC_URL="http://http.debian.net/debian/pool/main/l/llvm-toolchain-3.8/llvm-toolchain-3.8_3.8-2.dsc"
 dget ${DSC_URL} && rm -rf result/* && mkdir result && sudo -E DIST=brewmaster STEAMOS_TOOLS_BETA_HOOK="true" pbuilder --build --distribution brewmaster --buildresult result  --debbuildopts -sa --debbuildopts -nc llvm-toolchain-3.8_3.8-2.ds
+```
+
+
+example (with full source) using the pdebuild command inside the source dir:
+```
+DSC_URL="http://http.debian.net/debian/pool/main/l/llvm-toolchain-3.8/llvm-toolchain-3.8_3.8-2.dsc"
+dget ${DSC_URL} && rm -rf result/* && mkdir result 
+sudo -E DIST=brewmaster STEAMOS_TOOLS_BETA_HOOK="true" BULID_TMP=result pdebuild --debbuildopts -sa --debbuildopts -nc
 ```
 
 Ignore the steamos-tools beta line (for general building). This also depends on your `.pbuilderrc` setup. You only need `-nc` above if you are building on other distributions and you don't want dh_clean running before the build.
