@@ -133,6 +133,31 @@ effective.
 
 See [arch-and-indep-target](https://github.com/ProfessorKaos64/documents/blob/master/Debian/arch-and-indep-target.md) and [man pbuilder](http://manpages.ubuntu.com/manpages/trusty/man8/pbuilder.8.html) for more.
 
+**Note:**  
+
+To avoid rebuilding/uploading the first pass (arch-dep) of packages to a repository, you'll want to make use of the OTHERMIRROR option. This way, you can build the first pass, and then include the built debs for when you make your second pass that will be uploaded to your repository.
+
+```
+# Path to your local repo to be used as a mirror written as apt source line.
+OTHERMIRROR="deb /home/user/qt-arch/debs"
+
+# Path to your local repo. This tells pbuilder to mount this directory so it is available in the chroot.
+BINDMOUNTS="/home/andrew/pbuilder/local_repo"
+```
+
+You also need a pbuilder hook (e.g. "D5update-local-repo file"):
+
+```
+# Path to the local repo.
+LOCAL_REPO="/home/user/pbuilder/local_repo"
+
+# Generate a Packages file.
+(cd $LOCAL_REPO ; apt-ftparchive packages . > Packages)
+
+# Update to include any new packages in the local repo.
+apt-get update
+```
+
 # Links
 * [Manual](http://pbuilder.alioth.debian.org/)
 * [Why ues sbuild over pbuilder](http://askubuntu.com/questions/53014/why-use-sbuild-over-pbuilder)
