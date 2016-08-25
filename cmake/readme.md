@@ -26,3 +26,18 @@ cmake -LAH
 
 # Cmake vs Make
 * [Cmake vs Make (Perpetual Enigma)](http://prateekvjoshi.com/2014/02/01/cmake-vs-make/)
+
+# Simple example of setting and using an option in CMakeLists.txt
+
+```
+option(USE_CLANG "build application with clang" OFF) # OFF is the default
+```
+
+Then, wrap the clang-compiler settings in if()s:
+
+```
+if(USE_CLANG)
+    SET (...)
+    ....
+endif(USE_CLANG)
+```
