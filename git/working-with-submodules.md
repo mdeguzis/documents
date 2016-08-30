@@ -23,6 +23,14 @@ Tips and tricks for working with submodules
 git submodule update --remote MODULE_NAME
 ```
 
+# Creating a submodule
+
+```
+git submodule add https://github.com/chaconinc/DbConnector
+git status
+git commit -am 'added DbConnector module'
+```
+
 # Have a sudmodule always track the HEAD of a branch
 
 Note: This is dangerous and not reccomended. Original source is [here](http://stackoverflow.com/a/31851819)
