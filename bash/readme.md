@@ -15,6 +15,10 @@ Useful info for working with bash
 
 * [Bash pitfalls](http://mywiki.wooledge.org/BashPitfalls)
 
+# Subjects
+
+## [Arrays](https://github.com/ProfessorKaos64/documents/tree/master/bash)
+
 # Sourcing options in scrits 
 
 * [Sourcing options in scripts (bash hackers)](http://wiki.bash-hackers.org/howto/getopts_tutorial)
