@@ -17,7 +17,7 @@ Useful info for working with bash
 
 # Subjects
 
-* [Arrays](https://github.com/ProfessorKaos64/documents/tree/master/bash)
+* [Arrays](https://github.com/ProfessorKaos64/documents/blob/master/bash/bash-arrays.md)
 
 # Sourcing options in scrits 
 
