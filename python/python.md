@@ -7,7 +7,7 @@ Python tips and tricks
 Short way:
 
 ```
-python -c help('modules')
+python -c "help('modules')"
 ```
 
 Long way
