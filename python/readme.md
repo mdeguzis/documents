@@ -27,3 +27,18 @@ modules <MODULE_NAME>
 
 #CTRL+D press these key to exit from python prompt
 ```
+
+# Listing PYTHONPATH
+
+You would probably also want this:
+
+```
+import sys
+print(sys.path)
+```
+
+Or as a one liner from the terminal:
+
+```
+python -c "import sys; print '\n'.join(sys.path)"
+```
