@@ -3,7 +3,6 @@
 Helpful Arch Linux stuffs..
 
 # AUR
-1.1.1.r12.g338f54e
 
 ## Cloning
 
