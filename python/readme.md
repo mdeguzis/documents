@@ -49,3 +49,7 @@ python -c "import sys; print '\n'.join(sys.path)"
 * [Minimal module packaging](http://python-packaging.readthedocs.io/en/latest/minimal.html)
 * [Nice sample project](https://github.com/pypa/sampleproject/tree/master/sample)
 * [Installing data files](https://docs.python.org/3/distutils/setupscript.html#installing-additional-files)
+
+# Videos
+
+* [Packaging tips and tricks](https://ep2015.europython.eu/conference/talks/less-known-packaging-features-and-tricks)
