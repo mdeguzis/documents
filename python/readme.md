@@ -42,3 +42,8 @@ Or as a one liner from the terminal:
 ```
 python -c "import sys; print '\n'.join(sys.path)"
 ```
+
+# Links
+
+ * [Packaging style guide](https://packaging.python.org/distributing/)
+* [Minimal module packaging](http://python-packaging.readthedocs.io/en/latest/minimal.html)
