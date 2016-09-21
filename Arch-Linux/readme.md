@@ -22,5 +22,6 @@ mksrcinfo > .SRCINFO
 ## Links
 
 * [AUR guidelines](https://wiki.archlinux.org/index.php/Arch_User_Repository)
+* [PKBUILD manpage](https://www.archlinux.org/pacman/PKGBUILD.5.html)
 * [Creating packages](https://wiki.archlinux.org/index.php/creating_packages)
 * [.SRCINFO](https://wiki.archlinux.org/index.php/.SRCINFO)
