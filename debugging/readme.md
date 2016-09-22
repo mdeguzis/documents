@@ -21,6 +21,12 @@ Some notes about debugging
 
  * [gdb backtrace](https://sourceware.org/gdb/onlinedocs/gdb/Backtrace.html)
 
+# strace
+
+```
+strace -fp $(pidof -s steam) -e file -t
+```
+
 # General guidelines
 
 * [Arch Linux wiki](https://wiki.archlinux.org/index.php/Step-by-step_debugging_guide)
