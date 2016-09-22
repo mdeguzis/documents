@@ -44,7 +44,7 @@ SET (CMAKE_RANLIB  "/usr/bin/llvm-ranlib")
 
 ```
 
-# Builds with standards targeting GNU C++ or LLVM C++
+# Builds with linking targeting GNU C++ or LLVM C++
 
 See: standards.md in this directory. You may have to change what C++ standard you are using, depending on how the project is designed. Changes are stdc++ will work fine in most cases. However, this is not always the case. You will need `libc++-dev` on Debian systems to make use of `-stdlib=libc++` for CMake builds.
 
