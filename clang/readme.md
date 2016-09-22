@@ -44,6 +44,16 @@ SET (CMAKE_RANLIB  "/usr/bin/llvm-ranlib")
 
 ```
 
+# Builds with standards targeting GNU C++ or LLVM C++
+
+See: standards.md in this directory. You may have to change what C++ standard you are using, depending on how the project is designed. Changes are stdc++ will work fine in most cases. However, this is not always the case. You will need `libc++-dev` on Debian systems to make use of `-stdlib=libc++` for CMake builds.
+
+```
+cmake -DCMAKE_CXX_FLAGS="-O2 -g -stdlib=libc++"
+```
+
+* [Discussion thread 1](http://stackoverflow.com/questions/14972425/should-i-use-libc-or-libstdc)
+
 Reference: [Stackoverflow](http://stackoverflow.com/questions/7031126/switching-between-gcc-and-clang-llvm-using-cmake)
 
 # Links
