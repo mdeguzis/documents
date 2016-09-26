@@ -11,6 +11,19 @@
 # About
 Useful information about GPG / GNUPG
 
+# Distributing keys
+
+```
+gpg --gen-key
+gpg --armour --export uid > my_pubkey.asc
+```
+
+# Rovoking Keys
+
+```
+gpg --output revoke.asc --gen-revoke <mkeyid>
+```
+
 # Tips
 
 * use `gpg --export-options export-minimal` to avoid carrying information that quickly will be outdated or anyway it's not that useful
@@ -19,3 +32,6 @@ Useful information about GPG / GNUPG
 
 * [Exchanging keys](https://www.gnupg.org/gph/en/manual/x56.html)
 * [GPG Cheat Sheet](http://irtfweb.ifa.hawaii.edu/~lockhart/gpg/gpg-cs.html)
+* [Instant GPG How-To](http://homepages.inf.ed.ac.uk/da/id/gpg-howto.shtml)
+* [Revoking Keys](https://www.hackdiary.com/2004/01/18/revoking-a-gpg-key/)
+* [Revoking Keys (GNUGPG](https://www.gnupg.org/gph/en/manual/c14.html)
