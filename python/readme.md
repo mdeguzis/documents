@@ -51,10 +51,13 @@ python -c "import sys; print '\n'.join(sys.path)"
 
 # Links
 
+* [Installing data files](https://docs.python.org/3/distutils/setupscript.html#installing-additional-files)
+* [Online IDE for practice](https://repl.it/languages)
+* [Python code sytle guide](https://www.python.org/dev/peps/pep-0008/)
 * [Packaging style guide](https://packaging.python.org/distributing/)
 * [Minimal module packaging](http://python-packaging.readthedocs.io/en/latest/minimal.html)
 * [Nice sample project](https://github.com/pypa/sampleproject/tree/master/sample)
-* [Installing data files](https://docs.python.org/3/distutils/setupscript.html#installing-additional-files)
+
 
 # Videos
 
