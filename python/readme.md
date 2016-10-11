@@ -2,6 +2,12 @@
 
 Python tips and tricks
 
+# Python projects
+
+Repository for python code and examples:
+
+https://github.com/ProfessorKaos64/python
+
 # Listing all modules
 
 Short way:
