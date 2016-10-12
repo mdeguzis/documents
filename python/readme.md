@@ -8,6 +8,17 @@ Repository for python code and examples:
 
 https://github.com/ProfessorKaos64/python
 
+# Python 2 vs. Python 3
+
+Many projects still use python 2, but be aware of the syntax. Fortunately, there is some interoperability in python 2. For instace, in python 2.7.x, both the python 3 syntax of  `print (x)` and the python 2 syntax of `print x` will work.
+
+Example:
+
+```
+print bin(4)
+print (bin(4))
+```
+
 # Listing all modules
 
 Short way:
