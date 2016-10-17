@@ -14,10 +14,7 @@ Info for items specific to The Linux distirbution, Fedora.
 
 # Packaging
 
-* [How to create an RPM pacakge](https://fedoraproject.org/wiki/How_to_create_an_RPM_package)
-* [Third party repositories](https://fedoraproject.org/wiki/Third_party_repositories)
-* [RPM Fusion](http://rpmfusion.org/)
-* [OBS (Open Build System)](https://build.opensuse.org/)
+See: [packaging/rpm-readme.md](https://github.com/ProfessorKaos64/documents/new/master/packaging/rpm-readme.md)
 
 # Open Build System
 
