@@ -37,6 +37,12 @@ Generating a clean spec file template:
 rpmdev-newspec <PKG_NAME>
 ```
 
+# Download sources instead of using something like wget:
+
+```
+spectool -g *spec
+```
+
 Lint the package:
 
 ```
@@ -63,3 +69,9 @@ rm -rf *rpm results*
 fedpkg --dist f24 <PKG_NAME>
 fedora-review -n <PKG_NAME>
 ```
+
+Unpacking an RPM package:
+
+```
+ rpm2cpio <PACKAGE> | cpio -id 
+ ```
