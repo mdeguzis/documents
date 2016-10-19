@@ -27,5 +27,8 @@ See: [packaging/rpm-readme.md](https://github.com/ProfessorKaos64/documents/new/
 
 # System / OS
 
+* [EPEL (Extra packages for Enterprise Linux)](https://fedoraproject.org/wiki/EPEL)
 * [Man page - dnf](http://dnf.readthedocs.io/en/latest/command_ref.html)
+* [Man page - yum](http://man7.org/linux/man-pages/man8/yum.8.html)
 * [Feature changes moving from yum to dnf](https://www.mankier.com/8/yum2dnf)
+* [yum documentation (CentOS)](https://www.centos.org/docs/5/html/yum/)
