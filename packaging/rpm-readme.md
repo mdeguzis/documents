@@ -12,18 +12,40 @@
 # About
 Info for items specific to The Linux distirbution, Fedora.
 
+# CentOS-specific
+
+* [centpkg (early stages)](https://wiki.centos.org/HowTos/Centpkg)
+
 # Packaging
 
-* [Packager's Guide](https://docs.fedoraproject.org/en-US/Fedora_Draft_Documentation/0.1/html/Packagers_Guide/)
-* [How to create an RPM pacakge](https://fedoraproject.org/wiki/How_to_create_an_RPM_package)
-* [Third party repositories](https://fedoraproject.org/wiki/Third_party_repositories)
-* [RPM Fusion](http://rpmfusion.org/)
+* [How to create an RPM pacakge (fedora)](https://fedoraproject.org/wiki/How_to_create_an_RPM_package)
+* [How to create an RPM package (tldp)](http://www.tldp.org/HOWTO/RPM-HOWTO/build.html)
+* [Man page rpmbuild](http://www.rpm.org/max-rpm-snapshot/rpmbuild.8.html)
 * [OBS (Open Build System)](https://build.opensuse.org/)
+* [Packager's Guide](https://docs.fedoraproject.org/en-US/Fedora_Draft_Documentation/0.1/html/Packagers_Guide/)
+* [RPM Fusion](http://rpmfusion.org/)
+* [Setup packaging environment (CentOS)](https://wiki.centos.org/HowTos/SetupRpmBuildEnvironment)
+* spec files
+ * [Macros (Fedora docs)](https://fedoraproject.org/wiki/Packaging:RPMMacros?rd=Packaging/RPMMacros)
+ * [Macros (rpm.org)](http://www.rpm.org/wiki/PackagerDocs/Macros)
+ * [Spec file macros](http://www.rpm.org/max-rpm/s1-rpm-specref-macros.html)
+ * [Spec file tags (rpm.org)](http://rpm.org/api/4.4.2.2/specfile.html)
+* [Third party repositories](https://fedoraproject.org/wiki/Third_party_repositories)
 
 # Open Build System
 
 * [Main site](https://build.opensuse.org/)
 * [Tutorial](https://en.opensuse.org/openSUSE:Build_Service_Tutorial)
+
+# Mock-specific
+
+* See [documents/centos-fedora-rhel/mock](https://github.com/ProfessorKaos64/documents/master/centos-fedora-rhel/mock.md)
+
+Example mock build with `rpmbuild`:
+
+```
+mock -r epel-5-x86_64 --spec=component.spec --sources=. --resultdir=mock/result --buildsrpm
+```
 
 # Misc
 
