@@ -24,3 +24,8 @@ See: [packaging/rpm-readme.md](https://github.com/ProfessorKaos64/documents/new/
 # Misc
 
 * [Working with Kodi and RPM fusion](http://kodi.wiki/view/HOW-TO:Install_Kodi_on_Fedora_23_using_RPMFusion_packages#Configuring_Fedora_.2F_Installing_Dependencies)
+
+# System / OS
+
+* [Man page - dnf](http://dnf.readthedocs.io/en/latest/command_ref.html)
+* [Feature changes moving from yum to dnf](https://www.mankier.com/8/yum2dnf)
