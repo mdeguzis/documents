@@ -61,38 +61,69 @@ mock -r centos-7-x86_64 --spec=component.spec --sources=. --resultdir=mock/resul
 
 # RPM package quick start:
 
+## Generating spec file templates
+
 Generating a clean spec file template:
 
 ```
 rpmdev-newspec <PKG_NAME>
 ```
 
-# Download sources instead of using something like wget:
+## Sources
 
+It is good practice to download sources properly with `spectool`:
 ```
 spectool -R -g *spec
 ```
 
 `-g` - gets the sources/patches that are listed with a URL
-`-R` - download into rpm's %{_sourcedir}
+`-R` - download into rpm's %{_sourcedir}.
 
-Lint the package:
+## Building
 
-```
-fedpkg --dist f24 lint
-```
-
-
-Building:
+Building locally:
 
 ```
 fedpkg --dist f24 local
 ```
 
-Building with mock:
+Building with mock (fedora):
 
 ```
 fedpkg --dist f24 mockbuild
+```
+
+Building with mock (CentOS or RHEL):
+
+```
+mock -r <CONFIG_FILE_IN_ETC_MOCK> rebuild <PKG.src.rpm>
+```
+
+## Changelog
+
+Manual:
+```
+* date Packager's Name <packager's_email> version-revision
+- Summary of changes
+```
+
+Automatic:
+```
+rpmdev-bumpspec --comment=summary of changes --userstring=Packager's Name <packager's_email> spec file 
+```
+
+## Review
+
+Lint the package:
+
+Fedora
+```
+fedpkg --dist f24 lint
+```
+
+CentOS/RHEL
+```
+rpmlint -i <PACKAGE>.spec
 ```
 
 Using fedora-revew:
