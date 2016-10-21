@@ -14,7 +14,7 @@ Info for items specific to The Linux distirbution, Fedora.
 
 # Packaging
 
-See: [packaging/rpm-readme.md](https://github.com/ProfessorKaos64/documents/new/master/packaging/rpm-readme.md)
+See: [packaging/rpm-readme.md](https://github.com/ProfessorKaos64/documents/blob/master/packaging/rpm-readme.md)
 
 # Open Build System
 
