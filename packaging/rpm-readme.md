@@ -22,6 +22,7 @@ Info for items specific to The Linux distirbution, Fedora.
 
 * [How to create an RPM pacakge (fedora)](https://fedoraproject.org/wiki/How_to_create_an_RPM_package)
 * [How to create an RPM package (tldp)](http://www.tldp.org/HOWTO/RPM-HOWTO/build.html)
+* [Fedora maintainers resources](https://fedoraproject.org/wiki/Category:Package_Maintainers?rd=PackageMaintainers#Procedures.2C_Policies_and_Guides)
 * [Man page rpmbuild](http://www.rpm.org/max-rpm-snapshot/rpmbuild.8.html)
 * [OBS (Open Build System)](https://build.opensuse.org/)
 * [Packager's Guide](https://docs.fedoraproject.org/en-US/Fedora_Draft_Documentation/0.1/html/Packagers_Guide/)
