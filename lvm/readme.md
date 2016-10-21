@@ -6,7 +6,7 @@ General notes on LVM managment
 
 # Man pages
 
-* [man pages index [a-z](http://man7.org/linux/man-pages/dir_all_alphabetic.html)
+* [man pages index [a-z]](http://man7.org/linux/man-pages/dir_all_alphabetic.html)
 * [mkfs](http://man7.org/linux/man-pages/man8/mkfs.8.html)
 * [parted](http://man7.org/linux/man-pages/man8/parted.8.html)
 * [lvcreate](http://man7.org/linux/man-pages/man8/lvcreate.8.html)
