@@ -140,3 +140,35 @@ Unpacking an RPM package:
 ```
  rpm2cpio <PACKAGE> | cpio -id 
  ```
+ 
+ # GPG signing
+ 
+The following commands will initiate GPG key creation and export it in a format suitable for distributing to client systems. The created key should be stored safely and backed up, and its passphrase should be known only by trusted administrators.
+
+```
+mkdir -p ~/.gnupg
+gpg --gen-key
+gpg --list-keys --fingerprint
+gpg --export --armor "rpmbuild <rpmbuild@example.com>" > EXAMPLE-RPM-GPG-KEY
+```
+
+To import this key to the RPM database to allow RPM origin and integrity verification, the following command must be run as root on all target systems (naturally this should happen automatically during client installations):
+
+```
+rpm --import EXAMPLE-RPM-GPG-KEY
+```
+
+Once an RPM has been created it must be signed with the GPG key and uploaded to a correct channel:
+
+```
+rpm --resign package.rpm
+rhnpush --server=http[s]://satellite.server/APP package.rpm --channel=custom-channel-name
+```
+
+The following commands will verify an RPM package located in the current directory:
+
+```
+rpm –qip pakcage.rpm
+rpm -K package.rpm
+``` 
+See: [Red Hat Satellite Documentation](https://access.redhat.com/documentation/en-US/Red_Hat_Network_Satellite/5.3/html/Deployment_Guide/satops-rpm-building.html)
