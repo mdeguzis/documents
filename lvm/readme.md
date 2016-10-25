@@ -58,6 +58,9 @@ sudo lvcreate -n bulk_data_1 -l+100%FREE vg_data_1
 
 ## Format the LVM partition with a file system
 
+
+### RHEL 6
+
 ```
 sudo mkfs.ext4 -m 2 /dev/vg_data1/bulk_data_1
 ```
@@ -69,6 +72,25 @@ sudo mkfs.ext4 -m 2 /dev/vg_data1/bulk_data_1
 ```
 -m reserved-blocks-percentage
 ```
+
+### RHEL 7
+
+RHEL 7 has XFS, a 64-bit, high-performance JFS. Ideally, use XFS for your mount points, unless otherwise desired.
+
+```
+sudo mkfs.xfs /dev/mapper/vg_data_1-bulk_data_1
+```
+
+**Reference notes:**
+
+```
+vg_data_1 - Our LVM volume group
+bulk_data_1 - Our LVM volume itself
+```
+
+## Mounting
+
+See [documents/system/fstab.md](https://github.com/ProfessorKaos64/documents/blob/master/system/fstab.md)
 
 # Man pages
 
