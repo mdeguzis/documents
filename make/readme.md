@@ -13,3 +13,25 @@ Use info for GNU 'make'
 # Variables
 
  * [Assignment and definition](http://www.gnu.org/software/make/manual/html_node/Flavors.html#Flavors)
+
+# Tips and tricks
+
+## Filtering out a CFLAG/CXXFLAG
+
+In the Makefile where you want to overrides for the -Werror part of CFLAGS that will be removed in that Makefile, you can make use of the `filter-out` directive. aYou can even use this to override flags for a single target by using [target-specific variable values](http://www.gnu.org/software/make/manual/make.html#Target_002dspecific):
+
+Example:
+```
+CFLAGS = -Werror
+
+all: foo bar
+
+foo:
+        echo cc $(CFLAGS) -o $@
+
+bar: CFLAGS := $(filter-out -Werror,$(CFLAGS))
+
+bar:
+        echo cc $(CFLAGS) -o $@
+```
+foo will be built with the default CFLAGS containing -Werror, but bar will be built without.
