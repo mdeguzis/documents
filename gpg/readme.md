@@ -11,6 +11,19 @@
 # About
 Useful information about GPG / GNUPG
 
+# GPG status flags
+
+Upon inspection of the GPG source code, these appear to be the available status flags:
+
+```
+Constant              Character
+───────────────────────────────
+PUBKEY_USAGE_SIG      S
+PUBKEY_USAGE_CERT     C
+PUBKEY_USAGE_ENC      E
+PUBKEY_USAGE_AUTH     A
+```
+
 # Distributing keys
 
 ```
