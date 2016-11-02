@@ -18,6 +18,18 @@ gpg --gen-key
 gpg --armour --export uid > my_pubkey.asc
 ```
 
+# Adjusting key expiration and trust
+
+Edit the key, list the indexs, and choose the primary key/index 0. Adjust if necessary. You can also edit the trust with the command of the same name.
+```
+gpg --edit-key <KEY_ID>
+gpg> list
+gpg> key 0
+gpg> trust
+```
+
+See [this page](https://www.g-loaded.eu/2010/11/01/change-expiration-date-gpg-key/) for more.
+
 # Rovoking Keys
 
 ```
@@ -32,6 +44,7 @@ gpg --output revoke.asc --gen-revoke <mkeyid>
 
 * [Exchanging keys](https://www.gnupg.org/gph/en/manual/x56.html)
 * [GPG Cheat Sheet](http://irtfweb.ifa.hawaii.edu/~lockhart/gpg/gpg-cs.html)
+* [GPG documentation](https://www.gnupg.org/documentation/manpage.html)
 * [Instant GPG How-To](http://homepages.inf.ed.ac.uk/da/id/gpg-howto.shtml)
 * [Revoking Keys](https://www.hackdiary.com/2004/01/18/revoking-a-gpg-key/)
 * [Revoking Keys (GNUGPG](https://www.gnupg.org/gph/en/manual/c14.html)
