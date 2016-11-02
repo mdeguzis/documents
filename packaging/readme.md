@@ -10,6 +10,32 @@
 # About
 This directory contains some useful information for Linux distribution packaging (general info).
 
+# Locating Packages
+
+## Debian distros
+
+You can use `apt-cache seach <package_name>`
+
+## Arch Linux
+
+Use https://www.archlinux.org/packages/ for locating packages. Pacakges you need may also exist in the AUR. For locating package contents, the package `pkgfile` works great.
+
+```
+pkgfile -s <search_string>
+```
+
+## Debian
+Seach packages.debian.org/<pkgname>. If the build system cannot find a certain package, try searching for the .pc (package config) file.
+
+```
+File	                                             Packages
+/usr/lib/i386-linux-gnu/pkgconfig/libxml-2.0.pc	     libxml2-dev
+```
+
+## Ubuntu
+
+Locate packages on packages.ubuntu.com
+
 # Debugging
 
 * If you experience a "undefined ... function" when compiling a project, chances are that software is either:
