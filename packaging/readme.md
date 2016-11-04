@@ -44,3 +44,10 @@ Locate packages on packages.ubuntu.com
   * too old
 * Case in point, `qtwebengine` with `--system-vpx` (requires >= v 1.5).
 
+# Tips and tricks
+
+## Debian variants
+
+Don't use package tar.gz if you can. You loose the commit logs and meta data, unless other wise included. It is much better to use the git source Debian provides for many packages (see links below). This is especially useful for build scripts, and package systems like the AUR (Arch Linux User Repository). If you want ot save yourself time scrolling anomscm.debian.org, type "site:https://anonscm.debian.org/git/ <PACKAGE_NAME>" into Google.
+
+* https://anonscm.debian.org/git/ (page will take some time load)
