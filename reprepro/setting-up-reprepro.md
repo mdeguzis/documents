@@ -84,7 +84,9 @@ Generate a new GPG key if there is no key availble
 gpg --gen-key
 ```
 
-Add the following to ~/.profile so gpg-agent will be invoked automatically when it is not running
+Add the following to ~/.profile so gpg-agent will be invoked automatically when it is not running.
+
+**DO NOT USE ANYMORE**
 
 ```
 if test -f $HOME/.gpg-agent-info && kill -0 `cut -d: -f 2 $HOME/.gpg-agent-info` 2> /dev/null; then
@@ -102,7 +104,7 @@ if [ -f "${HOME}/.gpg-agent-info" ]; then
 fi
 ```
 
-Add the following line to your .bash_profile. It is highly annoying (at least for me, personally) to have your distro's GUI-based GPG agent (such as [GNOME Seahorse](https://wiki.gnome.org/Apps/Seahorse)) interfere with entering your passphrase. You will likley be working ina  terminal emulator anyway, and this breaks you out of the terminal window.
+Add the following line to  `~/.bashrc`. It is highly annoying (at least for me, personally) to have your distro's GUI-based GPG agent (such as [GNOME Seahorse](https://wiki.gnome.org/Apps/Seahorse)) interfere with entering your passphrase. You will likley be working ina  terminal emulator anyway, and this breaks you out of the terminal window.
 
 ```
 export GPG_TTY=`tty`
