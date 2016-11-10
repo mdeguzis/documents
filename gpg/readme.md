@@ -16,6 +16,13 @@ Useful information about GPG / GNUPG
 Upon inspection of the GPG source code, these appear to be the available status flags:
 
 ```
+sec => 'SECret key'
+ssb => 'Secret SuBkey'
+pub => 'PUBlic key'
+sub => 'public SUBkey'
+```
+
+```
 Constant              Character
 ───────────────────────────────
 PUBKEY_USAGE_SIG      S
@@ -58,6 +65,7 @@ gpg --output revoke.asc --gen-revoke <mkeyid>
 * [Exchanging keys](https://www.gnupg.org/gph/en/manual/x56.html)
 * [GPG Cheat Sheet](http://irtfweb.ifa.hawaii.edu/~lockhart/gpg/gpg-cs.html)
 * [GPG documentation](https://www.gnupg.org/documentation/manpage.html)
+* [pinentry info page](https://gist.github.com/ProfessorKaos64/05d1f284f931223624834788da045c65)
 * [Instant GPG How-To](http://homepages.inf.ed.ac.uk/da/id/gpg-howto.shtml)
 * [Revoking Keys](https://www.hackdiary.com/2004/01/18/revoking-a-gpg-key/)
 * [Revoking Keys (GNUGPG](https://www.gnupg.org/gph/en/manual/c14.html)
