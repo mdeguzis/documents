@@ -76,3 +76,13 @@ pkgsuffix="${latest_commit}git+bsos${pkgrev}"
 # Arch Linux VCS guidelines
 
 I actually prefer to use the guidelines Arch Linux sets forth, unless otherwise already set. See: https://wiki.archlinux.org/index.php/VCS_package_guidelines
+
+# Debian
+
+Debian tends to use this format (as seen with [llvm-snapshot](http://debian.cc.lehigh.edu/debian/pool/main/l/llvm-toolchain-snapshot/)):
+
+```
+package_4.0~svn279916-1_all.deb
+```
+
+Which us essentially the the packge version + revision count.
