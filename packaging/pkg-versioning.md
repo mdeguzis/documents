@@ -90,7 +90,7 @@ Which us essentially the the packge version + revision count.
 
 # My personal preference
 
-I prefer to version packages like this
+I prefer to version packages like this:
 
 **Tagged:**
 
@@ -98,8 +98,6 @@ I prefer to version packages like this
 # ${PKG_VER}+${OS_TAG}-${PKG_REV}
 package_0.1+bsos-1
 ```
-
-
 
 **Snapshot:**
 
@@ -117,3 +115,5 @@ REVISION_COMMIT=$(printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-pars
 # Set suffix based on revisions
 PKGSUFFIX="${REVISION_COMMIT}+bsos${PKGREV}"
 ```
+
+If There is no package version to go of off, use something like `0.0` or `0.0.0`.
