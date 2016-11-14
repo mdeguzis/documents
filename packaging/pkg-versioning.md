@@ -86,3 +86,34 @@ package_4.0~svn279916-1_all.deb
 ```
 
 Which us essentially the the packge version + revision count.
+
+
+# My personal preference
+
+I prefer to version packages like this
+
+**Tagged:**
+
+```
+# ${PKG_VER}+${OS_TAG}-${PKG_REV}
+package_0.1+bsos-1
+```
+
+
+
+**Snapshot:**
+
+```
+# ${PKG_VER}+r${REV}.${COMMIT}+${OS_TAG}-${PKG_REV}
+package_0.1+r000.0000000a+bsos-1
+```
+
+**Code:**
+
+```
+LATEST_COMMIT=$(git log -n 1 --pretty=format:"%h")
+REVISION_COMMIT=$(printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)")
+
+# Set suffix based on revisions
+PKGSUFFIX="${REVISION_COMMIT}+bsos${PKGREV}"
+```
