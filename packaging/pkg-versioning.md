@@ -106,14 +106,19 @@ package_0.1+bsos-1
 package_0.1+r000.0000000a+bsos-1
 ```
 
+**Alternatively::**
+
+```
+package_0.1+git20161114.0000000a+bsos-1
+```
+
+
 **Code:**
 
 ```
+DATE_SHORT=$(date +%Y%m%d)
 LATEST_COMMIT=$(git log -n 1 --pretty=format:"%h")
 REVISION_COMMIT=$(printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)")
-
-# Set suffix based on revisions
-PKGSUFFIX="${REVISION_COMMIT}+bsos${PKGREV}"
 ```
 
 If There is no package version to go of off, use something like `0.0` or `0.0.0`.
