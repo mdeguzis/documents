@@ -72,3 +72,7 @@ pkgver=$(sed "s|[-|a-z]||g" <<<"$pkgver_orig")
 # Alter pkg suffix based on commit
 pkgsuffix="${latest_commit}git+bsos${pkgrev}"
 ```
+
+# Arch Linux VCS guidelines
+
+I actually prefer to use the guidelines Arch Linux sets forth, unless otherwise already set. See: https://wiki.archlinux.org/index.php/VCS_package_guidelines
