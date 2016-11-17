@@ -6,10 +6,10 @@ One liners and examples that I have found useful
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [Tips and Tricks](#tips-and-tricks)
-  - [Pass results of find to command](#pass-results-of-find-to-command)
-  - [Replace line with contents of file](#replace-line-with-contents-of-file)
-  - [Replace line with block of text in file (perl)](#replace-line-with-block-of-text-in-file-perl)
+- [Commenting a line matching/not matching a specific string AND that is not already commented out](#commenting-a-line-matchingnot-matching-a-specific-string-and-that-is-not-already-commented-out)
+- [Pass results of find to command](#pass-results-of-find-to-command)
+- [Replace line with contents of file](#replace-line-with-contents-of-file)
+- [Replace line with block of text in file (perl)](#replace-line-with-block-of-text-in-file-perl)
 - [Delete 'n' lines after match (including match)](#delete-n-lines-after-match-including-match)
 - [Delete 'n' lines after match (excluding match). Increase 'd' for each line after N (the line not to delete)](#delete-n-lines-after-match-excluding-match-increase-d-for-each-line-after-n-the-line-not-to-delete)
 - [Delete between two patterns](#delete-between-two-patterns)
