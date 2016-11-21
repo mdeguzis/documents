@@ -42,3 +42,5 @@ In summary, : ${parameter_name:=value} is a concise way of writing
 ```
 if [ -z "$parameter_name" ]; then parameter_name=value; fi
 ```
+
+Source: [Stack Exchange](http://unix.stackexchange.com/questions/25425/what-does-param-value-mean)
