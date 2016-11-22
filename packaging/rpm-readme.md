@@ -16,6 +16,10 @@ Info for items specific to The Linux distirbution, Fedora.
 
 * [centpkg (early stages)](https://wiki.centos.org/HowTos/Centpkg)
 
+# Non-RHEL distros and chroots/mock
+
+Mock often doesn't quick work to initalize the base chroot on non-RHEL related distros. In that case, you can make use of the [build-test-fedora-chroot](https://github.com/ProfessorKaos64/LibreGeek-Packaging/blob/master/setup-files/build-test-fedora-chroot.sh) script to create the chroot.
+
 # Packaging
 
 ## General
