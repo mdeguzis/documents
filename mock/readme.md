@@ -15,6 +15,9 @@ Mock is capable of building SRPMs from source configuration management if the mo
 
 # Setup mock
 
+# Add user to group mock
+usermod -a -G mock ${USER}
+
 Initalizing your chroot:
 ```
 mock -r epel-7-x86_64 --init
