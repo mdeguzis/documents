@@ -48,6 +48,8 @@ gpg> key 0
 gpg> trust
 ```
 
+Source [g-loaded.eu](https://www.g-loaded.eu/2010/11/01/change-expiration-date-gpg-key/)
+
 See [this page](https://www.g-loaded.eu/2010/11/01/change-expiration-date-gpg-key/) for more.
 
 # Rovoking Keys
