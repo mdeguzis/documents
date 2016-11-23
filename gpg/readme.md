@@ -52,11 +52,36 @@ Source [g-loaded.eu](https://www.g-loaded.eu/2010/11/01/change-expiration-date-g
 
 See [this page](https://www.g-loaded.eu/2010/11/01/change-expiration-date-gpg-key/) for more.
 
+# Transitioning to a new key
+
+1. Generate New Key
+2. Open Interative Edit `gpg --edit <KEY>`
+3. Trust The new Key with the command`trust`
+
+Source: [Apache.org](https://www.apache.org/dev/key-transition.html)
+
 # Rovoking Keys
 
+Using revoke generation:
 ```
 gpg --output revoke.asc --gen-revoke <mkeyid>
 ```
+
+Using an existing certificate
+```
+# If the key is not on the host machine already
+gpg --recv-keys [key-id]
+
+# Now import the key :
+gpg --import [revocation-certificate-file]
+
+# After doing so, send the keys back to the key servers again:
+gpg --send-keys [key-id]
+
+```
+
+When a key is generated using GPG 2.x+, you should see the revocation certificates in `$HOME/.gnupg/openpgp-revocs.d`
+
 
 # Tips
 
