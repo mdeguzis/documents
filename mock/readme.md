@@ -94,7 +94,17 @@ You can also use `rpm`
 rpm -ivh <package>.rpm
 ```
 
+# Installing packages into mock chroot
 
+```
+mock -r MOCK_CONFIG --install PACKAGE_NAME_OR_PATH_TO_RPM
+```
+
+# Entering the mock chroot
+
+```
+mock -r MOCK_CONFIG --shell
+```
 
 # Links
 
