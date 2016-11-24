@@ -30,7 +30,30 @@ Cleaning a chroot:
 mock -r epel-7-x86_64 --clean
 ```
 
+# Initialize the mockdirectory structure
+
+Mock uses a setup of folders to determine (by default) where to find source rpm files, source code, and more. You can use a utility or create them yourself. There is nothing particular special about them beyond their names.
+
+Using a utility (if available):
+
+```
+rpmdev-setuptree
+```
+
+Manually:
+```
+$ mkdir -p ~/rpmbuild/{BUILD,RPMS,SOURCES,SPECS,SRPMS}'
+
+$ ls ~/rpmbuild/
+BUILD      RPMS     SPECS
+BUILDROOT  SOURCES  SRPMS
+```
+
 # Building packages
+
+## Using helper scripts
+
+Fedora and some other distros have nice helper scripts for mock
 
 ## Fedora
 
@@ -38,7 +61,9 @@ mock -r epel-7-x86_64 --clean
 fedpkg mockbuild
 ```
 
-## CentOS / RHEL
+## Usng Mock directly
+
+Using mock directly is generally how you would package standard RHEL/CentOS, due to the lack of simple helper scripts found on Fedora.
 
 First build the source rpm for mock
 ```
@@ -47,10 +72,13 @@ rpmbuild -bs mypackage.spec
 
 Issue the build with mock:
 ```
-mock -r epel-7-x86_64 rebuild package-1.1-1.src.rpm
+mock -r epel-7-x86_64 rebuild ~/rpmbuild/SRPMS/package.src.rpm
 ```
+Sans additional arguments, your package will fall into `/var/lib/mock/<config>/result`. 
 
-Sans additional arguments, your package will fall into `/var/lib/mock/<config>/result`
+# Helpful hints
+
+* Specify `--result=<FOLDER_PATH>` to push the results into another directory.
 
 ## Testing rpm packagge
 
