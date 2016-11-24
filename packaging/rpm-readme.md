@@ -20,18 +20,6 @@ Info for items specific to The Linux distirbution, Fedora.
 
 Mock often doesn't quick work to initalize the base chroot on non-RHEL related distros. In that case, you can make use of the [build-fedora-chroot](https://github.com/ProfessorKaos64/LibreGeek-Packaging/blob/master/setup-files/build-fedora-chroot.sh) script to create the chroot.
 
-# Man pages
-
-* [spectool](http://www.unix.com/man-page/centos/1/spectool/)
-
-## spec files
-
- * [Macros (Fedora docs)](https://fedoraproject.org/wiki/Packaging:RPMMacros?rd=Packaging/RPMMacros)
- * [Macros (rpm.org)](http://www.rpm.org/wiki/PackagerDocs/Macros)
- * [Spec file macros](http://www.rpm.org/max-rpm/s1-rpm-specref-macros.html)
- * [Spec file tags (rpm.org)](http://rpm.org/api/4.4.2.2/specfile.html)
- * [Sources](https://fedoraproject.org/wiki/Packaging:SourceURL?rd=Packaging/SourceURL)
-
 # Open Build System
 
 * [Main site](https://build.opensuse.org/)
@@ -65,6 +53,12 @@ spectool -R -g *spec
 
 ### Building locally:
 
+rpmbuild
+```
+rpmbuild --rebuild /tmp/SRPM_NAME
+```
+
+Fedora
 ```
 fedpkg --dist f24 local
 ```
@@ -158,3 +152,15 @@ See: [Red Hat Satellite Documentation](https://access.redhat.com/documentation/e
 * [Packager's Guide](https://docs.fedoraproject.org/en-US/Fedora_Draft_Documentation/0.1/html/Packagers_Guide/)
 * [RPM Fusion](http://rpmfusion.org/)
 * [Setup packaging environment (CentOS)](https://wiki.centos.org/HowTos/SetupRpmBuildEnvironment)
+
+## Man pages
+
+* [spectool](http://www.unix.com/man-page/centos/1/spectool/)
+
+## spec files
+
+ * [Macros (Fedora docs)](https://fedoraproject.org/wiki/Packaging:RPMMacros?rd=Packaging/RPMMacros)
+ * [Macros (rpm.org)](http://www.rpm.org/wiki/PackagerDocs/Macros)
+ * [Spec file macros](http://www.rpm.org/max-rpm/s1-rpm-specref-macros.html)
+ * [Spec file tags (rpm.org)](http://rpm.org/api/4.4.2.2/specfile.html)
+ * [Sources](https://fedoraproject.org/wiki/Packaging:SourceURL?rd=Packaging/SourceURL)
