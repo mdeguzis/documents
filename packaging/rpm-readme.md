@@ -18,20 +18,7 @@ Info for items specific to The Linux distirbution, Fedora.
 
 # Non-RHEL distros and chroots/mock
 
-Mock often doesn't quick work to initalize the base chroot on non-RHEL related distros. In that case, you can make use of the [build-test-fedora-chroot](https://github.com/ProfessorKaos64/LibreGeek-Packaging/blob/master/setup-files/build-test-fedora-chroot.sh) script to create the chroot.
-
-# Packaging
-
-## General
-
-* [How to create an RPM pacakge (fedora)](https://fedoraproject.org/wiki/How_to_create_an_RPM_package)
-* [How to create an RPM package (tldp)](http://www.tldp.org/HOWTO/RPM-HOWTO/build.html)
-* [Fedora maintainers resources](https://fedoraproject.org/wiki/Category:Package_Maintainers?rd=PackageMaintainers#Procedures.2C_Policies_and_Guides)
-* [Man page rpmbuild](http://www.rpm.org/max-rpm-snapshot/rpmbuild.8.html)
-* [OBS (Open Build System)](https://build.opensuse.org/)
-* [Packager's Guide](https://docs.fedoraproject.org/en-US/Fedora_Draft_Documentation/0.1/html/Packagers_Guide/)
-* [RPM Fusion](http://rpmfusion.org/)
-* [Setup packaging environment (CentOS)](https://wiki.centos.org/HowTos/SetupRpmBuildEnvironment)
+Mock often doesn't quick work to initalize the base chroot on non-RHEL related distros. In that case, you can make use of the [build-fedora-chroot](https://github.com/ProfessorKaos64/LibreGeek-Packaging/blob/master/setup-files/build-fedora-chroot.sh) script to create the chroot.
 
 # Man pages
 
@@ -49,16 +36,6 @@ Mock often doesn't quick work to initalize the base chroot on non-RHEL related d
 
 * [Main site](https://build.opensuse.org/)
 * [Tutorial](https://en.opensuse.org/openSUSE:Build_Service_Tutorial)
-
-# Mock-specific
-
-* See [documents/centos-fedora-rhel/mock](https://github.com/ProfessorKaos64/documents/blob/master/centos-fedora-rhel/mock.md)
-
-Example mock build with `rpmbuild` (see `/etc/mock`):
-
-```
-mock -r centos-7-x86_64 --spec=component.spec --sources=. --resultdir=mock/result --buildsrpm
-```
 
 # Misc
 
@@ -86,23 +63,15 @@ spectool -R -g *spec
 
 ## Building
 
-Building locally:
+### Building locally:
 
 ```
 fedpkg --dist f24 local
 ```
 
-Building with mock (fedora):
+## Building with mock
 
-```
-fedpkg --dist f24 mockbuild
-```
-
-Building with mock (CentOS or RHEL):
-
-```
-mock -r <CONFIG_FILE_IN_ETC_MOCK> rebuild <PKG.src.rpm>
-```
+* See [documents/mock/readme.md](https://github.com/ProfessorKaos64/documents/blob/master/mock/readme.md)
 
 ## Changelog
 
@@ -176,3 +145,16 @@ rpm –qip pakcage.rpm
 rpm -K package.rpm
 ``` 
 See: [Red Hat Satellite Documentation](https://access.redhat.com/documentation/en-US/Red_Hat_Network_Satellite/5.3/html/Deployment_Guide/satops-rpm-building.html)
+
+# Links
+
+## General
+
+* [How to create an RPM pacakge (fedora)](https://fedoraproject.org/wiki/How_to_create_an_RPM_package)
+* [How to create an RPM package (tldp)](http://www.tldp.org/HOWTO/RPM-HOWTO/build.html)
+* [Fedora maintainers resources](https://fedoraproject.org/wiki/Category:Package_Maintainers?rd=PackageMaintainers#Procedures.2C_Policies_and_Guides)
+* [Man page rpmbuild](http://www.rpm.org/max-rpm-snapshot/rpmbuild.8.html)
+* [OBS (Open Build System)](https://build.opensuse.org/)
+* [Packager's Guide](https://docs.fedoraproject.org/en-US/Fedora_Draft_Documentation/0.1/html/Packagers_Guide/)
+* [RPM Fusion](http://rpmfusion.org/)
+* [Setup packaging environment (CentOS)](https://wiki.centos.org/HowTos/SetupRpmBuildEnvironment)
