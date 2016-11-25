@@ -71,7 +71,7 @@ fedpkg --dist f24 local
 
 Manual:
 ```
-* date Packager's Name <packager's_email> version-revision
+* date Packager's Name <packager's_email> version-release_ver
 - Summary of changes
 ```
 
