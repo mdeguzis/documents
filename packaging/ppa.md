@@ -69,7 +69,7 @@ debsign -k <KEY_ID> <pacakage>*.changes
 
 ## Ubuntu
 ```
-dput -U ppa:<user>/<repo> <package>_source.changes
+dput ppa:<user>/<repo> <package>_source.changes
 ```
 
 ## Debian and other derivitives
@@ -83,5 +83,9 @@ method                  = ftp
 incoming                = ~<user>/ubuntu/<repo>
 login                   = anonymous
 allow_unsigned_uploads  = 0
-
 ```
+
+Uploading then is fairly straightforward
+```
+dput libregeek <package>_source.changes
+``
