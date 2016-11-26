@@ -1,3 +1,15 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [Resizing dynamic VDI disk image](#resizing-dynamic-vdi-disk-image)
+  - [Step 1:](#step-1)
+  - [Step 2:](#step-2)
+- [Resizing fixed VDI disk image](#resizing-fixed-vdi-disk-image)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About
 
 VirtualBox tips and tricks

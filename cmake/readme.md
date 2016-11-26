@@ -5,6 +5,7 @@
 - [Cmake](#cmake)
 - [Quick tips](#quick-tips)
 - [Cmake vs Make](#cmake-vs-make)
+- [Simple example of setting and using an option in CMakeLists.txt](#simple-example-of-setting-and-using-an-option-in-cmakeliststxt)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

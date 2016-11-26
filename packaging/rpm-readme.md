@@ -3,9 +3,18 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [About](#about)
-- [Packaging](#packaging)
+- [CentOS-specific](#centos-specific)
+- [Non-RHEL distros and chroots/mock](#non-rhel-distros-and-chrootsmock)
 - [Open Build System](#open-build-system)
 - [Misc](#misc)
+- [RPM package quick start:](#rpm-package-quick-start)
+  - [Generating spec file templates](#generating-spec-file-templates)
+  - [Sources](#sources)
+  - [Building](#building)
+    - [Building locally:](#building-locally)
+  - [Building with mock](#building-with-mock)
+  - [Changelog](#changelog)
+  - [Review](#review)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

@@ -1,3 +1,17 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+  - [For current user](#for-current-user)
+  - [For all users](#for-all-users)
+  - [Login shell and Non-login shell](#login-shell-and-non-login-shell)
+    - [Login shell](#login-shell)
+    - [Non-login shell](#non-login-shell)
+  - [Differences between .bashrc and .profile](#differences-between-bashrc-and-profile)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About
 
 Ater login to a Linux system, the command console will show up with a prompt label such as # or ~, a shell command can be typed after this prompt and the system can execute the command thereafter. All these operations are handled by shell.

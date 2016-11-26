@@ -1,3 +1,11 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Line passed to IPC too long](#line-passed-to-ipc-too-long)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Line passed to IPC too long
 
 This may come up with signing with your secret GPG key via pinentry(-curses). 

@@ -4,6 +4,7 @@
 
 - [About](#about)
 - [General links](#general-links)
+- [Subjects](#subjects)
 - [Sourcing options in scrits](#sourcing-options-in-scrits)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->

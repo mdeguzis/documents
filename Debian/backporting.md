@@ -4,6 +4,8 @@
 
 - [About](#about)
 - [General process with a pbuilder chroot](#general-process-with-a-pbuilder-chroot)
+- [Packages with build-indep and build-arch targets](#packages-with-build-indep-and-build-arch-targets)
+- [Examples](#examples)
 - [Boostrapping for packages](#boostrapping-for-packages)
 - [Links](#links)
 

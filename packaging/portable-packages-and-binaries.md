@@ -5,7 +5,7 @@
 - [About](#about)
 - [Static linking](#static-linking)
 - [Shipping binaries](#shipping-binaries)
-  - [compiler approach](#compiler-approach)
+  - [compiler approach (preferred)](#compiler-approach-preferred)
   - [Launch-script approach](#launch-script-approach)
 - [Why is rpath or -L needed?](#why-is-rpath-or--l-needed)
 - [Further reading](#further-reading)

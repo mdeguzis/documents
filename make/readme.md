@@ -4,6 +4,8 @@
 
 - [About](#about)
 - [Variables](#variables)
+- [Tips and tricks](#tips-and-tricks)
+  - [Filtering out a CFLAG/CXXFLAG](#filtering-out-a-cflagcxxflag)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

@@ -1,3 +1,27 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [Command reference](#command-reference)
+- [LVM Data volume creation](#lvm-data-volume-creation)
+  - [Creating the partition](#creating-the-partition)
+  - [Creating the physical volume for LVM](#creating-the-physical-volume-for-lvm)
+  - [Assign the created physical volume](#assign-the-created-physical-volume)
+  - [Create logical volume for LVM](#create-logical-volume-for-lvm)
+  - [Format the LVM partition with a file system](#format-the-lvm-partition-with-a-file-system)
+    - [RHEL 6](#rhel-6)
+    - [RHEL 7](#rhel-7)
+  - [Mounting](#mounting)
+- [LVM Data volume addition](#lvm-data-volume-addition)
+  - [Using parted](#using-parted)
+  - [Resize the physical LVM colume](#resize-the-physical-lvm-colume)
+  - [Resize the logical LVM volume](#resize-the-logical-lvm-volume)
+  - [Advise the OS to utilize the new space](#advise-the-os-to-utilize-the-new-space)
+- [Man pages](#man-pages)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About
 
 General notes on LVM managment

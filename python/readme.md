@@ -1,3 +1,17 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [Python projects](#python-projects)
+- [Python 2 vs. Python 3](#python-2-vs-python-3)
+- [Listing all modules](#listing-all-modules)
+- [Listing PYTHONPATH](#listing-pythonpath)
+- [Links](#links)
+- [Videos](#videos)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About
 
 Python tips and tricks

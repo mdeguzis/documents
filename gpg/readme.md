@@ -3,6 +3,11 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [About](#about)
+- [GPG status flags](#gpg-status-flags)
+- [Distributing keys](#distributing-keys)
+- [Adjusting key expiration and trust](#adjusting-key-expiration-and-trust)
+- [Transitioning to a new key](#transitioning-to-a-new-key)
+- [Rovoking Keys](#rovoking-keys)
 - [Tips](#tips)
 - [Links](#links)
 

@@ -3,7 +3,14 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [About](#about)
+- [Locating Packages](#locating-packages)
+  - [Debian distros](#debian-distros)
+  - [Arch Linux](#arch-linux)
+  - [Debian](#debian)
+  - [Ubuntu](#ubuntu)
 - [Debugging](#debugging)
+- [Tips and tricks](#tips-and-tricks)
+  - [Debian variants](#debian-variants)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

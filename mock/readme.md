@@ -3,6 +3,17 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [About](#about)
+- [Setup mock](#setup-mock)
+- [Add user to group mock](#add-user-to-group-mock)
+- [Initialize the mockdirectory structure](#initialize-the-mockdirectory-structure)
+- [Building packages](#building-packages)
+  - [Using helper scripts](#using-helper-scripts)
+  - [Fedora](#fedora)
+  - [Usng Mock directly](#usng-mock-directly)
+- [Helpful hints](#helpful-hints)
+  - [Testing rpm packagge](#testing-rpm-packagge)
+- [Installing packages into mock chroot](#installing-packages-into-mock-chroot)
+- [Entering the mock chroot](#entering-the-mock-chroot)
 - [Links](#links)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->

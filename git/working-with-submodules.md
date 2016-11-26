@@ -4,8 +4,9 @@
 
 - [About](#about)
 - [Links](#links)
-- [Quick reminders](#quick-reminders)
+- [Update a submodoule](#update-a-submodoule)
   - [Pull in latest changes for submodule](#pull-in-latest-changes-for-submodule)
+- [Creating a submodule](#creating-a-submodule)
 - [Have a sudmodule always track the HEAD of a branch](#have-a-sudmodule-always-track-the-head-of-a-branch)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->

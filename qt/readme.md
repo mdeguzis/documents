@@ -4,6 +4,7 @@
 
     - [About](#about)
     - [Links](#links)
+- [IMPORTANT](#important)
 - [About](#about-1)
 - [Build status](#build-status)
 - [Configure options sourced in debian/rules via conditional statements](#configure-options-sourced-in-debianrules-via-conditional-statements)

@@ -5,6 +5,9 @@
 - [Pkg versioning](#pkg-versioning)
   - [Base release off latest release tag](#base-release-off-latest-release-tag)
   - [Base release off latest commit (for "unstable packages")](#base-release-off-latest-commit-for-unstable-packages)
+- [Arch Linux VCS guidelines](#arch-linux-vcs-guidelines)
+- [Debian](#debian)
+- [My personal preference](#my-personal-preference)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

@@ -1,3 +1,17 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [OpenPGP keys](#openpgp-keys)
+- [Signing .changes files](#signing-changes-files)
+- [config files](#config-files)
+- [Uploading](#uploading)
+  - [Ubuntu](#ubuntu)
+  - [Debian and other derivitives](#debian-and-other-derivitives)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About
 
 Notes on uploading to PPAs

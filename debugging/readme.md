@@ -5,6 +5,7 @@
 - [About](#about)
 - [Common tools](#common-tools)
 - [gdb](#gdb)
+- [strace](#strace)
 - [General guidelines](#general-guidelines)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->

@@ -13,6 +13,7 @@
     - [Variables to understand](#variables-to-understand)
     - [Directories](#directories)
     - [Adding options for debuild](#adding-options-for-debuild)
+    - [Arch-independent packages](#arch-independent-packages)
 - [Links](#links)
 - [i386 building](#i386-building)
 - [Building from a .dsc file](#building-from-a-dsc-file)

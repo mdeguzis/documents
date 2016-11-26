@@ -5,6 +5,7 @@
 - [About](#about)
 - [Complete list of flags](#complete-list-of-flags)
 - [Use clang vs. gcc](#use-clang-vs-gcc)
+- [Builds with linking targeting GNU C++ or LLVM C++](#builds-with-linking-targeting-gnu-c-or-llvm-c)
 - [Links](#links)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
