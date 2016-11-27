@@ -196,7 +196,7 @@ DIST=saucy ARCH=i386 pdebuild
 example (with full source) using the pbuilder command:
 ```
 DSC_URL="http://http.debian.net/debian/pool/main/l/llvm-toolchain-3.8/llvm-toolchain-3.8_3.8-2.dsc"
-dget ${DSC_URL} && rm -rf result/* && mkdir result && sudo -E DIST=brewmaster STEAMOS_TOOLS_BETA_HOOK="true" pbuilder --build --distribution brewmaster --buildresult result  --debbuildopts -sa --debbuildopts -nc llvm-toolchain-3.8_3.8-2.ds
+dget ${DSC_URL} && rm -rf result/* && mkdir result && sudo -E DIST=jessie pbuilder --build --distribution brewmaster --buildresult result  --debbuildopts -sa --debbuildopts -nc llvm-toolchain-3.8_3.8-2.dsc
 ```
 
 
@@ -204,12 +204,12 @@ example (with full source) using the pdebuild command inside the source dir:
 ```
 DSC_URL="http://http.debian.net/debian/pool/main/l/llvm-toolchain-3.8/llvm-toolchain-3.8_3.8-2.dsc"
 dget ${DSC_URL} && rm -rf result/* && mkdir result 
-sudo -E DIST=brewmaster STEAMOS_TOOLS_BETA_HOOK="true" BUILD_TMP=result pdebuild --debbuildopts -sa --debbuildopts -nc
+sudo -E DIST=brewmaster BUILD_TMP=result pdebuild --debbuildopts -sa --debbuildopts -nc
 ```
 
 Ignore the steamos-tools beta line (for general building). This also depends on your `.pbuilderrc` setup. You only need `-nc` above if you are building on other distributions and you don't want dh_clean running before the build.
 
-**Do not** set BUILD_DIR above manually, as this conflicts with some packages, such as "llvm-toolchain". Instead, use `--buildresult /path/to/result_dir`.
+**Do not** set BUILD_DIR above manually, as this conflicts with some packages, such as "llvm-toolchain". Instead, use `--buildresult /path/to/result_dir`. The example above uses a modified `.pbuilderrc` config to utilize "BUILD_TMP" instead.
 
 # Buidling from a standalone script
 
