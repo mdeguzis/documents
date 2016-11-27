@@ -196,7 +196,7 @@ DIST=saucy ARCH=i386 pdebuild
 example (with full source) using the pbuilder command:
 ```
 DSC_URL="http://http.debian.net/debian/pool/main/l/llvm-toolchain-3.8/llvm-toolchain-3.8_3.8-2.dsc"
-dget ${DSC_URL} && rm -rf result/* && mkdir result && sudo -E DIST=jessie pbuilder --build --distribution brewmaster --buildresult result  --debbuildopts -sa --debbuildopts -nc llvm-toolchain-3.8_3.8-2.dsc
+dget ${DSC_URL} && rm -rf result && mkdir result && sudo -E DIST=jessie pbuilder --build --distribution brewmaster --buildresult result  --debbuildopts -sa --debbuildopts -nc llvm-toolchain-3.8_3.8-2.dsc
 ```
 
 
