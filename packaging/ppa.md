@@ -21,11 +21,9 @@ Notes on uploading to PPAs
 For Ubuntu PPAs, ensure your user profile page https://launchpad.net/~<user>/+editpgpkeys lists the appropriate 
 keys you have on your host machine that you are signing with
 
-# Signing .changes files
+# Signing .changes file
 
-`dpkg-buildpackage` will sign after the package created, unless otherwise told not to. For instance, if using pbuilder, you can use
-`debsign` after the package is build, since the build occurs in an chroot, not your host machine. See the man page for `debsign`.
-Setting DEBSIGN_KEYID can override the default. 
+`dpkg-buildpackage` will sign after the package created, unless otherwise told not to. For instance, if using pbuilder, you can use `debsign` after the package is build, since the build occurs in an chroot, not your host machine. See the man page for `debsign`. Setting DEBSIGN_KEYID can override the default. Signing the .changes file will sign the .dsc file as well. Both a signed .dsc and a signed .changes file are required for uploading.
 
 The two configuration files /etc/devscripts.conf and ~/.devscripts are sourced  in  that  order  to set configuration variables
 
@@ -57,7 +55,7 @@ DEBRELEASE_DEBS_DIR
 
 With a specified key
 ```
-debsign -k <KEY_ID> <pacakage>*.changes
+debsign -k <KEY_ID> <pacakage>.changes
 ```
 
 # config files
@@ -89,3 +87,7 @@ Uploading then is fairly straightforward
 ```
 dput libregeek <package>_source.changes
 ``
+
+# Links
+
+* https://www.debian.org/doc/manuals/maint-guide/build.en.html
