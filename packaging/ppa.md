@@ -16,6 +16,10 @@
 
 Notes on uploading to PPAs
 
+# Regarding pbuilder
+
+If using pbuilder, it is suggested to use `--debbuildopts -nc` to avoid checksum mismatches when using debsign/dput.
+
 # OpenPGP keys
 
 For Ubuntu PPAs, ensure your user profile page https://launchpad.net/~<user>/+editpgpkeys lists the appropriate 
