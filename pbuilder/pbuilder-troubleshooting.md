@@ -19,6 +19,10 @@ You could also invoke the `-x` bash option to show debug output from bash itself
 ```
 bash -x /usr/sbin/pbuilder create --debug
 ```
+# Errors with packaging that contains build profiles/stages
+
+Often this points to an older version of pbuilder that doesn't interpret stags correctly, such as `<!stage1>`.
+
 
 # reprepro complains about the generated pbuilder md5
 
