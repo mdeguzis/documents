@@ -75,7 +75,7 @@ debsign -k <KEY_ID> <pacakage>.changes
 
 ## Regarding multi dist uploads
 
-If you are rebuilding the *same source* for another distribution in the same family (such as Ubuntu Xenial, then yakkety), make sure you build the subsequent dists using the `-S` flag, which would be `--debbuildopts -S` for pbuilder. If you are using a severice such as Launchpad, the upload will be rejected if you are using the same source to build a new distribution package.
+If you are rebuilding the *same source* for another distribution in the same family (such as Ubuntu Xenial, then yakkety), make sure you build the subsequent dists using the `-S` flag, which would be `--debbuildopts -S` for pbuilder. If you are using a severice such as Launchpad, the upload will be rejected if you are using the same source to build a new distribution package. Remeber, you will need access to the original binary to pass the build and lintian tests. A good practice with pbuilder, is to use a hook for such things.
 
 Xenial build
 ```
