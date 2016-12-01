@@ -75,17 +75,7 @@ debsign -k <KEY_ID> <pacakage>.changes
 
 ## Regarding multi dist uploads
 
-If you are rebuilding the *same source* for another distribution in the same family (such as Ubuntu Xenial, then yakkety), make sure you build the subsequent dists using the `-S` flag, which would be `--debbuildopts -S` for pbuilder. If you are using a severice such as Launchpad, the upload will be rejected if you are using the same source to build a new distribution package. Remeber, you will need access to the original binary to pass the build and lintian tests. A good practice with pbuilder, is to use a hook for such things.
-
-Xenial build
-```
-debuildopts -sa
-```
-
-Xenial build
-```
-debuildopts -S
-```
+If you are rebuilding the *same source* for another distribution in the same family (such as Ubuntu Xenial, then yakkety), make sure you build the subsequent dists using a tarball of different name. Including the suffix is ideal. This is why you typically see packages marked such as `doom64ex - 0.0.0+git20161128.a43c528~ubuntu16.04.1-1` vs `doom64ex - 0.0.0+git20161128.a43c528~ubuntu16.10-1`. Notice the variants after the tilde.
 
 ## Ubuntu
 ```
