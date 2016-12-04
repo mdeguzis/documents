@@ -16,6 +16,23 @@
 
 Notes on uploading to PPAs
 
+# Package version policy
+
+If you are using Ubuntu you have seen that many packages include in the version the name ubuntu… some packages don’t include ubuntu at all in the package version. Here you can find a short explanation on how you can interpret the meaning of the package version of the Ubuntu packages and to find the correspondence with the Debian packages.
+
+Basically each package will be in the form: “package-XubuntuY****”. Let’s break this apart and see what each part means:
+
+1. package = this is the name of the program/library.
+2. X = this is the debian version of the package
+3. if X=0 this means that there is no debian package (or that the ubuntu team has forked a debian package to a newer version than the one found in the debian repositories) _ ex: bzip2-1.0.3-0ubuntu2_ (as shown in this example the debian package might be updated in the meantime and the ubuntu package will probably merged with it on the next version)
+   1. ubuntuY**** = this is the Yth ubuntu version of the debian package.
+4. if this is missing this mean that it is a clean, unchanged debian package ex: gzip-1.3.5-12 (in this sample, this is the original debian package included in ubuntu)
+5. if this is present it means that Ubuntu has taken the debian package and released it with some additional patches or bug fixes. _ ex: sudo-1.6.8p12-1ubuntu6_ (in this sample this is the 6th version of the ubuntu package based on the debian version 1.6.8p12-1 of sudo).
+
+As a conclusion, the version of a package can be: 2.6.0-1 – means that this is the 1st debian package of version 2.6.0. No ubuntu changes were included. 2.6.0-1ubuntu1 – means that this is the 1st ubuntu package based on the debian package version 2.6.0-1 2.6.0-0ubuntu1 – means that there was not a debian package yet and this is the 1st ubuntu version of package 2.6.0
+
+Source: [ducea.com](http://www.ducea.com/2006/06/17/ubuntu-package-version-naming-explanation/)
+
 # Regarding pbuilder
 
 If using pbuilder, it is suggested to use `--debbuildopts -nc` to avoid checksum mismatches when using debsign/dput.
