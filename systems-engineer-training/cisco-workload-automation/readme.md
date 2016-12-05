@@ -7,6 +7,10 @@ are defined and executed. This highly scalable workload automation solution mana
 across a broad set of applications, systems, and environments. It lowers the cost of data while improving 
 efficiency and throughput.
 
+Basic toplogy
+
+<img src="https://github.com/mtdeguzis/documents/raw/master/images/cwa-topology-basic.png" width=100%/>
+
 # Links
 
 * [Overview (Cisco)](http://www.cisco.com/c/en/us/products/analytics-automation-software/tidal-enterprise-scheduler/index.html#)
