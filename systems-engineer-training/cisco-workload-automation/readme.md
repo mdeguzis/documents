@@ -9,7 +9,7 @@ efficiency and throughput.
 
 Basic toplogy
 
-<img src="https://github.com/mtdeguzis/documents/raw/master/images/cwa-topology-basic.png" width=100%/>
+<img src="https://github.com/mtdeguzis/documents/raw/master/images/cwa-toplogy-basic.png" width=100%/>
 
 # Links
 
