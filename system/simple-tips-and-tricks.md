@@ -27,3 +27,16 @@ Using find (provides verbose endpoint, shows only symlinks)
 ```
 find / -maxdepth 1 -type l -exec ls -la '{}' \;
 ```
+
+# Web Links / Shortcuts
+
+Simply create a desktop file, such as the below:
+
+```
+[Desktop Entry]
+Encoding=UTF-8
+Name=Link to Stack Exchange
+Type=Link
+URL=http://www.stackexchange.com/
+Icon=text-html
+```
