@@ -1,0 +1,7 @@
+## JAVA env variables
+## Only use this file if you intend on using a manually downloaded and
+## Installed version of Java
+
+export JAVA_HOME=/usr/java/default
+export PATH=$PATH:$JAVA_HOME/bin
+export CLASSPATH=.:$JAVA_HOME/jre/lib:$JAVA_HOME/lib:$JAVA_HOME/lib/tools.jar
