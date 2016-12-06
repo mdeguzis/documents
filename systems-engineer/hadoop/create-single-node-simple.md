@@ -9,7 +9,7 @@
 
 ## Set host info and env
 
-# You can use "master" to be more in line with hadoop conventions
+You can use "master" to be more in line with hadoop conventions
 ```
 hostnamectl set-hostname centos7
 ```
