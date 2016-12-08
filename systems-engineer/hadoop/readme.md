@@ -12,6 +12,7 @@ Notes about Hadoop. General notes and links can be found on this page, with dedi
 
 # Quick Start Guides
 
+* [Beginners guide](http://blog.matthewrathbone.com/2013/04/17/what-is-hadoop.html)
 * [Hadoop Quick Start Guide (Apache)](https://wiki.apache.org/hadoop/QuickStart)
 * [Hadoop Quick Start Guide (Cloudera)](http://www.cloudera.com/developers/get-started-with-hadoop-tutorial.html)
 * [Hadoop Quick Start Guide (TutorialsPoint)](https://www.tutorialspoint.com/hadoop/hadoop_quick_guide.htm)
