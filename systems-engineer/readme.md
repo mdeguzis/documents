@@ -13,6 +13,7 @@ Temporary place holder for reading materials, resources, and more with a new job
 * Informatica
 * [Hadoop](https://github.com/mtdeguzis/documents/tree/master/systems-engineer-training/hadoop)
   * [Hortonworks HDP 2.5.3 Sandbox](http://hortonworks.com/downloads/#sandbox)
+* python
 * Tidal (Cisco Workload Automation)
 * Teradata
 
@@ -20,15 +21,16 @@ Temporary place holder for reading materials, resources, and more with a new job
 
 * business objects
 * confluence
-* jira
+* Java
+* Jira
 * LVM
-* python
+* Scala
+* Spark
 
 ## Low / Undetermined
 
 * Atanasuite
 * SQL Workbench
-* Java
 * Hipchat
 
 # RHEL-specific
