@@ -12,6 +12,7 @@ Temporary place holder for reading materials, resources, and more with a new job
 
 * Informatica
 * [Hadoop](https://github.com/mtdeguzis/documents/tree/master/systems-engineer-training/hadoop)
+  * [Hortonworks HDP 2.5.3 Sandbox](http://hortonworks.com/downloads/#sandbox)
 * Tidal (Cisco Workload Automation)
 * Teradata
 
