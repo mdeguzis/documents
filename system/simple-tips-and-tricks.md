@@ -4,6 +4,7 @@
 
 - [About](#about)
 - [Symbolic links](#symbolic-links)
+- [Web Links / Shortcuts](#web-links--shortcuts)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

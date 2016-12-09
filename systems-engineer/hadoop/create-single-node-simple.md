@@ -1,3 +1,20 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Components](#components)
+- [System configs](#system-configs)
+  - [Set host info and env](#set-host-info-and-env)
+  - [Add to /etc/hosts](#add-to-etchosts)
+- [Ensure Java SDK is installed](#ensure-java-sdk-is-installed)
+  - [Configure java version](#configure-java-version)
+- [Create a new user account without root privledges for Hadoop](#create-a-new-user-account-without-root-privledges-for-hadoop)
+- [Configure .bashrc for the hadoop user](#configure-bashrc-for-the-hadoop-user)
+- [Download and unpack hadoop](#download-and-unpack-hadoop)
+- [TODO, have errands to do :)](#todo-have-errands-to-do-)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Components
 
 * Hadoop Common – it contains the Java libraries and utilities needed by other Hadoop modules.

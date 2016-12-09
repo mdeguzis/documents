@@ -1,3 +1,16 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [General test taking tips](#general-test-taking-tips)
+  - [Advice](#advice)
+  - [Pitfalls](#pitfalls)
+  - [Test taking](#test-taking)
+- [General topics](#general-topics)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About
 
 Some general notes once RHCSA falls into view

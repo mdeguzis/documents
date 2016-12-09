@@ -1,3 +1,14 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [Links](#links)
+- [Setting up nodes](#setting-up-nodes)
+- [Quick Start Guides](#quick-start-guides)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About
 
 Notes about Hadoop. General notes and links can be found on this page, with dedicated information found in it's own page. Any instructions on setting up hadoop below are more targeted towards simple networks / home environments (for now).

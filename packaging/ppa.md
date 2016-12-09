@@ -3,10 +3,14 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [About](#about)
+- [Package version policy](#package-version-policy)
+- [Regarding pbuilder](#regarding-pbuilder)
+- [PPA build dependencies](#ppa-build-dependencies)
 - [OpenPGP keys](#openpgp-keys)
-- [Signing .changes files](#signing-changes-files)
+- [Signing .changes file](#signing-changes-file)
 - [config files](#config-files)
 - [Uploading](#uploading)
+  - [Regarding multi dist uploads](#regarding-multi-dist-uploads)
   - [Ubuntu](#ubuntu)
   - [Debian and other derivitives](#debian-and-other-derivitives)
 

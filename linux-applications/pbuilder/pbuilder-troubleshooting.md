@@ -3,6 +3,7 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [Having issues with pbuilder?](#having-issues-with-pbuilder)
+- [Errors with packaging that contains build profiles/stages](#errors-with-packaging-that-contains-build-profilesstages)
 - [reprepro complains about the generated pbuilder md5](#reprepro-complains-about-the-generated-pbuilder-md5)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->

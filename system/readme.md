@@ -4,6 +4,7 @@
 
 - [About](#about)
 - [Man pages](#man-pages)
+- [General topics](#general-topics)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
