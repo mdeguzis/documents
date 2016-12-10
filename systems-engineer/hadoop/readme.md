@@ -13,6 +13,10 @@
 
 Notes about Hadoop. General notes and links can be found on this page, with dedicated information found in it's own page. Any instructions on setting up hadoop below are more targeted towards simple networks / home environments (for now).
 
+# Latest news and updates
+
+See: [hadoop/hadoop-updates-news.md](https://github.com/mdeguzis/documents/tree/master/systems-engineer/hadoop)
+
 # Hadoop
 
 ## Main components
