@@ -26,29 +26,31 @@ Temporary place holder for reading materials, resources, and more with a new job
 
 ## High
 
-* Informatica
-* [Hadoop](https://github.com/mtdeguzis/documents/tree/master/systems-engineer-training/hadoop)
-  * [Hortonworks HDP 2.5.3 Sandbox](http://hortonworks.com/downloads/#sandbox)
-  * [HOrtonworks Hadoop tutorials](http://hortonworks.com/tutorials/)
-* python
-* Tidal (Cisco Workload Automation)
-* Teradata
+* [ ] Informatica
+* [ ] [Hadoop](https://github.com/mtdeguzis/documents/tree/master/systems-engineer-training/hadoop)
+  * [ ]  [Hortonworks HDP 2.5.3 Sandbox](http://hortonworks.com/downloads/#sandbox)
+    * [x] Familiarity with Ambari dashboard
+    * [ ] "Hello world" tutorial
+  * [ ]  [HOrtonworks Hadoop tutorials](http://hortonworks.com/tutorials/)
+* [ ]  python
+* [ ]  Tidal (Cisco Workload Automation)
+* [ ]  Teradata
 
 ## Medium
 
-* business objects
-* confluence
-* Java
-* Jira
-* LVM
-* Scala
-* Spark
+* [ ]  business objects
+* [ ]  confluence
+* [ ]  Java
+* [ ]  Jira
+* [ ]  LVM
+* [ ]  Scala
+* [ ]  Spark
 
 ## Low / Undetermined
 
-* Atanasuite
-* SQL Workbench
-* Hipchat
+* [ ]  Atanasuite
+* [ ]  SQL Workbench
+* [ ]  Hipchat
 
 # RHEL-specific
 
