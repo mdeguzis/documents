@@ -3,6 +3,17 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [About](#about)
+- [Latest news and updates](#latest-news-and-updates)
+- [Hadoop](#hadoop)
+  - [Main components](#main-components)
+  - [General components overview](#general-components-overview)
+- [Ambari](#ambari)
+  - [Notable features](#notable-features)
+  - [Main Components](#main-components)
+  - [Other components](#other-components)
+- [Hortonworks Sandbox](#hortonworks-sandbox)
+  - [Logins for tutorials](#logins-for-tutorials)
+  - [Commoon commands](#commoon-commands)
 - [Links](#links)
 - [Setting up nodes](#setting-up-nodes)
 - [Quick Start Guides](#quick-start-guides)
