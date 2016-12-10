@@ -42,7 +42,8 @@ Each project has been developed to deliver an explicit function and each has its
        
   * Apache Knox– The Knox Gateway (“Knox”) provides a single point of authentication and access for Apache Hadoop services in a cluster. The goal of the project is to simplify Hadoop security for users who access the cluster data and execute jobs, and for operators who control access to the cluster.
   * Apache Ranger– Apache Ranger delivers a comprehensive approach to security for a Hadoop cluster. It provides central security policy administration across the core enterprise security requirements of authorization, accounting and data protection.
-    Operations–  Provision, manage, monitor and operate Hadoop clusters at scale.
+
+5. **Operations** –  Provision, manage, monitor and operate Hadoop clusters at scale.
   * Apache Ambari– An open source installation lifecycle management, administration and monitoring system for Apache Hadoop clusters.
   * Apache Oozie– Oozie Java Web application used to schedule Apache Hadoop jobs. Oozie combines multiple jobs sequentially into one logical unit of work.
   * Apache ZooKeeper– A highly available system for coordinating distributed processes. Distributed applications use ZooKeeper to store and mediate updates to important configuration information.
