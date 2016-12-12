@@ -31,39 +31,73 @@ See: [hadoop/hadoop-updates-news.md](https://github.com/mdeguzis/documents/tree/
 
 # Hadoop
 
-## Main components
+## Overview
 
 * **Hadoop Common** – contains libraries and utilities needed by other Hadoop modules.
 * **Hadoop Distributed File System (HDFS)** – a distributed file-system that stores data on commodity machines, providing very high aggregate bandwidth across the cluster.
   * Namenode - manages cluster metadata and datanodes that store the data. Each block of file content is typically 128 MB. The Namenode also monitors the blocks
 * **Hadoop YARN** – a resource-management platform responsible for managing computing resources in clusters and using them for scheduling of users’ applications.
-  * The fundamental idea of YARN is to split up the two major responsibilities of the JobTracker i.e. resource management and job scheduling/monitoring, into separate daemons: a global **ResourceManager** and per-application **ApplicationMaster** (AM).
-  * The ResourceManager and per-node slave, the NodeManager (NM), form the new, and generic, system for managing applications in a distributed manner.
-  * ResourceManager and ApplicationMaster negotiate resources, while the per-node NodeManager keeps ResourceManager informed of that node's running resources (CPR, RAM, Disk, Network).
-  * YARN uses the existing MapReduce framework, providing compatibility with existing MapReduce users.
-  * Procedurally:
-    * Application container is spawned
-    * ApplicationMaster for container makes resource request to resource manager
-    * ResourceManager is also aware of the node specifications from the NodeManager.
-    * ResoureceManager allocates available resources via the pluggable Scheduler
 * **Hadoop MapReduce** – a programming model for large scale data processing. Composed of JobTracker, which is the master, and the per-node slaves called TaskTrackers
-  * The Map function divides the input into ranges by the InputFormat and creates a map task for each range in the input. The JobTracker distributes those tasks to the worker nodes. The output of each map task is partitioned into a group of key-value pairs for each reduce. 
-  * The Reduce function then collects the various results and combines them to answer the larger problem that the master node needs to solve. Each reduce pulls the relevant partition from the machines where the maps executed, then writes its output back into HDFS. Thus, the reduce is able to collect the data from all of the maps for the keys and combine them to solve the problem.
-  * The phases are input, map, shuffle and sort, reduce, and output. For Unix geeks, this is analogous to `cat`, `grep`, `sort`, `unique`, and `output`.
-  * In a simplistic view, this process entails eating input and flipping keys around.
 
-## General components overview
+## 5 pillars of the Hadoop  Framework
 
-* flume - distributed, reliable, and available service for efficiently collecting, aggregating, and moving large amounts of log data
-* hive - data summarization, query, and analysis. Design queries and provide the structure for the raw data
-* oozie - workflow scheduling system to manage Hadoop jobs.
-* pig - high-level platform for creating programs that run on hadoop
-* spark - the cluster computing framework. 
-* sqoop - Tool for efficiently transferring bulk data between structured databases and Hadoop
-* yarn - data processing framwork that extends MapReduce capabilities by supporting non-MapReduce workloads associated with other programming models.
-* zeppelin - web-based notebook that enables interactive data analytics
+1. Data Management
+2. Data Access
+3. Data Governance and Integration
+4. Security
+5. Operations
 
 A full list of comoponents, and their descriptions, can be found here at [hadoop/components.md](https://github.com/mdeguzis/documents/blob/master/systems-engineer/hadoop/components.md).
+
+## HDFS
+
+A single physical machine gets saturated with its storage capacity as data grows. With this growth comes the impending need to partition your data across separate machines. This type of File system that manages storage of data across a network of machines is called a Distributed File System. HDFS is a core component of Apache Hadoop and is designed to store large files with streaming data access patterns, running on clusters of commodity hardware.
+
+* Distributed file system across multiple servers
+* Can scale up to 200 PB / 4500 servers on a single cluster
+* NameNaode manages cluster metadata 
+* DataNodes store the data
+
+The NameNode does not directly send requests to DataNodes. It sends instructions to the DataNodes by replying to heartbeats sent by those DataNodes. The instructions include commands to:
+
+* replicate blocks to other nodes,
+* remove local block replicas,
+* re-register and send an immediate block report, or
+* shut down the node.
+
+## MapReduce and YARM
+
+### MapReduce
+
+* The Map function divides the input into ranges by the InputFormat and creates a map task for each range in the input. The JobTracker distributes those tasks to the worker nodes. The output of each map task is partitioned into a group of key-value pairs for each reduce. 
+* The Reduce function then collects the various results and combines them to answer the larger problem that the master node needs to solve. Each reduce pulls the relevant partition from the machines where the maps executed, then writes its output back into HDFS. Thus, the reduce is able to collect the data from all of the maps for the keys and combine them to solve the problem.
+* The phases are input, map, shuffle and sort, reduce, and output. For Unix geeks, this is analogous to `cat`, `grep`, `sort`, `unique`, and `output`.
+* In a simplistic view, this process entails eating input and flipping keys around.
+
+### Yarn
+
+* The fundamental idea of YARN is to split up the two major responsibilities of the JobTracker i.e. resource management and job scheduling/monitoring, into separate daemons: a global **ResourceManager** and per-application **ApplicationMaster** (AM).
+* The ResourceManager and per-node slave, the NodeManager (NM), form the new, and generic, system for managing applications in a distributed manner.
+* ResourceManager and ApplicationMaster negotiate resources, while the per-node NodeManager keeps ResourceManager informed of that node's running resources (CPR, RAM, Disk, Network).
+* YARN uses the existing MapReduce framework, providing compatibility with existing MapReduce users.
+* Procedurally:
+  * Application container is spawned
+  * ApplicationMaster for container makes resource request to resource manager
+  * ResourceManager is also aware of the node specifications from the NodeManager.
+  * ResoureceManager allocates available resources via the pluggable Scheduler
+
+## Hive and Pig
+
+Hive is an SQL like query language that enables those analysts familiar with SQL to run queries on large volumes of data.  Hive has three main functions: data summarization, query and analysis. Hive provides tools that enable easy data extraction, transformation and loading (ETL). Hive is comprised of yables (think RDMS) made up of partitions.
+
+There are several runtimes Hive can use when executing SQL queries:
+* Hadoop MapReduce
+* Tez
+* Spark
+
+Components:
+* HCatalog - table and storage management layer that enables users with different data processing tools  to more easily read and write data on the grid
+* WebHCat - service that you can use to run Hadoop MapReduce (or YARN), Pig, Hive jobs or perform Hive metadata operations using an HTTP (REST style) interface.
 
 # Ambari
 
@@ -93,7 +127,7 @@ A full list of comoponents, and their descriptions, can be found here at [hadoop
 
 * http://hortonworks.com/hadoop-tutorial/learning-the-ropes-of-the-hortonworks-sandbox/
 * [Hortonworks Hello World tutorial](http://hortonworks.com/hadoop-tutorial/hello-world-an-introduction-to-hadoop-hcatalog-hive-and-pig/#section_2)
-  * Last section read: 3.4
+  * Last section read: 3.5
 * [Hortonworks on Youtube](https://www.youtube.com/channel/UCXFjdDwI_CRTPxlshXWMu7w)
 
 ## Logins for tutorials
