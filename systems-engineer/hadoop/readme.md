@@ -23,7 +23,7 @@
 
 # About
 
-Notes about Hadoop. General notes and links can be found on this page, with dedicated information found in it's own page. Any instructions on setting up hadoop below are more targeted towards simple networks / home environments (for now).
+Notes about Hadoop. General notes and links can be found on this page, with dedicated information found in it's own page. Any instructions on setting up hadoop below are more targeted towards simple networks / home environments (for now). This document serves as a "Cliff Notes"-like presentation of Hadoop.
 
 # Latest news and updates
 
@@ -37,6 +37,15 @@ See: [hadoop/hadoop-updates-news.md](https://github.com/mdeguzis/documents/tree/
 * **Hadoop Distributed File System (HDFS)** – a distributed file-system that stores data on commodity machines, providing very high aggregate bandwidth across the cluster.
   * Namenode - manages cluster metadata and datanodes that store the data. Each block of file content is typically 128 MB. The Namenode also monitors the blocks
 * **Hadoop YARN** – a resource-management platform responsible for managing computing resources in clusters and using them for scheduling of users’ applications.
+  * The fundamental idea of YARN is to split up the two major responsibilities of the JobTracker i.e. resource management and job scheduling/monitoring, into separate daemons: a global **ResourceManager** and per-application **ApplicationMaster** (AM).
+  * The ResourceManager and per-node slave, the NodeManager (NM), form the new, and generic, system for managing applications in a distributed manner.
+  * ResourceManager and ApplicationMaster negotiate resources, while the per-node NodeManager keeps ResourceManager informed of that node's running resources (CPR, RAM, Disk, Network).
+  * YARN uses the existing MapReduce framework, providing compatibility with existing MapReduce users.
+  * Procedurally:
+    * Application container is spawned
+    * ApplicationMaster for container makes resource request to resource manager
+    * ResourceManager is also aware of the node specifications from the NodeManager.
+    * ResoureceManager allocates available resources via the pluggable Scheduler
 * **Hadoop MapReduce** – a programming model for large scale data processing. Composed of JobTracker, which is the master, and the per-node slaves called TaskTrackers
   * The Map function divides the input into ranges by the InputFormat and creates a map task for each range in the input. The JobTracker distributes those tasks to the worker nodes. The output of each map task is partitioned into a group of key-value pairs for each reduce. 
   * The Reduce function then collects the various results and combines them to answer the larger problem that the master node needs to solve. Each reduce pulls the relevant partition from the machines where the maps executed, then writes its output back into HDFS. Thus, the reduce is able to collect the data from all of the maps for the keys and combine them to solve the problem.
@@ -114,6 +123,7 @@ ambari-agent restart
 
 * [HDFS](https://youtu.be/1_ly9dZnmWc)
 * [MapReduce](https://www.youtube.com/watch?v=ht3dNvdNDzI)
+* [YARN](https://youtu.be/wlouNFscZS0)
 
 ## Setting up nodes 
 
