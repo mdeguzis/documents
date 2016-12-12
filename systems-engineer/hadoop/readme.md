@@ -65,7 +65,7 @@ The NameNode does not directly send requests to DataNodes. It sends instructions
 * re-register and send an immediate block report, or
 * shut down the node.
 
-## MapReduce and YARM
+## MapReduce and YARN
 
 ### MapReduce
 
