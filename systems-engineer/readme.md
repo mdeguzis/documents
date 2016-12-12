@@ -21,6 +21,9 @@ Temporary place holder for reading materials, resources, and more with a new job
 # Courses and Education
 
 * [BloomU](http://bloomu.edu/extended)
+* [Linda](https://www.lynda.com/Login/) - Sign Up required on ghs_domain first
+  * [x] Added applicable course on Python/Java/Hadoop to profile
+  * [Topic ladder: Python](https://www.lynda.com/learning-paths/Developer/become-a-python-developer)
 
 # Topics (by priority)
 
