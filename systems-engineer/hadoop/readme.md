@@ -88,7 +88,13 @@ The NameNode does not directly send requests to DataNodes. It sends instructions
 
 ## Hive and Pig
 
-Hive is an SQL like query language that enables those analysts familiar with SQL to run queries on large volumes of data.  Hive has three main functions: data summarization, query and analysis. Hive provides tools that enable easy data extraction, transformation and loading (ETL). Hive is comprised of yables (think RDMS) made up of partitions.
+### Hive
+
+Hive is an SQL like query language that enables those analysts familiar with SQL to run queries on large volumes of data.  Hive has three main functions: data summarization, query and analysis. Hive provides tools that enable easy data extraction, transformation and loading (ETL). Hive is comprised of yables (think RDMS) made up of partitions. Hive is not suited for real-time queries and row-level updates. It is more designed for assesing immutable objects, such as logs.
+
+Hive consists of Data (located in HDFS as file(s)) and Schema (representation of a plan or theory in the form of an outline or model). Schema and data are seperate, as data can be removed or added independently. Think of Schema as layout that provides direction on where Hive can be "pointed" or what defintions Hive should adhere to. Schema is required if you have existing data in HDFS that you want to use in Hive.
+
+See: [hadoop/hive/readme.md]() for more examples and content.
 
 There are several runtimes Hive can use when executing SQL queries:
 * Hadoop MapReduce
@@ -99,12 +105,36 @@ Components:
 * HCatalog - table and storage management layer that enables users with different data processing tools  to more easily read and write data on the grid
 * WebHCat - service that you can use to run Hadoop MapReduce (or YARN), Pig, Hive jobs or perform Hive metadata operations using an HTTP (REST style) interface.
 
+Uses:
+* Query data
+* Specific Questions
+
+### Pig
+
+Features
+* HiveQL similar to SQL (SQL92 spec)
+* Multi-table inserts
+* Convert SQL queries into MapReduce jobs without user knowledge of MapReduce itself
+* Allows plugging in custom MapReduce scripts as queries
+
+Uses
+* ETL (Extract -> Transform -> Load)
+* Preparing data for easier analysis
+* Long series of steps to perform
+
+## Tez
+
+* Customizable and extensible framework/API for building high performance batch and interactive data processing applications, coordinated by YARN in Apache Hadoop
+* Speeds up MapReduce while maintaining MapReduces's scaling paradigm
+* Used by Hive and Pig
+* Extensible and embeddable, providing the fit-to-purpose freedom to express highly optimized data processing applications and giving them an advantage over end-user-facing engines such as MapReduce and Spark
+
 # Ambari
 
 ## Notable features
 
 * Ambari 2.4+
-  * Role-Based Access Control(RBAC) - provides granular control of the Ambari dashboard
+  * Role-Based Access Control (RBAC) - provides granular control of the Ambari dashboard
 
 ## Main Components
 
@@ -127,7 +157,7 @@ Components:
 
 * http://hortonworks.com/hadoop-tutorial/learning-the-ropes-of-the-hortonworks-sandbox/
 * [Hortonworks Hello World tutorial](http://hortonworks.com/hadoop-tutorial/hello-world-an-introduction-to-hadoop-hcatalog-hive-and-pig/#section_2)
-  * Last section read: 3.5
+  * Last section read: 4.3.3
 * [Hortonworks on Youtube](https://www.youtube.com/channel/UCXFjdDwI_CRTPxlshXWMu7w)
 
 ## Logins for tutorials
@@ -158,6 +188,8 @@ ambari-agent restart
 * [HDFS](https://youtu.be/1_ly9dZnmWc)
 * [MapReduce](https://www.youtube.com/watch?v=ht3dNvdNDzI)
 * [YARN](https://youtu.be/wlouNFscZS0)
+* [Hive](https://youtu.be/Pn7Sp2-hUXE)
+* [Tez](https://youtu.be/cPSfA1bhgVA)
 
 ## Setting up nodes 
 
