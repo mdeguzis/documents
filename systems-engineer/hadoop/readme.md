@@ -191,6 +191,11 @@ ambari-agent restart
 * [Hive](https://youtu.be/Pn7Sp2-hUXE)
 * [Tez](https://youtu.be/cPSfA1bhgVA)
 
+## Main channels
+
+* [Hadoop Summit](https://www.youtube.com/channel/UC5o4P1O-WVE15EZWqayc5dw)
+* [Hortonworks](https://www.youtube.com/channel/UCXFjdDwI_CRTPxlshXWMu7w)
+
 ## Setting up nodes 
 
 * [Single Node (CentOS 7)](http://www.tecmint.com/install-configure-apache-hadoop-centos-7/)
