@@ -9,11 +9,7 @@
   - [5 pillars of the Hadoop  Framework](#5-pillars-of-the-hadoop--framework)
   - [HDFS](#hdfs)
   - [MapReduce and YARN](#mapreduce-and-yarn)
-    - [MapReduce](#mapreduce)
-    - [Yarn](#yarn)
   - [Hive and Pig](#hive-and-pig)
-    - [Hive](#hive)
-    - [Pig](#pig)
   - [Tez](#tez)
 - [Ambari](#ambari)
   - [Notable features](#notable-features)
@@ -76,14 +72,14 @@ The NameNode does not directly send requests to DataNodes. It sends instructions
 
 ## MapReduce and YARN
 
-### MapReduce
+**MapReduce**
 
 * The Map function divides the input into ranges by the InputFormat and creates a map task for each range in the input. The JobTracker distributes those tasks to the worker nodes. The output of each map task is partitioned into a group of key-value pairs for each reduce. 
 * The Reduce function then collects the various results and combines them to answer the larger problem that the master node needs to solve. Each reduce pulls the relevant partition from the machines where the maps executed, then writes its output back into HDFS. Thus, the reduce is able to collect the data from all of the maps for the keys and combine them to solve the problem.
 * The phases are input, map, shuffle and sort, reduce, and output. For Unix geeks, this is analogous to `cat`, `grep`, `sort`, `unique`, and `output`.
 * In a simplistic view, this process entails eating input and flipping keys around.
 
-### Yarn
+**Yarn**
 
 * The fundamental idea of YARN is to split up the two major responsibilities of the JobTracker i.e. resource management and job scheduling/monitoring, into separate daemons: a global **ResourceManager** and per-application **ApplicationMaster** (AM).
 * The ResourceManager and per-node slave, the NodeManager (NM), form the new, and generic, system for managing applications in a distributed manner.
@@ -97,7 +93,7 @@ The NameNode does not directly send requests to DataNodes. It sends instructions
 
 ## Hive and Pig
 
-### Hive
+**Hive**
 
 Hive is an SQL like query language that enables those analysts familiar with SQL to run queries on large volumes of data.  Hive has three main functions: data summarization, query and analysis. Hive provides tools that enable easy data extraction, transformation and loading (ETL). Hive is comprised of yables (think RDMS) made up of partitions. Hive is not suited for real-time queries and row-level updates. It is more designed for assesing immutable objects, such as logs.
 
@@ -118,7 +114,7 @@ Uses:
 * Query data
 * Specific Questions
 
-### Pig
+**Pig**
 
 Features
 * HiveQL similar to SQL (SQL92 spec)
