@@ -33,7 +33,8 @@ Temporary place holder for reading materials, resources, and more with a new job
 * [ ] [Hadoop](https://github.com/mtdeguzis/documents/tree/master/systems-engineer-training/hadoop)
   * [ ]  [Hortonworks HDP 2.5.3 Sandbox](http://hortonworks.com/downloads/#sandbox)
     * [x] Familiarity with Ambari dashboard
-    * [ ] "Hello world" tutorial (in progress)
+    * [x] Read all introductory material
+    * [ ] "Hello world" / Lab 1 (in progress)
   * [ ]  [Hortonworks Hadoop tutorials](http://hortonworks.com/tutorials/)
 * [ ]  python
 * [ ]  Tidal (Cisco Workload Automation)
