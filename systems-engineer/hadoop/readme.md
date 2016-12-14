@@ -30,6 +30,13 @@
 
 Notes about Hadoop. General notes and links can be found on this page, with dedicated information found in it's own page. Any instructions on setting up hadoop below are more targeted towards simple networks / home environments (for now). This document serves as a "Cliff Notes"-like presentation of Hadoop.
 
+# Hortonworks Sandbox
+
+* http://hortonworks.com/hadoop-tutorial/learning-the-ropes-of-the-hortonworks-sandbox/
+* [Hortonworks Hello World tutorial](http://hortonworks.com/hadoop-tutorial/hello-world-an-introduction-to-hadoop-hcatalog-hive-and-pig/#section_2)
+  * Section currently on: "HADOOP TUTORIAL – GETTING STARTED WITH HDP" / LAB 1
+* [Hortonworks on Youtube](https://www.youtube.com/channel/UCXFjdDwI_CRTPxlshXWMu7w)
+
 # Latest news and updates
 
 See: [hadoop/hadoop-updates-news.md](https://github.com/mdeguzis/documents/tree/master/systems-engineer/hadoop)
@@ -70,16 +77,14 @@ The NameNode does not directly send requests to DataNodes. It sends instructions
 * re-register and send an immediate block report, or
 * shut down the node.
 
-## MapReduce and YARN
-
-**MapReduce**
+## MapReduce
 
 * The Map function divides the input into ranges by the InputFormat and creates a map task for each range in the input. The JobTracker distributes those tasks to the worker nodes. The output of each map task is partitioned into a group of key-value pairs for each reduce. 
 * The Reduce function then collects the various results and combines them to answer the larger problem that the master node needs to solve. Each reduce pulls the relevant partition from the machines where the maps executed, then writes its output back into HDFS. Thus, the reduce is able to collect the data from all of the maps for the keys and combine them to solve the problem.
 * The phases are input, map, shuffle and sort, reduce, and output. For Unix geeks, this is analogous to `cat`, `grep`, `sort`, `unique`, and `output`.
 * In a simplistic view, this process entails eating input and flipping keys around.
 
-**Yarn**
+## Yarn
 
 * The fundamental idea of YARN is to split up the two major responsibilities of the JobTracker i.e. resource management and job scheduling/monitoring, into separate daemons: a global **ResourceManager** and per-application **ApplicationMaster** (AM).
 * The ResourceManager and per-node slave, the NodeManager (NM), form the new, and generic, system for managing applications in a distributed manner.
@@ -91,9 +96,7 @@ The NameNode does not directly send requests to DataNodes. It sends instructions
   * ResourceManager is also aware of the node specifications from the NodeManager.
   * ResoureceManager allocates available resources via the pluggable Scheduler
 
-## Hive and Pig
-
-**Hive**
+## Hive
 
 Hive is an SQL like query language that enables those analysts familiar with SQL to run queries on large volumes of data.  Hive has three main functions: data summarization, query and analysis. Hive provides tools that enable easy data extraction, transformation and loading (ETL). Hive is comprised of yables (think RDMS) made up of partitions. Hive is not suited for real-time queries and row-level updates. It is more designed for assesing immutable objects, such as logs.
 
@@ -114,15 +117,47 @@ Uses:
 * Query data
 * Specific Questions
 
-**Pig**
+## Pig
 
-Features
+Components
+
+* Language called "Pig Latin" :)
+* Grunt - interactive shell
+* Piggbank - Shared repository for user defined functions (UDF)
+
+Data Types
+
+* Tuple - ordered set of values
+```
+("2012-09-22", "ERROR",404, "Page not found")
+```
+
+* Bag - unordered collection of tuples, e.g `("2012-09-22", "ERROR",404, "Page not found")`
+```
+{
+  ("2012-09-22", "ERROR", 404, "Page not found")
+  ("2012-09-22", "INFO", 200 "OK")
+}
+```
+
+* Map - collection of key balue pairs
+```
+[firstName#Cary, lastName#Grant,id#123]
+```
+
+Features and info
+
 * HiveQL similar to SQL (SQL92 spec)
 * Multi-table inserts
+* Vs. Hive, Pig is programmable, and can be used to build complexe data flows
+* Supports many languages, such as Java, Python, Ruby, and others.
+* Pig Latin describes a directed acyclic graph (DAG)
 * Convert SQL queries into MapReduce jobs without user knowledge of MapReduce itself
 * Allows plugging in custom MapReduce scripts as queries
+* Use illustrate, explain, describe, and local mode to test your script
 
 Uses
+
 * ETL (Extract -> Transform -> Load)
 * Preparing data for easier analysis
 * Long series of steps to perform
@@ -130,9 +165,16 @@ Uses
 ## Tez
 
 * Customizable and extensible framework/API for building high performance batch and interactive data processing applications, coordinated by YARN in Apache Hadoop
+* Based on expressing a computation as a dataflow graph (DAG - Directed Acyclic Graph)
 * Speeds up MapReduce while maintaining MapReduces's scaling paradigm
 * Used by Hive and Pig
 * Extensible and embeddable, providing the fit-to-purpose freedom to express highly optimized data processing applications and giving them an advantage over end-user-facing engines such as MapReduce and Spark
+
+## Stinger and Stinger.next
+
+* Started to enable Hive to support an even broader range of use cases at larger scale
+* Focused on bringing Hive beyond its batch roots to support interactive queries – all with a common SQL access layer.
+* Real-time access in Hive while also bringing support for transactional capabilities
 
 # Ambari
 
@@ -158,13 +200,6 @@ Uses
 * Views
 * Ambari management is located at: Admin/UserID > Manage Ambari
 
-# Hortonworks Sandbox
-
-* http://hortonworks.com/hadoop-tutorial/learning-the-ropes-of-the-hortonworks-sandbox/
-* [Hortonworks Hello World tutorial](http://hortonworks.com/hadoop-tutorial/hello-world-an-introduction-to-hadoop-hcatalog-hive-and-pig/#section_2)
-  * Last section read: 4.3.3
-* [Hortonworks on Youtube](https://www.youtube.com/channel/UCXFjdDwI_CRTPxlshXWMu7w)
-
 ## Logins for tutorials
 
 Service |	User 	| Password
@@ -188,6 +223,13 @@ ambari-agent restart
 
 * [Apache main page](http://hadoop.apache.org/)
 
+## Conferences
+
+* [Data Summit (New York,  NY, USA](http://www.dbta.com/DataSummit)
+* [IEEE International (Washington DC, USA)](http://cci.drexel.edu/bigdata/bigdata2016/index.html)
+* [Strata+Hadoop (New York, USA)](http://conferences.oreilly.com/strata/hadoop-big-data-ny) [<sup>[1]</sup>](#cite1).
+* [Listings from Cloudera](http://www.cloudera.com/about-cloudera/events.html)
+
 ## Specific introduction topics
 
 * [HDFS](https://youtu.be/1_ly9dZnmWc)
@@ -195,6 +237,7 @@ ambari-agent restart
 * [YARN](https://youtu.be/wlouNFscZS0)
 * [Hive](https://youtu.be/Pn7Sp2-hUXE)
 * [Tez](https://youtu.be/cPSfA1bhgVA)
+* [Pig](https://youtu.be/PQb9I-8986s)
 
 ## Main channels
 
@@ -212,3 +255,6 @@ ambari-agent restart
 * [Hadoop Quick Start Guide (Cloudera)](http://www.cloudera.com/developers/get-started-with-hadoop-tutorial.html)
 * [Hadoop Quick Start Guide (TutorialsPoint)](https://www.tutorialspoint.com/hadoop/hadoop_quick_guide.htm)
 * [Understanding Hadoop 2.0](http://hortonworks.com/blog/understanding-hadoop-2-0/)
+
+# References
+1. <a name="cite1"></a> Strata is a name O'Reilly Media uses to use for conferences related to Big Data.
