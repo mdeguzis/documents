@@ -240,7 +240,7 @@ ambari-agent restart
 * [Strata+Hadoop (New York, USA)](http://conferences.oreilly.com/strata/hadoop-big-data-ny) [<sup>[1]</sup>](#cite1).
 * [Listings from Cloudera](http://www.cloudera.com/about-cloudera/events.html)
 
-## Specific introduction topics
+## Specific introduction videos
 
 * [HDFS](https://youtu.be/1_ly9dZnmWc)
 * [MapReduce](https://www.youtube.com/watch?v=ht3dNvdNDzI)
