@@ -13,6 +13,7 @@
   - [MapReduce](#mapreduce)
   - [Yarn](#yarn)
   - [Hive](#hive)
+  - [Acid on Hive](#acid-on-hive)
   - [Pig](#pig)
   - [Tez](#tez)
   - [Stinger and Stinger.next](#stinger-and-stingernext)
@@ -132,6 +133,10 @@ Components:
 Uses:
 * Query data
 * Specific Questions
+
+## Acid on Hive
+
+TODO, for now see: [Apache.org](https://cwiki.apache.org/confluence/display/Hive/Hive+Transactions).
 
 ## Pig
 
