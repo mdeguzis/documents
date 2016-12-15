@@ -72,170 +72,23 @@ See: [labs/readme.md](https://github.com/mdeguzis/documents/tree/master/systems-
 
 A full list of comoponents, and their descriptions, can be found here at [hadoop/components.md](https://github.com/mdeguzis/documents/blob/master/systems-engineer/hadoop/components.md).
 
-## HDFS
+## Hadoop projects / components
 
-A single physical machine gets saturated with its storage capacity as data grows. With this growth comes the impending need to partition your data across separate machines. This type of File system that manages storage of data across a network of machines is called a Distributed File System. HDFS is a core component of Apache Hadoop and is designed to store large files with streaming data access patterns, running on clusters of commodity hardware.
-
-* Distributed file system across multiple servers
-* Can scale up to 200 PB / 4500 servers on a single cluster
-* NameNaode manages cluster metadata 
-* DataNodes store the data
-
-The NameNode does not directly send requests to DataNodes. It sends instructions to the DataNodes by replying to heartbeats sent by those DataNodes. The instructions include commands to:
-
-* replicate blocks to other nodes,
-* remove local block replicas,
-* re-register and send an immediate block report, or
-* shut down the node.
-
-## MapReduce
-
-* The Map function divides the input into ranges by the InputFormat and creates a map task for each range in the input. The JobTracker distributes those tasks to the worker nodes. The output of each map task is partitioned into a group of key-value pairs for each reduce. 
-* The Reduce function then collects the various results and combines them to answer the larger problem that the master node needs to solve. Each reduce pulls the relevant partition from the machines where the maps executed, then writes its output back into HDFS. Thus, the reduce is able to collect the data from all of the maps for the keys and combine them to solve the problem.
-* The phases are input, map, shuffle and sort, reduce, and output. For Unix geeks, this is analogous to `cat`, `grep`, `sort`, `unique`, and `output`.
-* In a simplistic view, this process entails eating input and flipping keys around.
-
-## Yarn
-
-* The fundamental idea of YARN is to split up the two major responsibilities of the JobTracker i.e. resource management and job scheduling/monitoring, into separate daemons: a global **ResourceManager** and per-application **ApplicationMaster** (AM).
-* The ResourceManager and per-node slave, the NodeManager (NM), form the new, and generic, system for managing applications in a distributed manner.
-* ResourceManager and ApplicationMaster negotiate resources, while the per-node NodeManager keeps ResourceManager informed of that node's running resources (CPR, RAM, Disk, Network).
-* YARN uses the existing MapReduce framework, providing compatibility with existing MapReduce users.
-* Procedurally:
-  * Application container is spawned
-  * ApplicationMaster for container makes resource request to resource manager
-  * ResourceManager is also aware of the node specifications from the NodeManager.
-  * ResoureceManager allocates available resources via the pluggable Scheduler
-
-## Hive
-
-Hive is an SQL like query language that enables those analysts familiar with SQL to run queries on large volumes of data.  Hive has three main functions: data summarization, query and analysis. Hive provides tools that enable easy data extraction, transformation and loading (ETL). Hive is comprised of yables (think RDMS) made up of partitions. Hive is not suited for real-time queries and row-level updates. It is more designed for assesing immutable objects, such as logs.
-
-Hive consists of Data (located in HDFS as file(s)) and Schema (representation of a plan or theory in the form of an outline or model). Schema and data are seperate, as data can be removed or added independently. Think of Schema as layout that provides direction on where Hive can be "pointed" or what defintions Hive should adhere to. Schema is required if you have existing data in HDFS that you want to use in Hive.
-
-See: [hadoop/hive/readme.md]() for more examples and content.
-
-There are several runtimes Hive can use when executing SQL queries:
-
-* Hadoop MapReduce
-* Tez
-* Spark
-
-Also take note of:
-
-* ORC - A fast columnar storage file format for Hadoop workloads. The Optimized Row Columnar file format provides a highly efficient way to store Hive data. It was designed to overcome limitations of the other Hive file formats. Using ORC files improves performance when Hive is reading, writing, and processing data.
-
-Components:
-
-* HCatalog - table and storage management layer that enables users with different data processing tools  to more easily read and write data on the grid
-* WebHCat - service that you can use to run Hadoop MapReduce (or YARN), Pig, Hive jobs or perform Hive metadata operations using an HTTP (REST style) interface.
-
-Uses:
-* Query data
-* Specific Questions
-
-## Acid on Hive
-
-ACID stands for four traits of database transactions:
-
-1. **A**tomicity (an operation either succeeds completely or fails, it does not leave partial data)\
-2. **C**onsistency (once an application performs an operation the results of that operation are visible to it in every subsequent operation)
-3. **I**solation (an incomplete operation by one user does not cause unexpected side effects for other users)
-4. **D**urability (once an operation is complete it will be preserved even in the face of machine or system failure).  
-
-The addition of transactions in Hive 0.13 privded these components directly, rather than using other components in roundabout ways. This can allow operations such as adding rows to a table while another user reads from the same partition without interference. This way, locking mechanisms will not interfere with other users performing operations.
-
-**Use cases**
-
-1. **Streaming ingest of data** (e.g. Apache Flume, Apache Storm, or Apache Kafka) - Allows use case of rapid ingestion to partitions without high congestion (Hive 0.14+)
-2. **Slow changing dimensions** - [dimension tables](https://en.wikipedia.org/wiki/Dimension_(data_warehouse)#Dimension_table) gain the ability to inccur small updates to dimmension / fact tables. (Hive 0.14+)
-3. **Data restatement** - Support for adjustment of collected data via INSERT, UPDATE, and DELETE (Hive 0.14+)
-
-TODO - finish out
-
-Main confluence article from apache: [ACID and Transactions in Hive](https://cwiki.apache.org/confluence/display/Hive/Hive+Transactions).
-
-## Pig
-
-Components
-
-* Language called "Pig Latin" :)
-* Grunt - interactive shell
-* Piggbank - Shared repository for user defined functions (UDF)
-
-Data Types
-
-* Tuple - ordered set of values
-```
-("2012-09-22", "ERROR",404, "Page not found")
-```
-
-* Bag - unordered collection of tuples, e.g `("2012-09-22", "ERROR",404, "Page not found")`
-```
-{
-  ("2012-09-22", "ERROR", 404, "Page not found")
-  ("2012-09-22", "INFO", 200 "OK")
-}
-```
-
-* Map - collection of key balue pairs
-```
-[firstName#Cary, lastName#Grant,id#123]
-```
-
-Features and info
-
-* HiveQL similar to SQL (SQL92 spec)
-* Multi-table inserts
-* Vs. Hive, Pig is programmable, and can be used to build complexe data flows
-* Supports many languages, such as Java, Python, Ruby, and others.
-* Pig Latin describes a directed acyclic graph (DAG)
-* Convert SQL queries into MapReduce jobs without user knowledge of MapReduce itself
-* Allows plugging in custom MapReduce scripts as queries
-* Use illustrate, explain, describe, and local mode to test your script
-
-Uses
-
-* ETL (Extract -> Transform -> Load)
-* Preparing data for easier analysis
-* Long series of steps to perform
-## Tez
-
-* Customizable and extensible framework/API for building high performance batch and interactive data processing applications, coordinated by YARN in Apache Hadoop
-* Based on expressing a computation as a dataflow graph (DAG - Directed Acyclic Graph)
-* Speeds up MapReduce while maintaining MapReduces's scaling paradigm
-* Used by Hive and Pig
-* Extensible and embeddable, providing the fit-to-purpose freedom to express highly optimized data processing applications and giving them an advantage over end-user-facing engines such as MapReduce and Spark
-
-## Stinger and Stinger.next
-
-* Started to enable Hive to support an even broader range of use cases at larger scale
-* Focused on bringing Hive beyond its batch roots to support interactive queries – all with a common SQL access layer.
-* Real-time access in Hive while also bringing support for transactional capabilities
+* [HDFS](https://github.com/mdeguzis/documents/blob/master/systems-engineer/hadoop/hadoop-projects/hdfs.md)
+* [MapReduce](https://github.com/mdeguzis/documents/blob/master/systems-engineer/hadoop/hadoop-projects/mapreduce.md)
+* [Yarn](https://github.com/mdeguzis/documents/blob/master/systems-engineer/hadoop/hadoop-projects/yarn.md)
+* [Hive](https://github.com/mdeguzis/documents/blob/master/systems-engineer/hadoop/hadoop-projects/hive.md)
+* [Acid on Hive](https://github.com/mdeguzis/documents/blob/master/systems-engineer/hadoop/hadoop-projects/acid-on-hive.md)
+* [Pig](https://github.com/mdeguzis/documents/blob/master/systems-engineer/hadoop/hadoop-projects/pig.md)
+* [Tez](https://github.com/mdeguzis/documents/blob/master/systems-engineer/hadoop/hadoop-projects/tez.md)
+* [Stinger and Stinger.next](https://github.com/mdeguzis/documents/blob/master/systems-engineer/hadoop/hadoop-projects/stinger-and-stringer.next.md)
+* 
 
 # Ambari
 
-## Notable features
+See: [hadoop/ambari/readme.md](https://github.com/mdeguzis/documents/blob/master/systems-engineer/hadoop/ambari/readme.md)
 
-* Ambari 2.4+
-  * Role-Based Access Control (RBAC) - provides granular control of the Ambari dashboard
-
-## Main Components
-
-* **Dashboard (Ambari)** - Primary UI for Hadoop operations
-  * Heat maps
-  * configs: useful metadata for installed/running services
-* **Services**
-  * Summary information
-  * Manage configs / config profiles / config groups
-* **Hosts** - Available hosts attached to the current Hadoop framework. Lists summmary information and lists installed components for each host
-* **Alerts**
-* **Admin**
-
-## Other components
-
-* Views
-* Ambari management is located at: Admin/UserID > Manage Ambari
+# Hortonworks
 
 ## Logins for tutorials
 
@@ -246,15 +99,6 @@ Ambari, OS 	| maria_dev |	maria_dev
 Ambari, OS 	| raj_ops |	raj_ops
 Ambari, OS 	| holger_gov |	holger_gov
 Ambari, OS 	| amy_ds |	amy_ds
-
-## Commoon commands
-
-````
-# Updates password
-ambari-admin-password-reset
-# If Ambari doesn't restart automatically, restart ambari service
-ambari-agent restart
-```
 
 # Links
 
