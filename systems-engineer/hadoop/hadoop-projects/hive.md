@@ -20,6 +20,31 @@
 
 Detailed information and examples for Hadoop Hive.
 
+Hive is an SQL like query language that enables those analysts familiar with SQL to run queries on large volumes of data.  Hive has three main functions: data summarization, query and analysis. Hive provides tools that enable easy data extraction, transformation and loading (ETL). Hive is comprised of yables (think RDMS) made up of partitions. Hive is not suited for real-time queries and row-level updates. It is more designed for assesing immutable objects, such as logs.
+
+Hive consists of Data (located in HDFS as file(s)) and Schema (representation of a plan or theory in the form of an outline or model). Schema and data are seperate, as data can be removed or added independently. Think of Schema as layout that provides direction on where Hive can be "pointed" or what defintions Hive should adhere to. Schema is required if you have existing data in HDFS that you want to use in Hive.
+
+There are several runtimes Hive can use when executing SQL queries:
+
+* Hadoop MapReduce
+* Tez
+* Spark
+
+Also take note of:
+
+* ORC - A fast columnar storage file format for Hadoop workloads. The Optimized Row Columnar file format provides a highly efficient way to store Hive data. It was designed to overcome limitations of the other Hive file formats. Using ORC files improves performance when Hive is reading, writing, and processing data.
+
+Components:
+
+* HCatalog - table and storage management layer that enables users with different data processing tools  to more easily read and write data on the grid
+* WebHCat - service that you can use to run Hadoop MapReduce (or YARN), Pig, Hive jobs or perform Hive metadata operations using an HTTP (REST style) interface.
+
+Uses:
+
+* Query data
+* Specific Questions
+
+
 # Managing tables
 
 operation| syntax
