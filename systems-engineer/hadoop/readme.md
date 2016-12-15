@@ -24,7 +24,7 @@
   - [Commoon commands](#commoon-commands)
 - [Links](#links)
   - [Conferences](#conferences)
-  - [Specific introduction videos](#specific-introduction-topics)
+  - [Specific introduction videos](#specific-introduction-videos)
   - [Main channels](#main-channels)
   - [Setting up nodes](#setting-up-nodes)
   - [Quick Start Guides](#quick-start-guides)
