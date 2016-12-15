@@ -40,7 +40,7 @@ Notes about Hadoop. General notes and links can be found on this page, with dedi
 
 * http://hortonworks.com/hadoop-tutorial/learning-the-ropes-of-the-hortonworks-sandbox/
 * [Hortonworks Hello World tutorial](http://hortonworks.com/hadoop-tutorial/hello-world-an-introduction-to-hadoop-hcatalog-hive-and-pig/#section_2)
-  * Section currently on: "HADOOP TUTORIAL – GETTING STARTED WITH HDP" / LAB 1
+  * Section currently on: Section 2.2.7 of "Lab 2: Data Manipulation with Hive"
 * [Hortonworks on Youtube](https://www.youtube.com/channel/UCXFjdDwI_CRTPxlshXWMu7w)
 
 # Latest news and updates
@@ -115,11 +115,17 @@ Hive consists of Data (located in HDFS as file(s)) and Schema (representation of
 See: [hadoop/hive/readme.md]() for more examples and content.
 
 There are several runtimes Hive can use when executing SQL queries:
+
 * Hadoop MapReduce
 * Tez
 * Spark
 
+Also take note of:
+
+* ORC - A fast columnar storage file format for Hadoop workloads. The Optimized Row Columnar file format provides a highly efficient way to store Hive data. It was designed to overcome limitations of the other Hive file formats. Using ORC files improves performance when Hive is reading, writing, and processing data.
+
 Components:
+
 * HCatalog - table and storage management layer that enables users with different data processing tools  to more easily read and write data on the grid
 * WebHCat - service that you can use to run Hadoop MapReduce (or YARN), Pig, Hive jobs or perform Hive metadata operations using an HTTP (REST style) interface.
 
@@ -171,7 +177,6 @@ Uses
 * ETL (Extract -> Transform -> Load)
 * Preparing data for easier analysis
 * Long series of steps to perform
-
 ## Tez
 
 * Customizable and extensible framework/API for building high performance batch and interactive data processing applications, coordinated by YARN in Apache Hadoop
@@ -233,6 +238,10 @@ ambari-agent restart
 
 * [Apache main page](http://hadoop.apache.org/)
 
+## Cheatsheets
+
+* [Hive](http://hortonworks.com/blog/hive-cheat-sheet-for-sql-users/)
+
 ## Conferences
 
 * [Data Summit (New York,  NY, USA](http://www.dbta.com/DataSummit)
@@ -249,7 +258,7 @@ ambari-agent restart
 * [Tez](https://youtu.be/cPSfA1bhgVA)
 * [Pig](https://youtu.be/PQb9I-8986s)
 
-## Main channels
+## Main video channels
 
 * [Hadoop Summit](https://www.youtube.com/channel/UC5o4P1O-WVE15EZWqayc5dw)
 * [Hortonworks](https://www.youtube.com/channel/UCXFjdDwI_CRTPxlshXWMu7w)
