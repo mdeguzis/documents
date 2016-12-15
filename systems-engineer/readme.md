@@ -42,6 +42,8 @@ Temporary place holder for reading materials, resources, and more with a new job
     * [ ] Lab: Manage Files on HDFS via CLI/Ambari Files View
     * [ ] Lab: A Lap Around Apache Spark
   * [ ]  [Hortonworks Hadoop tutorials](http://hortonworks.com/tutorials/)
+  * Hadoop projects
+    * See [hadoop/readme.md#hadoop](https://github.com/mdeguzis/documents/blob/master/systems-engineer/hadoop/readme.md#hadoop)
 * [ ]  python
 * [ ]  Tidal (Cisco Workload Automation)
 * [ ]  Teradata
