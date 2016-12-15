@@ -41,6 +41,10 @@ Notes about Hadoop. General notes and links can be found on this page, with dedi
 
 See: [hadoop/hadoop-updates-news.md](https://github.com/mdeguzis/documents/tree/master/systems-engineer/hadoop)
 
+# Labs and exercies
+
+See: [labs/readme.md](https://github.com/mdeguzis/documents/tree/master/systems-engineer/hadoop/labs)
+
 # Hadoop
 
 ## Overview
