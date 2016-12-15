@@ -32,9 +32,15 @@ Temporary place holder for reading materials, resources, and more with a new job
 - [ ] Informatica
 * [ ] [Hadoop](https://github.com/mtdeguzis/documents/tree/master/systems-engineer-training/hadoop)
   * [ ]  [Hortonworks HDP 2.5.3 Sandbox](http://hortonworks.com/downloads/#sandbox)
+  * [ ] [HDP Labs](https://github.com/mdeguzis/documents/blob/master/systems-engineer/hadoop/labs/readme.md)
     * [x] Familiarity with Ambari dashboard
     * [x] Read all introductory material
-    * [ ] "Hello world" / Lab 1 (in progress)
+    * [ ] Lab: main lab, "Hello World"
+    * [ ] Lab: Deploying, managing and configuring HDP with Ambari
+    * [ ] Lab: Introducing Apache Ambari for deploying and managing Apache Hadoop
+    * [ ] Lab: Using Apache Ambari to add new nodes to your existing cluster
+    * [ ] Lab: Manage Files on HDFS via CLI/Ambari Files View
+    * [ ] Lab: A Lap Around Apache Spark
   * [ ]  [Hortonworks Hadoop tutorials](http://hortonworks.com/tutorials/)
 * [ ]  python
 * [ ]  Tidal (Cisco Workload Automation)
