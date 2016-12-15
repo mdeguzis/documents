@@ -21,3 +21,12 @@
 
 * Views
 * Ambari management is located at: Admin/UserID > Manage Ambari
+
+## Commoon commands
+
+````
+# Updates password
+ambari-admin-password-reset
+# If Ambari doesn't restart automatically, restart ambari service
+ambari-agent restart
+```
