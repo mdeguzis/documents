@@ -2,7 +2,7 @@
 
 ACID stands for four traits of database transactions:
 
-1. **A**tomicity (an operation either succeeds completely or fails, it does not leave partial data)\
+1. **A**tomicity (an operation either succeeds completely or fails, it does not leave partial data)
 2. **C**onsistency (once an application performs an operation the results of that operation are visible to it in every subsequent operation)
 3. **I**solation (an incomplete operation by one user does not cause unexpected side effects for other users)
 4. **D**urability (once an operation is complete it will be preserved even in the face of machine or system failure).  
