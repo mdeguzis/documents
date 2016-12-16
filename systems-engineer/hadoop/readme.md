@@ -74,6 +74,10 @@ A full list of comoponents, and their descriptions, can be found here at [hadoop
 * [Tez](https://github.com/mdeguzis/documents/blob/master/systems-engineer/hadoop/hadoop-projects/tez.md)
 * [Stinger and Stinger.next](https://github.com/mdeguzis/documents/blob/master/systems-engineer/hadoop/hadoop-projects/stinger-and-stringer.next.md)
 
+## Concepts
+
+* [Bucketing](http://hadooptutorial.info/bucketing-in-hive/)
+
 # Ambari
 
 See: [hadoop/ambari/readme.md](https://github.com/mdeguzis/documents/blob/master/systems-engineer/hadoop/ambari/readme.md)
