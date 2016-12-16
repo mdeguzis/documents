@@ -2,7 +2,6 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [Pkg versioning](#pkg-versioning)
   - [Base release off latest release tag](#base-release-off-latest-release-tag)
   - [Base release off latest commit (for "unstable packages")](#base-release-off-latest-commit-for-unstable-packages)
 - [Arch Linux VCS guidelines](#arch-linux-vcs-guidelines)

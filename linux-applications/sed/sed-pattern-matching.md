@@ -4,8 +4,6 @@
 
 - [Pattern Matching](#pattern-matching)
   - [Shell globbing](#shell-globbing)
-  - [Match three letter reversal patterns:](#match-three-letter-reversal-patterns)
-  - [Match a line that starts with an indented [TAB] `#` character, that also contains the word "changelog"](#match-a-line-that-starts-with-an-indented-tab-#-character-that-also-contains-the-word-changelog)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

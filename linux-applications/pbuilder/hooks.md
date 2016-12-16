@@ -4,7 +4,6 @@
 
 - [Hooks](#hooks)
 - [Note!](#note)
-  - [Classes	Description](#classes%09description)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

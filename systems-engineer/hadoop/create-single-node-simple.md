@@ -11,7 +11,9 @@
 - [Create a new user account without root privledges for Hadoop](#create-a-new-user-account-without-root-privledges-for-hadoop)
 - [Configure .bashrc for the hadoop user](#configure-bashrc-for-the-hadoop-user)
 - [Download and unpack hadoop](#download-and-unpack-hadoop)
+- [](#)
 - [TODO, have errands to do :)](#todo-have-errands-to-do-)
+- [](#-1)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

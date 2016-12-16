@@ -15,6 +15,11 @@
   - [Building with mock](#building-with-mock)
   - [Changelog](#changelog)
   - [Review](#review)
+- [GPG signing](#gpg-signing)
+- [Links](#links)
+  - [General](#general)
+  - [Man pages](#man-pages)
+  - [spec files](#spec-files)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

@@ -3,12 +3,6 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [About](#about)
-  - [For current user](#for-current-user)
-  - [For all users](#for-all-users)
-  - [Login shell and Non-login shell](#login-shell-and-non-login-shell)
-    - [Login shell](#login-shell)
-    - [Non-login shell](#non-login-shell)
-  - [Differences between .bashrc and .profile](#differences-between-bashrc-and-profile)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

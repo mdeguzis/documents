@@ -7,12 +7,6 @@
 - [Key points](#key-points)
 - [HiveQL (Hive Query Language)](#hiveql-hive-query-language)
   - [Examples](#examples)
-    - [Creating table](#creating-table)
-    - [Loading data](#loading-data)
-    - [Inserting data](#inserting-data)
-    - [Overwrite data](#overwrite-data)
-    - [Subquery](#subquery)
-    - [Full example of a complete simple query](#full-example-of-a-complete-simple-query)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

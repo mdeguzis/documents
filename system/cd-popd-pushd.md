@@ -3,9 +3,6 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [cd somedir](#cd-somedir)
-- [cd -:](#cd--)
-- [pushd somedir:](#pushd-somedir)
-- [popd:](#popd)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

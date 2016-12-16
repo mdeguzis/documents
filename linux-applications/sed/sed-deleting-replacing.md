@@ -5,7 +5,7 @@
   - [Match on only first occurence](#match-on-only-first-occurence)
   - [Delete Nth line(s) after match](#delete-nth-lines-after-match)
   - [delete n lines after match not including](#delete-n-lines-after-match-not-including)
-- [Replacing "|" pipe](#replacing-%7C-pipe)
+- [Replacing "|" pipe](#replacing--pipe)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
