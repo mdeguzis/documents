@@ -36,20 +36,24 @@ See: "Steaming APIs" on the [original article](https://cwiki.apache.org/confluen
 
 A high level overview (See [Apache](https://cwiki.apache.org/confluence/display/Hive/Hive+Transactions) for detailed descriptions):
 
-* Base and Delta Directories
-* Compactor
-  * Delta File Compaction
-  * Initiator
-  * Worker
-  * Cleaner
-  * ACIDHouseKeeperService
-  * SHOW COMPACTIONS
-* Transaction/Lock Manager
-* Configuration
+* **Base and Delta Directories** - Since HDFS does not support in-place changes, base files are merged with delta files, written at each transaction
+* **Compactor** - the background processes running in the Metastore to support ACID. Delta file compaction are done in major/minor sets
+  * Minor compaction takes a set of existing delta files and rewrites them to a single delta file per bucket.
+  * Major compaction takes one or more delta files and the base file for the bucket and rewrites them into a new base file per bucket. Major compaction is more expensive but is more effective.
+  * **Compactor components**
+    * Initiator - Handles whitch tables or partitions are possibly to be compacted based on thresholds and 
+    * Worker - Handles a single compaction task in the form of a MapReduce job.
+    * Cleaner - As it's name implies, cleans up leftover delta files if it is determined they are not needed
+    * ACIDHouseKeeperService - Aborts stale transactions with no heartbeat
+    * SHOW COMPACTIONS - command to display info about current and historical compact actions
+* **Transaction/Lock Manager** - Builds on the previous lock manager/ZooKeeper, adding management of transaction locks. Previous behavior of locking in ZooKeeper is not present anymore when transactions are enabled
+* **Configuration**
   * Parameters
   * Configuration Values to Set for INSERT, UPDATE, DELETE
   * Configuration Values to Set for Compaction
   * Table Properties
+
+**Note:** See original article for configuration information. The detail is out of the intended scope of this page.
 
 # References
 
