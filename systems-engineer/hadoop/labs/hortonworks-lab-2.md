@@ -4,7 +4,14 @@
 
 - [About](#about)
 - [Hortonworks](#hortonworks)
-  - [Hello World](#hello-world)
+- [HDP Lab 2](#hdp-lab-2)
+  - [Some commands from the lab](#some-commands-from-the-lab)
+  - [Notes](#notes)
+  - [ORC table creation](#orc-table-creation)
+    - [Breakdown / behind the scenes](#breakdown--behind-the-scenes)
+  - [Using Java Database Connectivity (JDBC) over CLI](#using-java-database-connectivity-jdbc-over-cli)
+  - [Analyze the Trucks Data](#analyze-the-trucks-data)
+  - [Tez practice](#tez-practice)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

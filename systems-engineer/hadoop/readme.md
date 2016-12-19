@@ -10,6 +10,7 @@
   - [Overview](#overview)
   - [5 pillars of the Hadoop  Framework](#5-pillars-of-the-hadoop--framework)
   - [Hadoop projects / components](#hadoop-projects--components)
+  - [Concepts](#concepts)
 - [Ambari](#ambari)
 - [Hortonworks](#hortonworks)
   - [Logins for tutorials](#logins-for-tutorials)

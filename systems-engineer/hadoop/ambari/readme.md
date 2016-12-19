@@ -4,6 +4,7 @@
 
 - [Ambari](#ambari)
   - [Notable features](#notable-features)
+  - [About](#about)
   - [Main Components](#main-components)
   - [Other components](#other-components)
   - [Commoon commands](#commoon-commands)

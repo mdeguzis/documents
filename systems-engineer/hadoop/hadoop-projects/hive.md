@@ -3,10 +3,14 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [About](#about)
+- [Useful tips and tricks](#useful-tips-and-tricks)
 - [Managing tables](#managing-tables)
 - [Key points](#key-points)
 - [HiveQL (Hive Query Language)](#hiveql-hive-query-language)
+  - [Query editor (GUI view)](#query-editor-gui-view)
+  - [Some of the supported query operations:](#some-of-the-supported-query-operations)
   - [Examples](#examples)
+- [Further reading](#further-reading)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
