@@ -11,4 +11,4 @@ Some topics/links for other areas of Hadoop / HDP
 
 ## Tables
 
-* [CTAS (Create Table as SELECT)](https://cwiki.apache.org/confluence/display/Hive/LanguageManual+DDL#LanguageManualDDL-CreateTableAsSelect(CTAS))
+* [CTAS (Create Table as SELECT)](https://cwiki.apache.org/confluence/display/Hive/LanguageManual+DDL#LanguageManualDDL-CreateTableAsSelect(CTAS)) - Persistant table stroage from SELECT queries
