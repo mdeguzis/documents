@@ -38,6 +38,9 @@ Uses:
 * Query data
 * Specific Questions
 
+# Useful tips and tricks
+
+* `CTRL+SPACE` will bring up suggested command completion
 
 # Managing tables
 
@@ -65,7 +68,15 @@ Drop a partition | hive> ALTER TABLE mytable DROP PARTITION (age=17)
 
 HiveQL is similar to many operations you'd use in SQL. As you can see below, manyt SQL, or SQL-like operations are supported.
 
-Some of the supported query operations:
+## Query editor (GUI view)
+
+* Take note of Excute/Explain/Save As
+* Explain will map out the excution of the query (much like optimizing in Microsof SSMS)
+* The right side "linker" icon will open a visual explanation, which looks more akin to SSMS
+* 
+
+## Some of the supported query operations:
+
 * SELECT
 * WHERE
 * UNION ALL
