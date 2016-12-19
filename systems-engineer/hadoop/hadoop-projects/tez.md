@@ -13,3 +13,8 @@
 * Speeds up MapReduce while maintaining MapReduces's scaling paradigm
 * Used by Hive and Pig
 * Extensible and embeddable, providing the fit-to-purpose freedom to express highly optimized data processing applications and giving them an advantage over end-user-facing engines such as MapReduce and Spark
+
+# Data
+
+* Tez gives a very nice and detailed view of jobs, mapping out meta details and statistics.
+* HDP > Tez view can provide a great deal of information in visual layouts
