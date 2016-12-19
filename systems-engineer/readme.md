@@ -52,8 +52,7 @@ Temporary place holder for reading materials, resources, and more with a new job
 
 * [ ]  business objects
 * [ ]  confluence
-* [ ]  Java
-  * [Notes](https://github.com/mdeguzis/documents/blob/master/systems-engineer/java/readme.md)
+* [ ]  Java ([Notes](https://github.com/mdeguzis/documents/blob/master/systems-engineer/java/readme.md))
   * [x] Lynda - "Java Essential Training"
 * [ ]  Jira
 * [ ]  LVM
