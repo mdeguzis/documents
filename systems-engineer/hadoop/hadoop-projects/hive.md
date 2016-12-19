@@ -154,3 +154,11 @@ FROM customers
 LEFT OUTER JOIN orders ON 
 (customers.customerID = orders.customerID) 
 ```
+
+# Further reading
+
+* [Apache Hive](http://hortonworks.com/hadoop/hive/)
+* [Hive LLAP enables sub second SQL on Hadoop](http://hortonworks.com/blog/llap-enables-sub-second-sql-hadoop/)
+* [Programming Hive](http://www.amazon.com/Programming-Hive-Edward-Capriolo/dp/1449319335/ref=sr_1_3?ie=UTF8&qid=1456009871&sr=8-3&keywords=apache+hive)
+* [Hive Language Manual]()
+* [HDP DEVELOPER: APACHE PIG AND HIVE](http://hortonworks.com/training/class/hadoop-2-data-analysis-pig-hive/)
