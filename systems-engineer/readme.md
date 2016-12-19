@@ -53,6 +53,8 @@ Temporary place holder for reading materials, resources, and more with a new job
 * [ ]  business objects
 * [ ]  confluence
 * [ ]  Java
+  * [Notes](https://github.com/mdeguzis/documents/blob/master/systems-engineer/java/readme.md)
+  * [x] Lynda - "Java Essential Training"
 * [ ]  Jira
 * [ ]  LVM
 * [ ]  Scala
@@ -64,12 +66,12 @@ Temporary place holder for reading materials, resources, and more with a new job
 * [ ]  SQL Workbench
 * [ ]  Hipchat
 
+## General
+
+* [x] Lynda [Foundations of Programming: Fundamentals](https://www.lynda.com/Programming-Foundations-tutorials/Foundations-Programming-Fundamentals/83603-2.html)
+
 # RHEL-specific
 
 # Tests
 
 # Conferences
-
-# Tools
-
-* [Online IDE](https://repl.it/languages)
