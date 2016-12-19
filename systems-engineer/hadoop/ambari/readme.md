@@ -17,6 +17,11 @@
 * Ambari 2.4+
   * Role-Based Access Control (RBAC) - provides granular control of the Ambari dashboard
 
+## About
+
+ * Hadoop is configured by a collection of XML files
+ * Ambari exposes these in the dashboard
+
 ## Main Components
 
 * **Dashboard (Ambari)** - Primary UI for Hadoop operations
