@@ -32,7 +32,7 @@ Notes about Hadoop. General notes and links can be found on this page, with dedi
 
 * http://hortonworks.com/hadoop-tutorial/learning-the-ropes-of-the-hortonworks-sandbox/
 * [Hortonworks Hello World tutorial](http://hortonworks.com/hadoop-tutorial/hello-world-an-introduction-to-hadoop-hcatalog-hive-and-pig/#section_2)
-  * Section currently on: Section 2.2.7 of "Lab 2: Data Manipulation with Hive"
+  * Section currently on: Lab 3 - [Use Pig to compute Driver Risk Factor](https://github.com/hortonworks/tutorials/blob/hdp-2.5/tutorials/hortonworks/hello-hdp-an-introduction-to-hadoop/hello-hdp-section-5.md)
 * [Hortonworks on Youtube](https://www.youtube.com/channel/UCXFjdDwI_CRTPxlshXWMu7w)
 
 
@@ -80,6 +80,7 @@ A full list of comoponents, and their descriptions, can be found here at [hadoop
 * [Pig](https://github.com/mdeguzis/documents/blob/master/systems-engineer/hadoop/hadoop-projects/pig.md)
 * [Tez](https://github.com/mdeguzis/documents/blob/master/systems-engineer/hadoop/hadoop-projects/tez.md)
 * [Stinger and Stinger.next](https://github.com/mdeguzis/documents/blob/master/systems-engineer/hadoop/hadoop-projects/stinger-and-stringer.next.md)
+* [Zeppelin](https://github.com/mdeguzis/documents/blob/master/systems-engineer/hadoop/hadoop-projects/zeppelin.md)
 
 ## Concepts
 
