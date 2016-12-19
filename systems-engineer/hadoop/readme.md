@@ -49,7 +49,7 @@ See: [hadoop/hadoop-updates-news.md](https://github.com/mdeguzis/documents/tree/
 
 # Labs and exercies
 
-See: [labs/readme.md](https://github.com/mdeguzis/documents/tree/master/systems-engineer/hadoop/labs)
+See: [hadoop/labs](https://github.com/mdeguzis/documents/tree/master/systems-engineer/hadoop/labs)
 
 # Hadoop
 
@@ -102,6 +102,8 @@ Ambari, OS 	| maria_dev |	maria_dev
 Ambari, OS 	| raj_ops |	raj_ops
 Ambari, OS 	| holger_gov |	holger_gov
 Ambari, OS 	| amy_ds |	amy_ds
+
+More usernames and passwords for the sandbox can be found on the [Learning the ropes of the Hortonworks sandbox](http://hortonworks.com/hadoop-tutorial/learning-the-ropes-of-the-hortonworks-sandbox/) page.
 
 # Links
 
