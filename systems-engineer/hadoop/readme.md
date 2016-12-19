@@ -35,6 +35,13 @@ Notes about Hadoop. General notes and links can be found on this page, with dedi
   * Section currently on: Section 2.2.7 of "Lab 2: Data Manipulation with Hive"
 * [Hortonworks on Youtube](https://www.youtube.com/channel/UCXFjdDwI_CRTPxlshXWMu7w)
 
+
+**For an overview/list of users see:**
+
+http://127.0.0.1:8888/ (quick links page).
+
+The HDP sandbox must first be started.
+
 # Latest news and updates
 
 See: [hadoop/hadoop-updates-news.md](https://github.com/mdeguzis/documents/tree/master/systems-engineer/hadoop)
