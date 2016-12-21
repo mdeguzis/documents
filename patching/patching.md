@@ -12,15 +12,16 @@
 
 General tips on creating, applying, and working with patches.
 
-# Creation
+# Patching (set of files)
 
-Generally, it is always good to edit the original and new file in a clean directory, or preferabling, in a copy of the origianl source code.
+Generally, it is always good to edit the original and new file in a clean directory, or in a copy of the origianl source code.
+
 
 ```
 source-0.1.0    source-0.1.0.orig
 ```
 
-Now, edit your file in the source directory, NOT the .orig backup folder:
+Now, edit your file in the source directory, **NOT** the .orig backup folder:
 
 ```
 vim source-0.1.0/file1
@@ -55,6 +56,21 @@ Example patch:
  </configuration>
 ```
 
+# Patching (one file)
+
+
+To create a patch for a single file, it is often sufficient to do::
+
+```
+SRCTREE= linux
+MYFILE=  drivers/net/mydriver.c
+
+cd $SRCTREE
+cp $MYFILE $MYFILE.orig
+vi $MYFILE	# make your change
+cd ..
+diff -up $SRCTREE/$MYFILE{.orig,} > /tmp/patch
+```
 
 # Applying
 
@@ -65,3 +81,7 @@ directory where the file to be patch is. The patch itself can be in another dire
 ```
 patch -p1 mychanges.patch
 ```
+
+# Links
+
+* [Submitting Patches to the Linux kernel](https://www.kernel.org/doc/Documentation/SubmittingPatches)
