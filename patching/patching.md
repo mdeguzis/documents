@@ -30,7 +30,7 @@ vim source-0.1.0/file1
 Create a diff of the file as your patch. Compare your changed file in the new folder, to the clean file in the source-0.1.0.orig directory.
 
 ```
-diff -uNr source-0.1.0.i.orig/file1 source-0.1.0/file1 > mychanges.patch
+diff -uNr source-0.1.0.i.orig source-0.1.0 > mychanges.patch
 ```
 
 `-u`  
@@ -40,7 +40,7 @@ diff -uNr source-0.1.0.i.orig/file1 source-0.1.0/file1 > mychanges.patch
 `-r`  
 	recursively compare any subdirectories found  
 
-Example patch:
+## Example patch:
 
 ```
 --- openra-20160508.orig/SharpFont.dll.config   2016-09-14 21:06:55.760000000 -0400
@@ -69,7 +69,12 @@ cd $SRCTREE
 cp $MYFILE $MYFILE.orig
 vi $MYFILE	# make your change
 cd ..
-diff -up $SRCTREE/$MYFILE{.orig,} > /tmp/patch
+diff -uNr $SRCTREE/$MYFILE{.orig,} > /tmp/patch
+```
+
+The last line brackets are a short form for:
+```
+diff -uNr $SRCTREE/$MYFILE.orig $SRCTREE/$MYFILE > /tmp/patch
 ```
 
 # Applying
