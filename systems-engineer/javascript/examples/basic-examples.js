@@ -6,6 +6,8 @@
 
 // Remove the beginning */ and endin /* to active the code block
 
+// Remove the beginning */ and endin /* to active the code block
+
 // ------ BEGINNING OF BLOCK QUOTE ------ //
 /*
 
@@ -16,16 +18,80 @@
 var myname = prompt("what is your name?");
 alert ("Hello, " + myname);
 
+// -----------------------
 // quotes
+// -----------------------
+
 var quote_inside_quotes = '"This is in quotes"';
 alert(quote_inside_quotes);
 
+// -----------------------
 // lenth
+// -----------------------
 alert("The length is: " + quote_inside_quotes.length);
 
+// -----------------------
 // add line break
+// -----------------------
 line_break = "line1 \nline2";
 alert(line_break);
+
+// -----------------------
+//concatenatin
+// -----------------------
+var foo = "5";
+var bar = "5"
+alert(foo + bar);
+
+// -----------------------
+// Convert string to Number
+// -----------------------
+var foo = "55";
+var myNumber = Number(foo);
+
+if ( isNaN(myNumber)) {
+  alert("It is a number");
+}
+
+// Using double negative
+if ( ! isNaN(myNumber)) {
+  alert("It is a number");
+}
+
+// -----------------------
+// String methods
+// -----------------------
+
+// type a . after a var and a method or property
+
+
+var string = "This is a sentence";
+alert(string.toUpperCase());
+
+var str1 = "hello";
+var str2 = "HELLO";
+
+if ( str1.toLowerCase() == str2.toLowerCase() ) {
+  alert("Yes they are the same");
+} else {
+  alert("They are not the same");
+}
+
+var phrase = "The best OS is Linux!";
+var position = phrase.indexOf("Linux"); // 15
+
+// Return -1 if the term is not found
+// Try windows instead below :P
+if ( phrase.indexOf("Linux") == -1 ) {
+  alert("The phrase Linux is not found :(")
+} else {
+  alert("Linux is found! " + "Position: " + position)
+}
+
+// -----------------------
+// Regular expressions
+// -----------------------
+
 
 // -----------------------------------------------------
 //   Math
@@ -276,6 +342,21 @@ for ( var i =  0;  i < 10; i++ ) {
 alert("The value of amount is: " + amount);
 
 
+// -----------------------
+// Do while
+// -----------------------
+
+var a = 1;
+
+do {
+  // code here
+  // This block is always* run at least once!
+  a++;
+} while ( a < 10 );
+
+// This then should resolve to 10
+alert("The value of a is: " + a);
+
 // ------ END OF BLOCK QUOTE ------ //
 */
 
@@ -287,3 +368,6 @@ alert("The value of amount is: " + amount);
 This is a 
 block quote
 */
+
+
+
