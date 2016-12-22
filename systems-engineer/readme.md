@@ -52,7 +52,7 @@ Temporary place holder for reading materials, resources, and more with a new job
 
 * [ ] business objects
 * [ ] confluence
-* Debugging
+* Debugging ([See documents/debugging](https://github.com/mdeguzis/documents/blob/master/debugging/debugging.md))
   * [ ] gdb
 * Java ([Notes](https://github.com/mdeguzis/documents/blob/master/systems-engineer/java/readme.md))
   * [x] Lynda - "Java Essential Training"
