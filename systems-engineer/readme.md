@@ -23,7 +23,7 @@ Temporary place holder for reading materials, resources, and more with a new job
 * [BloomU](http://bloomu.edu/extended)
 * [Linda](https://www.lynda.com/Login/) - Sign Up required on ghs_domain first
   * [x] Added applicable course on Python/Java/Hadoop to profile
-  * [Topic ladder: Python](https://www.lynda.com/learning-paths/Developer/become-a-python-developer)
+  * [ ] [Topic ladder: Python](https://www.lynda.com/learning-paths/Developer/become-a-python-developer)
 
 # Topics (by priority)
 
@@ -32,7 +32,7 @@ Temporary place holder for reading materials, resources, and more with a new job
 - [ ] Informatica
 * [ ] [Hadoop](https://github.com/mtdeguzis/documents/tree/master/systems-engineer-training/hadoop)
   * [ ]  [Hortonworks HDP 2.5.3 Sandbox](http://hortonworks.com/downloads/#sandbox)
-  * [ ] [HDP Labs](https://github.com/mdeguzis/documents/blob/master/systems-engineer/hadoop/labs/readme.md)
+  * [HDP Labs](https://github.com/mdeguzis/documents/blob/master/systems-engineer/hadoop/labs/readme.md)
     * [x] Familiarity with Ambari dashboard
     * [x] Read all introductory material
     * [ ] Lab: main lab, "[Hello World](http://hortonworks.com/hadoop-tutorial/hello-world-an-introduction-to-hadoop-hcatalog-hive-and-pig/)"
@@ -44,26 +44,28 @@ Temporary place holder for reading materials, resources, and more with a new job
   * [ ]  [Hortonworks Hadoop tutorials](http://hortonworks.com/tutorials/)
   * Hadoop projects
     * See [hadoop/readme.md#hadoop](https://github.com/mdeguzis/documents/blob/master/systems-engineer/hadoop/readme.md#hadoop)
-* [ ]  python
-* [ ]  Tidal (Cisco Workload Automation)
-* [ ]  Teradata
+* [ ] python
+* [ ] Tidal (Cisco Workload Automation)
+* [ ] Teradata
 
 ## Medium
 
-* [ ]  business objects
-* [ ]  confluence
-* [ ]  Java ([Notes](https://github.com/mdeguzis/documents/blob/master/systems-engineer/java/readme.md))
+* [ ] business objects
+* [ ] confluence
+* Debugging
+  * [ ] gdb
+* Java ([Notes](https://github.com/mdeguzis/documents/blob/master/systems-engineer/java/readme.md))
   * [x] Lynda - "Java Essential Training"
-* [ ]  Jira
-* [ ]  LVM
-* [ ]  Scala
-* [ ]  Spark
+* [ ] Jira
+* [ ] LVM
+* [ ] Scala
+* [ ] Spark
 
 ## Low / Undetermined
 
-* [ ]  Atanasuite
-* [ ]  SQL Workbench
-* [ ]  Hipchat
+* [ ] Atanasuite
+* [ ] SQL Workbench
+* [ ] Hipchat
 
 ## General
 
