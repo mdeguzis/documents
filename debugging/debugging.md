@@ -21,7 +21,18 @@ Some notes about debugging
 * **Resume** - You want the debugger to resume "normal" execution instead of step-by-step
 * **Line Breakpoint** - You don't care how it got there, but if execution reaches a particular line of code, you want the debugger to temporarily pause execution there so you can decide what to do.
 
-# Common tools
+# IDE (GUI-based)
+
+* ATOM - many languages (text based)
+* Bluefish - ASP .NET, C/C++, CSS, HTML5, JavaScript and jQuery, Java, Pearl, PHP, 
+* CodeLite - C and C++ (text based)
+* Eclipse - Java, C, C++, PHP, Python, Perl, Ruby and more.
+* Komodo IDE - PHP, Ruby, Perl, Python, Node.js
+* MonoDevelop - VB, Java, C/C++, C#, Python
+* Netbeans - Java, Python, C/C++, Ruby, PHP, JavaScript etc.
+* Sublime Text - All major languages (text based)
+
+# CLI
  
  * gdb
  * strace
@@ -41,3 +52,7 @@ strace -fp $(pidof -s steam) -e file -t
 # General guidelines
 
 * [Arch Linux wiki](https://wiki.archlinux.org/index.php/Step-by-step_debugging_guide)
+
+# Links
+
+* [Nice list of IDEs](http://codecondo.com/10-best-ides-linux/)
