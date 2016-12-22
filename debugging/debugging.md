@@ -28,6 +28,8 @@ Some notes about debugging
  
 ## gdb
 
+ * [Debugging with GDB (large manual)](http://www.sourceware.org/gdb/download/onlinedocs/gdb.html)
+ * [General overview](https://www.chemie.fu-berlin.de/chemnet/use/info/gdb/gdb_5.html)
  * [gdb backtrace](https://sourceware.org/gdb/onlinedocs/gdb/Backtrace.html)
 
 ## strace
