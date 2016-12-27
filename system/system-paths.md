@@ -20,9 +20,9 @@ There are two very important configuration files for bash : bashrc and profile. 
 
 The usual execution order typically goes something like this:
 
-1. `/etc/profile/
-2. etc/bash.bashrc` (often the default /etc/profile sources /etc/bash.bashrc)
-3. `~/.bash_profile` The other files that could have been read here (`~/.profile` and `~/.bash_login`) are ignored because ~/.bash_profile exists
+1. `/etc/profile/`
+2. `etc/bash.bashrc` (often the default /etc/profile sources /etc/bash.bashrc)
+3. `~/.bash_profile` The other files that could have been read here (`~/.profile` and `~/.bash_login`) are ignored because `~/.bash_profile` exists
 
 ### Interactive shell
 
@@ -36,6 +36,9 @@ When an interactive shell that is not a login shell  is  started,  bash  reads  
 
 You also have `/etc/environment` where you can set global environmental variables but that's read rather than sourced (commands inside it are not executed but variable definitions are set).
 
+### Other env vars
+
+Lastly, if something, such as the SSH daemon is sourcing files, you may end up with other results. For example, the the SSH daemon, via the `pam_motd` module of the PAM library, displays the contents of `/etc/motd`. Via the `pam_env` module, it sets the environment variables from `/etc/environment` and `~/.pam_environment`.
 ## What is my path
 
 /usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
