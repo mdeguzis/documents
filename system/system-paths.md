@@ -72,7 +72,7 @@ bash # "-" is NOT the first character. This is NOT a login shell.
 
 ##Differences between .bashrc and .profile
 
-* **bashr**c will be executed after the system boot up and is for non-login shell. It is specific to bash
+* **bashrc** will be executed after the system boot up and is for non-login shell. It is specific to bash
 * **profile** will be executed after the user login. It's for login shell and can be read by different shells
 source bashrc can be used to update bashrc and bash profile can be used to update profile
 * **profile** has the stuff not specifically related to bash, such as environment variables (PATH etc)
@@ -81,4 +81,7 @@ source bashrc can be used to update bashrc and bash profile can be used to updat
 * Anything that should be available only to login shells should go in profile
 * Anything that should be available to graphical applications must be in profile
 
-Reference : http://www.techug.com/linux-bashrc-profile
+# Links
+
+* [bashrc vs profile](http://www.techug.com/linux-bashrc-profile)
+* [PATH definition](http://www.linfo.org/path_env_var.html)
