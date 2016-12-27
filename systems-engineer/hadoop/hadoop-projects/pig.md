@@ -37,6 +37,7 @@ Data Types
 Features and info
 
 * HiveQL similar to SQL (SQL92 spec)
+* Effectively reads sperate value formats
 * Multi-table inserts
 * Vs. Hive, Pig is programmable, and can be used to build complexe data flows
 * Supports many languages, such as Java, Python, Ruby, and others.
