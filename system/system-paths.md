@@ -81,6 +81,14 @@ source bashrc can be used to update bashrc and bash profile can be used to updat
 * Anything that should be available only to login shells should go in profile
 * Anything that should be available to graphical applications must be in profile
 
+# Example default files
+
+* [/etc/profile](https://gist.github.com/mdeguzis/963a6f8b387ba0c4c23e7dd14e7aa826)
+* [~/.bash_profile](https://gist.github.com/mdeguzis/f7a00b28eb291a4bd196543c11ccfb65)
+* [~/.bashrc](https://gist.github.com/mdeguzis/0ca46f525b3b84702f959d00db19f216)
+
+Sourced from: CentOS 7
+
 # Links
 
 * [bashrc vs profile](http://www.techug.com/linux-bashrc-profile)
