@@ -16,15 +16,17 @@ There are two very important configuration files for bash : bashrc and profile. 
 
 # PATH
 
-Standard $PATH on most systems:
-```
 /usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 ```
+
+You can check the entirety of your environment with the `env` command.
 
 ##For current user
 
 .bashrc
 
+```
+Standard $PATH on most systems:
 ```
 # ~/.bashrc: executed by bash for non-login shells.
 ```
@@ -83,13 +85,14 @@ source bashrc can be used to update bashrc and bash profile can be used to updat
 
 # Example default files
 
+## CentOS 7
+
 * [/etc/profile](https://gist.github.com/mdeguzis/963a6f8b387ba0c4c23e7dd14e7aa826)
 * [~/.bash_profile](https://gist.github.com/mdeguzis/f7a00b28eb291a4bd196543c11ccfb65)
 * [~/.bashrc](https://gist.github.com/mdeguzis/0ca46f525b3b84702f959d00db19f216)
-
-Sourced from: CentOS 7
 
 # Links
 
 * [bashrc vs profile](http://www.techug.com/linux-bashrc-profile)
 * [PATH definition](http://www.linfo.org/path_env_var.html)
+* [Debian's stance on dotfiles](http://wiki.debian.org/DotFiles)
