@@ -16,6 +16,28 @@ There are two very important configuration files for bash : bashrc and profile. 
 
 # PATH
 
+## How dofiles are executed
+
+The usual execution order typically goes something like this:
+
+1. `/etc/profile/
+2. etc/bash.bashrc` (often the default /etc/profile sources /etc/bash.bashrc)
+3. `~/.bash_profile` The other files that could have been read here (`~/.profile` and `~/.bash_login`) are ignored because ~/.bash_profile exists
+
+### Interactive shell
+
+When  bash is invoked as an interactive login shell, or as a non-inter‐      active shell with the --login option, it first reads and executes  commands  from  the file /etc/profile, if that file exists.  After reading that file, it looks for ~/.bash_profile, ~/.bash_login, and ~/.profile,   in  that order, and reads and executes commands from the first one that  exists and is readable.  The --noprofile option may be  used  when  the   shell is started to inhibit this behavior.
+
+### non-interactive shell
+
+When an interactive shell that is not a login shell  is  started,  bash  reads  and  executes  commands  from /etc/bash.bashrc and ~/.bashrc, if  these files exist.  This may be inhibited by using the  --norc  option.  The  --rcfile  file option will force bash to read and execute commands  from file instead of /etc/bash.bashrc and ~/.bashrc.
+
+### environment
+
+You also have `/etc/environment` where you can set global environmental variables but that's read rather than sourced (commands inside it are not executed but variable definitions are set).
+
+## What is my path
+
 /usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 ```
 
