@@ -14,6 +14,13 @@ Shell is a command language interpreter that executes commands read from the sta
 
 There are two very important configuration files for bash : bashrc and profile. These two configuration files can help initialize and customize the shell environment including set up environment variables, themes, they are similar to the Microsoft DOS/Windows autoexec.bat file. Both these files are shell script themselves.
 
+# PATH
+
+Standard $PATH on most systems:
+```
+/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+```
+
 ##For current user
 
 .bashrc
