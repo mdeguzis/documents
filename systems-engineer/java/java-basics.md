@@ -23,6 +23,40 @@ This page provides some high-level oveview material of Java. Specific topics wil
 * Java is an object oriented and interpreted language that procues portable applications between platofrms
 * Java != Javascript (JavaScript is an interpreted language that's used in web browsers and other dynamic environments).
 
+## Compiling and running the program
+
+### CLI
+
+Simple example: `Main.java`
+
+Code:
+```
+class Main { 
+  // static - member of class that can be called from the class itself   
+  // void -do not return values   
+  // start method names with lowercase   
+  // inside parenthesis, declare arguments ([NAME] [ARGS])   
+  // String[] is an array of strings due to []    
+  
+  public static void main(String[] args) {    
+  
+    // print some text       
+    System.out.println("May the Force be with you");     
+    
+  }
+
+```
+
+To compile:
+```
+javac Main.java
+```
+
+To run:
+```
+java Main
+```
+
 ## Java vs C++
 
 C++                     |      Java             
