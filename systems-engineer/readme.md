@@ -8,6 +8,7 @@
   - [High](#high)
   - [Medium](#medium)
   - [Low / Undetermined](#low--undetermined)
+  - [General](#general)
 - [RHEL-specific](#rhel-specific)
 - [Tests](#tests)
 - [Conferences](#conferences)

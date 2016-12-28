@@ -3,6 +3,21 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [About](#about)
+- [Login shell and Non-login shell](#login-shell-and-non-login-shell)
+  - [Login shell](#login-shell)
+  - [Non-login shell](#non-login-shell)
+- [PATH](#path)
+  - [How dotfiles are executed](#how-dotfiles-are-executed)
+    - [Interactive shell](#interactive-shell)
+    - [non-interactive shell](#non-interactive-shell)
+    - [environment](#environment)
+    - [/etc/profile.d](#etcprofiled)
+    - [Other env vars](#other-env-vars)
+  - [What is my path](#what-is-my-path)
+  - [Differences between .bashrc and .profile](#differences-between-bashrc-and-profile)
+- [Example default files](#example-default-files)
+  - [CentOS 7](#centos-7)
+- [Links](#links)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

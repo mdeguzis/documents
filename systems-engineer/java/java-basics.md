@@ -3,6 +3,15 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [About](#about)
+- [Overview](#overview)
+  - [Java vs C++](#java-vs-c)
+- [Definitions](#definitions)
+- [Classes](#classes)
+  - [Simple Java class](#simple-java-class)
+- [Data types](#data-types)
+  - [Primitive](#primitive)
+- [Keywords](#keywords)
+- [Objects](#objects)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

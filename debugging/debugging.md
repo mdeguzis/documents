@@ -3,10 +3,13 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [About](#about)
-- [Common tools](#common-tools)
-- [gdb](#gdb)
-- [strace](#strace)
+- [Terminology](#terminology)
+- [IDE (GUI-based)](#ide-gui-based)
+- [CLI](#cli)
+  - [gdb](#gdb)
+  - [strace](#strace)
 - [General guidelines](#general-guidelines)
+- [Links](#links)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

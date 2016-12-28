@@ -3,6 +3,13 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [Pig](#pig)
+- [Components](#components)
+- [Topics](#topics)
+- [Data Types](#data-types)
+- [Features and info](#features-and-info)
+- [Uses](#uses)
+- [Working with data](#working-with-data)
+- [Tipcs and tricks](#tipcs-and-tricks)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

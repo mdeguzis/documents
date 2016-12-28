@@ -1,3 +1,22 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [Web IDE](#web-ide)
+- [Coding style](#coding-style)
+- [Behavior](#behavior)
+- [Variables](#variables)
+- [Statements](#statements)
+- [Functions](#functions)
+- [Loops](#loops)
+- [Methods](#methods)
+- [Keywords](#keywords)
+- [Simple math](#simple-math)
+- [Scripts](#scripts)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About
 
 Simple notes on Java script. 

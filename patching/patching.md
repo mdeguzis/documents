@@ -3,8 +3,11 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [About](#about)
-- [Creation](#creation)
+- [Patching (set of files)](#patching-set-of-files)
+  - [Example patch:](#example-patch)
+- [Patching (one file)](#patching-one-file)
 - [Applying](#applying)
+- [Links](#links)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
