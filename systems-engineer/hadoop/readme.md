@@ -76,6 +76,7 @@ A full list of comoponents, and their descriptions, can be found here at [hadoop
 
 ## Hadoop projects / components
 
+* [HBase](https://github.com/mdeguzis/documents/tree/master/systems-engineer/hadoop/hadoop-projects)
 * [HDFS](https://github.com/mdeguzis/documents/blob/master/systems-engineer/hadoop/hadoop-projects/hdfs.md)
 * [MapReduce](https://github.com/mdeguzis/documents/blob/master/systems-engineer/hadoop/hadoop-projects/mapreduce.md)
 * [Yarn](https://github.com/mdeguzis/documents/blob/master/systems-engineer/hadoop/hadoop-projects/yarn.md)
