@@ -7,7 +7,7 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-# Main  modules
+# Main modules
 
 The base Apache Hadoop framework is composed of the following modules:
 
@@ -15,6 +15,12 @@ The base Apache Hadoop framework is composed of the following modules:
 * Hadoop Distributed File System (HDFS) – a distributed file-system that stores data on commodity machines, providing very high aggregate bandwidth across the cluster.
 * Hadoop YARN – a resource-management platform responsible for managing computing resources in clusters and using them for scheduling of users’ applications.
 * Hadoop MapReduce – a programming model for large scale data processing.
+
+# Components
+
+Below is list of varias components in Hadoop. This list is far from complete.
+
+* [HCatalog](https://cwiki.apache.org/confluence/display/Hive/HCatalog) - allows us to share schema across tools and users within our Hadoop environment. It also allows us to factor out schema and location information from our queries and scripts and centralize them in a common repository
 
 # The five pillars
 
