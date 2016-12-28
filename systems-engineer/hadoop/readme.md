@@ -61,13 +61,15 @@ See: [hadoop/labs](https://github.com/mdeguzis/documents/tree/master/systems-eng
 * **Hadoop YARN** – a resource-management platform responsible for managing computing resources in clusters and using them for scheduling of users’ applications.
 * **Hadoop MapReduce** – a programming model for large scale data processing. Composed of JobTracker, which is the master, and the per-node slaves called TaskTrackers
 
-## 5 pillars of the Hadoop  Framework
+## 5 pillars of the Hadoop Framework
 
 1. Data Management
 2. Data Access
 3. Data Governance and Integration
 4. Security
 5. Operations
+
+## Hadoop Components
 
 A full list of comoponents, and their descriptions, can be found here at [hadoop/components.md](https://github.com/mdeguzis/documents/blob/master/systems-engineer/hadoop/components.md).
 
