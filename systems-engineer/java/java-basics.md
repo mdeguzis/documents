@@ -4,6 +4,8 @@
 
 - [About](#about)
 - [Overview](#overview)
+  - [Compiling and running the program](#compiling-and-running-the-program)
+    - [CLI](#cli)
   - [Java vs C++](#java-vs-c)
 - [Definitions](#definitions)
 - [Classes](#classes)

@@ -7,6 +7,8 @@
   - [DDL](#ddl)
   - [DML](#dml)
   - [DCL](#dcl)
+  - [ORC](#orc)
+  - [RDD](#rdd)
   - [TCL](#tcl)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->

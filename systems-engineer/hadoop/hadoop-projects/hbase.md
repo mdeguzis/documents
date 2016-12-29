@@ -1,3 +1,14 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [What it is](#what-it-is)
+- [What it is not](#what-it-is-not)
+- [Features](#features)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About
 
 HBase is an open source, non-relational, distributed database modeled after Google's BigTable and is written in Java. 

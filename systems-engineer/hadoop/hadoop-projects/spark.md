@@ -1,3 +1,25 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+  - [History](#history)
+  - [Where spark fits in](#where-spark-fits-in)
+- [Highlights](#highlights)
+- [Definitions](#definitions)
+- [Some key points](#some-key-points)
+- [Tips and tricks](#tips-and-tricks)
+- [Basic configuration in Ambari](#basic-configuration-in-ambari)
+- [Zeppelin](#zeppelin)
+- [Interpreters](#interpreters)
+- [RDD](#rdd)
+  - [See also](#see-also)
+- [Sample operations](#sample-operations)
+- [Spark interactive shell](#spark-interactive-shell)
+- [Links](#links)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About 
 
 ## History
