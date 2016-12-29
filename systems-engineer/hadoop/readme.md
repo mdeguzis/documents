@@ -86,6 +86,7 @@ A full list of comoponents, and their descriptions, can be found here at [hadoop
 * [Tez](https://github.com/mdeguzis/documents/blob/master/systems-engineer/hadoop/hadoop-projects/tez.md)
 * [Stinger and Stinger.next](https://github.com/mdeguzis/documents/blob/master/systems-engineer/hadoop/hadoop-projects/stinger-and-stringer.next.md)
 * [Zeppelin](https://github.com/mdeguzis/documents/blob/master/systems-engineer/hadoop/hadoop-projects/zeppelin.md)
+* [Spark](https://github.com/mdeguzis/documents/blob/master/systems-engineer/hadoop/hadoop-projects/spark.md)
 
 ## Concepts
 
