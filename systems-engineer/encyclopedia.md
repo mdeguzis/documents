@@ -47,6 +47,10 @@ Data Control Language (DCL) statements. Some examples:
   * GRANT - gives user's access privileges to database
   * REVOKE - withdraw access privileges given with the GRANT command
 
+## ORC
+
+The Optimized Row Columnar (ORC) file format provides a highly efficient way to store Hive data. It was designed to overcome limitations of the other Hive file formats. Using ORC files improves performance when Hive is reading, writing, and processing data.
+
 ## RDD
 
 Spark’s primary core abstraction is called a **Resilient Distributed Dataset** or RDD. It is a distributed collection of elements that is parallelized across the cluster. In other words, a RDD is an immutable collection of objects that is partitioned and distributed across multiple physical nodes of a YARN cluster and that can be operated in parallel.
