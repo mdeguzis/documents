@@ -19,6 +19,20 @@ Defintions for various topics
 
 # Data
 
+## DAG
+
+Directed Acyclic Graph representing the data flow graph. In simple terms...
+
+* graph = structure consisting of nodes, that are connected to each other with edges
+* directed = the connections between the nodes (edges) have a direction: A -> B is not the same as B -> A 
+* acyclic = "non-circular" = moving from node to node by following the edges, you will never encounter the same node for the second time.
+
+Example uses of a directed acyclic graph in programming include more or less anything that represents **connectivity** and **causality**
+
+For example, suppose you have a computation pipeline that is configurable at runtime. As one example of this, suppose computations A,B,C,D,E,F, and G depend on each other: A depends on C, C depends on E and F, B depends on D and E, and D depends on F. This can be represented as a DAG. Once you have the DAG in memory, you can write algorithms to:
+
+For more see: https://en.wikipedia.org/wiki/Directed_acyclic_graph
+
 ## DDL
 Data Definition Language (DDL) statements are used to define the database structure or schema. Some examples:
 
