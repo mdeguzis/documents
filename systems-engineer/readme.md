@@ -36,7 +36,7 @@ Temporary place holder for reading materials, resources, and more with a new job
   * [HDP Labs](https://github.com/mdeguzis/documents/blob/master/systems-engineer/hadoop/labs/readme.md)
     * [x] Familiarity with Ambari dashboard
     * [x] Read all introductory material
-    * [ ] Lab: main labs 1-5, "[Hello World](http://hortonworks.com/hadoop-tutorial/hello-world-an-introduction-to-hadoop-hcatalog-hive-and-pig/)"
+    * [x] Lab: main labs 1-5, "[Hello World](http://hortonworks.com/hadoop-tutorial/hello-world-an-introduction-to-hadoop-hcatalog-hive-and-pig/)"
     * [ ] Lab: Deploying, managing and configuring HDP with Ambari
     * [ ] Lab: Introducing Apache Ambari for deploying and managing Apache Hadoop
     * [ ] Lab: Using Apache Ambari to add new nodes to your existing cluster
@@ -60,12 +60,13 @@ Temporary place holder for reading materials, resources, and more with a new job
 * [ ] Jira
 * [ ] LVM
 * [ ] Scala
-* [ ] Spark
+* Spark
+  * [x] Basic overview
 
 ## Low / Undetermined
 
 * [ ] Atanasuite
-* [ ] SQL Workbench
+* [x] SQL Workbench
 * [ ] Hipchat
 
 ## General
