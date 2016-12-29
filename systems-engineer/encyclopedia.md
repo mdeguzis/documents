@@ -47,6 +47,10 @@ Data Control Language (DCL) statements. Some examples:
   * GRANT - gives user's access privileges to database
   * REVOKE - withdraw access privileges given with the GRANT command
 
+## RDD
+
+Spark’s primary core abstraction is called a **Resilient Distributed Dataset** or RDD. It is a distributed collection of elements that is parallelized across the cluster. In other words, a RDD is an immutable collection of objects that is partitioned and distributed across multiple physical nodes of a YARN cluster and that can be operated in parallel.
+
 ## TCL
 
 Transaction Control (TCL) statements are used to manage the changes made by DML statements. It allows statements to be grouped together into logical transactions.
