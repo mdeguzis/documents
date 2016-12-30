@@ -8,7 +8,7 @@
 - [Listing all modules](#listing-all-modules)
 - [Listing PYTHONPATH](#listing-pythonpath)
 - [Links](#links)
-- [Specific topics from docs.python.org](#specific-topics-from-docspythonorg)
+- [Specific topics](#specific-topics)
 - [Videos](#videos)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -88,7 +88,7 @@ python -c "import sys; print '\n'.join(sys.path)"
 * [Minimal module packaging](http://python-packaging.readthedocs.io/en/latest/minimal.html)
 * [Nice sample project](https://github.com/pypa/sampleproject/tree/master/sample)
 
-# Specific topics from docs.python.org
+# Specific topics
 
 See [docs/master-list.md](https://github.com/mdeguzis/documents/tree/master/programming/python/docs)
 
