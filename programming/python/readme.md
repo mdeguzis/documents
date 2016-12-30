@@ -71,7 +71,11 @@ print(sys.path)
 Or as a one liner from the terminal:
 
 ```
+# Python2
 python -c "import sys; print '\n'.join(sys.path)"
+
+# Python 3
+ python -c "import sys; print('\n'.join("sys.path"))"
 ```
 
 # Links
