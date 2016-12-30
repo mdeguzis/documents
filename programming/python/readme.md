@@ -76,7 +76,7 @@ Or as a one liner from the terminal:
 python -c "import sys; print '\n'.join(sys.path)"
 
 # Python 3
- python -c "import sys; print('\n'.join("sys.path"))"
+python -c "import sys; print('\n'.join("sys.path"))"
 ```
 
 # Links
