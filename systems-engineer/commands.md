@@ -6,7 +6,17 @@ Just notable commands that I have ran into so far.
 
 ## getent
 
-`getent` is Unix command which helps you query one of the following administrative databases in Unix: passwd, group, hosts, services, protocols, or networks.
+`getent` is Unix command which helps you query one of the following administrative databases in Unix: passwd, group, hosts, services, protocols, or networks. The config file is held in `/etc/nsswitch.conf`. 
+
+**key points**
+
+For example, the `passwd` line in `/etc/nsswitch.conf` will point to what databases hold the information:
+
+```
+passwd:     files ldap
+```
+
+Based on the above, getent will first run down the /etc/passwd list and then go through every user in LDAP.
 
 * [getent (man page)](http://man7.org/linux/man-pages/man1/getent.1.html)
 * [command-line foo examples](http://www.commandlinefu.com/commands/using/getent)
