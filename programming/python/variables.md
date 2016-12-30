@@ -3,7 +3,10 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [About](#about)
+- [Variable contraints](#variable-contraints)
 - [Assignment operators](#assignment-operators)
+- [Assignment statements](#assignment-statements)
+  - [Strings](#strings)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

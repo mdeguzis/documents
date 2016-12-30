@@ -8,6 +8,7 @@
 - [Listing all modules](#listing-all-modules)
 - [Listing PYTHONPATH](#listing-pythonpath)
 - [Links](#links)
+- [Specific topics from docs.python.org](#specific-topics-from-docspythonorg)
 - [Videos](#videos)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
