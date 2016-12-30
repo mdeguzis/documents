@@ -11,6 +11,11 @@
 
 Notes on working with variables
 
+# Variable contraints
+
+* Can only contain numbers, letters, and underscores
+* Cannot start with a number
+
 # Assignment operators
 
 >a += b  
@@ -25,3 +30,12 @@ a |= b
 a ^= b  
 a <<= b  
 a >>= b  
+
+# Assignment statements
+
+## Strings
+```
+>>> name = "mike"
+>>> print name
+mike
+```
