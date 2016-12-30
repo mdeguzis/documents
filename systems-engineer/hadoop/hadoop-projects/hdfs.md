@@ -29,6 +29,24 @@ The NameNode does not directly send requests to DataNodes. It sends instructions
 * re-register and send an immediate block report, or
 * shut down the node.
 
-# Links
+# HDFS shell
 
 * [HDFS filesystem shell commands](https://hadoop.apache.org/docs/r2.7.1/hadoop-project-dist/hadoop-common/FileSystemShell.html)
+
+## Notable examples
+
+removing folder
+
+```
+sudo -u hdfs hdfs dfs -rm -r /user/testuser1
+```
+
+if you somehow created a user dir with a new line...
+
+```
+# verify
+sudo -u hdfs hdfs dfs -find /user -name "*testuser1\n"
+
+# Remove
+sudo -u hdfs hdfs dfs -rm -r /user/"*testuser1\n"
+```
