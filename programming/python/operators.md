@@ -57,13 +57,36 @@ a >= b a greater than or equal to b
 
 The identity operators, is and is not, check for object identity. Specifically, is a actually b, not that the content of a is the same as b.
 
+condition | result
+----------|---------
+a is b | True if a and b are identical objects
+a is not b | True if a and b are not identical objects
+a in b | True if a is a member of b
+a not in b | True if a is not a member of b
+
+## 'not' Logical Operator
+
+This is a useful operator to ensure simple things like user input are actually entered, and "not false". In a simple passwrd entry program, this would ensure "Enter your username: " is displayed until it is actually entered (given username is initialized as blank). Obviously in a real-world situation, such items would be stored in a secure datbase, not as direct input.
+
+## 'and' Logical Operator
+
+As with the user/password example above, you want to ensure both the user 'and' password parameters match expected values. This is referred to as a "compound condition."
+
 ```
-a is b True if a and b are identical objects
-a is not b True if a and b are not identical objects
-a in b True if a is a member of b
-a not in b True if a is not a member of b
+if username == "Bob" and password == "mypassword":
+	// CODE
 ```
 
+## 'or' Logical Operator
+
+Continuing the example above, say we have a guest login. The username "guest," or password, "guest" would both be acceptable.
+
+```
+if username == "guest" or password == "guest":
+	// CODE
+```
+
+General comparisons
 ```
 In [19]: a = [1, 2, 3]
 b = [1, 2, 3]
@@ -73,7 +96,10 @@ In [21]: a is b
 Out [21]: False
 In [22]: a is not b
 Out [22]: True
+```
+
 What do identical objects look like? Here is an example:
+```
 In [23]: a = [1, 2, 3]
 b = a
 a is b
