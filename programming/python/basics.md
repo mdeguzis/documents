@@ -20,3 +20,27 @@ Just some tips and tricks / basics
 
 * Clear the screen with CTRL+L (It works for all shells e.g. Python, Bash, MySQL, MATLAB, etc)
 * Alternate clear screen `import os;os.system('clear')`
+
+# Pseudocode
+
+Pseudocode is a way of planning and writing out your program in "plain language." Instead of writing actual code, you write our what you want the code to do:
+
+```
+Start program
+
+get a list of mailboxes
+get a list of recipients
+
+run the email_delivery function with the mailbox and recipent arguments passed
+
+check that email was delieverd correctly:
+
+if the email is delivered to the expected mailbox, do this
+	report that the mail is delivered
+
+if the email is not delivered to the expected mailbox do this:
+	report an error
+	Ask maybe to try resending the email
+```
+
+If you are stumped, or want to draft out added functionality, pseudocode is a great way to plan it out.
