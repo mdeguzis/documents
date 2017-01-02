@@ -1,3 +1,16 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [if statements](#if-statements)
+- [While loops](#while-loops)
+    - [A simple while loop](#a-simple-while-loop)
+- [Sentry variables](#sentry-variables)
+- [True false](#true-false)
+  - [Intentional infinite loops](#intentional-infinite-loops)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # if statements
 ```
 if <condition1>:	# if <condition1> is true, run code in <block1>

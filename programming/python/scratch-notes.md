@@ -1,3 +1,26 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Basics](#basics)
+- [Types, variables, and Simple I/O](#types-variables-and-simple-io)
+  - [Methods](#methods)
+    - [Common string methods](#common-string-methods)
+    - [Converting values](#converting-values)
+    - [Type conversions](#type-conversions)
+  - [Asignment operators](#asignment-operators)
+  - [Duplication](#duplication)
+- [Branching, while loops, a program planning](#branching-while-loops-a-program-planning)
+  - [Comparison operators](#comparison-operators)
+  - [if statements](#if-statements)
+  - [While loops](#while-loops)
+    - [A simple while loop](#a-simple-while-loop)
+  - [Sentry variable](#sentry-variable)
+  - [True false](#true-false)
+  - [Intentional infinite loops](#intentional-infinite-loops)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Basics
 
 * Indentation is very important

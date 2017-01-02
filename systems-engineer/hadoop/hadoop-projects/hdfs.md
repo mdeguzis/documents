@@ -5,7 +5,8 @@
 - [About](#about)
 - [Features](#features)
 - [Namenode](#namenode)
-- [Links](#links)
+- [HDFS shell](#hdfs-shell)
+  - [Notable examples](#notable-examples)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

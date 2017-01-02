@@ -3,7 +3,9 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [About](#about)
+- [General](#general)
 - [Python shell](#python-shell)
+- [Pseudocode](#pseudocode)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

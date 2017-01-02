@@ -6,6 +6,9 @@
 - [Boolean operators](#boolean-operators)
 - [Comparison operators](#comparison-operators)
 - [Identity and Membership Operators](#identity-and-membership-operators)
+  - ['not' Logical Operator](#not-logical-operator)
+  - ['and' Logical Operator](#and-logical-operator)
+  - ['or' Logical Operator](#or-logical-operator)
 - [Logical operators](#logical-operators)
 - [Membership operators](#membership-operators)
 

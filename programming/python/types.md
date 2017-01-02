@@ -4,6 +4,7 @@
 
 - [Simple Values](#simple-values)
 - [Integers](#integers)
+- [Type conversions](#type-conversions)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
