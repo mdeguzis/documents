@@ -44,3 +44,12 @@ Out [4]: 2
 
 Finally, note that although Python 2.x had both an int and long type, Python 3 combines the behavior of these two into a single int
 type.
+
+# Type conversions
+
+functions | description            | Example          | Returns
+----------|------------------------|------------------|----------
+float(x) | Returns a floating-point value by converting x | float("10.0") | 10.0
+int(x) | Returns a string value by converting x | int("10") | 10
+str(x) | Returns a string value by converting x | str(10) | '10'
+
