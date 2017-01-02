@@ -11,6 +11,11 @@
 
 Just some tips and tricks / basics
 
+# General
+
+* Indentation is very important
+* Indentation is how conditional statments are read and terminated
+
 # Python shell
 
 * Clear the screen with CTRL+L (It works for all shells e.g. Python, Bash, MySQL, MATLAB, etc)
