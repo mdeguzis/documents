@@ -59,6 +59,14 @@ git commit
 
 Source: [StackOverflow](http://stackoverflow.com/questions/4114095/how-to-revert-git-repository-to-a-previous-commit)
 
+If that proves to much trouble, you can try a hard reset:
+
+```
+git reset --hard <COMMIT>
+git clean -f
+git push origin <BRANCH> --force
+```
+
 ## submodule
 
 ### Updating
