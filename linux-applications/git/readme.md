@@ -69,11 +69,17 @@ git push origin <BRANCH> --force
 
 ## submodule
 
+### Creating
+
+```
+git submodule add https://github.com/<user>/<repo_name> <OPTIONAL_PATH_AND_MODULE_NAME>
+```
+
 ### Updating
 
 Pull in latest changes for submodule
 ```
-git submodule update --remote MODULE_NAME
+git submodule update --remote <PATH_TO_WITH_MODULE_NAME>
 ```
 
 ### Have a sudmodule always track the HEAD of a branch
@@ -96,8 +102,9 @@ git config -f .gitmodules submodule.<path>.branch <branch>
 
 cd path/to/your/submodule
 git checkout -b branch --track origin/branch
-  # if the master branch already exist:
-  git branch -u origin/master master
+
+# if the master branch already exist:
+git branch -u origin/master master
 
 cd /path/to/your/parent/repo
 git add path/to/your/submodule
