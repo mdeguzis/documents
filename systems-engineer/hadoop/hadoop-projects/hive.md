@@ -161,6 +161,7 @@ LEFT OUTER JOIN orders ON
 
 # Further reading
 
+* [Hive cheatsheet (Hortonworks)](http://hortonworks.com/blog/hive-cheat-sheet-for-sql-users/)
 * [Apache Hive](http://hortonworks.com/hadoop/hive/)
 * [Hive LLAP enables sub second SQL on Hadoop](http://hortonworks.com/blog/llap-enables-sub-second-sql-hadoop/)
 * [Programming Hive](http://www.amazon.com/Programming-Hive-Edward-Capriolo/dp/1449319335/ref=sr_1_3?ie=UTF8&qid=1456009871&sr=8-3&keywords=apache+hive)
