@@ -207,6 +207,20 @@ C-a q          display pane numbers for a short while
 
 ## Other config file settings
 
+### Reloading config
+
+This can be done either from within tmux, by pressing Ctrl+B and then : to bring up a command prompt, and typing:
+
+```
+:source-file ~/.tmux.conf
+```
+
+Or simply from a shell:
+
+```
+$ tmux source-file ~/.tmux.conf
+```
+
 ### Force a reload of the config file on C-a r:
 
 ```
