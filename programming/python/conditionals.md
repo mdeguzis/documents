@@ -3,11 +3,7 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [if statements](#if-statements)
-- [While loops](#while-loops)
-    - [A simple while loop](#a-simple-while-loop)
-- [Sentry variables](#sentry-variables)
 - [True false](#true-false)
-  - [Intentional infinite loops](#intentional-infinite-loops)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

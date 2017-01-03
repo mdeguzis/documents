@@ -1,3 +1,16 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [For loops](#for-loops)
+  - [A simple for loop](#a-simple-for-loop)
+- [While loops](#while-loops)
+  - [A simple while loop](#a-simple-while-loop)
+- [Sentry variables](#sentry-variables)
+- [Intentional infinite loops](#intentional-infinite-loops)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # For loops
 
 * A for loop interates through a sequence one element at a time

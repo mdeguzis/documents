@@ -1,3 +1,31 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [tmux cheat sheet](#tmux-cheat-sheet)
+  - [Prefix key](#prefix-key)
+  - [Sessions, windows, panes](#sessions-windows-panes)
+  - [Getting help](#getting-help)
+  - [Managing sessions](#managing-sessions)
+    - [Creating a session:](#creating-a-session)
+    - [Attach to a session:](#attach-to-a-session)
+    - [Switch between sessions:](#switch-between-sessions)
+    - [Other:](#other)
+  - [Managing windows](#managing-windows)
+    - [Switch between windows:](#switch-between-windows)
+    - [Switch between windows with a twist:](#switch-between-windows-with-a-twist)
+  - [Managing split panes](#managing-split-panes)
+    - [Creating a new pane by splitting an existing one:](#creating-a-new-pane-by-splitting-an-existing-one)
+    - [Switching between panes:](#switching-between-panes)
+    - [Moving panes around:](#moving-panes-around)
+    - [Resizing panes:](#resizing-panes)
+    - [Applying predefined layouts:](#applying-predefined-layouts)
+  - [Other config file settings](#other-config-file-settings)
+    - [Force a reload of the config file on C-a r:](#force-a-reload-of-the-config-file-on-c-a-r)
+    - [Some other settings that I use:](#some-other-settings-that-i-use)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # tmux cheat sheet
 
 (C-x means ctrl+x, M-x means alt+x)

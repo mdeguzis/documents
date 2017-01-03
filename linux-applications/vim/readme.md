@@ -3,6 +3,11 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [About](#about)
+- [Tips and tricks](#tips-and-tricks)
+  - [Clearning settings](#clearning-settings)
+  - [Searching](#searching)
+- [Distro specific](#distro-specific)
+  - [Arch Linux](#arch-linux)
 - [Key links](#key-links)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
