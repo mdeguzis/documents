@@ -15,7 +15,7 @@
 
 # About
 
-Python tips and tricks
+Python tips and tricks. You can check your python version with `python --version` or `import sys; sys.version` in a python shell prompt.
 
 # Python projects
 
