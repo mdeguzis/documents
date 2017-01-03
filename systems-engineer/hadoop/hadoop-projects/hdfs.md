@@ -34,6 +34,21 @@ The NameNode does not directly send requests to DataNodes. It sends instructions
 
 * [HDFS filesystem shell commands](https://hadoop.apache.org/docs/r2.7.1/hadoop-project-dist/hadoop-common/FileSystemShell.html)
 
+## file and folder management
+
+#### Removing folder
+
+Simple removal:
+```
+sudo -u hdfs hadoop fs -rm -r /path/to/folder
+```
+
+Permenant removal (skips trash)
+```
+# Usage: hdfs dfs -rmr [-skipTrash] URI [URI …]
+sudo -u hdfs hadoop fs -rmr -skipTrash /path/to/folder
+```
+
 ## Notable examples
 
 removing folder
