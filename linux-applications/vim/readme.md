@@ -11,8 +11,39 @@
 
 Useful notes on VIM
 
+# Tips and tricks
+
+## Clearning settings
+
+* unset settings with `<command> :no<setting>`
+
+## Searching
+
+To turn off highlighting until the next search:
+```
+:noh
+```
+
+Or turn off highlighting completely:
+```
+set nohlsearch
+```
+
+Or, to toggle it:
+```
+set hlsearch!
+```
+
+# Distro specific
+
+## Arch Linux
+
+* `/etc/vimrc` loads  a default settings template from `/usr/share/vim/vimfiles/archlinux.vim` using the `runtime! archlinux.vim` parameter.
+
 # Key links
 
+* [vimrc guide](https://dougblack.io/words/a-good-vimrc.html)
+* [Notes on folder](http://vim.wikia.com/wiki/Folding)
 * [Things About Vim I Wish I Knew Earlier](http://blog.petrzemek.net/2016/04/06/things-about-vim-i-wish-i-knew-earlier/)
 * [VIM cheat-sheet](http://vim.rtorr.com/)
 * [VIM anti-patterns](https://sanctum.geek.nz/arabesque/vim-anti-patterns/)
