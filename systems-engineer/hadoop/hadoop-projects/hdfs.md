@@ -34,6 +34,33 @@ The NameNode does not directly send requests to DataNodes. It sends instructions
 
 * [HDFS filesystem shell commands](https://hadoop.apache.org/docs/r2.7.1/hadoop-project-dist/hadoop-common/FileSystemShell.html)
 
+## hadoop fs, hadoop dfs, and hdfs dfs
+
+FS relates to a generic file system which can point to any file systems like local, HDFS etc. So this can be used when you are dealing with different file systems such as Local FS, HFTP FS, S3 FS, and others
+```
+hadoop fs {args}
+```
+
+dfs is very specific to HDFS. would work for operation relates to HDFS. This has been deprecated and we should use hdfs dfs instead.
+```
+hadoop dfs <args>
+```
+
+same as 2nd i.e would work for all the operations related to HDFS and is the recommended command instead of hadoop dfs
+
+```
+hdfs   dfs <args>
+```
+
+Below is the list categorized as HDFS commands.
+
+**hdfs commands**
+```
+namenode|secondarynamenode|datanode|dfs|dfsadmin|fsck|balancer|fetchdt|oiv|dfsgroups
+```
+
+So even if you use Hadoop dfs , it will look locate hdfs and delegate that command to hdfs dfs
+
 ## file and folder management
 
 #### Removing folder
