@@ -48,6 +48,17 @@ git fetch xbmc-packaging; git rebase -i xbmc-packaging/master
 git push -f origin yourbranch
 ```
 
+## revert
+
+Revert a branch back to specific commit:
+
+```
+git revert --no-commit 0766c053..HEAD
+git commit
+```
+
+Source: [StackOverflow](http://stackoverflow.com/questions/4114095/how-to-revert-git-repository-to-a-previous-commit)
+
 ## submodule
 
 ### Updating
