@@ -143,8 +143,9 @@ More usernames and passwords for the sandbox can be found on the [Learning the r
 
 * [Single Node (CentOS 7)](http://www.tecmint.com/install-configure-apache-hadoop-centos-7/)
 
-## Quick Start Guides
+## Guides
 
+* [Processing frameworks for Hadoop (O'Reilly)](https://www.oreilly.com/ideas/processing-frameworks-for-hadoop)
 * [Beginners guide](http://blog.matthewrathbone.com/2013/04/17/what-is-hadoop.html)
 * [Hadoop Quick Start Guide (Apache)](https://wiki.apache.org/hadoop/QuickStart)
 * [Hadoop Quick Start Guide (Cloudera)](http://www.cloudera.com/developers/get-started-with-hadoop-tutorial.html)
