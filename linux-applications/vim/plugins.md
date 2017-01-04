@@ -1,3 +1,14 @@
+# Checking plugins
+
+Check the status of what set a value with
+
+Example for `formatoptoins`
+```
+:verbose set formatoptions
+Last set from ~/.vim/after/ftplugin/vim.vim
+```
+
+
 # Overriding plugins
 
 If a `ftplugin` tries to set something, I try not to fight it too hard. But that's just personal preference.
@@ -7,3 +18,6 @@ Also relevant might be `set formatoptions<`. The `<` on the end removes the loca
 See `:h :setlocal` for more on this.
 
 So basically you could make a file at `~/.vim/after/ftplugin/vim.vim` and reset the value there
+
+
+See: http://peox.net/articles/vimconfig.html
