@@ -14,6 +14,20 @@
 
 Notes on working with variables
 
+# Special values
+
+## None
+
+Given this example:
+```
+start = None
+```
+
+* 'None' is a special way of representing nothing, akin to 'NULL'
+* The purpose here is to initialize 'start'
+* It acts as a placeholder for a value later
+* It will also evauluate to False, handy for loops
+
 # Variable contraints
 
 * Can only contain numbers, letters, and underscores
