@@ -20,4 +20,4 @@ $ tmux source-file ~/.tmux.conf
 
 # Useful links
 
-* [Screena and tmux commands comparison](http://hyperpolyglot.org/multiplexers)
+* [Screen and tmux commands comparison](http://hyperpolyglot.org/multiplexers)
