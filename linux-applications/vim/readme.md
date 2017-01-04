@@ -18,6 +18,10 @@ Useful notes on VIM
 
 # Tips and tricks
 
+## Clipboard support
+
+If your copy of vim was not compiled with fancy features, such as clipboard support, try gvim. You can then read about accessing the [system registers](http://vimcasts.org/episodes/accessing-the-system-clipboard-from-vim/) to use copy/paste between windows.
+
 ## Clearning settings
 
 * unset settings with `<command> :no<setting>`
