@@ -22,6 +22,19 @@ Useful notes on VIM
 
 If your copy of vim was not compiled with fancy features, such as clipboard support, try gvim. You can then read about accessing the [system registers](http://vimcasts.org/episodes/accessing-the-system-clipboard-from-vim/) to use copy/paste between windows.
 
+
+The following will work only if vim --version indicates that you have +xterm_clipboard feature. If not, you will have to install extra packages or recompile vim with that feature added.
+
+There are actually two options for this:
+
+`"+y`  
+copies to the "usual" clipboard buffer (so you can paste using Ctrl+V, right click and select "Paste" etc), while
+
+`"*y`  
+copies to the X11 selection - you can paste from this buffer using middle click.
+
+Note that "* and "+ work both ways. So if you have selected some text in another application, you can paste it into vim using "*p and if you have copied some text (using, say, Ctrl-C) then you can paste it into vim using "+p.
+
 ## Clearning settings
 
 * unset settings with `<command> :no<setting>`
