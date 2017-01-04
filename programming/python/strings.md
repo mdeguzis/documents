@@ -9,6 +9,18 @@
 
 # Strings
 
+Notes on using string types in Python
+
+# Concepts
+
+## Indexing
+
+A nice way to accsss elements of a sequence. 
+
+See: [fundamenatals/random_access.py](https://github.com/mdeguzis/python/tree/python2/fundamenatals/random_access.py)
+
+# Functions
+
 ## print()
 
 * Seperate values with commas
@@ -46,3 +58,15 @@ p>>> rint("First line\nSecond line")
 >>> print("\a")
 
 ```
+
+## len()
+
+Check the length of a string
+
+See: [fundamenatals/message_analyzer.py](https://github.com/mdeguzis/python/tree/python2/fundamenatals/message_analyzer.py)
+
+```
+print "The var 'message' is:", len(message), "in length"
+
+```
+
