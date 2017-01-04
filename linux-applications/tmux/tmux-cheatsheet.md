@@ -205,6 +205,12 @@ C-a x          kill the current pane
 C-a q          display pane numbers for a short while
 ```
 
+### Restarting a pane
+
+A pane can be "restarted" and spawned anew in place.
+
+Use `<prefix>` + `:` and then enter `respawn-pane -k` and press Enter
+
 ## Other config file settings
 
 ### Reloading config
