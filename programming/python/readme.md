@@ -32,8 +32,13 @@ Example:
 
 ```
 print bin(4)
-print (bin(4))
+print(bin(4))
 ```
+
+# Future module
+
+See: [modules/future.md](https://github.com/mdeguzis/documents/blob/master/programming/python/modules/__future__.md)
+
 # Libraries
 
 See: https://docs.python.org for a listing of what is included in the Python Standard Library. You can swap Python versions with the dropdown box at the top of the screen. This is an important resource to bookmark.
