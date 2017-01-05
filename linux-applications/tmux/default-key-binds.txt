@@ -1,6 +1,8 @@
-bind-key		  C-a send-prefix                                                                                                                                                                                                       [10/10]
-bind-key		  C-l resize-pane -L 5
+bind-key          C-d resize-pane -D 5
+bind-key          C-l resize-pane -L 5
 bind-key          C-o rotate-window
+bind-key          C-r resize-pane -R 5
+bind-key          C-u resize-pane -U 5
 bind-key          C-z suspend-client
 bind-key          Space next-layout
 bind-key          ! break-pane
@@ -76,4 +78,3 @@ bind-key -r       C-Up resize-pane -U
 bind-key -r       C-Down resize-pane -D
 bind-key -r       C-Left resize-pane -L
 bind-key -r       C-Right resize-pane -R
-
