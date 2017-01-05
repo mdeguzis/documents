@@ -42,7 +42,7 @@ See: [fundamenatals/random_access.py](https://github.com/mdeguzis/python/tree/py
 
 Make copies of continuous sections of elements (slices). This enables you to grab anything from a single character, to the entire range, or any combination thereof.
 
-Example:
+**Example:**
 ```
 word = "pizza"
 start = 0
@@ -56,6 +56,19 @@ There is also a shorthand for slicing. Given the word being 'pizza', you can iss
 ```
 print word[0:4]
 ```
+
+**Open ended ranges**
+
+```
+# Every letter up to, but not including <INDEX>
+# Here, you are leaving the lower bound range empty, and just specifying the endjj
+word = word[:<INDEX>]
+
+# Every letter after word[<INDEX>]
+# Here, you are saying, start the index at the next number, and give me everything after (no higher bound)
+word((<INDEX> +1):)
+```
+
 See: [fundamentals/pizza-slicer.py](https://github.com/mdeguzis/python/blob/python2/fundamentals/pizza-slicer.py)
 
 # Functions
