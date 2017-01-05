@@ -5,6 +5,7 @@
 - [About](#about)
 - [Python projects](#python-projects)
 - [Python 2 vs. Python 3](#python-2-vs-python-3)
+- [Libraries](#libraries)
 - [Listing all modules](#listing-all-modules)
 - [Listing PYTHONPATH](#listing-pythonpath)
 - [Links](#links)

@@ -20,7 +20,9 @@
     - [Moving panes around:](#moving-panes-around)
     - [Resizing panes:](#resizing-panes)
     - [Applying predefined layouts:](#applying-predefined-layouts)
+    - [Restarting a pane](#restarting-a-pane)
   - [Other config file settings](#other-config-file-settings)
+    - [Reloading config](#reloading-config)
     - [Force a reload of the config file on C-a r:](#force-a-reload-of-the-config-file-on-c-a-r)
     - [Some other settings that I use:](#some-other-settings-that-i-use)
 

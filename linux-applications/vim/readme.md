@@ -4,6 +4,7 @@
 
 - [About](#about)
 - [Tips and tricks](#tips-and-tricks)
+  - [Clipboard support](#clipboard-support)
   - [Clearning settings](#clearning-settings)
   - [Searching](#searching)
 - [Distro specific](#distro-specific)

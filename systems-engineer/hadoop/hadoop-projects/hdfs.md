@@ -6,6 +6,9 @@
 - [Features](#features)
 - [Namenode](#namenode)
 - [HDFS shell](#hdfs-shell)
+  - [hadoop fs, hadoop dfs, and hdfs dfs](#hadoop-fs-hadoop-dfs-and-hdfs-dfs)
+  - [file and folder management](#file-and-folder-management)
+      - [Removing folder](#removing-folder)
   - [Notable examples](#notable-examples)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->

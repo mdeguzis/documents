@@ -3,6 +3,8 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [About](#about)
+- [Special values](#special-values)
+  - [None](#none)
 - [Variable contraints](#variable-contraints)
 - [Assignment operators](#assignment-operators)
 - [Assignment statements](#assignment-statements)

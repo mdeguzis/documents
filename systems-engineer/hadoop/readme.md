@@ -21,7 +21,7 @@
   - [Specific introduction videos](#specific-introduction-videos)
   - [Main video channels](#main-video-channels)
   - [Setting up nodes](#setting-up-nodes)
-  - [Quick Start Guides](#quick-start-guides)
+  - [Guides](#guides)
 - [References](#references)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
