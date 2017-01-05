@@ -35,7 +35,11 @@ print bin(4)
 print(bin(4))
 ```
 
-# \_\_future\_\_ module
+# Modules
+
+Below are some notable modules to keep in mind. The rest can be found in the modules/ folder or referenced from docs.python.org (see links).
+
+## \_\_future\_\_ module
 
 See: [modules/future.md](https://github.com/mdeguzis/documents/blob/master/programming/python/modules/__future__.md)
 
@@ -43,7 +47,7 @@ See: [modules/future.md](https://github.com/mdeguzis/documents/blob/master/progr
 
 See: https://docs.python.org for a listing of what is included in the Python Standard Library. You can swap Python versions with the dropdown box at the top of the screen. This is an important resource to bookmark.
 
-# Listing all modules
+## Listing all modules
 
 Short way:
 
@@ -97,9 +101,9 @@ python -c "import sys; print('\n'.join("sys.path"))"
 * [Minimal module packaging](http://python-packaging.readthedocs.io/en/latest/minimal.html)
 * [Nice sample project](https://github.com/pypa/sampleproject/tree/master/sample)
 
-# Specific topics
+# Documentation
 
-See [docs/master-list.md](https://github.com/mdeguzis/documents/tree/master/programming/python/docs)
+See [docs/master-list.md](https://github.com/mdeguzis/documents/tree/master/programming/python/docs). Notable snippets will be kept as separate files in the docs/ folder, with notable links documented under the master list.
 
 # Videos
 
