@@ -89,17 +89,23 @@ from __future__ import print_function
 
 # example snippet
 print("word[", start, ":", finish, "] is ", end= " ")
+```
 
 **Specify a final string to print***
 
 # You can also work around this behaviro by using the 'strip()' funcion 
 # on your strings.
-```
+
 # Using a space at the tail end
+
+```
 >>> print("Here", end=" ")
 >>> print("it is is...")
+```
 
 # Cutting of at the end of the string
+
+```
 >>> a = "hi"
 >>> print a,
 ```
@@ -114,14 +120,13 @@ print("word[", start, ":", finish, "] is ", end= " ")
 >>> print("\\this is a sentice, beginning with a slash instead")
 
 # Newline - n
-p>>> rint("First line\nSecond line")
+>>> print("First line\nSecond line")
 
 # Single quote - \'
 >>> print ("\'This is in single quotes\'")
 
 # Ring the system bell :)
 >>> print("\a")
-
 ```
 
 ## len()
