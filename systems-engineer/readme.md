@@ -45,7 +45,8 @@ Temporary place holder for reading materials, resources, and more with a new job
   * [ ]  [Hortonworks Hadoop tutorials](http://hortonworks.com/tutorials/)
   * Hadoop projects
     * See [hadoop/readme.md#hadoop](https://github.com/mdeguzis/documents/blob/master/systems-engineer/hadoop/readme.md#hadoop)
-* [ ] python
+* python
+  * [ ] Basics and fundementals (in progress)
 * [ ] Tidal (Cisco Workload Automation)
 * [ ] Teradata
 
@@ -55,9 +56,10 @@ Temporary place holder for reading materials, resources, and more with a new job
 * [ ] confluence
 * Debugging ([See documents/debugging](https://github.com/mdeguzis/documents/blob/master/debugging/debugging.md))
   * [ ] gdb
+  * [x] pdb (python)
 * Java ([Notes](https://github.com/mdeguzis/documents/blob/master/systems-engineer/java/readme.md))
   * [x] Lynda - "Java Essential Training"
-* [ ] Jira
+* [x] Jira
 * [ ] LVM
 * [ ] Scala
 * Spark
