@@ -35,7 +35,7 @@ print bin(4)
 print(bin(4))
 ```
 
-# Future module
+# __future__ module
 
 See: [modules/future.md](https://github.com/mdeguzis/documents/blob/master/programming/python/modules/__future__.md)
 
