@@ -17,6 +17,12 @@
 
 Useful notes on VIM
 
+# Movement
+
+## Panes
+
+When using help, `CTRL+W` + `<ARROW_KEY>` will move between panes. ':q' to exit help.
+
 # Tips and tricks
 
 ## Clipboard support
