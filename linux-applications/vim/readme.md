@@ -75,5 +75,6 @@ set hlsearch!
 * [vimrc guide](https://dougblack.io/words/a-good-vimrc.html)
 * [Notes on folder](http://vim.wikia.com/wiki/Folding)
 * [Things About Vim I Wish I Knew Earlier](http://blog.petrzemek.net/2016/04/06/things-about-vim-i-wish-i-knew-earlier/)
-* [VIM cheat-sheet](http://vim.rtorr.com/)
-* [VIM anti-patterns](https://sanctum.geek.nz/arabesque/vim-anti-patterns/)
+* [Vim cheat-sheet](http://vim.rtorr.com/)
+* [Vim anti-patterns](https://sanctum.geek.nz/arabesque/vim-anti-patterns/)
+* [Vim modes](https://en.wikibooks.org/wiki/Learning_the_vi_Editor/Vim/Modes)
