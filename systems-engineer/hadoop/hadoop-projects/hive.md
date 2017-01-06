@@ -159,6 +159,12 @@ LEFT OUTER JOIN orders ON
 (customers.customerID = orders.customerID) 
 ```
 
+# Beeline
+
+Command line access in Hive2
+
+See: http://www.teckstory.com/hadoop-ecosystem/hive-new-cli-beeline-for-hive/
+
 # Further reading
 
 * [Hive cheatsheet (Hortonworks)](http://hortonworks.com/blog/hive-cheat-sheet-for-sql-users/)
