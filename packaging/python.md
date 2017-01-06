@@ -8,3 +8,7 @@
 
 # Python
 [Debian Python packaging](https://wiki.debian.org/Python/Packaging)
+
+# Links
+
+* https://www.digitalocean.com/community/tutorials/how-to-package-and-distribute-python-applications
