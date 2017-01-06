@@ -21,7 +21,13 @@ Useful notes on VIM
 
 ## Panes
 
-When using help, `CTRL+W` + `<ARROW_KEY>` will move between panes. ':q' to exit help.
+* Ctrl-W, s will create a horizontal split.
+* Ctrl-W, v will create a vertical split.
+* Ctrl-W, direction will allow you to move among the panes.
+* :ls will show your open buffers.
+:kb <number> will open the specified buffer in the current pane.. 
+
+':q' to exit help.
 
 # Tips and tricks
 
