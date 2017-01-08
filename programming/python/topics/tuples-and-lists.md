@@ -10,3 +10,11 @@
 ## The case for lists
 
 If you don't require any of the above, lists are better in every other scenario.
+
+# Nested sequences
+
+* lists of tuples can contain other lists or tuples
+* These are called nested sequences
+* Think, the movie "Inception" :)
+
+To learn more, check out the "high-scores-2.0" program in the fundementals folder.
