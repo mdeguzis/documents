@@ -4,12 +4,9 @@
 
 - [About](#about)
 - [Data](#data)
-  - [DAG](#dag)
   - [DDL](#ddl)
   - [DML](#dml)
   - [DCL](#dcl)
-  - [ORC](#orc)
-  - [RDD](#rdd)
   - [TCL](#tcl)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -19,20 +16,6 @@
 Defintions for various topics
 
 # Data
-
-## DAG
-
-Directed Acyclic Graph representing the data flow graph. In simple terms...
-
-* graph = structure consisting of nodes, that are connected to each other with edges
-* directed = the connections between the nodes (edges) have a direction: A -> B is not the same as B -> A 
-* acyclic = "non-circular" = moving from node to node by following the edges, you will never encounter the same node for the second time.
-
-Example uses of a directed acyclic graph in programming include more or less anything that represents **connectivity** and **causality**
-
-For example, suppose you have a computation pipeline that is configurable at runtime. As one example of this, suppose computations A,B,C,D,E,F, and G depend on each other: A depends on C, C depends on E and F, B depends on D and E, and D depends on F. This can be represented as a DAG. Once you have the DAG in memory, you can write algorithms to:
-
-For more see: https://en.wikipedia.org/wiki/Directed_acyclic_graph
 
 ## DDL
 Data Definition Language (DDL) statements are used to define the database structure or schema. Some examples:
@@ -66,7 +49,9 @@ Data Control Language (DCL) statements. Some examples:
 
 ## ORC
 
-The Optimized Row Columnar (ORC) file format provides a highly efficient way to store Hive data. It was designed to overcome limitations of the other Hive file formats. Using ORC files improves performance when Hive is reading, writing, and processing data.
+ORC is a self-describing type-aware columnar file format designed for Hadoop workloads. It is optimized for large streaming reads and with integrated support for finding required rows fast. Storing data in a columnar format lets the reader read, decompress, and process only the values required for the current query. Because ORC files are type aware, the writer chooses the most appropriate encoding for the type and builds an internal index as the file is persisted.
+
+ORC supports the complete set of types in Hive, including the complex types: structs, lists, maps, and unions.
 
 ## RDD
 
