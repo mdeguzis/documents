@@ -8,7 +8,14 @@
   - [Immutability](#immutability)
   - [Indexing](#indexing)
   - [Slicing strings](#slicing-strings)
-  - [Tuples](#tuples)
+- [Functions](#functions)
+  - [print()](#print)
+    - [Note regarding slicing/indexing and print](#note-regarding-slicingindexing-and-print)
+- [You can also work around this behaviro by using the 'strip()' funcion](#you-can-also-work-around-this-behaviro-by-using-the-strip-funcion)
+- [on your strings.](#on-your-strings)
+- [Using a space at the tail end](#using-a-space-at-the-tail-end)
+- [Cutting of at the end of the string](#cutting-of-at-the-end-of-the-string)
+  - [len()](#len)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

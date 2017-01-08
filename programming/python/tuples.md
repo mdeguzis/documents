@@ -1,3 +1,14 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Tuples vs Arrays](#tuples-vs-arrays)
+- [Using functions with tupes](#using-functions-with-tupes)
+  - [len()](#len)
+- [Indexing](#indexing)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 #About Tuples
 
 Types are a type of sequence, like stings. However, unlike strings, which can only contain characters, tuples can contian elements of any type. This could be Names, numbers, and so on. Tuples can even contain images, sound files, and much more. Tuples are immutable.

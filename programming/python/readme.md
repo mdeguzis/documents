@@ -5,11 +5,13 @@
 - [About](#about)
 - [Python projects](#python-projects)
 - [Python 2 vs. Python 3](#python-2-vs-python-3)
+- [Modules](#modules)
+  - [\_\_future\_\_ module](#%5C_%5C_future%5C_%5C_-module)
 - [Libraries](#libraries)
-- [Listing all modules](#listing-all-modules)
+  - [Listing all modules](#listing-all-modules)
 - [Listing PYTHONPATH](#listing-pythonpath)
 - [Links](#links)
-- [Specific topics](#specific-topics)
+- [Documentation](#documentation)
 - [Videos](#videos)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->

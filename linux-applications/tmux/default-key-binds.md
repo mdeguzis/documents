@@ -1,3 +1,14 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [Client](#client)
+- [Editing](#editing)
+- [Windows](#windows)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About
 
 List of default keybindings for tmux. Take not that to initiate a key sequence you must start with the <prefix>, which is `CTRL+B` by default, or `C-b` in "tmux-speak".

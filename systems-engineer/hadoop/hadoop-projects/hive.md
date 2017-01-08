@@ -10,6 +10,7 @@
   - [Query editor (GUI view)](#query-editor-gui-view)
   - [Some of the supported query operations:](#some-of-the-supported-query-operations)
   - [Examples](#examples)
+- [Beeline](#beeline)
 - [Further reading](#further-reading)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->

@@ -1,3 +1,17 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [When to use tuples or lists](#when-to-use-tuples-or-lists)
+  - [The case for tuples](#the-case-for-tuples)
+  - [The case for lists](#the-case-for-lists)
+- [Nested sequences](#nested-sequences)
+  - [Accessing nested sequences](#accessing-nested-sequences)
+  - [Unpacking a sequence](#unpacking-a-sequence)
+  - [sorting nested sequences](#sorting-nested-sequences)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # When to use tuples or lists
 
 ## The case for tuples

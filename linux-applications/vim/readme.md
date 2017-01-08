@@ -3,8 +3,13 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [About](#about)
+- [Editing](#editing)
+  - [Indenting a block of text](#indenting-a-block-of-text)
+- [Movement](#movement)
+  - [Panes](#panes)
 - [Tips and tricks](#tips-and-tricks)
   - [Clipboard support](#clipboard-support)
+  - [Maps](#maps)
   - [Clearning settings](#clearning-settings)
   - [Searching](#searching)
 - [Distro specific](#distro-specific)
