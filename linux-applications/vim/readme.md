@@ -17,6 +17,14 @@
 
 Useful notes on VIM
 
+# Editing
+
+## Indenting a block of text
+
+In normal mode, type `>>` to indent the current line, or `<<` to unindent. Each command can be used with a count. The operators `> `and `<` do the same for motions, text objects and visual selections. For all commands, pressing . repeats the operation.
+
+For example, typing `5>>`.. shifts five lines to the right, and then repeats the operation twice so that the five lines are shifted three times. 
+
 # Movement
 
 ## Panes
