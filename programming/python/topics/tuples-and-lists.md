@@ -93,8 +93,10 @@ This is called "unpacking". Just make sure to use the same number of variables a
 
 ## sorting nested sequences
 
-**Using itemgetter** (`from operators import itemgetter`)
+### Using itemgetter
 ```
+from operators import itemgetter
+
 m = [
  ['4', '21', '1', '14', '2008-10-24 15:42:58'], 
  ['3', '22', '4', '2somename', '2008-10-24 15:22:03'], 
@@ -112,9 +114,12 @@ m = sorted(m, key=sort_on(1))
 
 # Filter on 4th column, where value = '2somename'
 m = filter(filter_on(3,'2somename'),m)
+
+# Multiple criteria
+sorted_list = sorted(list_to_sort, key=itemgetter(2,0,1))
 ```
 
-**Using lamba function**
+### Using lamba function
 
 Using a lambafunction is slower for larger and more complex sequences, but it is fine as well.
 ```
@@ -133,6 +138,16 @@ Using a lambafunction is slower for larger and more complex sequences, but it is
 [[9, 4, 'afsd'], [0, 1, 'f'], [4, 2, 't']]
 >>> print list
 [[0, 1, 'f'], [4, 2, 't'], [9, 4, 'afsd']]
+
+```
+
+### Grouping by
+
+```
+from operators import itemgetter
+from itertools import groupby
+
+y = groupby(x, itemgetter(1))
 ```
 
 To learn more, check out the "high-scores-2.0" program in the fundementals folder.
