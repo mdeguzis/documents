@@ -77,4 +77,48 @@ Shemp
 
 This is called "unpacking". Just make sure to use the same number of variables and elements in the sequence.
 
+## sorting nested sequences
+
+**Using itemgetter** (`from operators import itemgetter`)
+```
+m = [
+ ['4', '21', '1', '14', '2008-10-24 15:42:58'], 
+ ['3', '22', '4', '2somename', '2008-10-24 15:22:03'], 
+ ['5', '21', '3', '19', '2008-10-24 15:45:45'], 
+ ['6', '21', '1', '1somename', '2008-10-24 15:45:49'], 
+ ['7', '22', '3', '2somename', '2008-10-24 15:45:51']
+]
+
+# Sort and filter helpers.
+sort_on   = lambda pos:     lambda x: x[pos]
+filter_on = lambda pos,val: lambda l: l[pos] == val
+
+# Sort by second column
+m = sorted(m, key=sort_on(1))
+
+# Filter on 4th column, where value = '2somename'
+m = filter(filter_on(3,'2somename'),m)
+```
+
+**Using lamba function**
+
+Using a lambafunction is slower for larger and more complex sequences, but it is fine as well.
+```
+# in place (remember index starts at 0)
+
+>>> list = [[0, 1, 'f'], [4, 2, 't'], [9, 4, 'afsd']]
+>>> list.sort(key=lambda x: x[1])
+>>> print list
+[[0, 1, 'f'], [4, 2, 't'], [9, 4, 'afsd']]
+
+# not in place using sorted (as seen below, a comes first at index[2]),
+# but the list is unchanged
+
+>>> list = [[0, 1, 'f'], [4, 2, 't'], [9, 4, 'afsd']]
+>>> sorted(list, key=lambda x: x[2])
+[[9, 4, 'afsd'], [0, 1, 'f'], [4, 2, 't']]
+>>> print list
+[[0, 1, 'f'], [4, 2, 't'], [9, 4, 'afsd']]
+```
+
 To learn more, check out the "high-scores-2.0" program in the fundementals folder.
