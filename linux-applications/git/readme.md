@@ -32,6 +32,14 @@ Useful informatin about using git / GitHub. Also see [getting started with GitHu
 ### Stash only a specific commit, or set of them. 
 You can use`git stash -p`. This way you can select which hunks should be added to stash, whole files can be selected as well.
 
+## Retrieve a stash
+
+```
+git stash apply --index
+```
+
+See: https://git-scm.com/book/en/v1/Git-Tools-Stashing
+
 ## rebase
 
 ### Squashing commits
