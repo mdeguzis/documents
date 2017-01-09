@@ -47,7 +47,8 @@ Temporary place holder for reading materials, resources, and more with a new job
     * See [hadoop/readme.md#hadoop](https://github.com/mdeguzis/documents/blob/master/systems-engineer/hadoop/readme.md#hadoop)
 * python
   * [ ] Basics and fundementals (in progress)
-* [ ] Tidal (Cisco Workload Automation)
+* Tidal (Cisco Workload Automation)
+  * [x] Basics
 * [ ] Teradata
 
 ## Medium
