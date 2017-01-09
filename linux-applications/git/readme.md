@@ -35,6 +35,7 @@ You can use`git stash -p`. This way you can select which hunks should be added t
 ## Retrieve a stash
 
 ```
+git stash list
 git stash apply --index
 ```
 
