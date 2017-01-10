@@ -63,4 +63,6 @@ ssh host 'expect -c "spawn -noecho sh -c {
  exit [lindex [wait] 3]" 4>&1 5>&2 6<&0'
 ```
 
-(here assuming the login shell of the remote user is Bourne-like).
+(here assuming the login shell of the remote user is Bourne-like)
+
+FOr more usage of `expect`, see: http://www.admin-magazine.com/Articles/Automating-with-Expect-Scripts
