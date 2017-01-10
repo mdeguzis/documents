@@ -71,3 +71,15 @@ FOr more usage of `expect`, see: http://www.admin-magazine.com/Articles/Automati
 
 See: http://unix.stackexchange.com/a/122624 
 See: https://bugzilla.redhat.com/show_bug.cgi?id=1020147
+
+# Recovering from a broken sudo file
+
+**NEVER** edit sudo files with an editor directly. **ALWAYS** use visudo!
+
+That said...
+
+If you edited /etc/sudoers or a file in /etc/sudoers.d/ with vim and made an error, you can recover this as root with:
+
+```
+pkexec visudo -f /etc/sudoers
+```
