@@ -2,6 +2,14 @@
 
 Notes about sudo usage.
 
+# Syntax
+
+```
+User Host = (Runas) Command
+```
+
+See: http://toroid.org/sudoers-syntax
+
 # Assigning specific privledges
 
 From the sudoers(5) man page:
