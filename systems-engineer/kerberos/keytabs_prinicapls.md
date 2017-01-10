@@ -1,4 +1,4 @@
-# Keytabs and prinicapls
+# Keytabs and principals
 
 In a secured cluster you have two types of keytabs or principals.
 
