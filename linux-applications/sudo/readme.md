@@ -66,3 +66,8 @@ ssh host 'expect -c "spawn -noecho sh -c {
 (here assuming the login shell of the remote user is Bourne-like)
 
 FOr more usage of `expect`, see: http://www.admin-magazine.com/Articles/Automating-with-Expect-Scripts
+
+**See also***
+
+See: http://unix.stackexchange.com/a/122624 
+See: https://bugzilla.redhat.com/show_bug.cgi?id=1020147
