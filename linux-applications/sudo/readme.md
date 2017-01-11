@@ -91,3 +91,30 @@ If you edited /etc/sudoers or a file in /etc/sudoers.d/ with vim and made an err
 ```
 pkexec visudo -f /etc/sudoers
 ```
+
+**If you still have issues**
+
+Another way to recover from this mishap, provided you have another host and ssh access, is to sent remote commands.
+
+Example:
+
+```
+# Check the offending line
+ sudo echo
+sudo: >>> /etc/sudoers.d/file: syntax error near line 7 <<<
+sudo: parse error in /etc/sudoers.d/file near line 7
+sudo: no valid sudoers sources found, quitting
+sudo: unable to initialize policy plugin
+
+# Check the contents of the file
+sudo ssh HOST "cat /etc/sudoers.d/file"
+
+# Remove the offending line or comment it out
+
+# Deletion
+sudo ssh HOST "sed -i '/usergroup/d' /etc/sudoers.d/file"
+
+# Commenting out
+sudo ssh HOST "sed -i '/string/s/^/#/' /etc/sudoers.d/file"
+```
+
