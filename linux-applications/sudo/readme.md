@@ -1,6 +1,18 @@
 # About 
 
-Notes about sudo usage.
+Notes about using sudo
+
+# Editing
+
+**NEVER** edit sudo files with an editor directly. **ALWAYS** use visudo!
+
+From: http://www.courtesan.com/sudo/man/1.7.10/visudo.man.html:
+
+>visudo parses the sudoers file after the edit and will not save the changes if there is a syntax error. Upon finding an error, visudo will print a message stating the line number(s) where the error occurred and the user will receive the “What now?” prompt. At this point the user may enter ‘e’ to re-edit the sudoers file, ‘x’ to exit without saving the changes, or ‘Q’ to quit and save changes. The ‘Q’ option should be used with extreme care because if visudo believes there to be a parse error, so will sudo and no one will be able to sudo again until the error is fixed. If ‘e’ is typed to edit the sudoers file after a parse error has been detected, the cursor will be placed on the line where the error occurred (if the editor supports this feature).
+
+**Syntax Checking**
+
+Note: for whatever reason, issuing "e" after an initial syntax check throws an error works **one** time. If your mistake is still present the 2nd time, or a new one is introduced, visudo does not check this. For this reason, it is best to keep the file open, perform a write, but do not exit the file. You can also choose "x" (see `?` at prompt) to discard changes and re-evaluate you additions.
 
 # Syntax
 
@@ -80,15 +92,11 @@ FOr more usage of `expect`, see: http://www.admin-magazine.com/Articles/Automati
 See: http://unix.stackexchange.com/a/122624 
 See: https://bugzilla.redhat.com/show_bug.cgi?id=1020147
 
-# Recovering from a broken sudo file
+# Troubleshooting
 
-From: http://www.courtesan.com/sudo/man/1.7.10/visudo.man.html:
 
->visudo parses the sudoers file after the edit and will not save the changes if there is a syntax error. Upon finding an error, visudo will print a message stating the line number(s) where the error occurred and the user will receive the “What now?” prompt. At this point the user may enter ‘e’ to re-edit the sudoers file, ‘x’ to exit without saving the changes, or ‘Q’ to quit and save changes. The ‘Q’ option should be used with extreme care because if visudo believes there to be a parse error, so will sudo and no one will be able to sudo again until the error is fixed. If ‘e’ is typed to edit the sudoers file after a parse error has been detected, the cursor will be placed on the line where the error occurred (if the editor supports this feature).
+## Recovering from a broken sudo file
 
-**NEVER** edit sudo files with an editor directly. **ALWAYS** use visudo!
-
-That said...
 
 If you edited /etc/sudoers or a file in /etc/sudoers.d/ with vim and made an error, you can recover this as root with:
 
@@ -96,7 +104,7 @@ If you edited /etc/sudoers or a file in /etc/sudoers.d/ with vim and made an err
 pkexec visudo -f /etc/sudoers
 ```
 
-**If you still have issues**
+## If you still have issues
 
 Another way to recover from this mishap, provided you have another host and ssh access, is to sent remote commands.
 
