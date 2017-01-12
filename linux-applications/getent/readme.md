@@ -1,24 +1,8 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
-
-- [About](#about)
-- [Linux](#linux)
-  - [getent](#getent)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-# About
-
-Just notable commands that I have ran into so far.
-
-# Linux
-
-## getent
+# getent
 
 `getent` is Unix command which helps you query one of the following administrative databases in Unix: passwd, group, hosts, services, protocols, or networks. The config file is held in `/etc/nsswitch.conf`. 
 
-**key points**
+# key points
 
 For example, the `passwd` line in `/etc/nsswitch.conf` will point to what databases hold the information:
 
