@@ -20,3 +20,16 @@ The above command will query only the local files database, `/etc/group`
 
 * [getent (man page)](http://man7.org/linux/man-pages/man1/getent.1.html)
 * [command-line foo examples](http://www.commandlinefu.com/commands/using/getent)
+
+# Databases
+
+If the LDAP bindings are processed into an ldb databse, you may find them in a simliar location to the below:
+
+```
+/var/lib/sss
+/var/lib/sss/mc/group
+/var/lib/sss/mc/passwd
+```
+
+* files is /etc/passwd and /etc/group, not ldb files.
+* User/group id's greater than 2000 are in Linux LDAP, below in local files.
