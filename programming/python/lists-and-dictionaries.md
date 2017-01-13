@@ -15,6 +15,15 @@
   - [Functions](#functions)
     - [len()](#len)
 - [Examples](#examples)
+- [Shared references](#shared-references)
+- [Using dictionaries](#using-dictionaries)
+  - [Basics](#basics)
+  - [Requirements](#requirements)
+  - [Methods](#methods-1)
+  - [Accessing values](#accessing-values)
+  - [Testing for keys](#testing-for-keys)
+  - [Example](#example)
+  - [Example Programs](#example-programs)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
