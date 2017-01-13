@@ -4,18 +4,20 @@ Notes (WIP) on setting up a local git-server for GitHub use.
 
 # Setup
 
-## RHEL 7
-
-Required programs
+## Required programs
 ```
 sudo yum install git-core
 ```
+
+## git user setup
 
 Add the 'git' user
 ```
 sudo useradd git
 sudo passwd git
 ```
+
+## SSH Keys
 
 In order to ease access to the server, set-up a password-less ssh login. First create ssh keys on your local machine:
 ```
@@ -45,6 +47,8 @@ Now you have to copy these keys to the server so that the two machines can talk 
 ssh-copy-id git@remote-server
 ```
 
+## Repository setup
+
 Now, you can set up an empty repository for your users by running git init with the --bare option, which initializes the repository without a working directory:
 
 ```
@@ -54,6 +58,7 @@ $ cd project.git
 $ git --bare init
 ```
 
+## Getting users access to the repository
 
 Then, John, Josie, or Jessica can push the first version of their project into that repository by adding it as a remote and pushing up a branch. Note that someone must shell onto the machine and create a bare repository every time you want to add a project. Let’s use gitserver as the hostname of the server on which you’ve set up your 'git' user and repository. If you’re running it internally, and you set up DNS for gitserver to point to that server, then you can use the commands pretty much as is:
 
@@ -66,7 +71,6 @@ $ git commit -m 'initial commit'
 $ git remote add origin git@gitserver:/opt/git/project.git
 $ git push origin master
 ```
-
 
 At this point, the others can clone it down and push changes back up just as easily:
 
