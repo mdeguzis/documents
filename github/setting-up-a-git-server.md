@@ -112,6 +112,10 @@ fatal: What do you think I am? A shell?
 Connection to gitserver closed.
 ```
 
+# Setting up public access
+
+TODO
+
 # Links
 
 * [Git documentation (GitHub)](https://git-scm.com/doc)
