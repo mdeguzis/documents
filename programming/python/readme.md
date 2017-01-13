@@ -103,7 +103,7 @@ python -c "import sys; print('\n'.join("sys.path"))"
 * [Minimal module packaging](http://python-packaging.readthedocs.io/en/latest/minimal.html)
 * [Nice sample project](https://github.com/pypa/sampleproject/tree/master/sample)
 
-# ebooks
+# books and ebooks
 
 * [Python Programming for the Absolute Beginner, 3rd Edition](https://www.amazon.com/Python-Programming-Absolute-Beginner-3rd/dp/1435455002) - **Bookmark status:** - page 149
 
