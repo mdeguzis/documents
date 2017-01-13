@@ -103,6 +103,10 @@ python -c "import sys; print('\n'.join("sys.path"))"
 * [Minimal module packaging](http://python-packaging.readthedocs.io/en/latest/minimal.html)
 * [Nice sample project](https://github.com/pypa/sampleproject/tree/master/sample)
 
+# ebooks
+
+* [Python Programming for the Absolute Beginner, 3rd Edition](https://www.amazon.com/Python-Programming-Absolute-Beginner-3rd/dp/1435455002) - **Bookmark status:** - page 149
+
 # Documentation
 
 See [docs/master-list.md](https://github.com/mdeguzis/documents/tree/master/programming/python/docs). Notable snippets will be kept as separate files in the docs/ folder, with notable links documented under the master list.
