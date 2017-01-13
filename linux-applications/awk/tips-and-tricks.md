@@ -6,7 +6,29 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-# Get extension and file name
+# String matching
+
+## Match string
+
+```
+ls -l / | awk '!/var/'
+drwxr-xr-x.  18 root          root         4096 Nov  2 18:18 var
+```
+
+## Do not match string
+
+```
+ls -l / | awk '!/var/'
+total 100
+lrwxrwxrwx.   1 root          root            7 Feb 18  2016 bin -> usr/bin
+dr-xr-xr-x.   4 root          root         4096 Nov  2 15:38 boot
+drwxr-xr-x.  22 root          root         3540 Nov  2 18:18 dev
+...
+```
+
+# Files and extensions
+
+## Get extension and file name
 
 ```
 f='/path/to/complex/file.1.0.1.tar.gz'
