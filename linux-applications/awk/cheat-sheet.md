@@ -101,4 +101,4 @@ awk 'NR==12' file↵ Print line number 12 of file
 
 # Sources:
 
-* [awk cheet sheeet (shortcut foo)](https://www.shortcutfoo.com/app/dojos/awk/cheatsheet)
+* [awk cheat sheet (shortcut foo)](https://www.shortcutfoo.com/app/dojos/awk/cheatsheet)
