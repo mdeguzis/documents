@@ -9,6 +9,9 @@
   - [Accessing nested sequences](#accessing-nested-sequences)
   - [Unpacking a sequence](#unpacking-a-sequence)
   - [sorting nested sequences](#sorting-nested-sequences)
+    - [Using itemgetter](#using-itemgetter)
+    - [Using lamba function](#using-lamba-function)
+    - [Grouping by](#grouping-by)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

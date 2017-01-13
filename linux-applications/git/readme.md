@@ -6,6 +6,7 @@
 - [Commands](#commands)
   - [stash](#stash)
     - [Stash only a specific commit, or set of them.](#stash-only-a-specific-commit-or-set-of-them)
+  - [Retrieve a stash](#retrieve-a-stash)
   - [rebase](#rebase)
     - [Squashing commits](#squashing-commits)
   - [revert](#revert)

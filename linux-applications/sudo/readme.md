@@ -1,3 +1,18 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [Editing](#editing)
+- [Syntax](#syntax)
+- [Assigning specific privledges](#assigning-specific-privledges)
+- [Using sudo over ssh connections](#using-sudo-over-ssh-connections)
+- [Troubleshooting](#troubleshooting)
+  - [Recovering from a broken sudo file](#recovering-from-a-broken-sudo-file)
+  - [If you still have issues](#if-you-still-have-issues)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About 
 
 Notes about using sudo

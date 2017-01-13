@@ -1,3 +1,12 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Keytabs and principals](#keytabs-and-principals)
+  - [Headless and Service principals.](#headless-and-service-principals)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Keytabs and principals
 
 In a secured cluster you have two types of keytabs or principals.
