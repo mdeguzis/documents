@@ -16,6 +16,12 @@
 
 Notes on working with variables
 
+# Key points
+
+## Shared references
+
+Variables don't store a value, they technically refer to the place in the computers memory where the value is stored (more particular to Python).
+
 # Special values
 
 ## None
