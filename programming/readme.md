@@ -8,7 +8,7 @@ Some general programming notes, such as code-style.
 
 This varies, but it's a good idea to use TABs for most languages, with a tabstop of 4. This way, if you require 8 for uniformity, you just tap TAB twice, versus having to use spaces (as backing up will clear the TAB).
 
-## Blanks lines
+## Blank lines
 
 Whitespace is crucial to clean readable code. A blank line (or two) help visually separate out logical blocks of code.
 
