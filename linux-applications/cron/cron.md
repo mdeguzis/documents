@@ -17,5 +17,16 @@ Useful info for cron (automation).
 ## Listing all jobs for all users
 
 ```
-for user in $(cut -f1 -d: /etc/passwd); do sudo crontab -u $user -l; done
+for user in $(cut -f1 -d: /etc/passwd); do echo "Checking cronjobs for user: $user" && sudo crontab -u $user -l; done
+```
+
+## Viewing cronjobs for specific user
+
+```
+sudo crontab -l -u <USER>
+```
+
+## Edit another user's crontab
+```
+sudo crontab -e -u <USER>
 ```
