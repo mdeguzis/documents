@@ -1,3 +1,14 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [Coding style](#coding-style)
+  - [Indents](#indents)
+  - [Blank lines](#blank-lines)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About
 
 Some general programming notes, such as code-style.

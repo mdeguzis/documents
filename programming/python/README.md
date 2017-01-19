@@ -11,6 +11,7 @@
   - [Listing all modules](#listing-all-modules)
 - [Listing PYTHONPATH](#listing-pythonpath)
 - [Links](#links)
+- [books and ebooks](#books-and-ebooks)
 - [Documentation](#documentation)
 - [Videos](#videos)
 

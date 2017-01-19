@@ -2,7 +2,11 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [Get extension and file name](#get-extension-and-file-name)
+- [String matching](#string-matching)
+  - [Match string](#match-string)
+  - [Do not match string](#do-not-match-string)
+- [Files and extensions](#files-and-extensions)
+  - [Get extension and file name](#get-extension-and-file-name)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

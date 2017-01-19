@@ -1,3 +1,20 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [Setup](#setup)
+  - [Required programs](#required-programs)
+  - [git user setup](#git-user-setup)
+  - [SSH Keys](#ssh-keys)
+  - [Repository setup](#repository-setup)
+  - [Getting users access to the repository](#getting-users-access-to-the-repository)
+- [Restricting the 'git' user's actions](#restricting-the-git-users-actions)
+- [Setting up public access](#setting-up-public-access)
+- [Links](#links)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About
 
 Notes (WIP) on setting up a local git-server for GitHub use.

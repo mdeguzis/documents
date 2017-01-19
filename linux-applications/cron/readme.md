@@ -3,8 +3,11 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [About](#about)
+- [Visualization of cron setup](#visualization-of-cron-setup)
 - [Useful commands](#useful-commands)
   - [Listing all jobs for all users](#listing-all-jobs-for-all-users)
+  - [Viewing cronjobs for specific user](#viewing-cronjobs-for-specific-user)
+  - [Edit another user's crontab](#edit-another-users-crontab)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

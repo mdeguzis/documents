@@ -1,3 +1,23 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [Basics](#basics)
+  - [Defining a function](#defining-a-function)
+  - [Documenting a function](#documenting-a-function)
+  - [Calling a function](#calling-a-function)
+  - [Returning values](#returning-values)
+  - [Encapsulation](#encapsulation)
+  - [Keyword arguments and default parameter values](#keyword-arguments-and-default-parameter-values)
+  - [Global variables](#global-variables)
+  - [Scopes](#scopes)
+  - [Shadowing a global variable](#shadowing-a-global-variable)
+  - [Global variables vs. Global constants](#global-variables-vs-global-constants)
+- [Examples](#examples)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About
 
 Python functions
