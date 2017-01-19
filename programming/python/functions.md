@@ -121,6 +121,28 @@ variable0
 
 Any variable that you create in the global scope is called a global variablewhile any variable you create inside a function is called a local variable (it’s local to that function).
 
+## Shadowing a global variable
+
+If you give a variable inside a function the same name as a global variable, you shadow the
+global variable. That is, you hide it with your new variable. It might look like you can change
+the value of a global variable by doing this, but you only change the local variable you’ve
+created
+
+## Global variables vs. Global constants
+
+Just because you can, doesn’t mean you should. This is a good programming motto. Some-
+times things are technically possible, but not good ideas. Using global variables is an example
+of this. In general, global variables make programs confusing because it can be hard to keep
+track of their changing values. You should limit your use of them as much as you can.
+
+Global constants (global variables that you treat as constants), on the other hand, can make
+programs less confusing. For example, say you’re writing a business application that calcu-
+lates someone’s taxes. Like a good programmer, you have written a variety of functions in
+your code, all of which use the somewhat cryptic value .28 as the tax rate. Instead, you could
+create a global constant called TAX_RATE and set it to .28 . Then, in each function, you could
+replace the number .28 with TAX_RATE . This produces two benefits. It makes your code clearer
+and it makes changes (like a new tax rate) no sweat.
+
 # Examples
 
 See the following examples at [mdeguzis/python](https://github.com/mdeguzis/python)
