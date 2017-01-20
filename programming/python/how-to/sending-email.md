@@ -60,9 +60,13 @@ TODO - add links researched below.
         print "Failed due to " + r.reason
 ```
 
+## Using attachments (advanced)
+
+For more advanced dynamic checks, see the "Python email examples" in the links below.
+
 # Links
 
-* [Python email examples](https://docs.python.org/3/library/email-examples.html)
+* [Python email examples (docs.python.org)](https://docs.python.org/3/library/email-examples.html)
 * [Logging library](https://docs.python.org/2/howto/logging.html)
 * [Stack Overflow example 1](http://stackoverflow.com/questions/27621041/sending-email-attachment-txt-file-using-python-2-7-smtplib)
 * [Sample sendmail documentation (jpsoft)](https://jpsoft.com/help/sendmail.htm)
