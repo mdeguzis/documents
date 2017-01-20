@@ -55,7 +55,7 @@ This took a bit to figure out with sendmail. Another alternative is 'mailx'. Oth
             "\n\nA copy of the complete audit actions is attached\n"))
             f = file("/tmp/system-user-log.txt")
             attachment = MIMEText(f.read())
-            attachment.add_header('Content-Disposition', 'attachment', filename="/tmp/system-user-log.txt")
+            attachment.add_header('Content-Disposition', 'attachment', filename='system-user-log.txt')
             msg.attach(attachment)
             p = Popen(["/usr/sbin/sendmail", "-t", "-oi"], stdin=PIPE)
             p.communicate(msg.as_string())  
