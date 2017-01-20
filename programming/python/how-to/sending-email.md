@@ -1,6 +1,10 @@
+# Configuring sendmail/mail
+
+TODO
+
 # Using sendmail
 
-## Basic emai
+## Basic email
 
 ```
 from email.mime.text import MIMEText
