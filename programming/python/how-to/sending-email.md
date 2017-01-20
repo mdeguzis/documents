@@ -37,7 +37,6 @@ p.communicate(msg.as_string())
 
 This took a bit to figure out with sendmail. Another alternative is 'mailx'. Other methods are more lengthly in their implementation, but the below accomplishes what I set out to do.
 
-TODO - add links researched below.
 
 ```
        # Send email out if list that holds invalid users is not None
