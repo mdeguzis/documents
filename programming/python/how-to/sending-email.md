@@ -4,6 +4,14 @@ TODO
 
 # Using sendmail
 
+## Modules
+
+```
+import subprocess
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+```
+
 ## Basic email
 
 ```
@@ -14,7 +22,7 @@ msg = MIMEText("Here is the body of my message")
 msg["From"] = "me@example.com"
 msg["To"] = "you@example.com"
 msg["Subject"] = "This is the subject."
-p = Popen(["/usr/sbin/sendmail", "-t", "-oi"], stdin=PIPE)
+p = subprocess.Popen(["/usr/sbin/sendmail", "-t", "-oi"], stdin=subprocess.PIPE)
 p.communicate(msg.as_string())
 ```
 
@@ -29,8 +37,8 @@ msg["From"] = "email@domain.com"
 msg["To"] = "email@domain.com"
 msg["Subject"] = "User Audit for: " + date_stamp
                                       
-p = Popen(["/usr/sbin/sendmail", "-t", "-oi"], stdin=PIPE)
-p.communicate(msg.as_string())  
+p = subprocess.Popen(["/usr/sbin/sendmail", "-t", "-oi"], stdin=subprocess.PIPE)
+p.communicate(msg.as_string())
 ```
 
 ## Using attachments
@@ -44,6 +52,8 @@ This took a bit to figure out with sendmail. Another alternative is 'mailx'. Oth
             print "\n== Sending audit email ==\n"
             date_stamp = str(time.strftime("%c"))
             divider = str('-' * 80 + "\n")
+
+            # create msg
             msg = MIMEMultipart()
             msg["From"] = "email@domain.com"
             msg["To"] = "email@domain.com"
@@ -53,12 +63,16 @@ This took a bit to figure out with sendmail. Another alternative is 'mailx'. Oth
             "\n\n" + divider + "These users are in the list of system users, but not AD/LDAP: \n" + divider + str(invalid_system_users) +
             "\n\n" + divider + "These users were manually filterd out: \n" + divider + str(user_skip_list) +
             "\n\nA copy of the complete audit actions is attached\n"))
+
+            # add attachment
             f = file("/tmp/system-user-log.txt")
             attachment = MIMEText(f.read())
             attachment.add_header('Content-Disposition', 'attachment', filename='system-user-log.txt')
             msg.attach(attachment)
-            p = Popen(["/usr/sbin/sendmail", "-t", "-oi"], stdin=PIPE)
-            p.communicate(msg.as_string())  
+
+            # Send email
+            p = subprocess.Popen(["/usr/sbin/sendmail", "-t", "-oi"], stdin=subprocess.PIPE)
+            p.communicate(msg.as_string()) 
     else:
         print "Failed due to " + r.reason
 ```
