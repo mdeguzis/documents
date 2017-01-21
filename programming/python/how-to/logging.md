@@ -116,5 +116,6 @@ logging.warning('And this, too')
 
 # Links
 
+* [Log file format](https://docs.python.org/2/library/logging.html#logrecord-attributes)
 * [logging (doc)](https://docs.python.org/2/library/logging.html)
 * [logging library (how to)](https://docs.python.org/2/howto/logging.html)
