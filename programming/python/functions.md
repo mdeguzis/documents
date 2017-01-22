@@ -26,6 +26,11 @@ Python functions
 * reusable
 * create your own modules for easier reusability
 
+# Key points
+
+* Any time you get a mutable value passed to a function, you have to be careful. If you know you’re going to change the value as you work with it, make a copy and use that instead.
+* Changing a mutable parameter directly is considered creating a side effect. Not all side effects are bad, but this type is generally frowned upon. It’s best to communicate with the rest of your program through return values; that way, it’s clear exactly what infor- mation you’re giving back.
+
 # Basics
 
 ## Defining a function
