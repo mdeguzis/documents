@@ -13,7 +13,9 @@
 
 Useful info for using parted
 
-# Formatting a new drive (simple)
+# Partitioning a drive
+
+## Listing
 
 Listing drives:
 
@@ -56,6 +58,8 @@ start parted
 sudo parted /dev/sde
 ```
 
+## Creating the partition
+
 Print the table for review
 ```
 print
@@ -95,20 +99,28 @@ Partition Table: gpt
 Disk Flags: 
 ```
 
+## Create the partition
+
 
 To use all of the disk size, use 0 at both start and end markers:
 ```
-mkpart primary 0 0
+mkpart primary ext4 0 0
 ```
 
 This is equivalent to:
 ```
-mkpart primary 0.00TB 1.00TB
+mkpart primary ext4 0.00TB 1.00TB
 ```
+
+You could also specify percent:
+```
+mkpart primary ext4 1 100%
+```
+This is 1 MiB to 100%
 
 Now,exit parted with the `quit` command
 
-# Post partitioning
+#  Format the drive
 
 The most basic task now, is to format the drive with a file system. It is recommended to use the -m 2 option when 
 formatting ext volumes on Linux so that only 2% of space is reserved for superuser. The default of 
@@ -116,9 +128,17 @@ formatting ext volumes on Linux so that only 2% of space is reserved for superus
 The -m option is not documented in the man page for mkfs, but mkfs.ext4 only. man mkfs.ext4 usually 
 redirects to the mk2fs man page.
 
+ext4
 ```
 sudo mkfs.ext4 -m 2 /dev/sde
 ```
+
+vfat
+```
+sudo mkfs.vfat -F 32 /dev/sde
+```
+
+* `-F` FAT-SIZE - Specifies  the type of file allocation tables used (12, 16 or 32 bit).  If nothing is specified, mkfs.fat will automatically select between 12, 16 and 32 bit, whatever fits better for the filesystem size.
 
 You may see:
 ```
@@ -127,6 +147,29 @@ Proceed anyway? (y,n)
 ```
 
 If it is a new drive, answer yes.
+
+# Labeling the drive
+
+## Ext files sytems
+
+Example
+```
+sudo e2label /dev/sda1
+```
+
+## FAT32
+
+Check the label
+```
+sudo mlabel -i <device> -s ::
+```
+
+Create the label:
+```
+sudo mlabel -i <device> ::<label>
+```
+
+# Attaching a drive using fstab
 
 Now, attach the drive in `/etc/fstab`. You will want to use the UUID of the drive. The advantage of using the 
 UUID is that it is independent from the actual device number the operating system gives your hard disk. 
