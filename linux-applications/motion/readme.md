@@ -107,7 +107,8 @@ sudo reboot
 
 The two options we set in the configuration are rtw_power_mgnt and rtw_enusbss. If you are interested they take the values defined below :
 
->rtw_power_mgnt
+```
+rtw_power_mgnt
 0 = disable power saving
 1 = power saving on, minPS
 2 = power saving on, maxPS
@@ -115,8 +116,9 @@ rtw_enusbss
 0 = disable auto suspend
 1 = enable auto suspend
 So setting them both to zero disables “power saving” and “auto suspend”.
+```
 
-# Sourcea
+# Sources
 
 * https://pimylifeup.com/raspberry-pi-webcam-server/
 * https://www.raspberrypi.org/forums/viewtopic.php?t=61665
