@@ -3,8 +3,15 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [About](#about)
-- [Formatting a new drive (simple)](#formatting-a-new-drive-simple)
-- [Post partitioning](#post-partitioning)
+- [Partitioning a drive](#partitioning-a-drive)
+  - [Listing](#listing)
+  - [Creating the partition](#creating-the-partition)
+  - [Create the partition](#create-the-partition)
+- [Format the drive](#format-the-drive)
+- [Labeling the drive](#labeling-the-drive)
+  - [Ext files sytems](#ext-files-sytems)
+  - [FAT32](#fat32)
+- [Attaching a drive using fstab](#attaching-a-drive-using-fstab)
 - [Links](#links)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->

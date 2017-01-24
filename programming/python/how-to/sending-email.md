@@ -1,3 +1,17 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Configuring sendmail/mail](#configuring-sendmailmail)
+- [Using sendmail](#using-sendmail)
+  - [Modules](#modules)
+  - [Basic email](#basic-email)
+  - [Using attachments](#using-attachments)
+  - [Using attachments (advanced)](#using-attachments-advanced)
+- [Links](#links)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Configuring sendmail/mail
 
 TODO

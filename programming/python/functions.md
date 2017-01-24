@@ -3,6 +3,7 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [About](#about)
+- [Key points](#key-points)
 - [Basics](#basics)
   - [Defining a function](#defining-a-function)
   - [Documenting a function](#documenting-a-function)

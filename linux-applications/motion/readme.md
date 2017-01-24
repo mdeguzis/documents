@@ -1,3 +1,21 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Setting up motion on a Raspberry Pi 2](#setting-up-motion-on-a-raspberry-pi-2)
+  - [Update](#update)
+  - [Install motion](#install-motion)
+  - [Edits to `/etc/motion/motion.conf`](#edits-to-etcmotionmotionconf)
+  - [Check owner on capture directory](#check-owner-on-capture-directory)
+  - [Setup up the daemon, first we need to edit the motion file](#setup-up-the-daemon-first-we-need-to-edit-the-motion-file)
+- [Operations](#operations)
+  - [Start the service](#start-the-service)
+  - [Stop the service](#stop-the-service)
+- [Connecting](#connecting)
+- [Source](#source)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Setting up motion on a Raspberry Pi 2
 
 ## Update
