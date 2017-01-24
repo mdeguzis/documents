@@ -13,7 +13,18 @@
 
 # About
 
-Useful info for cron (automation).
+Useful info for cron (automation). A good layout of the cron daemon and it's technical details can be found at: http://www.unixgeeks.org/security/newbie/unix/cron-1.html
+
+# Cron execution and paths
+
+Cron knows nothing about your shell; it is started by the system, so it has a minimal environment. If you want anything, you need to have that brought in yourself.
+
+To work around this, source the path in your script or in crontab. In the crontab, before you command, add . $HOME/.profile. For example:
+```
+0 5 * * * . $HOME/.profile; /path/to/command/to/run
+```
+
+Source: [Stack Exchange](http://unix.stackexchange.com/questions/27289/how-can-i-run-a-cron-command-with-existing-environmental-variables)
 
 # Visualization of cron setup
 
