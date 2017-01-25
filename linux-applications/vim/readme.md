@@ -61,7 +61,7 @@ copies to the X11 selection - you can paste from this buffer using middle click.
 
 Note that "* and "+ work both ways. So if you have selected some text in another application, you can paste it into vim using "*p and if you have copied some text (using, say, Ctrl-C) then you can paste it into vim using "+p.
 
-`Vp`
+`Vp`  
 Select line and paste overtop of tline with what is in buffer from yank.
 
 ## Maps
