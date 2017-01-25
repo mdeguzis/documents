@@ -92,6 +92,10 @@ A full list of comoponents, and their descriptions, can be found here at [hadoop
 
 * [Bucketing](http://hadooptutorial.info/bucketing-in-hive/)
 
+## Discussion topics
+
+* [Hive CLI vs Beeline](https://docs.hortonworks.com/HDPDocuments/HDP2/HDP-2.4.2/bk_dataintegration/content/beeline-vs-hive-cli.html)
+
 # Ambari
 
 See: [hadoop/ambari/readme.md](https://github.com/mdeguzis/documents/blob/master/systems-engineer/hadoop/ambari/readme.md)
