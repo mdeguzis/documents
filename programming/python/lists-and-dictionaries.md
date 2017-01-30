@@ -190,6 +190,44 @@ I have no idea.
 None
 ```
 
+## Traversing a dictionary
+
+Note:  
+For Python 3.x, iteritems() has been replaced with simply items(), which returns a set-like view backed by the dict, like iteritems() but even better. This is also available in 2.7 as viewitems(). The operation items() will work for both 2 and 3, but in 2 it will return a list of the dictionary's (key, value) pairs, which will not reflect changes to the dict that happen after the items() call. If you want the 2.x behavior in 3.x, you can call list(d.items()).
+
+**Python 2:**
+
+object-based
+```
+
+dict = {'tom': 'tom', 'bonnie': 'bonnie'}
+  for key, value in dict.iteritems()
+    print key
+
+print dict.iteritems()
+<dictionary-itemiterator object at 0x7f3aabc26260> 
+```
+
+tuple-based
+```
+dict = {'tom': 'tom', 'bonnie': 'bonnie'}
+  for key, value in dict.items()
+    print key
+
+print dict.items()
+[('mtdeguzis', 'mtdeguzis'), ('vaalbers', 'vaalbers')]  
+```
+
+viewitems() - akin to items() in python 3, which returns a set-like view backed by the dict, like iteritems() but even better. 
+```
+dict = {'tom': 'tom', 'bonnie': 'bonnie'}
+  for key, value in dict.viewitems()
+    print key
+
+print dict.viewitems()
+dict_items([('mtdeguzis', 'mtdeguzis'), ('vaalbers', 'vaalbers')]) 
+```
+
 ## Testing for keys
 
 ```
