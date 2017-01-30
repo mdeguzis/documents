@@ -8,7 +8,11 @@ When you use with statement with open function, you do not need to close the fil
 
 # Additional functionality
 
-Also, with statement is not just for openning files, with is used in conjuction with context managers. Basically, if you have an object that you want to make sure it is cleaned once you are done with it or some kind of errors occur, you can define it as a [context manager](https://docs.python.org/2/library/contextlib.html) and with statement will call its `__enter__()` and `__exit__()` methods on entry to and exit from the with block. According to [PEP 0343](https://www.python.org/dev/peps/pep-0343/) -
+Also, with statement is not just for openning files, with is used in conjuction with context managers. Basically, if you have an object that you want to make sure it is cleaned once you are done with it or some kind of errors occur, you can define it as a [context manager](https://docs.python.org/2/library/contextlib.html) and with statement will call its `__enter__()` and `__exit__()` methods on entry to and exit from the with block. According to [PEP 0343](https://www.python.org/dev/peps/pep-0343/):
+
+>This PEP adds a new statement "with" to the Python language to make it possible to factor out standard uses of try/finally statements.
+
+>In this PEP, context managers provide __enter__() and __exit__() methods that are invoked on entry to and exit from the body of the with statement.
 
 # performance testing of using with and not using it
 
