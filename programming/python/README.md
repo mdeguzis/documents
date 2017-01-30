@@ -106,7 +106,7 @@ python -c "import sys; print('\n'.join("sys.path"))"
 
 # books and ebooks
 
-* [Python Programming for the Absolute Beginner, 3rd Edition](https://www.amazon.com/Python-Programming-Absolute-Beginner-3rd/dp/1435455002) - **Bookmark status:** - page 177
+* [Python Programming for the Absolute Beginner, 3rd Edition](https://www.amazon.com/Python-Programming-Absolute-Beginner-3rd/dp/1435455002) - **Bookmark status:** - page 197
 
 # Documentation
 
