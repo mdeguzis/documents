@@ -21,9 +21,11 @@ If order is important to you, then you will have to use a different mechanism.
 
 # Keeping the order
 
+```
 >>> from collections import OrderedDict
 >>> list(OrderedDict.fromkeys('abracadabra'))
 ['a', 'b', 'r', 'c', 'd']
+```
 
 # Links
 
