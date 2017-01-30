@@ -12,7 +12,9 @@
   - [Start the service](#start-the-service)
   - [Stop the service](#stop-the-service)
 - [Connecting](#connecting)
-- [Source](#source)
+- [WLAN tweaks](#wlan-tweaks)
+  - [Disable Power Management](#disable-power-management)
+- [Sources](#sources)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

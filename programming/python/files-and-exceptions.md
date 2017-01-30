@@ -1,3 +1,17 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [Reading from text files](#reading-from-text-files)
+  - [The methods](#the-methods)
+  - [File accesss modes](#file-accesss-modes)
+  - [open](#open)
+  - [with open](#with-open)
+- [Example programs](#example-programs)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About
 
 * Read from text files

@@ -12,6 +12,7 @@
   - [Hadoop Components](#hadoop-components)
   - [Hadoop projects / components](#hadoop-projects--components)
   - [Concepts](#concepts)
+  - [Discussion topics](#discussion-topics)
 - [Ambari](#ambari)
 - [Hortonworks](#hortonworks)
   - [Logins for tutorials](#logins-for-tutorials)

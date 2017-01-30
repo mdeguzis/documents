@@ -9,6 +9,7 @@
   - [Panes](#panes)
 - [Tips and tricks](#tips-and-tricks)
   - [Clipboard support](#clipboard-support)
+  - [Editing](#editing-1)
   - [Maps](#maps)
   - [Clearning settings](#clearning-settings)
   - [Searching](#searching)

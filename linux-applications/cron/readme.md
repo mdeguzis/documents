@@ -3,6 +3,7 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [About](#about)
+- [Cron execution and paths](#cron-execution-and-paths)
 - [Visualization of cron setup](#visualization-of-cron-setup)
 - [Useful commands](#useful-commands)
   - [Listing all jobs for all users](#listing-all-jobs-for-all-users)

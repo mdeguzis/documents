@@ -1,3 +1,14 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Why or why not?](#why-or-why-not)
+- [The main difference](#the-main-difference)
+- [Additional functionality](#additional-functionality)
+- [performance testing of using with and not using it](#performance-testing-of-using-with-and-not-using-it)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Why or why not?
 
 Using with statement is not for performance gain, I do not think there are any performance gains or loss associated with using with statement, as long as, you perform the same cleanup activity that using with statement would perform automatically.
