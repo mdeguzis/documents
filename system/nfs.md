@@ -105,7 +105,7 @@ To prevent clients from using NFSv4, turn it off by setting RPCNFSDARGS= -N 4 in
 
 # Troubleshooting
 
-f NFS fails to start, check /var/log/messages. Commonly, NFS fails to start if you specify a port number that is already in use. After editing /etc/sysconfig/nfs, you need to restart the nfs-config service for the new values to take effect in Red Hat Enterprise Linux 7.2 and prior by running:
+If NFS fails to start, check /var/log/messages. Commonly, NFS fails to start if you specify a port number that is already in use. After editing /etc/sysconfig/nfs, you need to restart the nfs-config service for the new values to take effect in Red Hat Enterprise Linux 7.2 and prior by running:
 
 ```
 # systemctl restart nfs-config
@@ -130,7 +130,7 @@ Export list for mysever
 ```
 
 Second, on any server that supports NFSv4, mount / and look around.
-``
+```
 # mount myserver:/ /mnt/
 #cd /mnt/
 exports
