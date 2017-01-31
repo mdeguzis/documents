@@ -87,13 +87,13 @@ Causes all directories to be exported or unexported, depending on what other opt
 **-o file-systems**  
 Specifies directories to be exported that are not listed in /etc/exports. Replace file-systems with additional file systems to be exported. These file systems must be formatted in the same way they are specified in /etc/exports. This option is often used to test an exported file system before adding it permanently to the list of file systems to be exported. Refer to Section 8.7.1, “The /etc/exports Configuration File” for more information on /etc/exports syntax.
 
-**-i**
+**-i**  
 Ignores /etc/exports; only options given from the command line are used to define exported file systems.
 
-**-u**
+**-u**  
 Unexports all shared directories. The command /usr/sbin/exportfs -ua suspends NFS file sharing while keeping all NFS daemons up. To re-enable NFS sharing, use exportfs -r.
 
-**-v**
+**-v**  
 Verbose operation, where the file systems being exported or unexported are displayed in greater detail when the exportfs command is executed.
 
 If no options are passed to the exportfs command, it displays a list of currently exported file systems. For more information about the exportfs command, refer to man exportfs.
