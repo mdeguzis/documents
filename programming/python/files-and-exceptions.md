@@ -102,6 +102,118 @@ with open ('text-file.txt, 'r') as file:
      os.mkdir(path, 0755)
 ```
 
+# Writing to text files
+
+**Using open:**
+```
+print "\nCreating a text file with the write() method."
+text_file = open("write_it.txt", "w")
+ 
+text_file.write("Line 1\n")
+text_file.write("This is line 2\n")
+text_file.write("That makes this line 3\n")
+text_file.close()
+```
+
+**with open**
+```
+print "\nCreating a text file with the write() method using 'with open'."
+with open("write_it.txt", 'w') as text_file:
+  text_file.write("Line 1\n")
+  text_file.write("This is line 2\n")
+  text_file.write("That makes this line 3\n")
+
+# read the new file
+with open("write_it.txt", 'r') as text_file:
+  print text_file.read()
+
+```
+
+## object methods
+
+Method | Description
+-------|------------------------
+close() | Closes the file. A closed file cannot be read from or written to until opened again.
+read([size]) | Reads size characters from a file and returns them as a string. If size is not specified, the method returns all of the characters from the current position to the end of the file.
+readline([size]) | Reads size characters from the current line in a file and returns them as a string. If size is not specified, the method returns all of the characters from the current position to the end of the line.
+readlines() | Reads all of the lines in a file and returns them as elements in a list.
+write(output) | Writes the string output to a file.
+writelines(output) | Writes the strings in the list output to a file.
+
+# Storing complex data in files
+
+## Binary fie access modes
+
+Mode | Description
+-----|------------------
+"rb" |  Read from a binary file. If the file doesn’t exist, Python will complain with an error.
+"wb" | Write to a binary file. If the file exists, its contents are overwritten. If the file doesn’t exist, it’s created.
+"ab" | Append a binary file. If the file exists, new data is appended to it. If the file doesn’t exist, it’s created.
+"rb+" | Read from and write to a binary file. If the file doesn’t exist, Python will complain with an error.
+"wb+" | Write to and read from a binary file. If the file exists, its contents are overwritten. If the file doesn’t exist, it’s created.
+"ab+" | Append and read from a binary file. If the file exists, new data is appended to it. If the file doesn’t exist, it’s created.
+
+## Pickling and shelving
+
+* Pickling means to preserve
+* You can pickle a complex piece of data, like a list or dictionary, and save it in its entirety to a file.
+* The shelve module allows you to store and randomly access pickled objects in a file
+* Pickling is straightforward. 
+* Instead of writing characters to a file, you can write a pickled object to a file. 
+* Pickled objects are stored in files much like characters; you can store and retrieve them sequentially
+
+## picking functions
+
+Function | Description
+---------|-----------------
+dump(object, file, [,bin]) | Writes pickled version of object to file. If bin is True, object is written in binary format. If bin is False, object is written in less efficient, but more human- readable, text format. The default value of bin is equal to False.
+load(file) | Unpickles and returns the next pickled object in file.
+
+## Shelving pickled data
+
+* shelving acts like a dictionary, which provides random access to the lists.
+* The `shelve.open()` function works a lot like the file `open()` function. However, the `shelve.open ()` function works with a file that stores pickled objects and not characters. 
+* When you call `shelve.open()` , Python may add an extension to the file name you specify. Python may also create additional files to support the newly created shelf.
+* The shelve.open() function requires one argument: a file name.
+
+
+```
+print "\nShelving lists."
+s = shelve.open("pickles2.dat")
+s["variety"] = ["sweet", "hot", "dill"]
+s["shape"] = ["whole", "spear", "chip"]
+s["brand"] = ["Claussen", "Heinz", "Vlassic"]
+```
+
+Shelving explained:
+
+* pickles works like a dictionary. 
+* The e key "variety" is paired with the value ["sweet","hot", "dill"]. 
+* The key "shape" is paired with the value ["whole", "spear", "chip"] . And the key "brand" is paired with the value ["Claussen", "Heinz", "Vlassic"] 
+* One important thing to note is that *a shelf key can only be a string*.
+
+Syncing:
+
+* Python writes changes to a shelf file to a buffer and then periodically writes the buffer to the file.
+* To make sure the file reflects all the changes to a shelf, you can invoke a shelf’s `sync()` method. 
+* A shelf file is also updated when you close it with its `close()` method.
+* While you could simulate a shelf by pickling a dictionary, the shelve module is more memory efficient. 
+# So, if you need random access to pickled objects, create a shelf.
+
+## Shelve access modes
+
+Mode | Description
+-----|----------------
+"c" | Open a file for reading or writing. If the file doesn’t exist, it’s created.
+"n" | Create a new file for reading or writing. If the file exists, its contents are overwritten.
+"r" | Read from a file. If the file doesn’t exist, Python will complain with an error.
+"w" | Write to a file. If the file doesn’t exist, Python will complain with an error.
+
+## Real world application
+
+Pickling and unpickling are good ways to store and retrieve structured information, but more complex information can require even more power and flexibility. Databases and XML are two popular methods for storing and retrieving more complex data, and Python has modules that can work with either. To learn more, visit the  Python language website at http://www.python.org.
+
 # Example programs
 
-* [python/fundementals/trivia-challenge.py](s://github.com/mdeguzis/python/tree/python2/fundamentals/triva-challenge.py).
+* [python/fundementals/trivia-challenge.py](s://github.com/mdeguzis/python/tree/python2/fundamentals/triva-challenge.py)
+* [python/fundementals/write-it.py](s://github.com/mdeguzis/python/tree/python2/fundamentals/write-it.py)
