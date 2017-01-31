@@ -1,12 +1,13 @@
 # About
 
-The qaundry:
+The qaundry: Using update or subscribt:
 
+Update method:
 ```
 mydict.update({'newkey':'newvalue'})
 ```
-instead of
 
+subscript, iterative method:
 ```
 mydict['newkey'] = 'newvalue'
 ```
