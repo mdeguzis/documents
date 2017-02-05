@@ -153,7 +153,7 @@ Mode | Description
 "wb+" | Write to and read from a binary file. If the file exists, its contents are overwritten. If the file doesn’t exist, it’s created.
 "ab+" | Append and read from a binary file. If the file exists, new data is appended to it. If the file doesn’t exist, it’s created.
 
-## Pickling and shelving
+# Pickling and shelving
 
 * Pickling means to preserve
 * You can pickle a complex piece of data, like a list or dictionary, and save it in its entirety to a file.
@@ -185,14 +185,14 @@ s["shape"] = ["whole", "spear", "chip"]
 s["brand"] = ["Claussen", "Heinz", "Vlassic"]
 ```
 
-Shelving explained:
+## Shelving explained
 
 * pickles works like a dictionary. 
 * The e key "variety" is paired with the value ["sweet","hot", "dill"]. 
 * The key "shape" is paired with the value ["whole", "spear", "chip"] . And the key "brand" is paired with the value ["Claussen", "Heinz", "Vlassic"] 
 * One important thing to note is that *a shelf key can only be a string*.
 
-Syncing:
+## Syncing
 
 * Python writes changes to a shelf file to a buffer and then periodically writes the buffer to the file.
 * To make sure the file reflects all the changes to a shelf, you can invoke a shelf’s `sync()` method. 
@@ -213,7 +213,57 @@ Mode | Description
 
 Pickling and unpickling are good ways to store and retrieve structured information, but more complex information can require even more power and flexibility. Databases and XML are two popular methods for storing and retrieving more complex data, and Python has modules that can work with either. To learn more, visit the  Python language website at http://www.python.org.
 
+# Handling exceptions
+
+* It’s good programming practice to specify exception types so that you handle each individual case. In fact, it’s dangerous to catch all exceptions the way I did in the first except clause of the program. Generally, you should avoid that type of catchall.
+* You shoudl implement exceptoins for any point of external interaction with your program (e.g. reading files, converting data).
+* Use the python shell interpreter to test for exception types if you are unsure of what error could be thrown.
+* Mulitple exception types can be seperated with commas
+
+## Exception types
+
+Exception Type | Description
+---------------|-------------------------
+IOError |  Raised when an I/O operation fails, such as when an attempt is made to open a nonexistent file in read mode.
+IndexError | Raised when a sequence is indexed with a number of a nonexistent element.
+KeyError | Raised when a dictionary key is not found.
+NameError | Raised when a name (of a variable or function, for example) is not found.
+SyntaxError | Raised when a syntax error is encountered.
+TypeError |Raised when a built-in operation or function is applied to an object of inappropriate type.
+ValueError | Raised when a built-in operation or function receives an argument that has the right type but an inappropriate value.
+ZeroDivisionError | Raised when the second argument of a division or modulo operation is zero.
+
+## Getting an exceptions arguement
+
+When an exception occurs, it may have an associated value, the exception’s argument. The argument is usually an official message from Python describing the exception. You can receive the argument if you specify a variable after the exception type, preceded by the keyword `as`.
+
+```
+# get an exception's argument
+try:
+  num = float(input("\nEnter a number: "))
+except ValueError as e:
+  print("That was not a number! Or as Python would say...")
+  print(e)
+```
+
+## Adding an else Clause
+
+You can add a single else clause after all the except clauses in a try statement. The else block executes only if no exception is raised in the try block.
+
+```
+# try/except/else
+try:
+  num = float(raw+input("\nEnter a number: "))
+except ValueError:
+  print("That was not a number!")
+else:
+  print("You entered the number", num)
+  raw_input("\n\nPress the enter key to exit.")
+```
+
+
 # Example programs
 
 * [python/fundementals/trivia-challenge.py](s://github.com/mdeguzis/python/tree/python2/fundamentals/triva-challenge.py)
 * [python/fundementals/write-it.py](s://github.com/mdeguzis/python/tree/python2/fundamentals/write-it.py)
+* [python/fundementals/handle-it.py](s://github.com/mdeguzis/python/tree/python2/fundamentals/handle-it.py)
