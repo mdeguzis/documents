@@ -11,6 +11,47 @@
 
 Information and help on working with variables in bash.
 
+# $VAR vs. ${VAR}
+
+`VAR=$VAR1` is a simplified version of `VAR=${VAR1}`. There are things the second can do that the first can't, for instance reference an array index (not portable) or remove a substring (POSIX-portable). See the More on variables section of the Bash Guide for Beginners and Parameter Expansion in the POSIX spec.
+
+Using quotes around a variable as in `rm -- "$VAR1" or rm -- "${VAR}"` is a good idea. This makes the contents of the variable an atomic unit. If the variable value contains blanks (well, characters in the `$IFS` special variable, blanks by default) or globbing characters and you don't quote it, then each word is considered for filename generation (globbing) whose expansion makes as many arguments to whatever you're doing.
+
+```
+$ find .
+.
+./*r*
+./-rf
+./another
+./filename
+./spaced filename
+./another spaced filename
+./another spaced filename/x
+$ var='spaced filename'
+# usually, 'spaced filename' would come from the output of some command and you weren't expecting it
+$ rm $var
+rm: cannot remove 'spaced': No such file or directory
+# oops! I just ran 'rm spaced filename'
+$ var='*r*'
+$ rm $var
+# expands to: 'rm' '-rf' '*r*' 'another spaced filename'
+
+$ find .
+.
+./another
+./spaced filename
+./another spaced filename
+$ var='another spaced filename'
+$ rm -- "$var"
+$ find .
+.
+./another
+./spaced filename
+```
+On portability: According to POSIX.1-2008 section 2.6.2, the curly braces are optional.
+
+Source: [Stack Exchange](http://unix.stackexchange.com/a/4900)
+
 # Setting default variables
 
 ```
