@@ -13,7 +13,7 @@ Information and help on working with variables in bash.
 
 # $VAR vs. ${VAR}
 
-`VAR=$VAR1` is a simplified version of `VAR=${VAR1}`. There are things the second can do that the first can't, for instance reference an array index (not portable) or remove a substring (POSIX-portable). See the More on variables section of the Bash Guide for Beginners and Parameter Expansion in the POSIX spec.
+`VAR=$VAR1` is a simplified version of `VAR=${VAR1}`. There are things the second can do that the first can't, for instance reference an array index (not portable) or remove a substring (POSIX-portable). See the [More on variables section](http://tldp.org/LDP/Bash-Beginners-Guide/html/chap_10.html) of the Bash Guide for Beginners and [Parameter](http://pubs.opengroup.org/onlinepubs/009695399/utilities/xcu_chap02.html#tag_02_06_02) Expansion in the POSIX spec.
 
 Using quotes around a variable as in `rm -- "$VAR1" or rm -- "${VAR}"` is a good idea. This makes the contents of the variable an atomic unit. If the variable value contains blanks (well, characters in the `$IFS` special variable, blanks by default) or globbing characters and you don't quote it, then each word is considered for filename generation (globbing) whose expansion makes as many arguments to whatever you're doing.
 
