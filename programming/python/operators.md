@@ -111,7 +111,7 @@ Out [23]: True
 
 The difference between the two cases here is that in the first, a and b point to different objects, while in the second they point to the sameobject. Python variables are pointers.The is operator checks whether the two variables are pointing to the same container (object), rather than referring to what the container contains.
 
-# Logical operators
+# Bitwise logical operators
 
 ```
 >a & b Bitwise AND Bits defined in both a and b  
@@ -121,6 +121,9 @@ a << b Bit shift left Shift bits of a left by b units
 a >> b Bit shift right Shift bits of a right by b units  
 ~a Bitwise NOT Bitwise negation of a
 ```
+
+More on the bitwise operator: [documents/programming/python/topics/bitwise-operators.md](https://github.com/mdeguzis/documents/blob/master/programming/python/topics/bitwise-operators.md)
+
 
 # Membership operators
 
