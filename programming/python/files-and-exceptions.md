@@ -261,6 +261,14 @@ else:
   raw_input("\n\nPress the enter key to exit.")
 ```
 
+## Multiple except clauses on one line
+
+This is useful if you want to catch certain situations, but run the same code against it. A try statement may have more than one except clause, to specify handlers for different exceptions. At most one handler will be executed. Handlers only handle exceptions that occur in the corresponding try clause, not in other handlers of the same try statement. An except clause may name multiple exceptions as a parenthesized tuple, for example:
+
+```
+except (RuntimeError, TypeError, NameError):
+  <CODE>
+```
 
 # Example programs
 
