@@ -201,6 +201,7 @@ def get_ad_sam_acctname(userdn):
         return None
 ```
 
-# LDAP Syntax filters
+# See also
 
-See: [TechNet](https://social.technet.microsoft.com/wiki/contents/articles/5392.active-directory-ldap-syntax-filters.aspx#Filter_on_objectCategory_and_objectClass)
+* [LDAP Syntax filters (TechNet)](https://social.technet.microsoft.com/wiki/contents/articles/5392.active-directory-ldap-syntax-filters.aspx#Filter_on_objectCategory_and_objectClass)
+* [ldif](https://www.python-ldap.org/doc/html/ldif.html)
