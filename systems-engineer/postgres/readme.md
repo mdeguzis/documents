@@ -28,7 +28,7 @@ Command | Actions
 Command | Actions
 --------|----------------------
 show all tables | \dt
-List databases from within a pg shell | \|
+List databases from within a pg shell | \\\|
 describe table | \d \<TABLE_NAME\>
 list system tables | select * from pg_tables where tableowner = 'postgres';
 list all schemas | \dn
