@@ -22,6 +22,7 @@ The base Apache Hadoop framework is composed of the following modules:
 Below is list of varias components in Hadoop. This list is far from complete.
 
 * [HCatalog](https://cwiki.apache.org/confluence/display/Hive/HCatalog) - allows us to share schema across tools and users within our Hadoop environment. It also allows us to factor out schema and location information from our queries and scripts and centralize them in a common repository
+* [Hortonworks SmartSense Tool (HST)](https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.1.0/bk_smartsense_admin/content/ch01s02s02.html) - The Hortonworks SmartSense Tool (HST) is used to collect cluster diagnostic data, both for assisting with support case troubleshooting, and for SmartSense analysis. HST uses a central server daemon and a distributed set of passive HST agents. The HST Agent processes are not long-lived services, and are only started when specific data capture tasks are required. Once the HST Agent has captured the requested data, the process stops. All data captured by HST Agents are sent to the central HST server to coalesce into a single downloadable bundle file
 
 # The five pillars
 
