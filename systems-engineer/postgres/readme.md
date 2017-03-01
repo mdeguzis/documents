@@ -53,3 +53,5 @@ Restore dump file | pg_restore --verbose --clean --no-acl --no-owner -h localhos
 
 * [Basic PSQL commands](https://manikandanmv.wordpress.com/tag/basic-psql-commands/)
 * [postgresql login commands](http://jazstudios.blogspot.com/2010/06/postgresql-login-commands.html)
+* Postgres operations
+ * [Like clause](https://www.tutorialspoint.com/postgresql/postgresql_like_clause.htm)
