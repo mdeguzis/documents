@@ -31,3 +31,8 @@ git reset --merge
 To abort the merge and throw away just the merge changes.
 
 Source: [StackOverflow](http://stackoverflow.com/a/16778718)
+
+
+# Links
+
+* [Git Fetch/Merge, not Pull](https://longair.net/blog/2009/04/16/git-fetch-and-merge/)
