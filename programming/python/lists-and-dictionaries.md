@@ -242,6 +242,26 @@ else:
 geek = {"404": "clueless.From the web error message 404, meaning page not found."}
 ```
 
+# Sorting
+
+## Sorting lists
+
+See: https://wiki.python.org/moin/HowTo/Sorting
+
+## Sort list of dictionay items
+
+```
+# Sort based on single key
+l.sort(key=lambda x:x['title'])
+
+# To sort with multiple keys, assuming all in ascending order:
+l.sort(key=lambda x:(x['title'], x['title_url'], x['id']))
+
+# Using itemgetter
+import operator
+L.sort(key=operator.itemgetter('title','title_url','id'))
+```
+
 ## Example Programs
 
 See: [geek-translator.py](https://github.com/mdeguzis/python/blob/python2/fundamentals/geek-translator.py)
