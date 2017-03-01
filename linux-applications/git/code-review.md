@@ -5,37 +5,29 @@ Some practices for handling fetch/merge/pull code review
 # The "code review workflow" 
 
 ```
-git merge --no-commit --no-ff branchname
+git merge --no-commit <branchname>
 ```
 
-Without the `--no-ff flag`, if Git can do a fast-forward then it will do that. (As expected, as in the case of a fast forward, there's no merge commit to create.)
-
-I have this alias setup in .gitconfig for convenience:
+You can back out of that merge with
 
 ```
-rev = merge --no-ff --no-commit
+git reset --hard
 ```
 
-So that I can simply do:
+Also, remember that it is always easy to back up in Git. You can do a full merge, including commit, inspect the complete result and if you change your mind you can
 
 ```
-git rev branchname
+git reset --hard HEAD^
 ```
 
-The idea is that all features are developed in separate branches, and each feature is reviewed and merged by somebody other than the author. As other answers pointed out you can abort the merge with:
+to throw away the merge and be back at the commit before the merge.
+
+In fact, at any point during the merge resolution, you can do
 
 ```
 git reset --merge
 ```
 
-and ask the author to make more changes.
+To abort the merge and throw away just the merge changes.
 
-To view the log with only the merge commits I use this other alias:
-
-```
-revlog = log --first-parent
-```
-
-This way the log becomes a timeline of the large steps: feature by feature rather than commit by commit.
-
-Source: [StackOverflow](http://stackoverflow.com/a/16778871)
+Source: [StackOverflow](http://stackoverflow.com/a/16778718)
