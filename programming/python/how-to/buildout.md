@@ -84,7 +84,7 @@ If you want to undo this:
 * [mdeguzis/python/buildout (example configs/scripts)](https://github.com/mdeguzis/python/tree/python2/buildout)
 * [Buildout basics](https://www.isotoma.com/blog/2011/08/16/buildout-basics-part-1/)
 * [Easily creating repeatable buildouts](http://www.uwosh.edu/ploneprojects/docs/how-tos/how-to-use-buildout-to-pin-product-versions)
-* [Buildout tips/tricks/howto (rhodesmill)](http://rhodesmill.org/brandon/buildout]
+* [Buildout tips/tricks/howto (rhodesmill)](http://rhodesmill.org/brandon/buildout)
 
 # Tutorial videos
 
