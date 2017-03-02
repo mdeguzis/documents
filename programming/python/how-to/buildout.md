@@ -4,13 +4,25 @@ Notes on using buildout
 
 # Overview
 
+Buildout allows you to define package sets with any multitude of python package versions. Simply put a buildout.cfg (or specified cfg from buildout.cfg) in a new folder, define some paramaters, and you have a completely different set of modules/libraries etc. 
+
+# Features
+
+* Isolation (each buildout directory is separate)
+* Repeatability (try to include version numbers in setup.py and/or versions tag in buildout.cfg)
+* Deployment
+ * An application installed inside a buildout is protected because it has it's own copy of every egg it needs
+ * Recipes already exist for creating configuration files and setting up databases, and you can learn to write your own.
+
+## Components
+
 * source in src directory
 
-Placing source in a separate src directory is a common convention. It violates “shallow is better than nested”. Smaller projects may benefit from putting sources in the root directory,
+Placing source in a separate src directory is a common convention. It violates “shallow is better than nested”. Smaller projects may benefit from putting sources in the root directory.
 
 * setup.py for defining egg
 
-Assuming that the project will eventually produce an egg, we have a setup file for the project. As we’ll see later, this can be very minimal to start.
+Assuming that the project will eventually produce an egg, we have a setup file for the project. Changes to a setup.py will be immediately reflected in what buildout produces. Remove a dependency, it is removed from your buildout. This is crucial to the concept of buildout, as this automatically manages what is installed in, say `./bin/`. With `easy_install`, for instance, you must managed this all manually, and this is where buildout shines.
 
 * README.txt
 
@@ -21,6 +33,12 @@ It is conventional to put a README.txt in the root of the project. distutils use
 The bootstrap script makes it easy to install the buildout software. We’ll see another way to do this later.
 
 * buildout.cfg defines the buildout
+
+# Basic steps
+
+1. Get buildout.cfg
+2. Run bootstrap.py
+3. Run ./bin/buildout
 
 # Topics
 
@@ -46,9 +64,28 @@ You can also use custom interpreters to run scripts, just like you would with th
 
 **Note:** This is important, as this interpreter will allow you to import your built versions of modules that may supercede system versions. For example, I built included a newer version of requests_kerberos, and when using the custom interpreter, I get version 0.11.0, when with the system python interpreter, I get 0.8.0.
 
+## Rapid trials of new dependencies
+
+Auditing a new dependency:
+
+* Add it to your setup.py
+* Re-run buildout
+* Try using the dependency from your application's code
+
+If you want to undo this:
+
+* Remove it from your setup.py
+* Re-run buildout
+
 # Links
 
 * [Buildout(pypi)](https://pypi.python.org/pypi/zc.buildout/2.8.0)
 * [Buildout Tutorial (buildout.org)](http://www.buildout.org/en/latest/docs/tutorial.html)
+* [mdeguzis/python/buildout (example configs/scripts)](https://github.com/mdeguzis/python/tree/python2/buildout)
 * [Buildout basics](https://www.isotoma.com/blog/2011/08/16/buildout-basics-part-1/)
 * [Easily creating repeatable buildouts](http://www.uwosh.edu/ploneprojects/docs/how-tos/how-to-use-buildout-to-pin-product-versions)
+* [Buildout tips/tricks/howto (rhodesmill)](http://rhodesmill.org/brandon/buildout]
+
+# Tutorial videos
+
+* [PyAtl presents: A Brief Introduction to Buildout](https://www.youtube.com/watch?v=HXvzzK9m2IA)
