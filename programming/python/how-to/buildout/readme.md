@@ -42,6 +42,12 @@ The bootstrap script makes it easy to install the buildout software. We’ll see
 
 # Topics
 
+## Sections
+
+Details details for buildout pieces.
+
+See: [buildout/sections](https://github.com/mdeguzis/documents/tree/master/programming/python/how-to/buildout)
+
 ## Custom interpreters
 
 The script recipe allows an interpreter script to be created.
