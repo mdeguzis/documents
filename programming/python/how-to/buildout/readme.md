@@ -14,6 +14,17 @@ Buildout allows you to define package sets with any multitude of python package 
  * An application installed inside a buildout is protected because it has it's own copy of every egg it needs
  * Recipes already exist for creating configuration files and setting up databases, and you can learn to write your own.
 
+# Definitions
+Here is some nomenclature to keep in mind:
+
+* `recipe` - which recipe to use. This can be from PyPi or custom defined
+* `eggs` - Which eggs to build/fetch
+* `scripts` - Define which scripts to include from the egg (if any)
+* depedendent scripts (applies to: zc.recipe.egg) - If set to the string “true”, scripts will be generated for all required eggs in addition to the eggs specifically named.
+* `${buildout:project-eggs}` - For this definition, see the [buildout] section, under the `project-eggs` sub-category.
+
+Also see: http://www.buildout.org/en/latest/docs/tutorial.html
+
 ## Components
 
 * source in src directory
