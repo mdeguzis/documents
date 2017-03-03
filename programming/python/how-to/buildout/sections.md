@@ -84,14 +84,6 @@ Example:
 # Custom sections
 These may related to parts or other defined items. There is no requirement beyond the tag format and python assignment conventions.
 
-**Definitions**
-
-* `recipe` - which recipe to use. This can be from PyPi or custom defined
-* `eggs` - Which eggs to build/fetch
-* `scripts` - Define which scripts to include from the egg (if any)
-* depedendent scripts (applies to: zc.recipe.egg) - If set to the string “true”, scripts will be generated for all required eggs in addition to the eggs specifically named.
-* `${buildout:project-eggs}` - For this definition, see the [buildout] section, under the `project-eggs` sub-category.
-
 examples:
 
 ```
