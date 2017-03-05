@@ -1,5 +1,4 @@
-# Order
-ere's the order:
+# Watch Order
 
 * Ghost in the Shell (2015) is set as a prelude to the original Ghost in the Shell from 1995. It ends where the movie from 1995 begins.
 * Ghost in the Shell (set in 2029) from 1995 or its 2008 remake Ghost in the Shell 2.0
