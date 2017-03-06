@@ -50,3 +50,7 @@ See [here](http://docs.python.org/howto/logging.html#logging-from-multiple-modul
 # Important
 
 When calling `fileConfig()`, you may want to specify `disable_existing_loggers=False` if you're using Python 2.6 or later (see the [docs](http://docs.python.org/2/library/logging.config.html#logging.config.fileConfig) for more information). The default value is `True` for backward compatibility, which causes all existing loggers to be disabled by `fileConfig()` unless they or their ancestor are explicitly named in the configuration. With the value set to `False`, existing loggers are left alone. If using Python 2.7/Python 3.2 or later, you may wish to consider the `dictConfig()` API which is better than `fileConfig()` as it gives more control over the configuration.
+
+# Links
+
+* Source [StackOverflow](http://stackoverflow.com/questions/15727420/using-python-logging-in-multiple-modules)
