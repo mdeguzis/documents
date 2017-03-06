@@ -5,6 +5,7 @@ Somtimes you paste text between files and receive this message:
 ```
 SyntaxError: Non-ASCII character '\xe2' in file <FILE>
 ... on line 7, but no encoding declared; see http://www.python.org/peps/pep-0263.html for details
+```
 
 # Repairing
 
