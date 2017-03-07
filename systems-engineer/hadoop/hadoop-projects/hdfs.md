@@ -35,7 +35,9 @@ The NameNode does not directly send requests to DataNodes. It sends instructions
 
 # HDFS shell
 
+* [HDFS Commands manual](https://hadoop.apache.org/docs/r2.7.3/hadoop-project-dist/hadoop-hdfs/HDFSCommands.html)
 * [HDFS filesystem shell commands](https://hadoop.apache.org/docs/r2.7.1/hadoop-project-dist/hadoop-common/FileSystemShell.html)
+* [HDFS Quota Management](https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-hdfs/HdfsQuotaAdminGuide.html)
 
 ## hadoop fs, hadoop dfs, and hdfs dfs
 
