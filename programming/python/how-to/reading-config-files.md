@@ -2,7 +2,9 @@
 
 Notes on reading configuration files in python
 
-# Reading ini files
+# ini files
+
+## Reading ini files
 
 Example:
 ```
@@ -21,6 +23,61 @@ print a_float + an_int
 # This is because we are using a RawConfigParser().
 if config.getboolean('Section1', 'a_bool'):
     print config.get('Section1', 'foo')
+```
+
+## Storing and reading lists from ini files
+
+Given this example:
+```
+[offices]
+location_nyc =
+    marketing
+    finance
+    information_technology
+```
+
+Normally, the output of the get method would produce:
+```
+config.get('offices', 'location_nyc')
+'\nmarketing\nfinance\ninformation_technology'
+```
+### Preferred method
+
+What I prefer is to keep the first examples format, and just use the `split()` method. This produces a list type object *and* looks clean in the .ini file:
+
+```
+config.get('offices', 'location_nyc').split()
+['nmarketing', 'finance', 'information_technology']
+```
+
+### Alterantive methods
+
+Because the examples format is clean looking, I personally prefer to store it that way. Alternatives are:
+
+Seperate items
+```
+[offices]
+office1 = marketing
+office2 = finance
+office3 = information_technology
+```
+
+The JSON "hacky" approach (produces native list type)
+```
+fibs: [1,1,2,3,5,8,13]
+just read it with:
+
+>>> json.loads(config.get("Foo","fibs"))
+[1, 1, 2, 3, 5, 8, 13]
+
+# You can even break lines if your list is long (thanks @peter-smit):
+
+[Bar]
+files_to_check = [
+     "/path/to/file1",
+     "/path/to/file2",
+     "/path/to/another file with space in the name"
+     ]
 ```
 
 # Links
