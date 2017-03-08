@@ -33,7 +33,7 @@ vim source-0.1.0/file1
 Create a diff of the file as your patch. Compare your changed file in the new folder, to the clean file in the source-0.1.0.orig directory.
 
 ```
-diff -uNr source-0.1.0.i.orig source-0.1.0 > mychanges.patch
+diff -uNr source-0.1.0.orig source-0.1.0 > mychanges.patch
 ```
 
 `-u`  
