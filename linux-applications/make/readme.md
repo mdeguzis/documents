@@ -16,6 +16,16 @@ Use info for GNU 'make'
 
  * [Assignment and definition](http://www.gnu.org/software/make/manual/html_node/Flavors.html#Flavors)
 
+## Get basename of filepath
+```
+CONFIG_BASENAME = $(addsuffix .cfg, $(basename $(notdir $(CONFIG))))
+```
+
+## Strip dir trailing slash if user adds one
+```
+TARGET_DIR := $(patsubst %/,%,$(TARGET_DIR))
+```
+
 # Tips and tricks
 
 ## Filtering out a CFLAG/CXXFLAG
