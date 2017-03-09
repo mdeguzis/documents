@@ -14,6 +14,7 @@
 
 # Links
 
+* [Python modules](https://docs.python.org/2/tutorial/modules.html)
 * [Distributing Python Modules (python.org)](https://docs.python.org/2/distutils/introduction.html)
 * [How To Package Your Python Code (readthedocs)](https://python-packaging.readthedocs.io/en/latest/)
 * https://www.digitalocean.com/community/tutorials/how-to-package-and-distribute-python-applications
