@@ -16,3 +16,19 @@ Retab:
 ```
 :retab
 ```
+
+**More advanced usage**
+
+ convert all existing tabs to spaces. You can do both in one command:
+```
+:set et|retab
+```
+
+You can also convert spaces to tabs:
+```
+:set noet|retab!
+```
+
+# Links
+
+* [Super retab](http://vim.wikia.com/wiki/Super_retab)
