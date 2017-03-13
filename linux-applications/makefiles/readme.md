@@ -86,3 +86,9 @@ $(MAKE) -C engine sv-rel -j4 DESTDIR=$(TOP) PREFIX=/usr install
 ```
 $(info $$var is [${var}])
 ```
+
+# Other Links
+
+* [GNU Make](https://www.gnu.org/software/make/manual/make.html)
+* [Automatic Variables](https://www.gnu.org/software/make/manual/html_node/Automatic-Variables.html)
+* [Special Variables](https://www.gnu.org/software/make/manual/html_node/Special-Variables.html)
