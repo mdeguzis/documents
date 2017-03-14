@@ -76,3 +76,7 @@ sudo crontab -l -u <USER>
 ```
 sudo crontab -e -u <USER>
 ```
+
+# Links
+
+* https://crontab.guru
