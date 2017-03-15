@@ -30,3 +30,47 @@ Make sure you use the right principal when you use kinit, you can see the princi
 ```
 klist -k <keytab file>
 ```
+
+# Authentication
+
+Show the encryption type that you get when you run kinit using a password:
+```
+Etype (skey, tkt): aes256-cts-hmac-sha1-96, aes256-cts-hmac-sha1-96
+```
+
+This will help identify a compatible encryption type for your keytab. A list of authentcatin types can be foudn int he MIT documentation in the links below. This is found on [For administrators > Encryption types](http://web.mit.edu/~kerberos/krb5-latest/doc/admin/enctypes.html)
+
+## Generating keytabs
+
+Example AES256 encryption
+```
+ktutil: addent -password -p user@REAM -k 1 -e aes256-cts-hmac-sha1-96
+```
+
+## Authenticate with generated keytab
+
+```
+kinit -kt /home/user/file.keytab user@REALM
+```
+
+# Administration
+
+## List keytabs from keytab file
+
+```
+klist -ket ~/file.keytab
+```
+
+## Removing Principals from Keytabs
+
+```
+ktutil
+read_kt ~/file.keytab
+list
+delent <ENTRY_NUM>
+```
+
+# Links
+
+* [Kerberos (MIT docs)](http://web.mit.edu/~kerberos/krb5-latest/doc/)
+* [Keytabs (Indiana University)](https://kb.iu.edu/d/aumh)
