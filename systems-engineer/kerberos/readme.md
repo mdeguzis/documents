@@ -7,6 +7,9 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
+# About
+General info on using Kerberos
+
 # Keytabs and principals
 
 In a secured cluster you have two types of keytabs or principals.
