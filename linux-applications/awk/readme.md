@@ -92,9 +92,9 @@ exits immediately; exit status is the evaluation of expression
 exit [ expression ]
 ```
 
-Statements are terminated by semicolons, newlines or right braces. An empty expression-list stands for $0. String constants are quoted " ", with the usual C escapes recognized within. Expressions take on string or numeric values as appropriate, and are built using the operators +, -, *, /, %, ^ (exponentiation), and concatenation (indicated by white space).
+Statements are terminated by semicolons, newlines or right braces. An empty expression-list stands for `$0`. String constants are quoted " ", with the usual C escapes recognized within. Expressions take on string or numeric values as appropriate, and are built using the operators `+, -, *, /, %, ^` (exponentiation), and concatenation (indicated by white space).
 
-operators !, ++, --, +=, -=, *=, /=, %=, ^=, >, >=, <, <=, ==, !=, and ?: are also available in expressions. Variables may be scalars, array elements (denoted x[i]) or fields. Variables are initialized to the null string. Array subscripts may be any string, not necessarily numeric; this allows for a form of associative memory. Multiple subscripts such as [i,j,k] are permitted; the constituents are concatenated, separated by the value of SUBSEP.
+operators `!, ++, --, +=, -=, *=, /=, %=, ^=, >, >=, <, <=, ==, !=, and ?`: are also available in expressions. Variables may be scalars, array elements (denoted x[i]) or fields. Variables are initialized to the null string. Array subscripts may be any string, not necessarily numeric; this allows for a form of associative memory. Multiple subscripts such as [i,j,k] are permitted; the constituents are concatenated, separated by the value of SUBSEP.
 
 The print statement prints its arguments on the standard output (or on a file if >file or >>file is present or on a pipe if |cmd is present), separated by the current output field separator, and terminated by the output record separator. file and cmd may be literal names or parenthesized expressions; identical string values in different statements denote the same open file. The printf statement formats its expression list according to the format (see printf). The built-in function close(expr) closes the file or pipe expr. The built-in function fflush(expr) flushes any buffered output for the file or pipe expr.
 
@@ -118,9 +118,9 @@ system(cmd) | executes cmd and returns its exit status
 tolower(str) | returns a copy of str with all upper-case characters translated to their corresponding lower-case equivalents.
 toupper(str) | returns a copy of str with all lower-case characters translated to their corresponding upper-case equivalents.
 
-The function getline sets $0 to the next input record from the current input file; getline <file sets $0 to the next record from file. getline x sets variable x instead. Finally, cmd | getline pipes the output of cmd into getline; each call of getline returns the next line of output from cmd. In all cases, getline returns 1 for a successful input, 0 for end of file, and -1 for an error.
+The function getline sets $0 to the next input record from the current input file; getline `<file` sets $0 to the next record from file. getline x sets variable x instead. Finally, cmd | getline pipes the output of cmd into getline; each call of getline returns the next line of output from cmd. In all cases, getline returns 1 for a successful input, 0 for end of file, and -1 for an error.
 
-Patterns are arbitrary Boolean combinations (with ! || &&) of regular expressions and relational expressions. Regular expressions are as defined in re_format. Isolated regular expressions in a pattern apply to the entire line. Regular expressions may also occur in relational expressions, using the operators ~ and !~. /re/ is a constant regular expression; any string (constant or variable) may be used as a regular expression, except in the position of an isolated regular expression in a pattern.
+Patterns are arbitrary Boolean combinations (`with ! || &&`) of regular expressions and relational expressions. Regular expressions are as defined in re_format. Isolated regular expressions in a pattern apply to the entire line. Regular expressions may also occur in relational expressions, using the operators `~` and `!~. /re/` is a constant regular expression; any string (constant or variable) may be used as a regular expression, except in the position of an isolated regular expression in a pattern.
 
 A pattern may consist of two patterns separated by a comma; in this case, the action is performed for all lines from an occurrence of the first pattern though an occurrence of the second.
 
@@ -209,6 +209,19 @@ printf "\n"
 exit }
 ```
 
+# Expressions
+
+You can print/excute expressions with awk as well. This is very handy for admins who utilize pdsh/pdcp.
+
+Example: copy a list of files that end in, say `_bak`, to a destination path and strip the `_bak` suffix.
+```
+# Print the action
+ls | awk -F_ '{print("sudo pdcp -w host[001-005]prod "$1"_"$2" /destinatin/path/"$1)}'
+
+# Execute the action
+# Print the action
+ls | awk -F_ '{system("sudo pdcp -w host[001-005]prod "$1"_"$2" /destinatin/path/"$1)}'
+```
 
 # Links
 
