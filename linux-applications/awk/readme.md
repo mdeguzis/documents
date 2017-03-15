@@ -164,6 +164,20 @@ function foo(a, b, c) { ...; return x }
 
 Parameters are passed by value (if scalar) or by reference (if array name); functions may be called recursively. Parameters are local to the function; all other variables are global. Thus local variables may be created by providing excess parameters in the function definition.
 
+# Expressions
+
+You can print/excute expressions with awk as well. This is very handy for admins who utilize pdsh/pdcp.
+
+Example: copy a list of files that end in, say `_bak`, to a destination path and strip the `_bak` suffix.
+```
+# Print the action
+ls | awk -F_ '{print("sudo pdcp -w host[001-005]prod "$1"_"$2" /destinatin/path/"$1)}'
+
+# Execute the action
+# Print the action
+ls | awk -F_ '{system("sudo pdcp -w host[001-005]prod "$1"_"$2" /destinatin/path/"$1)}'
+```
+
 # awk examples
 
 **Print only lines of the file text.txt that are longer than 72 characters.**
@@ -207,20 +221,6 @@ BEGIN {
 for (i = 1; i < ARGC; i++) printf "%s ", ARGV[i]
 printf "\n"
 exit }
-```
-
-# Expressions
-
-You can print/excute expressions with awk as well. This is very handy for admins who utilize pdsh/pdcp.
-
-Example: copy a list of files that end in, say `_bak`, to a destination path and strip the `_bak` suffix.
-```
-# Print the action
-ls | awk -F_ '{print("sudo pdcp -w host[001-005]prod "$1"_"$2" /destinatin/path/"$1)}'
-
-# Execute the action
-# Print the action
-ls | awk -F_ '{system("sudo pdcp -w host[001-005]prod "$1"_"$2" /destinatin/path/"$1)}'
 ```
 
 # Links
