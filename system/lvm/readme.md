@@ -210,6 +210,52 @@ XFS systems:
 xfs_growfs
 ```
 
+# LVM data volume modification
+
+## Case 1: move/add separate /tmp mount, borrowing space from another physical volume
+
+Step 1: Check what is mounted and available:
+```
+$ sudo lvs -o+stripes
+
+LV VG Attr LSize Pool Origin Data% Meta% Move Log Cpy%Sync Convert #Str
+root rhel -wi-ao ---- 4.00g 1
+swap rhel -wi-ao ---- 4.00g 1
+usr rhel -wi-ao ---- 20.00g 1
+var rhel -wi-ao ---- 50.00g 1
+```
+
+```
+$ sudo pvs
+
+PV VG Fmt Attr PSize PFree
+/dev/sda3 rhel lvm2 a-- 111.07g 33.07g
+/dev/sdb1 vg_data1 lvm2 a-- 1.09t 807.78g
+/dev/sdc1 vg_data1 lvm2 a-- 1.09t 807.78g
+```
+
+Step 2: Add `/tmp` mount to `/etc/fstab`
+
+```
+$ sudo vi /etc/fstab
+
+# add line:
+/dev/mapper/vg_data1-tmp /tmp xfs defaults 1 2
+```
+
+3. Create a separate mount volume for /tmp
+
+```
+lvcreate -n tmp -i 2 -I 4 -L8G vg_data1
+mkfs.xfs /dev/mapper/vg_data1-tmp
+mkdir /tmp-old
+mv /tmp/ /tmp-old*
+mount /tmp
+mv /tmp-old/ /tmp*
+restorecon -R /tmp
+rmdir /tmp-old
+```
+
 # Man pages
 
 * [man pages index [a-z]](http://man7.org/linux/man-pages/dir_all_alphabetic.html)
@@ -221,3 +267,8 @@ xfs_growfs
 * [pvdisplay](http://man7.org/linux/man-pages/man8/pvdisplay.8.html)
 * [pvscan](http://man7.org/linux/man-pages/man8/pvscan.8.html)
 * [vgcreate](http://man7.org/linux/man-pages/man8/vgcreate.8.htmle)
+
+
+# Links
+
+* [RHEL (Multipath Devices)](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/DM_Multipath/mpath_devices.html)
