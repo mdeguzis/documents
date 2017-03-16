@@ -64,6 +64,12 @@ kinit -kt /home/user/file.keytab user@REALM
 klist -ket ~/file.keytab
 ```
 
+## List cached tickets for any user
+
+```
+sudo -u <USER> klist | grep Ticket | cut -d':' -f 3
+```
+
 ## Removing Principals from Keytabs
 
 ```
