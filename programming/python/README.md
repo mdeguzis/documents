@@ -21,6 +21,26 @@
 
 Python tips and tricks. You can check your python version with `python --version` or `import sys; sys.version` in a python shell prompt.
 
+# Getting help for python libs/modules
+
+## list help for module/lib
+```
+help(posix1e)
+```
+
+## list help/docstring from function
+If the developer was kind enough to list helpful info in the docstring of a function, you can list that as so:
+```
+obj.__doc__
+```
+
+You may have to build the object you are using a method on first:
+```
+import posix1e
+b = posix1e.ACL(text="u:user:rwx,g:group:r,o::-")
+print b.applyto.__doc__
+```
+
 # Python projects
 
 Repository for python code and examples:
