@@ -1,6 +1,17 @@
 # About
 Adding/removing ACLs and other items
 
+**Always remember**  
+If you set a top level/parent permission wrong, it will cascade on down, despite any ACL. Always be aware of effective permissions, POSIX-level, and ACL-level. 
+
+If you encounter an issue, take your time and *think*:
+
+1. Where does this permission set start?
+2. What are my POSIX permissions from the root level (`/`) on down?
+3. What are my ACLs from the root level (`/`) on down?
+4. What are my effective permissions (use `getfacl -e`)?
+5. Are there any conflicting flags set?
+
 # Basic vs. Extended ACLs
 
 ACLs, or Access Control Lists, are available for a variety of Linux filesystems including ext2, ext3, and XFS. With XFS, ACL support is available pretty much "out of the box" and with ext2/ext3, it's available via a kernel patch that most Linux vendors have applied to the binary kernels they provide. In all cases, the SGI acl and attr tools are required; most Linux vendors provide these as well.
