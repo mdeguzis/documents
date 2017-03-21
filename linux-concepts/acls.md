@@ -72,6 +72,7 @@ n | read-named-attributes - read the named attributes of the file/directory.
 N | write-named-attributes - write the named attributes of the file/directory. 
 o | write-owner - change ownership of the file/directory. 
 r |	Has permission to read the file/directory.
+t | read-attributes - read the attributes of the file/directory. 
 T | write-attributes - write the attributes of the file/directory.
 w	| Has permission to write (change) to the file/directory.
 x	| Has permission to execute the file (program)
