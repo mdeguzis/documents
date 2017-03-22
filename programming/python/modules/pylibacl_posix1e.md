@@ -16,7 +16,6 @@ other::r--
 # Setting ACLS
 
 Be careful, currently, the documenation for pylibacl does not note you need to explicitly have a mask entry after the POSIX user/group/others set. See the Troubleshooting section below for more.
-```
 
 ```
 # Simple
