@@ -96,7 +96,7 @@ If you want to undo this:
 
 # Links
 
-* [Buildout(pypi)](https://pypi.python.org/pypi/zc.buildout/2.8.0)
+* [Buildout (pypi)](https://pypi.python.org/pypi/zc.buildout/2.8.0)
 * [Buildout Tutorial (buildout.org)](http://www.buildout.org/en/latest/docs/tutorial.html)
 * [mdeguzis/python/buildout (example configs/scripts)](https://github.com/mdeguzis/python/tree/python2/buildout)
 * [Buildout basics](https://www.isotoma.com/blog/2011/08/16/buildout-basics-part-1/)
