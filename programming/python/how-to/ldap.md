@@ -201,6 +201,16 @@ def get_ad_sam_acctname(userdn):
         return None
 ```
 
+# Searching on the command line
+
+```
+$ ldapsearch -H ldaps://adldapserver -D user@host.com -W "(sAMAccountName=bsmith)" employeeNumber employeeID | grep "\(dn\|employee\)"
+Enter LDAP Password:
+# requesting: employeeNumber employeeID
+dn: CN=Bob\, Smith,OU=Non-Employee,OU=Managed Users,DC=geisinger,DC=edu
+employeeNumber: 00111000 
+```
+
 # See also
 
 * [LDAP Syntax filters (TechNet)](https://social.technet.microsoft.com/wiki/contents/articles/5392.active-directory-ldap-syntax-filters.aspx#Filter_on_objectCategory_and_objectClass)
