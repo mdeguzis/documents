@@ -23,15 +23,24 @@ Python tips and tricks. You can check your python version with `python --version
 
 # Getting help for python libs/modules
 
-## list help for module/lib
+**list help for module/lib**
+
 ```
 help(posix1e)
 ```
 
-## list help/docstring from function
+**list help/docstring from function**
+
 If the developer was kind enough to list helpful info in the docstring of a function, you can list that as so:
 ```
 obj.__doc__
+```
+
+**list  methods**
+
+You can use the below command to see all available methods/attributes.
+```
+dir(<MODULE>) 
 ```
 
 You may have to build the object you are using a method on first:
