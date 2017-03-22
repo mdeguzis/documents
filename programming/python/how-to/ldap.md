@@ -203,12 +203,26 @@ def get_ad_sam_acctname(userdn):
 
 # Searching on the command line
 
+Users
 ```
+# adldap
 $ ldapsearch -H ldaps://adldapserver -D user@host.com -W "(sAMAccountName=bsmith)" employeeNumber employeeID | grep "\(dn\|employee\)"
 Enter LDAP Password:
 # requesting: employeeNumber employeeID
-dn: CN=Bob\, Smith,OU=Non-Employee,OU=Managed Users,DC=geisinger,DC=edu
+dn: CN=Bob\, Smith,OU=Non-Employee,OU=Managed Users,DC=host,DC=com
 employeeNumber: 00111000 
+
+# openldap
+ldapsearch -H ldaps://ldaphost -D uid=user1,ou=people,dc=domain,dc=com -W "(&(objectClass=posixAccount)(uid=username))"
+```
+
+Groups
+```
+# adldap
+$ ldapsearch -D user@host.com -W "(cn=mygroup)"
+
+# openldap
+ldapsearch -H ldaps://ldaphost -D uid=user1,ou=people,dc=domain,dc=com -W "(&(objectClass=posixGroup)(cn=groupname))"
 ```
 
 # See also
