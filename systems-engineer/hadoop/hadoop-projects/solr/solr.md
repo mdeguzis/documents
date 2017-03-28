@@ -41,7 +41,7 @@ Architecture pieces (high-level):
 * Linearly scalable, auto index replication, auto failover and recovery
 * Flexible and adaptable, with XML configuration
 * Other features
- * Faceting
+ * Faceting -  Allows users to narrow search results in ways that are meaningful to your application
  * Highlighting
  * Spell checking
  * Query re-ranking
@@ -85,7 +85,7 @@ See [solr-instances.png](https://github.com/mdeguzis/documents/blob/master/syste
 * `solrconfig.xml` - configuration for all indexing and searching
 * `solr.xml` - At the entire solr level
 * `core.properties` - Define properties at the core level
-* `schema.xml` - Core data strucuture level
+* `schema.xml` - Core data strucuture level (data fields)
 * `elevate.xml` - Elevated query results file determined by the config-file arguments
 
 ## solrconfig.xml
@@ -139,6 +139,14 @@ Features
 * ZooKeeper integration for coordination and configurations
 
 # Search
+
+# Scalability
+
+One technique available is to increase the "Replication Factor" of your collection, which allows you to add servers with additional copies of your collection to handle higher concurrent query load by spreading the requests around to multiple machines.  Sharding and Replication are not mutually exclusive, and together make Solr an extremely powerful and scalable platform.
+
+# Shards
+
+"Sharding" is a scaling technique in which a collection is split into multiple logical pieces called "shards" in order to scale up the number of documents in a collection beyond what could physically fit on a single server.  Incoming queries are distributed to every shard in the collection, which respond with merged results.  
 
 # Links:
 
