@@ -78,6 +78,8 @@ git commit --amend --author="Author Name <email@address.com>"
 git rebase --continue
 ```
 
+Source: http://stackoverflow.com/a/28845565
+
 # Squash commits
 
 The workflow of the Todo.txt Touch project says that the master branch of [ginatrapani/todo.txt-touch](https://github.com/ginatrapani/todo.txt-touch) is the golden branch from which all development is based off of.
