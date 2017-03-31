@@ -7,8 +7,7 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-# Source:
-https://github.com/ginatrapani/todo.txt-android/wiki/Squash-All-Commits-Related-to-a-Single-Issue-into-a-Single-Commit
+# How to
 
 The workflow of the Todo.txt Touch project says that the master branch of [ginatrapani/todo.txt-touch](https://github.com/ginatrapani/todo.txt-touch) is the golden branch from which all development is based off of.
 
@@ -18,17 +17,42 @@ Once you have rebased your work on top of the latest state of the upstream maste
 
 To squash four commits into one, do the following:
 
-    $ git rebase -i HEAD~4
+```
+git rebase -i HEAD~4
+```
+
+To rebase a range of commits:
+
+```
+
+```
 
 In the text editor that comes up, replace the words "pick" with "squash" next to the commits you want to squash into the commit before it. Save and close the editor, and git will combine the "squash"'ed commits with the one before it. Git will then give you the opportunity to change your commit message to something like, "Issue #100: Fixed retweet bug."
 
 _**Important: If you've already pushed commits to GitHub, and then squash them locally, you will have to force the push to your branch.
 
-    $ git push origin branch-name --force
+```
+git push origin branch-name --force
+```
 
 Helpful hint: You can always edit your last commit message, before pushing, by using:
 
-    $ git commit --amend
+```
+git commit --amend
+```
 
-### See also:
-[Git Book Chapter 6.4: Git Tools - Rewriting History](http://git-scm.com/book/en/Git-Tools-Rewriting-History)
+# Aborting a rebase
+
+```
+git rebase --abort
+```
+
+You may need to reset your tree if it has diverged:
+```
+git reset --hard origin/master
+```
+
+# See also:
+
+* [Git Book Chapter 6.4: Git Tools - Rewriting History](http://git-scm.com/book/en/Git-Tools-Rewriting-History)
+* https://github.com/ginatrapani/todo.txt-android/wiki/Squash-All-Commits-Related-to-a-Single-Issue-into-a-Single-Commit
