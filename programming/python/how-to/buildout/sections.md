@@ -1,3 +1,20 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [[buildout]](#buildout)
+- [Extensions](#extensions)
+- [Versions](#versions)
+- [Pinning](#pinning)
+- [Show versions being picked](#show-versions-being-picked)
+- [Sources](#sources)
+- [Mr. Developer options](#mr-developer-options)
+- [parts](#parts)
+- [Define any develop egg directories](#define-any-develop-egg-directories)
+- [Custom sections](#custom-sections)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # [buildout]
 
 Parent section: None  

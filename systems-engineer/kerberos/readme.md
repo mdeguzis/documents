@@ -2,8 +2,17 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
+- [About](#about)
 - [Keytabs and principals](#keytabs-and-principals)
   - [Headless and Service principals.](#headless-and-service-principals)
+- [Authentication](#authentication)
+  - [Generating keytabs](#generating-keytabs)
+  - [Authenticate with generated keytab](#authenticate-with-generated-keytab)
+- [Administration](#administration)
+  - [List keytabs from keytab file](#list-keytabs-from-keytab-file)
+  - [List cached tickets for any user](#list-cached-tickets-for-any-user)
+  - [Removing Principals from Keytabs](#removing-principals-from-keytabs)
+- [Links](#links)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

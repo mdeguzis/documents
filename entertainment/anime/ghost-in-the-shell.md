@@ -1,3 +1,11 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Watch Order](#watch-order)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Watch Order
 
 * Ghost in the Shell (2015) is set as a prelude to the original Ghost in the Shell from 1995. It ends where the movie from 1995 begins.

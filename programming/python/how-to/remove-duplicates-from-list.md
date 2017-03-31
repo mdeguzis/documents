@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Not keeping the order](#not-keeping-the-order)
+- [Keeping the order](#keeping-the-order)
+- [Links](#links)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Not keeping the order
 
 The common approach to get a unique collection of items is to use a set. Sets are unordered collections of distinct objects. To create a set from any iterable, you can simply pass it to the built-in set() function. If you later need a real list again, you can similarly pass the set to the list() function.

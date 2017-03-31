@@ -1,3 +1,21 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [NFS ACLs](#nfs-acls)
+  - [POSIX ACLs and NFS mounts](#posix-acls-and-nfs-mounts)
+  - [NFS ACL overview](#nfs-acl-overview)
+    - [Types](#types)
+    - [Flags](#flags)
+    - [Principal](#principal)
+    - [Permissions](#permissions)
+- [Basic vs. Extended ACLs](#basic-vs-extended-acls)
+- [Setting an ACL](#setting-an-acl)
+- [Links](#links)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About
 Adding/removing ACLs and other items.
 

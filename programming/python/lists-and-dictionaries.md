@@ -21,8 +21,12 @@
   - [Requirements](#requirements)
   - [Methods](#methods-1)
   - [Accessing values](#accessing-values)
+  - [Traversing a dictionary](#traversing-a-dictionary)
   - [Testing for keys](#testing-for-keys)
   - [Example](#example)
+- [Sorting](#sorting)
+  - [Sorting lists](#sorting-lists)
+  - [Sort list of dictionay items](#sort-list-of-dictionay-items)
   - [Example Programs](#example-programs)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->

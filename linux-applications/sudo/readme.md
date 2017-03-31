@@ -3,7 +3,8 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [About](#about)
-- [Editing](#editing)
+- [Impersonating users](#impersonating-users)
+- [Editing sudoers](#editing-sudoers)
 - [Syntax](#syntax)
 - [Assigning specific privledges](#assigning-specific-privledges)
 - [Using sudo over ssh connections](#using-sudo-over-ssh-connections)

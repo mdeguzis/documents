@@ -1,3 +1,22 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [Overview](#overview)
+- [Features](#features)
+- [Definitions](#definitions)
+  - [Components](#components)
+- [Basic steps](#basic-steps)
+- [Topics](#topics)
+  - [Sections](#sections)
+  - [Custom interpreters](#custom-interpreters)
+  - [Rapid trials of new dependencies](#rapid-trials-of-new-dependencies)
+- [Links](#links)
+- [Tutorial videos](#tutorial-videos)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About
 
 Notes on using buildout

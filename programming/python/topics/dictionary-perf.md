@@ -1,3 +1,12 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Performance Impact of Using dict() Instead of {}](#performance-impact-of-using-dict-instead-of-)
+- [Links](#links)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Performance Impact of Using dict() Instead of {} 
 
 With CPython 2.7, using dict() to create dictionaries takes up to 6 times longer and involves more memory allocation operations than the literal syntax. Use {} to create dictionaries, especially if you are pre-populating them, unless the literal syntax does not work for your case.

@@ -8,6 +8,7 @@
 - [Variable assignments](#variable-assignments)
 - [Setting targets](#setting-targets)
 - [Printing vars in Makefiles](#printing-vars-in-makefiles)
+- [Other Links](#other-links)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

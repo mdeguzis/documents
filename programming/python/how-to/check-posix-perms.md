@@ -1,3 +1,16 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [Checking for special bits/flags](#checking-for-special-bitsflags)
+  - [Assess which bit to compare to](#assess-which-bit-to-compare-to)
+  - [SetGID](#setgid)
+  - [Sticky-bit](#sticky-bit)
+- [Links](#links)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About
 
 Various methods to extract/read/analyze OS-level permissions with Python.

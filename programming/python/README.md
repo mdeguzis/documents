@@ -3,6 +3,7 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [About](#about)
+- [Getting help for python libs/modules](#getting-help-for-python-libsmodules)
 - [Python projects](#python-projects)
 - [Python 2 vs. Python 3](#python-2-vs-python-3)
 - [Modules](#modules)

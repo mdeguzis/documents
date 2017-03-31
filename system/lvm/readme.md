@@ -18,7 +18,10 @@
   - [Resize the physical LVM colume](#resize-the-physical-lvm-colume)
   - [Resize the logical LVM volume](#resize-the-logical-lvm-volume)
   - [Advise the OS to utilize the new space](#advise-the-os-to-utilize-the-new-space)
+- [LVM data volume modification](#lvm-data-volume-modification)
+  - [Case 1: move/add separate /tmp mount, borrowing space from another physical volume](#case-1-moveadd-separate-tmp-mount-borrowing-space-from-another-physical-volume)
 - [Man pages](#man-pages)
+- [Links](#links)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

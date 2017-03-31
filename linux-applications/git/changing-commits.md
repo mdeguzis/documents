@@ -2,8 +2,12 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [Source:](#source)
-    - [See also:](#see-also)
+- [Replacing and ammending commits](#replacing-and-ammending-commits)
+  - [Method 1: `git replace` (clean, preferred)](#method-1-git-replace-clean-preferred)
+  - [Method 2: `git rebase` (messy)](#method-2-git-rebase-messy)
+- [Squash commits](#squash-commits)
+- [Aborting a rebase](#aborting-a-rebase)
+- [See also:](#see-also)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

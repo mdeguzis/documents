@@ -1,3 +1,16 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [Reading ACLs](#reading-acls)
+- [Setting ACLS](#setting-acls)
+- [Troublehsooting](#troublehsooting)
+  - ["Invalid Argument" when applying an ACL](#invalid-argument-when-applying-an-acl)
+- [Links](#links)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About
 
 Information on using POSIX.1e permissions with Python on Linux, using `pylibacl`.

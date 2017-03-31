@@ -6,6 +6,7 @@
 - [Syntax and usage](#syntax-and-usage)
 - [Arguments](#arguments)
 - [Overview](#overview)
+- [Expressions](#expressions)
 - [awk examples](#awk-examples)
 - [Links](#links)
 

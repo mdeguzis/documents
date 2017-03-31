@@ -1,3 +1,12 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Full screen mode](#full-screen-mode)
+- [4.9.7 ‘Full screen on Alt-Enter’](#497-full-screen-on-alt-enter)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Full screen mode
 
 If you find the title bar on a maximised window to be ugly or distracting, you can select Full Screen mode to maximise PuTTY ‘even more’. When you select this, PuTTY will expand to fill the whole screen and its borders, title bar and scrollbar will disappear. (You can configure the scrollbar not to disappear in full-screen mode if you want to keep it; see section 4.7.3.)

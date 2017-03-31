@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Following logs](#following-logs)
+  - [Tail vs less](#tail-vs-less)
+    - [When not to use less](#when-not-to-use-less)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Following logs
 You can follow logs with `tail -f`, but it is not the most useful way. See below.
 

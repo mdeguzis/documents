@@ -9,7 +9,7 @@
   - ['not' Logical Operator](#not-logical-operator)
   - ['and' Logical Operator](#and-logical-operator)
   - ['or' Logical Operator](#or-logical-operator)
-- [Logical operators](#logical-operators)
+- [Bitwise logical operators](#bitwise-logical-operators)
 - [Membership operators](#membership-operators)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->

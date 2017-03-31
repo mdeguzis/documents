@@ -1,3 +1,27 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [Structure](#structure)
+- [Features](#features)
+- [Indexing](#indexing)
+- [Analysis](#analysis)
+- [Solr config](#solr-config)
+  - [solrconfig.xml](#solrconfigxml)
+  - [solr.xml](#solrxml)
+  - [core.properties](#coreproperties)
+  - [schema.xml](#schemaxml)
+- [Querying](#querying)
+- [SolrCloud](#solrcloud)
+- [Search](#search)
+- [Scalability](#scalability)
+- [Shards](#shards)
+- [Links:](#links)
+- [Videos](#videos)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About
 
 Rapid indexing & search on Hadoop

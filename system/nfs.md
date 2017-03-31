@@ -1,3 +1,18 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [How to](#how-to)
+- [IMPORTANT](#important)
+- [The exportfs Command](#the-exportfs-command)
+- [Using exportfs with NFSv4](#using-exportfs-with-nfsv4)
+- [Troubleshooting](#troubleshooting)
+- [Discovering NFS exports](#discovering-nfs-exports)
+- [Links](#links)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About 
 
 Creating and utilizing NFS in Red Hat / Centos / Fedora

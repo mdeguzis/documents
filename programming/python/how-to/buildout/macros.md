@@ -1,3 +1,14 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [Examples](#examples)
+  - [Pulling a config value from the same section](#pulling-a-config-value-from-the-same-section)
+  - [Pulling values from another section](#pulling-values-from-another-section)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About
 
 Reuse sections of buildout

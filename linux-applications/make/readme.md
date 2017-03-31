@@ -4,6 +4,8 @@
 
 - [About](#about)
 - [Variables](#variables)
+  - [Get basename of filepath](#get-basename-of-filepath)
+  - [Strip dir trailing slash if user adds one](#strip-dir-trailing-slash-if-user-adds-one)
 - [Tips and tricks](#tips-and-tricks)
   - [Filtering out a CFLAG/CXXFLAG](#filtering-out-a-cflagcxxflag)
 

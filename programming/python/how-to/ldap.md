@@ -1,3 +1,20 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [Basic connection](#basic-connection)
+- [Searching LDAP/AD](#searching-ldapad)
+  - [Get AD groupmembers from CN](#get-ad-groupmembers-from-cn)
+  - [Get AD user attributes](#get-ad-user-attributes)
+  - [Get LDAP group members](#get-ldap-group-members)
+  - [Get LDAP user attributes](#get-ldap-user-attributes)
+  - [Get SAM account name](#get-sam-account-name)
+- [Searching on the command line](#searching-on-the-command-line)
+- [See also](#see-also)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About
 
 Notes regarding using LDAP in python

@@ -1,3 +1,18 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [firewall-cmd](#firewall-cmd)
+- [Editing](#editing)
+- [Service state changes](#service-state-changes)
+- [Examples](#examples)
+  - [re-attach a corrupted zone after fixing a problem.](#re-attach-a-corrupted-zone-after-fixing-a-problem)
+  - [Enable portimmediately and permanently](#enable-portimmediately-and-permanently)
+- [Links](#links)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About
 
 Notes on firewalld

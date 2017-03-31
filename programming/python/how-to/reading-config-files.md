@@ -1,3 +1,17 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [ini files](#ini-files)
+  - [Reading ini files](#reading-ini-files)
+  - [Storing and reading lists from ini files](#storing-and-reading-lists-from-ini-files)
+    - [Preferred method](#preferred-method)
+    - [Alterantive methods](#alterantive-methods)
+- [Links](#links)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About
 
 Notes on reading configuration files in python

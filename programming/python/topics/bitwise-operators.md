@@ -1,3 +1,23 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [Basics](#basics)
+- [Working with bitwise](#working-with-bitwise)
+- [Bitwise shift](#bitwise-shift)
+- [Bitwise AND](#bitwise-and)
+- [Bitwise OR](#bitwise-or)
+- [Bitwise XOR](#bitwise-xor)
+- [Bitwise NOT](#bitwise-not)
+- [bit mask](#bit-mask)
+  - [Turning a mask on](#turning-a-mask-on)
+  - [Flipping bits](#flipping-bits)
+  - [Shifting bits](#shifting-bits)
+- [See more](#see-more)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About 
 
 Expanded explanation of bitwise operations

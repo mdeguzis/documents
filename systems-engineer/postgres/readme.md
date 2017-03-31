@@ -1,3 +1,17 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [Basic operation](#basic-operation)
+  - [Starting postgres](#starting-postgres)
+  - [Basic commands](#basic-commands)
+  - [Common commands](#common-commands)
+  - [command examples](#command-examples)
+- [Links](#links)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About 
 
 Info on using postgres. More detailed information should be sourced from additional pages in this directory.

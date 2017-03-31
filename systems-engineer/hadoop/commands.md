@@ -3,8 +3,11 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [About](#about)
-- [General](#general)
+- [hadoop commands](#hadoop-commands)
+- [hadoop distcp](#hadoop-distcp)
+  - [hadoop fs](#hadoop-fs)
 - [Hive](#hive)
+- [Links](#links)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

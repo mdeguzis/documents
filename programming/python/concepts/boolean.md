@@ -1,3 +1,17 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Boolean](#boolean)
+- [Is it generally considered better to just use '==' by default, even when comparing int or Boolean values?](#is-it-generally-considered-better-to-just-use--by-default-even-when-comparing-int-or-boolean-values)
+- [For comparing against None, is None is preferred over == None.](#for-comparing-against-none-is-none-is-preferred-over--none)
+- [Comparing objects - is vs. =](#comparing-objects---is-vs-)
+  - [Example](#example)
+- [Test cases](#test-cases)
+- [Links](#links)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Boolean 
 
 Boolean values are the two constant objects False and True. They are used to represent truth values (although other values can also be considered false or true). In numeric contexts (for example when used as the argument to an arithmetic operator), they behave like the integers 0 and 1, respectively. The built-in function bool() can be used to cast any value to a Boolean, if the value can be interpreted as a truth value (see section Truth Value Testing above).

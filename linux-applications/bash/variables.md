@@ -3,6 +3,7 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [About](#about)
+- [$VAR vs. ${VAR}](#var-vs-var)
 - [Setting default variables](#setting-default-variables)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->

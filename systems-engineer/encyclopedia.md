@@ -7,6 +7,7 @@
   - [DDL](#ddl)
   - [DML](#dml)
   - [DCL](#dcl)
+  - [Heap size](#heap-size)
   - [ORC](#orc)
   - [RDD](#rdd)
   - [TCL](#tcl)
