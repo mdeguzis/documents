@@ -7,7 +7,63 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-# How to
+# Replacing and ammending commits
+
+This is useful if you accidentally committed a file under a different login or username. It happens :)
+
+Interactive rebase off of a point earlier in the history than the commit you need to modify (`git rebase -i <earliercommit>`). In the list of commits being rebased, change the text from pick to edit next to the hash of the one you want to modify. Then when git prompts you to change the commit, use this:
+
+
+## Method 1: `git replace` (clean, preferred)
+
+Checkout the commit we are trying to modify.
+```
+git checkout 03f482d6`
+```
+Make the change. In this example, ammending the author
+```
+git commit --amend --author "New Author Name <New Author Email>"
+```
+
+Replace the old commit with the new one locally.
+```
+git replace 03f482d6 42627abe
+```
+
+Rewrite all future commits based on the replacement.
+```
+git filter-branch -- --all
+```
+
+Remove the replacement for cleanliness
+```
+git replace -d 03f482d6
+```
+
+Push the new history (after sanity checking with git log).
+```
+git push -f`
+```
+
+When you are finished with out changes, checkout your original branch and update:
+```
+git checkout <original_branch>
+git pull
+```
+
+## Method 2: `git rebase` (messy)
+```
+# Rebase and use "edit"
+git rebase -i <earliercommit>
+
+# Change author
+git commit --amend --author="Author Name <email@address.com>"
+
+# Satisfied with changes?
+git rebase --continue
+```
+
+# Squash commits
 
 The workflow of the Todo.txt Touch project says that the master branch of [ginatrapani/todo.txt-touch](https://github.com/ginatrapani/todo.txt-touch) is the golden branch from which all development is based off of.
 
