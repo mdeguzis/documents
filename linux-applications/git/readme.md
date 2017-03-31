@@ -141,9 +141,21 @@ Entire log
 git log
 ```
 
-Detailed
+Per author
 ```
 git log --author=root
+```
+
+Listing all authors *except* a set of authors
+
+This uses the advanced "negative lookahead" feature available in PCRE, perl-based regex functionality. Your version of grep must support PCRE, so you'll need to check the way your vendor builds it. There are tips out there for how to rebuild or get other versions if needed.
+
+```
+$ git config --global grep.patternType perl
+$ git log --author='^((?!pattern).*)$'
+
+# Example
+git log --perl-regexp --author='^((?!excluded-author1-regex)(?!excluded-author2-regex).*)$'
 ```
 
 One line
@@ -151,7 +163,10 @@ One line
 git log --author=root --pretty=oneline --abbrev-commit
 ```
 
-See: https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History
+**See Also**
+
+* https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History
+* https://coderwall.com/p/tzdzwa
 
 ### Checking git status items
 
