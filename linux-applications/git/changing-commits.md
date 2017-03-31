@@ -42,7 +42,7 @@ git replace -d 03f482d6
 
 Push the new history (after sanity checking with git log).
 ```
-git push -f`
+git push -f
 ```
 
 When you are finished with out changes, checkout your original branch and update:
