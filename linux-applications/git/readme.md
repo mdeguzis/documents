@@ -131,6 +131,25 @@ git commit -m "Make submodule tracking a branch"
 
 ## Reviewing
 
+### Git logs
+
+Entire log
+```
+git log
+```
+
+Detailed
+```
+git log --author=root
+```
+
+One line
+```
+git log --author=root --pretty=oneline --abbrev-commit
+```
+
+See: https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History
+
 ### Checking git status items
 
 simple
