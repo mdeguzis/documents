@@ -11,6 +11,10 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
+# About
+
+Information regarding rewriting commits in git. It is important to note here, you will still see entries with the 'git log --all' switch below until you reclone your repository. The history stays local for both commits. On GitHub.com you will only see the corrected entry.
+
 # Replacing and ammending commits
 
 This is useful if you accidentally committed a file under a different login or username. It happens :)
@@ -22,6 +26,9 @@ git log --author=root
 
 # One line
 git log --author=root --pretty=oneline --abbrev-commit
+
+# Authors EXCEPT specified
+git log --all --perl-regexp --author='^((?!My Full Name)(?!myusername)(?!My Full Name2)(?!myusername2).*)$' --pretty='%an %h %s'
 ```
 
 Interactive rebase off of a point earlier in the history than the commit you need to modify (`git rebase -i <earliercommit>`). In the list of commits being rebased, change the text from pick to edit next to the hash of the one you want to modify. Then when git prompts you to change the commit, use this:
