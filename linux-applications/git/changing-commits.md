@@ -11,6 +11,15 @@
 
 This is useful if you accidentally committed a file under a different login or username. It happens :)
 
+To show a specific author:
+```
+# Detailed
+git log --author=root
+
+# One line
+git log --author=root --pretty=oneline --abbrev-commit
+```
+
 Interactive rebase off of a point earlier in the history than the commit you need to modify (`git rebase -i <earliercommit>`). In the list of commits being rebased, change the text from pick to edit next to the hash of the one you want to modify. Then when git prompts you to change the commit, use this:
 
 
