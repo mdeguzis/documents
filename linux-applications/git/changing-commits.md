@@ -16,9 +16,11 @@ Interactive rebase off of a point earlier in the history than the commit you nee
 
 ## Method 1: `git replace` (clean, preferred)
 
+This method is preferred. It is more clean than doing a rebase, and easier to manage. However, it is tedious for multiple commits.
+
 Checkout the commit we are trying to modify.
 ```
-git checkout 03f482d6`
+git checkout 03f482d6
 ```
 Make the change. In this example, ammending the author
 ```
