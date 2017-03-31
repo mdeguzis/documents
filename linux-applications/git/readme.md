@@ -129,6 +129,25 @@ git commit -m "Make submodule tracking a branch"
 * Run git rm --cached path_to_submodule (no trailing slash).
 * Commit and delete the now untracked submodule files.
 
+## Reviewing
+
+### Checking git status items
+
+simple
+```
+git status
+```
+
+Checking branch status info
+```
+# On branch master
+# Your branch and 'origin/master' have diverged,
+# and have 4 and 4 different commits each, respectively.
+#   (use "git pull" to merge the remote branch into yours)
+
+git log HEAD..origin/master
+```
+
 # Tools / Utilities
 
 ## dch
