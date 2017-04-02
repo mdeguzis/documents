@@ -99,7 +99,7 @@ git submodule update --remote <PATH_TO_WITH_MODULE_NAME>
 
 ### Have a sudmodule always track the HEAD of a branch
 
-Note: This is dangerous and not reccomended. Original source is [here](http://stackoverflow.com/a/31851819)
+Note: This is dangerous and not recommended. Original source is [here](http://stackoverflow.com/a/31851819)
 
 As I mention in "git submodule tracking latest", you can since git 1.8.2 (March 2013) make a submodule track the HEAD of branch:
 
