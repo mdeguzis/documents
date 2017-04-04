@@ -104,6 +104,23 @@ Filesystem ACLs are extremely handy in that they allow you to extend access cont
 
 Source: [techrepublic](http://www.techrepublic.com/article/learn-to-use-extended-filesystem-acls/)
 
+# Reading an ACL
+
+Basic
+```
+getfacl /path/to/file/or/folder
+```
+
+Show all effective permissions:
+```
+getfacl -e /path/to/file/or/folder
+```
+
+nfs ACL:
+```
+nfs4_getfacl /path/to/file/or/folder
+```
+
 # Setting an ACL
 
 user
