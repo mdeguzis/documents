@@ -236,7 +236,7 @@ ldapsearch -H ldaps://ldaphost -D uid=user1,ou=people,dc=domain,dc=com -W "(&(ob
 Groups
 ```
 # adldap
-$ ldapsearch -D user@host.com -W "(cn=mygroup)"
+$ ldapsearch -H ldaps://adldapserver -D user@host.com -W "(cn=mygroup)"
 
 # openldap
 ldapsearch -H ldaps://ldaphost -D uid=user1,ou=people,dc=domain,dc=com -W "(&(objectClass=posixGroup)(cn=groupname))"
