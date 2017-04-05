@@ -10,7 +10,13 @@
 
 # About
 
-Notes for Ranger
+Notes for Ranger. 
+
+# user sync
+
+## AD groups
+
+A ranger group using an AD group needs to exactly match the group name as created in Linux LDAP. Ranger is just an authorization manager, it maps to groups at the OS level which must exist, groups created in it arbitrarily don't exist at the application level.
 
 # Unix Group Manual sync
 
