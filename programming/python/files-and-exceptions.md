@@ -236,6 +236,19 @@ Pickling and unpickling are good ways to store and retrieve structured informati
 * Use the python shell interpreter to test for exception types if you are unsure of what error could be thrown.
 * Mulitple exception types can be seperated with commas
 
+## sys.exit vs raise
+
+sys.exit in python apparently defaults to sys.exit(0) which is 'completed normally'. If you're just using 'raise SystemExit(1)', then using raise is stupid vs 'sys.exit(1)' as you're doing the same thing in a much less clean way. sys.exit does indeed support error message text:
+
+To me where to use these would depend on the code use case; although the end is technically the same the functions themselves are documentation as to programmer intent. Exceptions should be thrown where the developer expects a possibility of interception and use by parent code wrapping it, i.e. libraries. Use sys.exit in endpoint driver code and shell script replacements where you explicitly mean for the code to exit at that point and it not to be possible to be intercepted.
+
+Using raise is more useful if you expect that you want the traceback of what went wrong. If you don't it's cleaner and quicker to just log the error if you are using Python's logging module, and perform a `sys.exit(1)` to kill the script (if that is your intention).
+
+See:
+
+* https://docs.python.org/2/library/sys.html#sys.exit
+* https://docs.python.org/2/library/exceptions.html
+
 ## Exception types
 
 Exception Type | Description
@@ -284,6 +297,22 @@ This is useful if you want to catch certain situations, but run the same code ag
 ```
 except (RuntimeError, TypeError, NameError):
   <CODE>
+```
+
+## Some exception examples
+
+sys.exit vs raise
+```
+import sys
+
+try:
+    sys.exit(1) # Or something that calls sys.exit()
+except SystemExit as e:
+    sys.exit(e)
+except:
+    # Cleanup and reraise. This will print a backtrace.
+    # (Insert your cleanup code here.)
+    raise
 ```
 
 # Example programs
