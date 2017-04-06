@@ -291,3 +291,7 @@ except (RuntimeError, TypeError, NameError):
 * [python/fundementals/trivia-challenge.py](s://github.com/mdeguzis/python/tree/python2/fundamentals/triva-challenge.py)
 * [python/fundementals/write-it.py](s://github.com/mdeguzis/python/tree/python2/fundamentals/write-it.py)
 * [python/fundementals/handle-it.py](s://github.com/mdeguzis/python/tree/python2/fundamentals/handle-it.py)
+
+# Links
+
+* https://docs.python.org/2/library/exceptions.html
