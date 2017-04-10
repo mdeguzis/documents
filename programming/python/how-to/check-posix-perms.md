@@ -55,6 +55,18 @@ This is represented with `chmod +t`. Either of the two methods here work. I pref
 True
 ```
 
+# Caveats
+
+## setuid on Linux
+
+Recall that the setuid and setgid bits were invented for a completely different purpose: causing an executable to run with its owner's uid or gid, rather than the uid or gid of the user running the file. Any other usage is just an extra feature.
+
+These bits have no function on ordinary files that aren't executable. (And also shell scripts on some distros, due to security issues.) Originally, they also had no function for directories. Obviously somebody decided it would be cool to take the unused setgid on directories and use it to enforce consistency of group ownership. After all, if you're playing with group ownership, it's because more than one person is working with the file, and it probably makes sense for all the files in a given directory to belong to the same group, no matter who created them. Hassles due to somebody forgetting to run newgrp are eliminated.
+
+So, why not implement the same feature for setuid and the file uid? Well, uid is much more basic than gid. If you implement this, often a file will not belong to the user who created it! Presumably the user can still modify the file (assuming the umask is something sane), but they can't change the permission bits. Hard to see the utility of that.
+
+Source: [StackOverflow](https://superuser.com/questions/471844/why-is-setuid-ignored-on-directories)
+
 # Links
 
 * [Interpreting 'stat' results](https://docs.python.org/2/library/stat.html)
