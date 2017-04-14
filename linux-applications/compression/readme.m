@@ -1,5 +1,7 @@
 # About
 
+# Tar
+
 GNU `tar' saves many files together into a single tape or disk archive, and can restore individual files from the archive.
 
 # GZIP compression
@@ -21,6 +23,17 @@ env GZIP=-9 tar cvzf file.tar.gz /path/to/directory
 tar cvf - /path/to/directory | gzip -9 - > file.tar.gz
 ```
 
+# xz
+
+xz offers the best size compression, but bear in mind it will take quite longer to do so with high compression levels.
+
+```
+# -z compress
+# -9 compression level (0-9)
+xz -zv -9 gdchdpdn005drlx.fsck.log gdchdpdn005drlx.fsck.log.xz
+```
+
 # Links
 
 * https://www.cyberciti.biz/howto/question/general/compress-file-unix-linux-cheat-sheet.php
+* https://www.rootusers.com/gzip-vs-bzip2-vs-xz-performance-comparison/
