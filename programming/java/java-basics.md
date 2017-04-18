@@ -107,3 +107,9 @@ all lowercase, numbers/characters/booleans, and stored in the fastest available 
 * An object is an instance of a class
 * They can have multiple references
 * Non-primitive varibales are reference to objects
+
+# Troubleshooting
+
+## Class path errors
+
+http://stackoverflow.com/questions/18093928/what-does-could-not-find-or-load-main-class-mean
