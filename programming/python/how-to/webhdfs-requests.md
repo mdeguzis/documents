@@ -18,3 +18,4 @@ How to utilize the webhdfs REST API using python requests.
 * [Python Kerberos requests](http://python-notes.curiousefficiency.org/en/latest/python_kerberos.html)
 * [Requests API developer interface](http://docs.python-requests.org/en/master/api/)
 * [Requests Quick Start Guide](http://docs.python-requests.org/en/master/user/quickstart/)
+* [WebHDFS API (Hortonworks)](https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-hdfs/WebHDFS.html)
