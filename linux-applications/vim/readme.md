@@ -95,37 +95,6 @@ Or, to toggle it:
 set hlsearch!
 ```
 
-## json
-
-If your script/program dumps valid json, you can tee this to a log and use the `%!python -m json.tool` command to expand the structure into a more readable format.
-
-Just execute the following with the JSON document open.
-
-```
-%!python -m json.tool
-```
-
-Now if you're like me you won't remember this in an hour so you can add it to your .vimrc file as a custom command like so:
-
-```
-command! FormatJSON %!python -m json.tool  
-```
-
-You can also do this from piped output:
-```
-Using json.tool from the shell to validate and pretty-print:
-
-$ echo '{"json":"obj"}' | python -m json.tool
-{
-    "json": "obj"
-}
-$ echo '{1.2:3.4}' | python -mjson.tool
-Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
-```
-
-See: http://visibletrap.blogspot.com/2010/05/vim-how-to-format-and-syntax-highlight.html
-See: http://dustinmartin.net/format-json-in-vim/
-
 # Distro specific
 
 ## Arch Linux
