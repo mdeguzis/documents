@@ -21,3 +21,23 @@ And regarding the key combo to enter/leave full screen, there is at least a conf
 If this option is enabled, then pressing Alt-Enter will cause the PuTTY window to become full-screen. Pressing Alt-Enter again will restore the previous window size.
 
 The full-screen feature is also available from the System menu, even when it is configured not to be available on the Alt-Enter key. See section 3.1.3.7.
+
+# Letters showing up when typing on the numpad
+
+Why do letters show up when I try to enter numbers from the keypad? Why doesn't the numpad work as expected? Why does the NumLock key bring up help.txt?
+
+These confusing things happen when PuTTY is in "application keypad mode".
+
+PuTTY can be configured so that keys on the numeric keypad (including NumLock) will send an escape sequence ("application keypad mode"), or will behave as a standard number pad (when NumLock is on, send the characters  [0-9/*-+.]; otherwise, send the codes for the cursor movement keys).
+
+For use in Vim, you want to disable application keypad mode:
+
+* Run PuTTY Configuration.
+* In the left pane, select Terminal, Features.
+* Put a check mark next to "Disable application keypad mode".
+* In the left pane, select Session.
+* Save the settings.
+
+Now the NumLock key and the numbers on the numpad should work in Vim, as expected.
+
+See: http://vim.wikia.com/wiki/PuTTY_numeric_keypad_mappings
