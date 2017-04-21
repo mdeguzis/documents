@@ -56,6 +56,7 @@ Check the schema | hive> ALTER TABLE mytable RENAME to mt;
 Add a column | hive> ALTER TABLE mytable ADD COLUMNS (mycol STRING);
 Drop a partition | hive> ALTER TABLE mytable DROP PARTITION (age=17)
 
+Note: to drop a database with tables, use `cascade` with the command
 
 # Key points
 
