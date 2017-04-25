@@ -27,6 +27,23 @@ Useful info for working with bash
 
 # Tips and tricks
 
+## Running command from bash history
+
+You can use `history` to pull up a command from your login:
+
+```
+history | grep "command"
+112 ls
+113 echo "test"
+114 echo "test2"
+
+# Run command 
+!112
+
+# Just pring the command
+!112:p
+```
+
 ## Garbled terminal
 
 If you accidentally mess up your terminal screen, say with feeding sed binary files, use `reset`. This will reset the terminal output and stop spitting out garbage. You can try it when your terminal is clear to see what it does; usually when you run it you can't actually see the `$` prompt and it's possible you don't actually have a prompt, but when you do and just can't see it, this clears things up without losing shell history.
