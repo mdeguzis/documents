@@ -30,3 +30,7 @@ docker run -i $DOCKER_IMAGE /bin/bash -c command.sh
 
 See: https://docs.docker.com/engine/getstarted/step_six/
 
+
+# Links
+
+* [Docker - getting started](https://docs.docker.com/get-started/)
