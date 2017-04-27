@@ -52,7 +52,7 @@ You can then resize the resulting dynamic VDI using "VBoxManage modifyhd" as des
 
 # Troubleshooting
 
-## Move VM folder without updating VM first
+## Moved VM folder without updating VM first
 
 1. GUI starts up.
 2. GUI reads VirtualBox.xml from VBOX_USER_HOME (if defined) or from default location (if not defined).
