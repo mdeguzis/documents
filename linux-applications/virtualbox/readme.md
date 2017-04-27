@@ -50,3 +50,12 @@ VBoxManage clonehd <infilename or UUID> <outfilename> --format VDI --variant Sta
 
 You can then resize the resulting dynamic VDI using "VBoxManage modifyhd" as described above.
 
+# Troubleshooting
+
+## Move VM folder without updating VM first
+
+1. GUI starts up.
+2. GUI reads VirtualBox.xml from VBOX_USER_HOME (if defined) or from default location (if not defined).
+3. GUI parses VirtualBox.xml and extracts list of VM names, and default home folders for VMs and hard disk images.
+
+Open up `$HOME/.VirtualBox/VirtualBox.xml` and update the paths.
