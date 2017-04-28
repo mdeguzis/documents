@@ -14,6 +14,11 @@ Useful info for Docker
 
 # Working with images
 
+searching for images on the cli
+```
+docker search
+```
+
 pull image
 ```
 docker pull <IMAGE>:<TAG>
