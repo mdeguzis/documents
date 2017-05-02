@@ -35,7 +35,6 @@ If a service is requested under a certain name but no unit configuration file is
 
 The syntax of systemd's [unit files](http://www.freedesktop.org/software/systemd/man/systemd.unit.html) is inspired by XDG Desktop Entry Specification `.desktop` files, which are in turn inspired by Microsoft Windows `.ini` files. 
 
-=
 
 ## Simple unit file
 
@@ -68,7 +67,7 @@ Unit files are loaded from two locations. From lowest to highest precedence they
 
 * [Writing unit files (docker)](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux_atomic_host/7/html/managing_containers/using_systemd_with_containers)
 * [systemd service (freedesktop.org)](https://www.freedesktop.org/software/systemd/man/systemd.service.html)
-* [Writing unit files (Arch Linux)(https://wiki.archlinux.org/index.php/systemd#Writing_unit_files)
+* [Writing unit files (Arch Linux)](https://wiki.archlinux.org/index.php/systemd#Writing_unit_files)
 
 # Education
 
