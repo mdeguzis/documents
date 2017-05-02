@@ -9,7 +9,66 @@
 
 # About 
 
-General notes on systemd.
+General notes on systemd. See [systemd cheatsheet](https://github.com/mdeguzis/documents/blob/master/linux-applications/systemd/systemd-cheat-sheet.md) for a list of handy commands.
+
+# system runlevel vs. sysv
+
+SysV Runlevel	| systemd Target |	Notes
+--------------|----------------|---------------------
+0	|runlevel0.target, poweroff.target	|Halt the system.
+1, s, single	|runlevel1.target, rescue.target	|Single user mode.
+2, 4	|runlevel2.target, runlevel4.target, multi-user.target	|User-defined/Site-specific runlevels. By default, identical to 3.
+3	|runlevel3.target, multi-user.target	|Multi-user, non-graphical. Users can usually login via multiple consoles or via the network.
+5	|runlevel5.target, graphical.target	|Multi-user, graphical. Usually has all the services of runlevel 3 plus a graphical login.
+6	|runlevel6.target, reboot.target	| Reboot
+emergency	|emergency.target	|Emergency shell
+
+# Unit files
+
+A unit configuration file whose name ends in .service encodes information about a process controlled and supervised by systemd.
+
+This man page lists the configuration options specific to this unit type. See systemd.unit(5) for the common options of all unit configuration files. The common configuration items are configured in the generic "[Unit]" and "[Install]" sections. The service specific configuration options are configured in the "[Service]" section.
+
+Additional options are listed in systemd.exec(5), which define the execution environment the commands are executed in, and in systemd.kill(5), which define the way the processes of the service are terminated, and in systemd.resource-control(5), which configure resource control settings for the processes of the service.
+
+If a service is requested under a certain name but no unit configuration file is found, systemd looks for a SysV init script by the same name (with the .service suffix removed) and dynamically creates a service unit from that script. This is useful for compatibility with SysV. Note that this compatibility is quite comprehensive but not 100%. For details about the incompatibilities, see the Incompatibilities with SysV document.
+
+The syntax of systemd's [unit files](http://www.freedesktop.org/software/systemd/man/systemd.unit.html) is inspired by XDG Desktop Entry Specification `.desktop` files, which are in turn inspired by Microsoft Windows `.ini` files. 
+
+=
+
+## Simple unit file
+
+```
+[Unit]
+Description=Redis container
+After=docker.service
+
+[Service]
+Restart=always
+ExecStart=/usr/bin/docker start -a redis_server
+ExecStop=/usr/bin/docker stop -t 2 redis_server
+
+[Install]
+WantedBy=local.target
+```
+
+## Installation
+
+Unit files are loaded from two locations. From lowest to highest precedence they are:
+
+* `/usr/lib/systemd/system/`: units provided by installed packages
+* `/etc/systemd/system/`: units installed by the system administrator
+
+# Tips and tricks
+
+* Comments prepended with # may be used in unit-files as well, but only in new lines. Do not use end-line comments after systemd parameters or the unit will fail to activate.
+
+# Documentation
+
+* [Writing unit files (docker)](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux_atomic_host/7/html/managing_containers/using_systemd_with_containers)
+* [systemd service (freedesktop.org)](https://www.freedesktop.org/software/systemd/man/systemd.service.html)
+* [Writing unit files (Arch Linux)(https://wiki.archlinux.org/index.php/systemd#Writing_unit_files)
 
 # Education
 
