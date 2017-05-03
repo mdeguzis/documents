@@ -18,13 +18,35 @@ EXPOSE 5000
 CMD ["python", "./app.py"]
 ```
 
-The docker build command is quite simple - it takes an optional tag name with -t and a location of the directory containing the Dockerfile.
+## Build
+
+The docker build command is quite simple - it takes an optional tag name with -t and a location of the directory containing the Dockerfile. Tagging ahead of is a good idea in case you don't want to push the image right away.
 
 ```
 cd <DOCKER_PROJECT_DIR>
 docker build -t mike/testimage .
 ```
 
+## Push an image to Docker Cloud (Docker Hub)
+
+Before beginning, check your images
+```
+docker images
+```
+
+Example
+```
+# login
+docker login
+
+# tag image (if you have not already)
+docker tag my_image <username>/my_image
+
+# push image
+docker push <username>/my_image
+```
+
 # Links
 
 * https://prakhar.me/docker-curriculum/
+* https://docs.docker.com/docker-cloud/builds/push-images/
