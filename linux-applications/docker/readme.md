@@ -3,8 +3,11 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [About](#about)
-- [Useful commands](#useful-commands)
+- [Working with images](#working-with-images)
+- [Working with containers](#working-with-containers)
+- [Monitoring](#monitoring)
 - [Tag and upload](#tag-and-upload)
+- [Links](#links)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

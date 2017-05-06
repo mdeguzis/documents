@@ -11,6 +11,7 @@
     - [Principal](#principal)
     - [Permissions](#permissions)
 - [Basic vs. Extended ACLs](#basic-vs-extended-acls)
+- [Reading an ACL](#reading-an-acl)
 - [Setting an ACL](#setting-an-acl)
 - [Links](#links)
 

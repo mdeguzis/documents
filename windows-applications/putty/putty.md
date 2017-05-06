@@ -4,6 +4,7 @@
 
 - [Full screen mode](#full-screen-mode)
 - [4.9.7 ‘Full screen on Alt-Enter’](#497-full-screen-on-alt-enter)
+- [Letters showing up when typing on the numpad](#letters-showing-up-when-typing-on-the-numpad)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

@@ -6,6 +6,9 @@
 - [General links](#general-links)
 - [Subjects](#subjects)
 - [Sourcing options in scrits](#sourcing-options-in-scrits)
+- [Tips and tricks](#tips-and-tricks)
+  - [Running command from bash history](#running-command-from-bash-history)
+  - [Garbled terminal](#garbled-terminal)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

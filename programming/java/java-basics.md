@@ -14,6 +14,8 @@
   - [Primitive](#primitive)
 - [Keywords](#keywords)
 - [Objects](#objects)
+- [Troubleshooting](#troubleshooting)
+  - [Class path errors](#class-path-errors)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

@@ -1,3 +1,32 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Unit and service commands](#unit-and-service-commands)
+  - [Start a unit immediately](#start-a-unit-immediately)
+  - [Stop a unit immediately](#stop-a-unit-immediately)
+  - [Restart a unit](#restart-a-unit)
+  - [Ask a unit to reload its configuration](#ask-a-unit-to-reload-its-configuration)
+  - [Show the status of a unit, including whether it is running or not](#show-the-status-of-a-unit-including-whether-it-is-running-or-not)
+  - [Check whether a unit is already enabled or not](#check-whether-a-unit-is-already-enabled-or-not)
+  - [Enable a unit to be started on bootup](#enable-a-unit-to-be-started-on-bootup)
+  - [Disable a unit to not start during bootup](#disable-a-unit-to-not-start-during-bootup)
+  - [Mask a unit to make it impossible to start it](#mask-a-unit-to-make-it-impossible-to-start-it)
+  - [Unmask a unit](#unmask-a-unit)
+  - [Show the manual page associated with a unit (this has to be supported by the unit file)](#show-the-manual-page-associated-with-a-unit-this-has-to-be-supported-by-the-unit-file)
+  - [Reload systemd, scanning for new or changed units:](#reload-systemd-scanning-for-new-or-changed-units)
+- [Replacment unit files](#replacment-unit-files)
+- [Drop-in files](#drop-in-files)
+  - [Revert to vendor version](#revert-to-vendor-version)
+- [Power management](#power-management)
+  - [Shut down and reboot the system](#shut-down-and-reboot-the-system)
+  - [Shut down and power-off the system](#shut-down-and-power-off-the-system)
+  - [Suspend the system](#suspend-the-system)
+  - [Put the system into hibernation](#put-the-system-into-hibernation)
+  - [Put the system into hybrid-sleep state (or suspend-to-both)](#put-the-system-into-hybrid-sleep-state-or-suspend-to-both)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Unit and service commands
 
 ## Start a unit immediately

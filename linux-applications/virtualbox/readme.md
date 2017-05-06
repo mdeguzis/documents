@@ -7,6 +7,8 @@
   - [Step 1:](#step-1)
   - [Step 2:](#step-2)
 - [Resizing fixed VDI disk image](#resizing-fixed-vdi-disk-image)
+- [Troubleshooting](#troubleshooting)
+  - [Moved VM folder without updating VM first](#moved-vm-folder-without-updating-vm-first)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

@@ -1,3 +1,15 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [Finding files based on date or age](#finding-files-based-on-date-or-age)
+  - [mtime and ctime explanation](#mtime-and-ctime-explanation)
+  - [file age](#file-age)
+  - [file age by date / time](#file-age-by-date--time)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About
 
 Find command usage, tips, and tricks

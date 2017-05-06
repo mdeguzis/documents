@@ -1,3 +1,11 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Error: requests.exceptions.SSLError: EOF occurred in violation of protocol (_ssl.c:765)](#error-requestsexceptionssslerror-eof-occurred-in-violation-of-protocol-_sslc765)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Error: requests.exceptions.SSLError: EOF occurred in violation of protocol (_ssl.c:765) 
 
 This may occur if you are using buldout/virutalenv and missing some SSL components. When I tested this, `/usr/bin/python` was able to make the request, 

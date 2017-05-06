@@ -3,6 +3,12 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [About](#about)
+- [system runlevel vs. sysv](#system-runlevel-vs-sysv)
+- [Unit files](#unit-files)
+  - [Simple unit file](#simple-unit-file)
+  - [Installation](#installation)
+- [Tips and tricks](#tips-and-tricks)
+- [Documentation](#documentation)
 - [Education](#education)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->

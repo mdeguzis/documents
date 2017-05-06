@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [The Difference Between URLs and URIs](#the-difference-between-urls-and-uris)
+- [In summary](#in-summary)
+- [Examples](#examples)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # The Difference Between URLs and URIs
 
 ![Alt text](https://github.com/mdeguzis/documents/blob/master/images/URI-vs.-URL-e1464829000786.png?raw=true "Optional Title")

@@ -7,6 +7,8 @@
   - [Assess which bit to compare to](#assess-which-bit-to-compare-to)
   - [SetGID](#setgid)
   - [Sticky-bit](#sticky-bit)
+- [Caveats](#caveats)
+  - [setuid on Linux](#setuid-on-linux)
 - [Links](#links)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->

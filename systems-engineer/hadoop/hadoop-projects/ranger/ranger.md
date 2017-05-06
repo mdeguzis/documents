@@ -3,6 +3,8 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [About](#about)
+- [user sync](#user-sync)
+  - [AD groups](#ad-groups)
 - [Unix Group Manual sync](#unix-group-manual-sync)
 - [JSON file Group sync](#json-file-group-sync)
 

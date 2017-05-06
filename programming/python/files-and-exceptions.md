@@ -20,11 +20,14 @@
   - [Shelve access modes](#shelve-access-modes)
   - [Real world application](#real-world-application)
 - [Handling exceptions](#handling-exceptions)
+  - [sys.exit vs raise](#sysexit-vs-raise)
   - [Exception types](#exception-types)
   - [Getting an exceptions arguement](#getting-an-exceptions-arguement)
   - [Adding an else Clause](#adding-an-else-clause)
   - [Multiple except clauses on one line](#multiple-except-clauses-on-one-line)
+  - [Some exception examples](#some-exception-examples)
 - [Example programs](#example-programs)
+- [Links](#links)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

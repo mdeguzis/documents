@@ -1,3 +1,12 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Obtain UNIX epoch time using bash](#obtain-unix-epoch-time-using-bash)
+- [Converting UNIX epoch time to human readable time](#converting-unix-epoch-time-to-human-readable-time)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Obtain UNIX epoch time using bash
 
 Obtaining the UNIX epoch time using bash is easy. Use the build-in date command and instruct it to output the number of seconds since `1970-01-01 00:00:00 UTC`. You can do this by passing a format string as parameter to the date command. The format string for UNIX epoch time is `%s`.

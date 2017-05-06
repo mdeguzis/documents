@@ -2,6 +2,7 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
+- [About](#about)
 - [Replacing and ammending commits](#replacing-and-ammending-commits)
   - [Method 1: `git replace` (clean, preferred)](#method-1-git-replace-clean-preferred)
   - [Method 2: `git rebase` (messy)](#method-2-git-rebase-messy)
