@@ -8,7 +8,7 @@
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 # About
-Useful info about apt
+Useful info about apt. Please note the differences between `apt` (newer usage) and `apt-get` or `dpkg`. `apt` aims to make usage of the package manage more useful and consistent.
 
 # Recursive listing of packages, listing only installed
 
