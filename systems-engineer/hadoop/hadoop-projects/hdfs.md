@@ -68,7 +68,13 @@ So even if you use Hadoop dfs , it will look locate hdfs and delegate that comma
 
 ## file and folder management
 
-#### Removing folder
+### List storage summary, sorted
+
+```
+sudo -u hdfs hadoop fs -du -h -s /user/* | sed 's/ //' | sort -h
+```
+
+### Removing folder
 
 Simple removal:
 ```
