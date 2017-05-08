@@ -58,6 +58,19 @@ perl -pe 's|OLD|`cat blockoftext`|e'
 perl -pe 's|OLD|`cat blockoftext`|e' -i
 ```
 
+# Delete empty lines
+```
+sed ‘/^$/d’ <input-file>
+echo LINE | sed ‘/^$/d’
+echo $VAR | sed ‘/^$/d’
+
+So to delete all empty lines from a file called /tmp/data.txt, enter:
+$ sed '/^$/d' /tmp/data.txt
+
+To store output to another file use redirection operator:
+$ sed '/^$/d' /tmp/data.txt > /tmp/output.txt
+```
+
 # Delete 'n' lines after match (including match)
 ```
 sed -e '/pattern/,+5d' file.txt
