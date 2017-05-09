@@ -218,6 +218,11 @@ def get_ad_sam_acctname(userdn):
         return None
 ```
 
+## Paging results
+
+See: https://gist.github.com/mattfahrner/c228ead9c516fc322d3a
+Fork (backup): https://gist.github.com/mdeguzis/78bfdbe3e9bd3ddc503aae32cc33eb11
+
 # Searching on the command line
 
 Users
@@ -244,5 +249,6 @@ ldapsearch -H ldaps://ldaphost -D uid=user1,ou=people,dc=domain,dc=com -W "(&(ob
 
 # See also
 
+* [ldap python documentation](https://www.python-ldap.org/doc/html/ldap.html)
 * [LDAP Syntax filters (TechNet)](https://social.technet.microsoft.com/wiki/contents/articles/5392.active-directory-ldap-syntax-filters.aspx#Filter_on_objectCategory_and_objectClass)
 * [ldif](https://www.python-ldap.org/doc/html/ldif.html)
