@@ -16,3 +16,7 @@ Information on using curl
 ```
 curl https://google.com -s -f -o /dev/null && echo “Website up”|| echo "Website down."
 ```
+
+# Links
+
+* [Curl error codes](https://curl.haxx.se/libcurl/c/libcurl-errors.html)
