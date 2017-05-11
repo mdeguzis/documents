@@ -75,6 +75,67 @@ CONTAINER ID        IMAGE               COMMAND             CREATED             
 ff0a5c3750b9        busybox             "sh"                12 minutes ago      Exited (0) 12 minutes ago                       elated_ramanujan
 ```
 
+# SSL
+
+For example with Jenkins:
+
+```
+sudo docker run -d \
+		--name jenkins_server \
+		--user 1000 \
+		--privileged \
+		--volume /home/jenkins:/var/jenkins_home \
+		--publish 443:8443 \
+		$(ENV_OPTS) \
+		geisinger-jenkins \
+		--httpPort=-1 \
+		--httpsPort=8443 \
+		--httpsKeyStore=/var/jenkins_home/.keystore/jenkins_keystore.jks \
+		--httpsKeyStorePassword="$(KEYSTORE_PASSWORD)"
+```
+
+
+```
+-u 1000
+         The UID of the host jenkins user
+
+--privileged
+         Required for SELinux environments and usage of SSL
+
+-v /home/jenkins:/var/jenkins_home
+          exposes the host home folder to the jenkins docker container
+-p 443:8443
+          maps 8443 jenkins port in the container to the 443 port of the host
+--httpPort=-1 --httpsPort=8443
+          blocks jenkins http and exposes it with https on port 8443 inside the container
+--httpsKeyStore=/var/jenkins_home/jenkins_keystore.jks --httpsKeyStorePassword=mypassword
+          provides your keystore that has been mapped from the host home folder to the container /var/jenkins_home/ folder.
+```
+
+Source: [StackOverflow](http://stackoverflow.com/questions/29755014/setup-secured-jenkins-master-with-docker)
+
+# Firewall
+
+## Exposing ports for the container firewall
+
+### Opening a port
+
+```
+--publish 443:8443
+```
+
+### Locally
+
+There is a way to bind a docker container to only local host, i.e. to forward a service via Apache on the local system. 
+
+Use this syntax: 
+```
+{{-p 127.0.0.1:50111:8080}}
+```
+
+This will bind the service's port 8080 in the docker container to 50111 on the local host only without punching a hole in the firewall.
+
+
 # Tag and upload
 
 See: https://docs.docker.com/engine/getstarted/step_six/
