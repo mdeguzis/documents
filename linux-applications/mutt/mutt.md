@@ -4,12 +4,39 @@ Usage notes for mutt. Mutt is a mail-reading CLI program for Linux
 
 # Main inbox status markers
 
-`D` - marked for Deletion
-`N` - New email
-`T` - Unknown
-`+` - Attachment
+## Message status flags
+
+Flag	|Description
+------|-----------------
+D|	message is deleted (is marked for deletion)
+d	|message has attachments marked for deletion
+K	|contains a PGP public key
+N	|message is new
+O	|message is old
+P	|message is PGP encrypted
+r	|message has been replied to
+S	|message is signed, and the signature is successfully verified
+s	|message is signed
+!	|message is flagged
+\*	|message is tagged
+n	|thread contains new messages (only if collapsed)
+o	|thread contains old messages (only if collapsed)
+
+## Message recipent flags
+
+Flag|	Description
+----|---------------
++|	message is to you and you only
+T|	message is to you, but also to or CC'ed to others
+C|	message is CC'ed to you
+F|	message is from you
+L|	message is sent to a subscribed mailing list
+
+See: [Message status flags](https://dev.mutt.org/doc/manual.html#tab-msg-status-flags)
 
 # Reference docs
+
+* [Manual](https://dev.mutt.org/doc/manual.html)
 
 ## Key binding
 
