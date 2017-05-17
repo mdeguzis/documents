@@ -2,8 +2,6 @@
 
 Usage notes for mutt. Mutt is a mail-reading CLI program for Linux
 
-
-
 # Mutt Quick Reference Chart
 
 [Source](https://www.ucolick.org/~lharden/muttchart.html "Permalink to Mutt Quick Reference Chart")
@@ -58,4 +56,14 @@ Mutt Command      | Context                                                     
 [10]: https://www.ucolick.org/learnmutt.html#Reply
 [11]: https://www.ucolick.org/learnmutt.html#Save
 
-  
+# Attachments
+
+Viewing attachments is perhaps the least intuitive part of Mutt. It requires creating a ~/.mailcap file that specifies which applications should be used to open which kinds of attachments. I basically adopted this system wholesale, especially the view_attachment.sh script.
+
+For example, these lines in my .mailcap file tell Mutt to open Microsoft Word documents in TextEdit, while allowing it to open *.docx files in Microsoft Word. Rich Text files are opened using Bean. HTML attachments and messages are piped through pandoc and converted to markdown for easy reading.
+
+http://wcm1.web.rice.edu/mutt-tips.html
+
+# Searching
+
+http://www.rosipov.com/blog/effective-search-with-mutt/
