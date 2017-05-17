@@ -2,7 +2,13 @@
 
 Usage notes for mutt. Mutt is a mail-reading CLI program for Linux
 
-# Mutt Quick Reference Chart
+# Reference docs
+
+## Visual interactive chart
+
+http://sheet.shiar.nl/mutt
+
+## Mutt Quick Reference Chart
 
 [Source](https://www.ucolick.org/~lharden/muttchart.html "Permalink to Mutt Quick Reference Chart")
 
