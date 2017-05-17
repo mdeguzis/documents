@@ -11,6 +11,10 @@ Usage notes for mutt. Mutt is a mail-reading CLI program for Linux
 
 # Reference docs
 
+## Key binding
+
+https://dev.mutt.org/trac/wiki/MuttFaq/Action
+
 ## Visual interactive chart
 
 http://sheet.shiar.nl/mutt
