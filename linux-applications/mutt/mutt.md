@@ -72,4 +72,9 @@ http://wcm1.web.rice.edu/mutt-tips.html
 
 # Searching
 
+## Hints
+
+* Use `/` (search) to search for an instance
+* Use `//` after searching to clear the query
+
 http://www.rosipov.com/blog/effective-search-with-mutt/
