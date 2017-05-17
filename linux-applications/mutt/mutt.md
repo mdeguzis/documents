@@ -2,6 +2,13 @@
 
 Usage notes for mutt. Mutt is a mail-reading CLI program for Linux
 
+# Main inbox status markers
+
+`D` - marked for Deletion
+`N` - New email
+`T` - Unknown
+`+` - Attachment
+
 # Reference docs
 
 ## Visual interactive chart
