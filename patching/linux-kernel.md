@@ -16,7 +16,40 @@ sudo pacman -S  perl-net-smtp-ssl perl-mime-tools perl-authen-sasl
 * Keep patches to a single file
 * See https://github.com/mdeguzis/dotfiles for .gitconfig example
 * Subject format: `Subject: [PATCH 001/123] subsystem: summary phrase`
-* Example email:
+
+## Preparing the source
+
+```
+git clone <SOURCE> <DIRECTORY>
+cp -r <DIRECTORY> <DIRECTORY>.orig
+vim <DIRECTORY>/file/file.c
+```
+
+## Commit changes to your copy of the code
+
+```
+cd <DIRECTORY>
+git add file/file.c
+
+# Commit and sign
+git commit -s
+```
+
+## Formatting and emailing a patch
+
+Using git send-email
+
+First submission:
+```
+git send-email -cc <EMAIL_LIST> --annotate HEAD^
+```
+
+Subsequent changes:
+```
+git send-email -cc <EMAIL_LIST> --annotate -v2 HEAD^
+```
+
+## Example email
 
 >Subject: PATCH [PATCH 001] memory management: spelling and grammar
 >
@@ -37,16 +70,6 @@ for huge_memory.c.
 >The contribution is based upon previous work that, to the best of my knowledge, is covered under an appropriate open source license and I have the right under that license to submit that work with modifications, whether created in whole or in part by me, under the same open source license (unless I am permitted to submit under a different license), as indicated in the file; or
 The contribution was provided directly to me by some other person who certified (a), (b) or (c) and I have not modified it.
 I understand and agree that this project and the contribution are public and that a record of the contribution (including all personal information I submit with it, including my sign-off) is maintained indefinitely and may be redistributed consistent with this project or the open source license(s) involved.
-
-# Formatting patch
-
-After making a commit in a git tree:
-
-```
-git format-patch
-git format-patch -o /tmp HEAD^
-git send-email -cc <EMAIL_LIST> --annotate HEAD^
-```
 
 # Help message from KernelPRbot
 
