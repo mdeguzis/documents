@@ -148,3 +148,4 @@ Happy hacking!
 
 * https://git-scm.com/docs/git-send-email
 * https://git-scm.com/docs/git-format-patch
+* https://kernelnewbies.org/FirstKernelPatch
