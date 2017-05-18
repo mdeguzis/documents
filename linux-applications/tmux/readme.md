@@ -29,6 +29,12 @@ Or simply from a shell:
 $ tmux source-file ~/.tmux.conf
 ```
 
+## Tmux window is small when resuming session
+
+```
+tmux attach -d
+```
+
 # Useful links
 
 * [Screen and tmux commands comparison](http://hyperpolyglot.org/multiplexers)
