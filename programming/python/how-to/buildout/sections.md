@@ -75,6 +75,24 @@ git clone ssh://git@github.com/<USER>/<REPO>
 opstools = git ssh://git@github.com/<USER>/<REPO>
 ```
 
+## Config switching with a python flag
+```
+# Load config file
+config = ConfigParser.RawConfigParser()
+# Handle develop egg use and packaged use here
+if args.develop:
+    logging.warning("Using opstools develop egg")
+    configfile = str(os.environ['HOME']) + '/python-opstools/opstools/hdp-env.ini'
+else:
+    logging.info("Using opstools packaged version")
+    configfile = 'buildout/src/opstools/hdp-env.ini'
+
+# Ensure file is loaded
+if not config.read(configfile):
+    logging.error("Configuration file " + configfile + " could not be loaded!")
+    sys.exit("Configuration file load error")
+```
+
 # Mr. Developer options
 Parent section: [buildout]  
 Required: No
