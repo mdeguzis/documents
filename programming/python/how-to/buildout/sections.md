@@ -62,6 +62,8 @@ Parent section: [buildout]
 Required: No
 Tell buildout to look for external sources in the [sources] tag (requires mr. developer). Note that if your GitHub respository is private, you will need to automate access to the repository so git clone can function inside buildout.cfg with Mr. Developer. To achieve this, generate and/or add the [SSH key](https://help.github.com/articles/generating-an-ssh-key/) of the initiating user. When you initially clone down the repo, login with the actual GitHub user account, even if you are using a service account with buildout (i.e. clone with jsmith, use buildout with sys_acct).
 
+If you are using develop eggs, ensure your relative path is correct to the path reported by`.egg-link`:
+
 ## Basic example
 ```
 sources = sources
