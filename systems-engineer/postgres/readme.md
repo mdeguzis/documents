@@ -31,6 +31,8 @@ Command | Actions
 \l	| List all databases
 \c | dbname	Connect to new database.
 \dt	| To view list of relations/tables
+\dt \*.\* | List of relations/tables in all schemas:
+\dt public.\* | List of relations/tables in a particular schema:
 \d | tablename	Describe the details of given table.
 \h	| Get a help on syntax of SQL commands
 \?	| Lists all psql slash commands.
