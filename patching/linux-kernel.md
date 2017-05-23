@@ -1,3 +1,26 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [Required software packages for git send-email](#required-software-packages-for-git-send-email)
+  - [Arch Linux](#arch-linux)
+- [General outlines](#general-outlines)
+  - [Preparing the source](#preparing-the-source)
+  - [Commit changes to your copy of the code](#commit-changes-to-your-copy-of-the-code)
+  - [Formatting and emailing a patch](#formatting-and-emailing-a-patch)
+  - [Example email](#example-email)
+- [Help message from KernelPRbot](#help-message-from-kernelprbot)
+  - [How do I format my contribution?](#how-do-i-format-my-contribution)
+  - [Who do I send my contribution to?](#who-do-i-send-my-contribution-to)
+  - [How do I send my contribution?](#how-do-i-send-my-contribution)
+  - [How do I get help if I'm stuck?](#how-do-i-get-help-if-im-stuck)
+  - [I sent my patch - now what?](#i-sent-my-patch---now-what)
+  - [Further information](#further-information)
+- [Links](#links)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About
 
 This document outlines steps for linux kernel patching.

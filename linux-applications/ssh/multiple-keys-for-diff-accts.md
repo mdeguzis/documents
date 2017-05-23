@@ -1,3 +1,14 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Multiple SSH Keys settings for different github account](#multiple-ssh-keys-settings-for-different-github-account)
+  - [create different public key](#create-different-public-key)
+  - [Modify the ssh config](#modify-the-ssh-config)
+  - [Clone you repo and modify your Git config](#clone-you-repo-and-modify-your-git-config)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 Multiple SSH Keys settings for different github account
 =================================================================
 

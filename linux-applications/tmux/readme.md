@@ -5,6 +5,7 @@
 - [About](#about)
 - [Tips and tricks](#tips-and-tricks)
   - [Reloading config](#reloading-config)
+  - [Tmux window is small when resuming session](#tmux-window-is-small-when-resuming-session)
 - [Useful links](#useful-links)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->

@@ -1,3 +1,15 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [SSH Key Generation](#ssh-key-generation)
+- [Adding SSH key to ssh-agent](#adding-ssh-key-to-ssh-agent)
+- [GitHub and SSH](#github-and-ssh)
+- [Handling ssh-agent on login](#handling-ssh-agent-on-login)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About
 
 Information for using SSH/OpenSSH

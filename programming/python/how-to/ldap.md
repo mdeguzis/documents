@@ -10,6 +10,7 @@
   - [Get LDAP group members](#get-ldap-group-members)
   - [Get LDAP user attributes](#get-ldap-user-attributes)
   - [Get SAM account name](#get-sam-account-name)
+  - [Paging results](#paging-results)
 - [Searching on the command line](#searching-on-the-command-line)
 - [See also](#see-also)
 

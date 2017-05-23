@@ -1,3 +1,21 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [Main inbox status markers](#main-inbox-status-markers)
+  - [Message status flags](#message-status-flags)
+  - [Message recipent flags](#message-recipent-flags)
+- [Reference docs](#reference-docs)
+  - [Key binding](#key-binding)
+  - [Visual interactive chart](#visual-interactive-chart)
+  - [Mutt Quick Reference Chart](#mutt-quick-reference-chart)
+- [Attachments](#attachments)
+- [Searching](#searching)
+  - [Hints](#hints)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About
 
 Usage notes for mutt. Mutt is a mail-reading CLI program for Linux

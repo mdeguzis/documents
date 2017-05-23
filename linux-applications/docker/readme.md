@@ -6,6 +6,11 @@
 - [Working with images](#working-with-images)
 - [Working with containers](#working-with-containers)
 - [Monitoring](#monitoring)
+- [SSL](#ssl)
+- [Firewall](#firewall)
+  - [Exposing ports for the container firewall](#exposing-ports-for-the-container-firewall)
+    - [Opening a port](#opening-a-port)
+    - [Locally](#locally)
 - [Tag and upload](#tag-and-upload)
 - [Links](#links)
 

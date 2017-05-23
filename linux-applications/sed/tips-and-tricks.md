@@ -10,6 +10,7 @@ One liners and examples that I have found useful
 - [Pass results of find to command](#pass-results-of-find-to-command)
 - [Replace line with contents of file](#replace-line-with-contents-of-file)
 - [Replace line with block of text in file (perl)](#replace-line-with-block-of-text-in-file-perl)
+- [Delete empty lines](#delete-empty-lines)
 - [Delete 'n' lines after match (including match)](#delete-n-lines-after-match-including-match)
 - [Delete 'n' lines after match (excluding match). Increase 'd' for each line after N (the line not to delete)](#delete-n-lines-after-match-excluding-match-increase-d-for-each-line-after-n-the-line-not-to-delete)
 - [Delete between two patterns](#delete-between-two-patterns)

@@ -1,3 +1,50 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Python Packaging with Setuptools](#python-packaging-with-setuptools)
+- [Distutils](#distutils)
+- [Installing with Distutils](#installing-with-distutils)
+- [Part 1: easy_install.py](#part-1-easy_installpy)
+- [Installation: Normal](#installation-normal)
+- [Installation: Development](#installation-development)
+- [Installation: Isolated](#installation-isolated)
+- [Using easy_install.py](#using-easy_installpy)
+- [Development](#development)
+- [Development notes](#development-notes)
+- [Development installation](#development-installation)
+- [Development notes](#development-notes-1)
+- [Installing in Isolation](#installing-in-isolation)
+- [Installing in Isolation](#installing-in-isolation-1)
+- [Isolated Checkouts](#isolated-checkouts)
+- [Part 2: creating packages](#part-2-creating-packages)
+- [Setuptools](#setuptools)
+- [Setuptools](#setuptools-1)
+- [Creating a Package](#creating-a-package)
+- [Package Layout](#package-layout)
+- [Package Layout](#package-layout-1)
+- [setup.py](#setuppy)
+- [setup.py](#setuppy-1)
+- [setup.py: ez_setup](#setuppy-ez_setup)
+- [setup.py: an explanation](#setuppy-an-explanation)
+- [setup.py: the arguments](#setuppy-the-arguments)
+- [setup.py: the arguments](#setuppy-the-arguments-1)
+- [setup.py: more arguments](#setuppy-more-arguments)
+- [setup.py: requirements](#setuppy-requirements)
+- [Your New Package](#your-new-package)
+- [Commands: build*](#commands-build)
+- [Your New Package](#your-new-package-1)
+- [Your New Package](#your-new-package-2)
+- [Commands: distributing](#commands-distributing)
+- [Your New Package](#your-new-package-3)
+- [Commands: setuptools](#commands-setuptools)
+- [Commands: options](#commands-options)
+- [Commands: eggs](#commands-eggs)
+- [Commands: manage](#commands-manage)
+- [Source](#source)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 Python Packaging with Setuptools
 ++++++++++++++++++++++++++++++++
 

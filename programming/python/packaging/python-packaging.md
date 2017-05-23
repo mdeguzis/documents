@@ -1,3 +1,15 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [Basic setup.py](#basic-setuppy)
+- [Including extra files](#including-extra-files)
+- [Diagnositcs](#diagnositcs)
+  - [Getting version infromation from setup.py in code](#getting-version-infromation-from-setuppy-in-code)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About
 
 Document some setup.py / packaging practices

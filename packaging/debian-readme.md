@@ -5,10 +5,14 @@
 - [Hardening](#hardening)
 - [Modifying the source](#modifying-the-source)
 - [Debian files](#debian-files)
+  - [debian/control](#debiancontrol)
   - [debian/rules](#debianrules)
     - [Tips](#tips)
   - [debian/install](#debianinstall)
   - [debian/watch](#debianwatch)
+- [systemd integration](#systemd-integration)
+  - [Basics](#basics)
+  - [Override systemd helper behavior](#override-systemd-helper-behavior)
 - [Resources](#resources)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
