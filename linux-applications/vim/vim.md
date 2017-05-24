@@ -99,15 +99,35 @@ maps
 
 ## Searching
 
-To turn off highlighting until the next search:
+### To turn off highlighting until the next search
 ```
 :noh
 ```
+
 
 Or turn off highlighting completely:
 ```
 set nohlsearch
 ```
+
+### Searching multiple words
+
+This can be done manually, without any script, for two search patterns.
+
+```
+:match Search /pattern/
+:match Search /<CTRL-R>/   # highlight the current search pattern
+```
+
+Search is the name of the highlight group, use the completion to select another group to highlight with a different color.
+
+```
+:match <TAB>
+:match <TAB>    # completion will list all highlight group
+```
+
+This an be handy when you cannot use your own vim configuration.
+
 
 Or, to toggle it:
 ```
