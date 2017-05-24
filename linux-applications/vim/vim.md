@@ -67,6 +67,9 @@ Note that "* and "+ work both ways. So if you have selected some text in another
 `Vp`  
 Select line and paste overtop of tline with what is in buffer from yank.
 
+`:-3,.d`  
+If you want to delete 3 lines above and the current line (command only). You can also easily do this via visual mode `v` and then issued `dd`.
+
 ## Maps
 
 Check the current maps (command mode)
