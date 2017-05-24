@@ -62,6 +62,22 @@ copies to the X11 selection - you can paste from this buffer using middle click.
 
 Note that "* and "+ work both ways. So if you have selected some text in another application, you can paste it into vim using "*p and if you have copied some text (using, say, Ctrl-C) then you can paste it into vim using "+p.
 
+## Colors
+
+### Override colorscheme
+
+ I want transparent background instead of the black background from the theme, while simply overriding the color after the colorscheme statement in .vimrc doesn't work and installing a plugin just for that is weird. Here is what I did:
+
+```
+autocmd ColorScheme * highlight Normal ctermbg=None
+autocmd ColorScheme * highlight NonText ctermbg=None
+autocmd ColorScheme * highlight Search cterm=NONE ctermfg=darkblue ctermbg=darkgreen
+```
+
+Why does it work? I guess that vim does something besides just read your colorscheme statement and load the statement and then read your highlight statement and change the color. Anyway it seems like vim only change the color scheme after reading the config files. So I provide a hook, that will change the colors every time the color scheme is changed. A nice side effect is, this works even if you switch your color scheme (you could do an if block if you want to).
+
+Source: https://stackoverflow.com/a/7383051
+
 ## Editing
 
 `Vp`  
