@@ -169,6 +169,22 @@ create a global constant called TAX_RATE and set it to .28 . Then, in each funct
 replace the number .28 with TAX_RATE . This produces two benefits. It makes your code clearer
 and it makes changes (like a new tax rate) no sweat.
 
+# Variable function parameters
+
+This is simple and works if you disregard keyword arguments:
+
+```
+def manyArgs(*arg):
+  print "I was called with", len(arg), "arguments:", arg
+
+>>> manyArgs(1)
+I was called with 1 arguments: (1,)
+>>> manyArgs(1, 2,3)
+I was called with 3 arguments: (1, 2, 3)
+```
+
+As you can see, Python will give you a single tuple with all the arguments.
+
 # Examples
 
 See the following examples at [mdeguzis/python](https://github.com/mdeguzis/python)
@@ -176,3 +192,7 @@ See the following examples at [mdeguzis/python](https://github.com/mdeguzis/pyth
 * fundementals/tic-tac-toe.py
 * fundementals/receive-and-return.py
 * fundementals/global-reach.py
+
+# Links
+
+* [Effective Python: 4 best practices for Function Arguments]9http://www.informit.com/articles/article.aspx?p=2314818)
