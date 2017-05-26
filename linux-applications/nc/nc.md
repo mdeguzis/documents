@@ -12,5 +12,13 @@ authentication as well). Some general principles apply to most applications and 
 ## Basic connectivity on a certain port
 
 ```
-"nc <hostname> 10000"
+nc <hostname> 10000
+```
+
+Add `-v` to get verbose output
+
+```
+nc -v <hostname> 10000
+Ncat: Version 6.40 ( http://nmap.org/ncat )
+Ncat: Connected to <hostname> 10000
 ```
