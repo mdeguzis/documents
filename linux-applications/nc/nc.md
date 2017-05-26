@@ -22,3 +22,34 @@ nc -v <hostname> 10000
 Ncat: Version 6.40 ( http://nmap.org/ncat )
 Ncat: Connected to <hostname> 10000
 ```
+
+## Listen for certain ports
+
+On one machine, you can tell netcat to listen to a specific port for connections. We can do this by providing the -l parameter and choosing a port:
+
+```
+netcat -l 4444
+```
+
+This will tell netcat to listen for TCP connections on port 4444. As a regular (non-root) user, you will not be able to open any ports under 1000, as a security measure.
+
+On a second server, we can connect to the first machine on the port number we choose. We do this the same way we've been establishing connections previously:
+
+```
+netcat domain.com 4444
+```
+
+It will look as if nothing has happened. However, you can now send messages on either side of the connection and they will be seen on either end. Type a message and press ENTER. It will appear on both the local and remote screen. This works in the opposite direction as well.
+
+## Scan ports
+
+For instance, we can scan all ports up to 1000 by issuing this command:
+```
+netcat -z -v domain.com 1-1000
+```
+
+This is NOT a good idea if using an enterprise network that monitoring for port scanning.
+
+# Links
+
+* https://www.digitalocean.com/community/tutorials/how-to-use-netcat-to-establish-and-test-tcp-and-udp-connections-on-a-vps
