@@ -54,6 +54,10 @@ watch ls -lah /path/to/backup.img.gz
 This is a pretty easy way to watch progress. You can also use `pv`.
 
 
-# Linux
+# See also:
+
+https://github.com/mdeguzis/documents/tree/master/linux-applications/pv
+
+# Links
 
 * https://wiki.archlinux.org/index.php/disk_cloning
