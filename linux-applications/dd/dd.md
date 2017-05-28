@@ -4,7 +4,7 @@ Usage notes for dd
 
 # Backup / Cloning
 
-Create disk image
+## Create disk image
 
 1. Boot from a live media.
 2. Make sure no partitions are mounted from the source hard drive.
@@ -29,6 +29,30 @@ If there is not enough disk space locally, you may send the image through ssh:
 ```
 # fdisk -l /dev/sdX > /path/to/list_fdisk.info
 ```
+
+## Watching progress
+
+Using pv (if available), you can issue a command such as:
+```
+dd if=/dev/sdX conv=sync,noerror bs=64K | pv -s <DISK_SIGE> | gzip -c  > /path/to/backup.img.gzd if=/dev/sdX conv=sync,noerror bs=64K | pv -s <DISK_SIGE> | gzip -c  > /path/to/backup.img.gz
+```
+
+Replace disk size with a human-readable format, such as "100 G".
+
+dd has a decent progress meter:
+```
+dd status=progress if=/dev/sdX conv=sync,noerror bs=64K | pv -s <DISK_SIGE> | gzip -c  > /path/to/backup.img.gz
+```
+
+This will display the total size and rate.
+
+You can also fire up another terminal/TTY and issue
+```
+watch ls -lah /path/to/backup.img.gz
+```
+
+This is a pretty easy way to watch progress. You can also use `pv`.
+
 
 # Linux
 
