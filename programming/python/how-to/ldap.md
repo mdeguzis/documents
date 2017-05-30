@@ -226,27 +226,7 @@ Fork (backup): https://gist.github.com/mdeguzis/78bfdbe3e9bd3ddc503aae32cc33eb11
 
 # Searching on the command line
 
-Users
-```
-# adldap
-$ ldapsearch -H ldaps://adldapserver -D user@host.com -W "(sAMAccountName=bsmith)" employeeNumber employeeID | grep "\(dn\|employee\)"
-Enter LDAP Password:
-# requesting: employeeNumber employeeID
-dn: CN=Bob\, Smith,OU=Non-Employee,OU=Managed Users,DC=host,DC=com
-employeeNumber: 00111000 
-
-# openldap
-ldapsearch -H ldaps://ldaphost -D uid=user1,ou=people,dc=domain,dc=com -W "(&(objectClass=posixAccount)(uid=username))"
-```
-
-Groups
-```
-# adldap
-$ ldapsearch -H ldaps://adldapserver -D user@host.com -W "(cn=mygroup)"
-
-# openldap
-ldapsearch -H ldaps://ldaphost -D uid=user1,ou=people,dc=domain,dc=com -W "(&(objectClass=posixGroup)(cn=groupname))"
-```
+See: [ldapsearch/ldapsearch.md](https://github.com/mdeguzis/documents/blob/master/linux-applications/ldapsearch/ldapsearch.md)
 
 # See also
 
