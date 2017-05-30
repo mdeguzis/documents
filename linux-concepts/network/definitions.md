@@ -4,7 +4,7 @@ Various network definitions
 
 # Definition list
 
-## eno
+## Interface name "enoX"
 
 This is [Predictable Network Interface Device Names](http://www.freedesktop.org/wiki/Software/systemd/PredictableNetworkInterfaceNames/) in action.
 
