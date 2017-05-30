@@ -29,7 +29,18 @@ Useful informatin about using git / GitHub. Also see [getting started with GitHu
 
 
 # Commands
-***
+
+## clone
+
+https
+```
+git clone https://github.com/username/repo
+```
+
+ssh
+```
+git clone ssh://git@github.com/username/
+```
 
 ## stash
 
