@@ -37,6 +37,12 @@ The docker build command is quite simple - it takes an optional tag name with -t
 
 ```
 cd <DOCKER_PROJECT_DIR>
+docker build --no-cache=true -t mike/testimage .
+```
+
+Although, for clean builds/rebuilds, it may be best to not include cache
+```
+cd <DOCKER_PROJECT_DIR>
 docker build -t mike/testimage .
 ```
 
@@ -58,6 +64,22 @@ docker tag my_image <username>/my_image
 # push image
 docker push <username>/my_image
 ```
+
+## Garbage cleanup
+
+It is probably a good idea to include garbage collection steps, especially if you have scripted this with a Makefile.
+
+CLI
+```
+sudo docker rmi $(sudo docker images -f "dangling=true" -q)
+```
+
+Makefile
+```
+sudo docker rmi `sudo docker images -f "dangling=true" -q`
+```
+
+See: http://www.projectatomic.io/blog/2015/07/what-are-docker-none-none-images/
 
 # Links
 
