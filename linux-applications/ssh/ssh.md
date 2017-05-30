@@ -65,6 +65,13 @@ ssh-add ~/.ssh/id_rsa
 
 Add the SSH key to your applicable account
 
+# Listing keys added to ssh agent
+
+This is a good way to prove your key is active too, beyond checking `ps` for `ssh-agent`.
+```
+ssh-add -l
+```
+
 # GitHub and SSH
 
 * [Generating an SSH Key](https://help.github.com/articles/generating-an-ssh-key/)
