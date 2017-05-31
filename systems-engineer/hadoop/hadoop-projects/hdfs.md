@@ -132,6 +132,9 @@ The typical value for `<percent>` is 70. In some cases, this may need tuning to 
 
 If you're interested in more background on garbage collection, then you might want to read [NameNode Garbage Collection Configuration: Best Practices and Rationale](https://community.hortonworks.com/content/kbentry/14170/namenode-garbage-collection-configuration-best-pra.html). This article is admittedly focused on the NameNode instead of the DataNode, but much of the background information on garbage collection and configuration is applicable to any JVM process.
 
+* [Namendoe heap size formula](https://docs.hortonworks.com/HDPDocuments/HDP2/HDP-2.3.6/bk_installing_manually_book/content/ref-80953924-1cbf-4655-9953-1e744290a6c3.1.html)
+* [Datanode heap size formula]
+
 
 ## Configuration gotchas
 
