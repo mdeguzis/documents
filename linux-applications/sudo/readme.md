@@ -53,10 +53,51 @@ From: http://www.courtesan.com/sudo/man/1.7.10/visudo.man.html:
 # Syntax
 
 ```
-User Host = (Runas) Command
+Defaults        env_reset
+Defaults        mail_badpass
+Defaults        secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+
+root    ALL=(ALL:ALL) ALL
+
+%admin ALL=(ALL) ALL
+%sudo   ALL=(ALL:ALL) ALL
+
+#includedir /etc/sudoers.d
 ```
 
-See: http://toroid.org/sudoers-syntax
+## Default Lines
+
+The first line, "Defaults env_reset", resets the terminal environment to remove any user variables. This is a safety measure used to clear potentially harmful environmental variables from the sudo session.
+
+The second line, Defaults mail_badpass, tells the system to mail notices of bad sudo password attempts to the configured mailto user. By default, this is the root account.
+
+The third line, which begins with "Defaults secure_path=...", specifies the PATH (the places in the filesystem the operating system will look for applications) that will be used for sudo operations. This prevents using user paths which may be harmful.
+
+## User Privilege Lines
+
+The fourth line, which dictates the root user's sudo privileges, is different from the preceding lines. Let's take a look at what the different fields mean:
+
+```
+# Syntax
+# <APPLY_TO_USER> <HOST>=(<INPERSONATING_USER>:<INPERSONATING_GROUP>) <COMMAND>
+root ALL=(ALL:ALL) ALL
+```
+
+* The first field indicates the username that the rule will apply to (root).
+* The first "ALL" indicates that this rule applies to all hosts.
+* The first ALL *in parenthesis* indicates that the root user can run commands as all users.
+* The second ALL *in parenthesis* indicates that the root user can run commands as all groups.
+* The last "ALL" indicates these rules apply to all commands.
+
+## Group Privilege Lines
+
+The next two lines are similar to the user privilege lines, but they specify sudo rules for groups.
+
+Names beginning with a "%" indicate group names.
+
+Here, we see the "admin" group can execute any command as any user on any host. Similarly, the sudo group can has the same privileges, but can execute as any group as well.
+
+See: [DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-edit-the-sudoers-file-on-ubuntu-and-centos)
 
 # Assigning specific privledges
 
