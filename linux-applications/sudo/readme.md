@@ -39,7 +39,7 @@ sudo -i -u user whoami
 
 Example (print user's $HOME):
 ```
-sudo -i -u user echo \$HOME
+sudo -i -u user echo $HOME
 ```
 
 # Editing sudoers
