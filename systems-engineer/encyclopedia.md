@@ -56,17 +56,13 @@ The `Runtime `documents these as:
 
 **Oveview**
 
-`Heap Memory` means in programming, an area of memory reserved for data that is created at runtime that is, when the program actually executes. In contrast, the stack is an area of memory used for data whose size can be determined when the program is compiled.Java heap is the heap size allocated to JVM applications which takes care of the new objects being created. If the objects being created exceed the heap size, it will throw an error saying memoryOutof Bound
+`Heap Memory` means in programming, an area of memory reserved for data that is created at runtime that is, when the program actually executes. In contrast, the stack is an area of memory used for data whose size can be determined when the program is compiled. Java heap is the heap size allocated to JVM applications which takes care of the new objects being created. If the objects being created exceed the heap size, it will throw an error saying memoryOutof Bound.
 
-`Java's default heap size limit is 128MB`. If you need more than this, you should use the -Xms and -Xmx command line arguments when launching your program: `java -Xms -Xmx`.
+As objects are allocated, they'll fill the heap. Many objects turn out to be short-lived and get garbage collected relatively quickly. For longer-lived objects, they might not get cleared until the heap is very highly consumed and the JVM decides to trigger a full garbage collection. As far as measurement of the heap usage, this can look like a sawtooth pattern if you can imagine a plot of heap usage over time.
 
 **In terms of Hadoop**
 
-* `totalMemory()` Returns the total amount of memory in the Java virtual machine.
-* `maxMemory()` Returns the maximum amount of memory that the Java virtual machine will attempt to use
-Max is going to be the `-Xmx` parameter from the service start command. The total memory main factor is the number of blocks in your HDFS cluster. The namenode requires ~150 bytes for each block, +16 bytes for each replica, and it must be kept in live memory. So a default replication factor of 3 gives you 182 bytes, and you have 7534776 blocks gives about 1.3GB. Plus all other non-file related memory in use in the namenode, 1.95GB sounds about right. I would say that your HDFS cluster size requires a bigger namenode, more RAM. If possible, increase namenode startup -Xmx. If maxed out, you'll need a bigger VM/physical box.
-
-See: [Configuring Heap Size (Hortonworks)](https://docs.hortonworks.com/HDPDocuments/HDP2/HDP-2.4.2/bk_installing_manually_book/content/ref-80953924-1cbf-4655-9953-1e744290a6c3.1.html)
+See: [hadoop-projects/hdfs](https://github.com/mdeguzis/documents/blob/master/systems-engineer/hadoop/hadoop-projects/hdfs.md)
 
 ## ORC
 
