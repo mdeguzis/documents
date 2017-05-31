@@ -105,3 +105,37 @@ sudo -u hdfs hdfs dfs -find /user -name "*testuser1\n"
 # Remove
 sudo -u hdfs hdfs dfs -rm -r /user/"*testuser1\n"
 ```
+
+# Heap Usage
+
+## Heap Usage
+
+If an alert states that the percentage of heap used is too high, then it's possible that this is just a natural consequence of the way the JVM manages the heap and reports its usage. It might not be a real operational problem. 0.5 M blocks on a DataNode is not necessarily too large.
+
+As objects are allocated, they'll fill the heap. Many objects turn out to be short-lived and get garbage collected relatively quickly. For longer-lived objects, they might not get cleared until the heap is very highly consumed and the JVM decides to trigger a full garbage collection. As far as measurement of the heap usage, this can look like a sawtooth pattern if you can imagine a plot of heap usage over time.
+
+Sometimes a JVM will just hover reporting a high proportion of its heap used. This can happen if there were a large number of long-lived objects that couldn't be collected quickly, but there isn't quite enough new object allocation activity happening right now to trigger the full garbage collection that would bring the reported usage back down. One way to test this theory is to trigger a full garbage collection manually on one of the DataNodes, such as by running this command on the DataNode's PID:
+
+```
+jcmd <PID> GC.run
+```
+
+If the reported heap usage drops significantly after running this command, then that validates the above theory.
+
+A possible way to "stay ahead" of this problem and do full garbage collections more frequently is to add the following garbage collection options to HADOOP_DATANODE_OPTS:
+
+```
+-XX:+UseCMSInitiatingOccupancyOnly -XX:CMSInitiatingOccupancyFraction=<percent>
+```
+
+The typical value for `<percent>` is 70. In some cases, this may need tuning to find the optimal value, but in practice, I have seen 70 work well almost always.
+
+If you're interested in more background on garbage collection, then you might want to read [NameNode Garbage Collection Configuration: Best Practices and Rationale](https://community.hortonworks.com/content/kbentry/14170/namenode-garbage-collection-configuration-best-pra.html). This article is admittedly focused on the NameNode instead of the DataNode, but much of the background information on garbage collection and configuration is applicable to any JVM process.
+
+
+## Configuration gotchas
+
+* `totalMemory()` Returns the total amount of memory in the Java virtual machine.
+* `maxMemory()` Returns the maximum amount of memory that the Java virtual machine will attempt to use
+
+Max is going to be the `-Xmx` parameter from the service start command. The total memory main factor is the number of blocks in your HDFS cluster. The namenode requires ~150 bytes for each block, +16 bytes for each replica, and it must be kept in live memory. So a default replication factor of 3 gives you 182 bytes, and you have 7534776 blocks gives about 1.3GB. Plus all other non-file related memory in use in the namenode, 1.95GB sounds about right. I would say that your HDFS cluster size requires a bigger namenode, more RAM. If possible, increase namenode startup -Xmx. If maxed out, you'll need a bigger VM/physical box.
