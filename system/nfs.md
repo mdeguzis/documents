@@ -91,6 +91,8 @@ Every file system being exported to remote users with NFS, as well as the access
 
 When issued manually, the /usr/sbin/exportfs command allows the root user to selectively export or unexport directories without restarting the NFS service. When given the proper options, the /usr/sbin/exportfs command writes the exported file systems to /var/lib/nfs/xtab. Since rpc.mountd refers to the xtab file when deciding access privileges to a file system, changes to the list of exported file systems take effect immediately.
 
+**This is only needed if modifying/changing the top level folder, not subdirs**
+
 The following is a list of commonly-used options available for /usr/sbin/exportfs:
 
 **-r**  
