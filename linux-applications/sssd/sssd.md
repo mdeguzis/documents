@@ -23,7 +23,6 @@ sssd log
 /var/log/sssd/sssd_default.log
 ```
 
-
 # Debugging
 
 ## Clear sssd cache cleanup
@@ -78,8 +77,9 @@ Now, parse the logged entries:
 ```
 sudo grep -A3 <GROUP_NAME> /var/log/sssd/sssd_default.log
 ```
+See also: [linux-applications/ldb/ldb.md](https://github.com/mdeguzis/documents/tree/master/linux-applications/ldb)
 
-# See also
+# Links
 
 * [Troubleshooting sssd (Red Hat)](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Deployment_Guide/SSSD-Troubleshooting.html)
 
