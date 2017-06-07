@@ -16,11 +16,70 @@ Groups seen by getend are not 'updated' until a refresh is triggered by actual u
 
 When a group is first loaded, any users which haven't been initialized by sssd yet are not looked up as that would impose extra load, so they are loaded as "ghost" instead. Then, as users are actually used by processes, the group's membership state is updated, cleaned if the user doesn't actually exist, or updated with the 'real' person if it does.
 
-# Clear sssd cache cleanup
+# logs
+
+sssd log
+```
+/var/log/sssd/sssd_default.log
+```
+
+
+# Debugging
+
+## Clear sssd cache cleanup
 
 If an LDAP group/user was changed and you want to pull in the change faster (if this is even needed), do:
 ```
 sudo sss_cache -E
 ```
 
+This should resolve "ghost" entries
+
+## Restart of the sssd service
+
 If this does not resolve the issue, you may need to restart the sssd service. As sssd restarts all user/group queries will fail. This is a high risk for active production servers. Additionally if sssd doesn't come back up, you'll have to manually fix each node via your Hyperisor/Managment service (such as HP iLO).
+
+### ldb issues
+
+[ldb](https://linux.die.net/man/3/ldb) may have issues updating as well. Old data may be retained for some reason.
+
+```
+sudo ldbsearch -H /var/lib/sss/db/cache_default.ldb -a | sed -n '/dn: name=<GROUP>/,/^$/p' -
+```
+
+Note the unix time stamp on "last updated"
+
+```
+date -d @<UNIX_TIME>
+```
+
+output may indicate ldb not detecting the difference between the stale ldb data and the in memory version, resulting in it destroying the 'correct' version and never pushing the new version into in memory cache or ldb. You may also see behavior that shows ldb is appending the old timestamp during the new group load.
+
+Install `sss_debuglevel` to do some testing. See `man sss_debuglevel` for more.
+
+```
+# Enable debug level
+sudo sss_debuglevel 6
+
+# Query
+getent group <GROUP_NAME>
+
+# Clear cache
+sudo sss_cache -g <GROUP_NAME>
+
+# Query again
+getent group <GROUP_NAME>
+
+# Turn debug level back to default of 0
+sudo sss_debuglevel 0
+```
+
+Now, parse the logged entries:
+```
+sudo grep -A3 <GROUP_NAME> /var/log/sssd/sssd_default.log
+```
+
+# See also
+
+* [Troubleshooting sssd (Red Hat)](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Deployment_Guide/SSSD-Troubleshooting.html)
+
