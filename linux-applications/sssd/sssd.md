@@ -32,7 +32,22 @@ If an LDAP group/user was changed and you want to pull in the change faster (if 
 sudo sss_cache -E
 ```
 
-This should resolve "ghost" entries
+This should resolve "ghost" entries. If this does not, try the following:
+
+```
+# Query the group via getent
+sudo pdsh -w <NODES> getent group <GROUP> | dshbak -c
+  
+# Compile the user list from OpenLDAP
+ldapsearch -H ldaps://<HOST> -D uid=<MY_USERNAME>,ou=people,dc=host,dc=com -W "(&(objectClass=posixGroup)(cn=<GROUP>))" memberUid | awk -F' ' '/memberUid:/ {print $2}' > ~/user-list-tmp.txt
+  
+# Loop over the users and query their groups
+for user in `cat users-list-tmp.txt`; do sudo pdsh -w <HOSTS> groups $user | dshbak -c; done
+  
+# Clear the sssd cache
+sudo pdsh -w <NODES> sss_cache | dshbak -c
+rm ~/user-list-tmp.txt
+```
 
 ## Restart of the sssd service
 
