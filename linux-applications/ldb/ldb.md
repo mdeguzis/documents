@@ -1,17 +1,28 @@
 # About
 
-LDB is the database engine used within Samba. LDB is an an embedded LDAP-Like database library, but not completely LDAP compliant. It can store its database in regular files (using TDB), or talk to a standard LDAP server. LDB is a core part of Samba4. There has been work using it for Samba3's group mapping database.
+Lightweight Directory Access Protocol is the dominant database used by organisations around the world to manage their, well, organisation – eg all of their directory services (things such as person information, IT information (machine details, print services, etc), all information pertaining to the business that would need to be “directoried”). Many large companies use LDAP within their server and business tools, eg IBM, Oracle, HP, Novell to name but a few.
 
-Raw LDB is not even close to LDAP compliant, we use modules to ensure compliance. We aim for LDAP compliance where possible, although Samba’s higher priority is Active Directory compliance. We do aim for LDAP compliance where it doesn’t conflict.
-
-LDB is transactional (allowing multiple changes to be made to ensure that changes all are applied as expected prior to committing them to the database, if an error occurs all changes are backed out and the database is left “untouched”) and modular (allowing different information or functionality to be added or removed according to how a database is needed to perform).
+LDAP is an incredibly complex protocol, and there are many books and RFCs available to read about it. The RFC probably most of note is this one: RFC4511 – Lightweight Directory Access Protocol (LDAP): The Protocol
 
 # Searching an ldb database
 
-Example: default sssd cache
+## Basic examples
+
+default sssd cache
 ```
 sudo ldbsearch -H /var/lib/sss/db/cache_default.ldb
 ```
+
+By group and user:
+```
+# All output
+sudo ldbsearch -H /var/lib/sss/db/cache_default.ldb "(&(objectClass=group)(memberUid=<USER>@default))"
+
+# Only name and managedby
+sudo ldbsearch -H /var/lib/sss/db/cache_default.ldb "(&(objectClass=group)(memberUid=<USER>@default))" name managedby
+```
+
+By objectClass and user
 
 # Links
 
