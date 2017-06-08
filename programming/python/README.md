@@ -106,6 +106,16 @@ modules <MODULE_NAME>
 #CTRL+D press these key to exit from python prompt
 ```
 
+For example:
+```
+# Code line
+conn = hive.Connection(this, then, that)
+
+# Getting the docstring help
+from pyhive import hive
+help(hive.Connection)
+```
+
 # Listing PYTHONPATH
 
 You would probably also want this:
