@@ -14,7 +14,19 @@
 # About
 How to unpack and inspect RPM packages
 
-# List files inside an RPM package file using the rpm command
+# How to
+
+## List rpm installed size
+
+Top 10 (right aligned size)
+```
+rpm -qa --queryformat "%-50{NAME} %10{SIZE}\n"
+```
+
+See: http://rpm5.org/docs/api/queryformat.html  
+See: http://rpm.org/user_doc/query_format.html
+
+## List files inside an RPM package file using the rpm command
 
 The RPM package manager rpm comes with various utilities to interact with packages. The following command will list all the files inside an RPM package:
 
@@ -31,7 +43,7 @@ $ rpm -qlpv ./packagecloud-test-1.1-1.x86_64.rpm
 
 In this example, the rpm command is used with the flag -q to specify it as a query command, -l to list the files in the package, and -p so it knows to query the uninstalled package file. The -v flag (verbose) just provides additional information (permissions, owner, etc.) for the sake of this example. As we can see, the package installs an executable binary called packagecloud_hello into /usr/local/bin/.
 
-List files inside of an already installed RPM package
+## List files inside of an already installed RPM package
 
 Use the rpm command with -q and -l flags to list the files from an installed RPM package:
 
@@ -41,7 +53,7 @@ $ rpm -ql packagecloud-test
 
 NOTE the use of a package’s name in the previous command and not the path to a specific RPM package.
 
-# Extract cpio archive from RPM packages
+## Extract cpio archive from RPM packages
 
 To extract files from an RPM package you must first extract a cpio archive from the package itself. RedHat provides a utility called `rpm2cpio` which does exactly that:
 
@@ -49,7 +61,7 @@ To extract files from an RPM package you must first extract a cpio archive from 
 $ rpm2cpio ./packagecloud-test-1.1-1.x86_64.rpm
 ```
 
-Extract files from an RPM package’s cpio archive
+## Extract files from an RPM package’s cpio archive
 
 The `rpm2cpio` command will output (to stdout) a cpio archive from the RPM package. To extract the package files we’ll use the output from `rpm2cpio` and then use the cpio command to extract and create the files we need.
 
@@ -72,7 +84,7 @@ usr/local/bin/packagecloud_hello: ELF 64-bit LSB executable, x86-64, version 1 (
 
 NOTE that simply extracting package files to the root directory does NOT properly install a package. Use the yum or rpm tools to correctly install RPM packages.
 
-# Show RPM package preinstall and postinstall scripts
+## Show RPM package preinstall and postinstall scripts
 
 To show the scripts that will run when a package is installed or uninstalled from a system, use the `--scripts` flag when querying a package using rpm. The following command will show the scripts for an uninstalled package `test-1.1-1.el6.x86_64.rpm`:
 
@@ -106,7 +118,7 @@ To view the scriptlets of an already installed package, you can use the followin
 $ rpm -q --scripts <packagename>
 ```
 
-# View contents of RPM packages on remote repositories using repoquery
+## View contents of RPM packages on remote repositories using repoquery
 
 `repoquery` is provided by the `yum-utils` package, make sure it’s installed:
 
