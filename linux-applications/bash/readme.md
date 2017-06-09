@@ -30,6 +30,38 @@ Useful info for working with bash
 
 # Tips and tricks
 
+## Using vi commands at the bash prompt
+
+Bash provides two modes for command line editing - **emacs** and **vi**. Emacs editing mode is the default and I already wrote an [article and created a cheat sheet for this mode][2].
+
+This time I am going to introduce you to bash's **vi editing mode** and give out a detailed cheat sheet with the default keyboard mappings for this mode.
+
+The difference between the two modes is what command each key combination (or key) gets bound to. You may inspect your current keyboard mappings with bash's built in **bind** command:
+    
+    
+    $ bind -P
+    
+    abort can be found on "C-g", "C-xC-g", "M-C-g".
+    accept-line can be found on "C-j", "C-m".
+    alias-expand-line is not bound to any keys
+    ...
+    
+
+To get into the **vi editing mode** type
+    
+    
+     
+    $ set -o vi
+    
+
+in your bash shell (to switch back to emacs editing mode, type **set -o emacs**).
+
+If you are used to a vi text editor you will feel yourself at home. 
+
+Use `ESC` to enter command mode.
+
+See: http://www.catonmat.net/download/bash-vi-editing-mode-cheat-sheet.pdf
+
 ## Running command from bash history
 
 You can use `history` to pull up a command from your login:
