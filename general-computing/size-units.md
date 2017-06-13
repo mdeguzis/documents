@@ -21,4 +21,4 @@ Gibibyte (GiB) is one of the standard units used in the field of data processing
 
 Gigabyte (GB) can have different meanings in different contexts. When referring to computer memory, gigabyte is allways a “power of two” - 1,073,741,824 bytes, but when measuring hard drive capacity it is often defined as 1,000,000,000 bytes. Generally, operating systems calculate disk and file sizes using binary numbers, so a new 500 GB drive you've just purchased would be reported by the OS as "465.66 GB" (meaning 465.66 GiB).
 
-Source: [LinkedIn](https://www.linkedin.com/pulse/20140814132922-176099595-mb-vs-mib-gb-vs-gib)
+Source: [WintelGuy.com](http://wintelguy.com/gb2gib.html)
