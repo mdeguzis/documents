@@ -15,7 +15,9 @@
   - [Scopes](#scopes)
   - [Shadowing a global variable](#shadowing-a-global-variable)
   - [Global variables vs. Global constants](#global-variables-vs-global-constants)
+- [Variable function parameters](#variable-function-parameters)
 - [Examples](#examples)
+- [Links](#links)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

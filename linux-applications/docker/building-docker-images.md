@@ -7,6 +7,7 @@
   - [Dockerfile](#dockerfile)
   - [Build](#build)
   - [Push an image to Docker Cloud (Docker Hub)](#push-an-image-to-docker-cloud-docker-hub)
+  - [Garbage cleanup](#garbage-cleanup)
 - [Links](#links)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->

@@ -5,6 +5,7 @@
 - [About](#about)
 - [SSH Key Generation](#ssh-key-generation)
 - [Adding SSH key to ssh-agent](#adding-ssh-key-to-ssh-agent)
+- [Listing keys added to ssh agent](#listing-keys-added-to-ssh-agent)
 - [GitHub and SSH](#github-and-ssh)
 - [Handling ssh-agent on login](#handling-ssh-agent-on-login)
 

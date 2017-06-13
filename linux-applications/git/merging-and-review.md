@@ -5,6 +5,7 @@
 - [About](#about)
 - [The "code review workflow"](#the-code-review-workflow)
 - [Git Stash Review](#git-stash-review)
+- [Ignoring and filtering files on merge](#ignoring-and-filtering-files-on-merge)
 - [Links](#links)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->

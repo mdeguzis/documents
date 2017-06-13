@@ -3,10 +3,14 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [About](#about)
-- [List files inside an RPM package file using the rpm command](#list-files-inside-an-rpm-package-file-using-the-rpm-command)
-- [Extract cpio archive from RPM packages](#extract-cpio-archive-from-rpm-packages)
-- [Show RPM package preinstall and postinstall scripts](#show-rpm-package-preinstall-and-postinstall-scripts)
-- [View contents of RPM packages on remote repositories using repoquery](#view-contents-of-rpm-packages-on-remote-repositories-using-repoquery)
+- [How to](#how-to)
+  - [List rpm installed size](#list-rpm-installed-size)
+  - [List files inside an RPM package file using the rpm command](#list-files-inside-an-rpm-package-file-using-the-rpm-command)
+  - [List files inside of an already installed RPM package](#list-files-inside-of-an-already-installed-rpm-package)
+  - [Extract cpio archive from RPM packages](#extract-cpio-archive-from-rpm-packages)
+  - [Extract files from an RPM package’s cpio archive](#extract-files-from-an-rpm-packages-cpio-archive)
+  - [Show RPM package preinstall and postinstall scripts](#show-rpm-package-preinstall-and-postinstall-scripts)
+  - [View contents of RPM packages on remote repositories using repoquery](#view-contents-of-rpm-packages-on-remote-repositories-using-repoquery)
 - [Conclusion](#conclusion)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->

@@ -11,6 +11,9 @@
     - [List storage summary, sorted](#list-storage-summary-sorted)
     - [Removing folder](#removing-folder)
   - [Notable examples](#notable-examples)
+- [Heap Usage](#heap-usage)
+  - [Heap Usage](#heap-usage-1)
+  - [Configuration gotchas](#configuration-gotchas)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

@@ -7,6 +7,7 @@
 - [Subjects](#subjects)
 - [Sourcing options in scrits](#sourcing-options-in-scrits)
 - [Tips and tricks](#tips-and-tricks)
+  - [Using vi commands at the bash prompt](#using-vi-commands-at-the-bash-prompt)
   - [Running command from bash history](#running-command-from-bash-history)
   - [Garbled terminal](#garbled-terminal)
 

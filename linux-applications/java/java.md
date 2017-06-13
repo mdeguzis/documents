@@ -5,6 +5,9 @@
 - [About](#about)
 - [File types](#file-types)
   - [jar vs war](#jar-vs-war)
+- [Unpacking files](#unpacking-files)
+  - [Unpack a jar / war file](#unpack-a-jar--war-file)
+  - [Unpacking class / binary files](#unpacking-class--binary-files)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

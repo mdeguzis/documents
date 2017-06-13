@@ -2,7 +2,14 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [Clear sssd cache cleanup](#clear-sssd-cache-cleanup)
+- [About](#about)
+- [Cache](#cache)
+- [logs](#logs)
+- [Debugging](#debugging)
+  - [Clear sssd cache cleanup](#clear-sssd-cache-cleanup)
+  - [Restart of the sssd service](#restart-of-the-sssd-service)
+    - [ldb issues](#ldb-issues)
+- [Links](#links)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
