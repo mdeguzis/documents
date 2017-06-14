@@ -68,7 +68,21 @@ git stash show -p stash@{1}
 
 Source [StackOverflow](http://stackoverflow.com/questions/10725729/git-see-whats-in-a-stash-without-applying-stash)
 
-# Ignoring and filtering files on merge
+# disregard master in merge and take another branches changes
+
+```
+git merge master --strategy=ours
+```
+
+http://schacon.github.com/git/git-merge.html
+
+As 'Computer Linguist' commented here, this will "ignore everything from 'master', even if it has changes to new, independent files". So if you are not the OP and want a more safe merge that does not as the OP says "forget the merging", then use this excellent safe command from 'Computer Linguist', and plus his comment up so he gets creds.
+
+```
+git merge -s recursive -X theirs branch
+```
+
+# Ignoring and filtering files on merge (advanced)
 
 This is **very** useful for filtering out files when merging a staging branch.
 
