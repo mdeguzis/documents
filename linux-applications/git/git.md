@@ -31,6 +31,14 @@ Useful informatin about using git / GitHub. Also see [getting started with GitHu
 
 # Commands
 
+## Checkout
+
+### Reset a file you deleted/modified
+
+```
+git checkout -- file
+```
+
 ## clone
 
 https
