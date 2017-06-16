@@ -102,12 +102,6 @@ To squash four commits into one, do the following:
 git rebase -i HEAD~4
 ```
 
-To rebase a range of commits:
-
-```
-
-```
-
 In the text editor that comes up, replace the words "pick" with "squash" next to the commits you want to squash into the commit before it. Save and close the editor, and git will combine the "squash"'ed commits with the one before it. Git will then give you the opportunity to change your commit message to something like, "Issue #100: Fixed retweet bug."
 
 _**Important: If you've already pushed commits to GitHub, and then squash them locally, you will have to force the push to your branch.
