@@ -36,7 +36,7 @@ Useful informatin about using git / GitHub. Also see [getting started with GitHu
 ### Reset a file you deleted/modified
 
 ```
-git checkout -- file
+git checkout <COMMIT_TO_USE> -- file1/to/restore file2/to/restore
 ```
 
 ## clone
@@ -51,12 +51,20 @@ ssh
 git clone ssh://git@github.com/username/
 ```
 
+## Log
+
+### Committed changes to be pushed
+
+```
+git log origin/<BRANCH>..HEAD
+```
+
 ## stash
 
 ### Stash only a specific commit, or set of them. 
 You can use`git stash -p`. This way you can select which hunks should be added to stash, whole files can be selected as well.
 
-## Retrieve a stash
+### Retrieve a stash
 
 ```
 git stash list
