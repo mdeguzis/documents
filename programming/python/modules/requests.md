@@ -37,3 +37,4 @@ else:
 # Links
 
 * http://docs.python-requests.org/en/master/
+* [Reading JSON from a file](http://stackabuse.com/reading-and-writing-json-to-a-file-in-python/)
