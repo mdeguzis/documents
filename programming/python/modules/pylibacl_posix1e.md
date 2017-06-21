@@ -57,6 +57,18 @@ True
 
 # Troublehsooting
 
+## Getting status codes
+
+### Example: Check() 
+
+```
+import posix1e
+print posix1e.ACL_MULTI_ERROR
+4096
+```
+
+See: [posix1e.ACL.check](http://pylibacl.k1024.org/module.html#posix1e.ACL.check)
+
 ## "Invalid Argument" when applying an ACL
 
 pylibacl requires a mask entry after the POSIX user/group/others set. This is in line with the entries `getfacl` would spit out. If you fail to do so, you will see this error:
