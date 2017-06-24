@@ -70,6 +70,30 @@ Get-ADOrganizationalUnit -SearchBase "OU=Managed Users,DC=domain,DC=com" -Filter
 # Interactive filter (prompted)
 Get-ADOrganizationalUnit -SearchBase "OU=Managed Users,DC=domain,DC=com"
 ```
+# Advanced
+
+## Get upper range / schema
+
+```
+# Need the Microsoft AD PS module
+Import-Module ActiveDirectory
+
+# Get the user class definition, include "allowedAttributes"
+$userClass = Get-ADObject -SearchBase ((Get-ADRootDSE).schemaNamingContext) -Filter { Name -eq "User" } -Properties allowedAttributes
+
+# Walk the allowedAttributes array and sort into a table with "name" and "rangeUpper"
+$userClass.allowedAttributes | 
+  ForEach-Object { Get-ADObject -SearchBase ((Get-ADRootDSE).schemaNamingContext) -Filter { LDAPDisplayName -eq $_ } -Property rangeUpper } |
+    Sort-Object Name |
+      Format-Table -Property Name, rangeUpper
+
+# If you want to only see defined "rangeUpper" values
+$userClass.allowedAttributes | 
+  ForEach-Object { Get-ADObject -SearchBase ((Get-ADRootDSE).schemaNamingContext) -Filter { LDAPDisplayName -eq $_ } -Property rangeUpper } |
+    Where-Object { $_.rangeUpper } |
+      Sort-Object Name |
+         Format-Table -Property Name, rangeUpper
+```
 
 # Other
 
