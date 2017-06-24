@@ -97,6 +97,12 @@ $userClass.allowedAttributes |
 
 **WIth dsquery**
 
+All properties:
+```
+squery * "cn=Schema,cn=Configuration,dc=domain,dc=com" -Filter "(objectClass=attributeSchema)" -Attr LDAPDisplayName rangeUpper -Limit 0
+```
+
+One property:
 ```
 dsquery * "cn=Schema,cn=Configuration,dc=domain,dc=com" -filter "(LDAPDisplayName=department)" -attr rangeUpper
 ```
