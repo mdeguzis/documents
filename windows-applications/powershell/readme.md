@@ -95,6 +95,12 @@ $userClass.allowedAttributes |
          Format-Table -Property Name, rangeUpper
 ```
 
+**WIth dsquery**
+
+```
+dsquery * "cn=Schema,cn=Configuration,dc=domain,dc=com" -filter "(LDAPDisplayName=department)" -attr rangeUpper
+```
+
 # Other
 
 ## Converting time stamps with w32tm.exe:
