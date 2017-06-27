@@ -76,18 +76,24 @@ git commit -m "Make submodule tracking a branch"
 
 You have the git submodule deinit.
 
+```
+[submodule "path/folder]          <-- use full submodule name
+        path = path/folder
+        url = https://github.com/<user>/<repo>
+```
+
 Permanently remove
 ```
 # Note: asubmodule (no trailing slash)
 
-git submodule deinit <asubmodule>    
-git rm <asubmodule>
+git submodule deinit <submodule>    
+git rm <submodule>
 ```
 
 If you want to leave it in your working tree
 ```
-git rm --cached <asubmodule>
-rm -rf .git/modules/<asubmodule>
+git rm --cached <submodule>
+rm -rf .git/modules/<submodule>
 ```
 
 **[deinit](https://git-scm.com/docs/git-submodule)**
