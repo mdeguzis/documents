@@ -19,7 +19,19 @@ Tips and tricks for working with submodules
 
 # Update a submodoule
 
-## Pull in latest changes for submodule
+## Pull in latest changes for all submodules
+```
+git submodule update
+```
+
+## Pull in latest changes for all submodules (recursively)
+If `--recursive` is specified, this command will recurse into the registered submodules, and update any nested submodules within.
+
+```
+git submodule update --recursive
+```
+
+## Pull in latest changes for specific submodule
 ```
 git submodule update --remote MODULE_NAME
 ```
