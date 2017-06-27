@@ -82,11 +82,11 @@ rm -rf .git/modules/<asubmodule>
 
 >Un-register the given submodules, i.e. remove the whole submodule.$name
 section from .git/config together with their work tree.
-
+>
 >Further calls to git submodule update, git submodule foreach and git submodule sync will skip any unregistered submodules until they are initialized again, so use this command if you don’t want to have a local checkout of the submodule in your work tree anymore.
-
+>
 >If you really want to remove a submodule from the repository and commit that use git rm instead.
-
+>
 >If --force is specified, the submodule’s work tree will be removed even if it contains local modifications.
 
 Source: [StackOverflow](https://stackoverflow.com/questions/29850029/what-is-the-current-way-to-remove-a-git-submodule)  
