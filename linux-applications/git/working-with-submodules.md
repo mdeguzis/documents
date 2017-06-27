@@ -17,7 +17,7 @@ Tips and tricks for working with submodules
 # Links
 [Git Submofule (official)](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
 
-# Update a submodoule
+# Updating submodules
 
 ## Pull in latest changes for all submodules
 ```
