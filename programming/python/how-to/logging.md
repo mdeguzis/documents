@@ -130,6 +130,26 @@ logging.info('So should this')
 logging.warning('And this, too')
 ```
 
+# Log just stdout file
+
+```
+# Log stdout to file with this handy class
+log_filename = str(os.environ['HOME']) + '/user-audit.log'
+class Logger(object):
+    def __init__(self, filename=log_filename):
+        self.terminal = sys.stdout
+        self.log = open(filename, "w")
+
+    def write(self, message):
+        self.terminal.write(message)
+        self.log.write(message)
+
+# Push to log
+sys.stdout = Logger(log_filename)
+```
+
+Source: https://stackoverflow.com/a/5916874
+
 # Links
 
 * [Log file format](https://docs.python.org/2/library/logging.html#logrecord-attributes)
