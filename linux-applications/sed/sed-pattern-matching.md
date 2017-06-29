@@ -53,7 +53,6 @@ example: s/a/b/g, substitute b for a, globally. Drop the g and you only substitu
 example: /but/d, delete any line that says "but", not buts allowed!
 
 
-
 ## Match three letter reversal patterns:
 
 ```
@@ -67,4 +66,11 @@ Try to save old files in a subdirectory.
 
 ```
 sed 's/^\t#.*changelog.*/test/g' file.txt
+```
+
+## Replacing a string on specific line ranges
+
+Lines 7-10
+```
+:7,10s/<OLD>/<NEW>
 ```
