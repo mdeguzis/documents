@@ -34,6 +34,7 @@ Command | Actions
 \dt \*.\* | List of relations/tables in all schemas:
 \dt public.\* | List of relations/tables in a particular schema:
 \d | tablename	Describe the details of given table.
+\d+ | Table relations (shows table sizes)
 \h	| Get a help on syntax of SQL commands
 \?	| Lists all psql slash commands.
 \set	| System variables list.
