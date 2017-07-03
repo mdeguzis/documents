@@ -41,6 +41,8 @@ Initial layout in global scope
 ```
 # log config
 # Reuse the same log file for now
+# NOTE: This base logging level MUST be the "staring" point for other loggers like stdout below
+# If you set this to INFO, and use DEBUG on your stdout logger, it will not work!
 logging.basicConfig(filename='/tmp/script-log.txt', level=logging.DEBUG, filemode='w')
 
 # Log to file and to stdout
