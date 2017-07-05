@@ -47,6 +47,32 @@ For example, typing `5>>`.. shifts five lines to the right, and then repeats the
 
 ':q' to exit help.
 
+# Security
+
+## Password protect a file
+
+Default encryption (weak)
+```
+:X
+```
+
+Stronger encryption
+```
+# Check existin encryption in vim
+:setlocal cm?
+
+# To set a encryption method
+# The “blowfish2” encryption is best for security.
+:setlocal cm=blowfish2
+:setlocal cm=blowfish
+:setlocal cm=zip
+
+
+```
+
+Source: [howtogeek](https://www.howtogeek.com/299546/how-to-password-protect-text-files-using-vim-on-linux-or-macos/)  
+See also: http://vim.wikia.com/wiki/Encryption
+
 # Tips and tricks
 
 ## Clipboard support
