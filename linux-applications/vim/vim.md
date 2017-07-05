@@ -130,6 +130,24 @@ There are two simple ways to highlight multiple words in vim editor.
 /word1\|word2\|word3earch!
 ```
 
+## Tables
+
+## Setting up Tabular Editing in Vim
+
+Adjust your tab settings so you're editing with hard tabs:
+```
+:setlocal noexpandtab
+```
+
+Now, widen the columns enough so they're aligned:
+```
+:setlocal shiftwidth=20
+:setlocal softtabstop=20
+:setlocal tabstop=20
+```
+
+http://alangrow.com/blog/turn-vim-into-excel-tips-for-tabular-data-editing
+
 # Distro specific
 
 ## Arch Linux
