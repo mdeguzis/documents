@@ -16,6 +16,20 @@
 # About
 Useful information about GPG / GNUPG
 
+# Encrypt and DeCrypt a file
+
+Encrypt
+```
+gpg -c important.docx.
+```
+
+DeCrypt
+```
+gpg important.dox.gpg
+```
+
+Source: [techrepublic](http://www.techrepublic.com/article/how-to-easily-encryptdecrypt-a-file-in-linux-with-gpg/)
+
 # GPG status flags
 
 Upon inspection of the GPG source code, these appear to be the available status flags:
