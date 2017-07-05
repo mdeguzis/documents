@@ -18,9 +18,31 @@ Useful information about GPG / GNUPG
 
 # Encrypt and DeCrypt a file
 
+Note regarding symetric ciphers:
+> Documents may also be encrypted without using public-key cryptography. Instead, only a symmetric cipher is used to encrypt the document. The key used to drive the symmetric cipher is derived from a passphrase supplied when the document is encrypted, and for good security, it should not be the same passphrase that you use to protect your private key. Symmetric encryption is useful for securing documents when the passphrase does not need to be communicated to others. A document can be encrypted with a symmetric cipher by using the --symmetric option.
+
+## When you are sharing documents
+
+encrypt
+```
+alice% gpg --output doc.gpg --encrypt --recipient blake@cyb.org doc
+```
+
+decrypt
+```
+blake% gpg --output doc --decrypt doc.gpg
+```
+
+## When communicating the key to others is not needed 
+This is useful for simple passworded documents
+
 Encrypt
 ```
-gpg -c important.docx.
+# Default
+gpg -c important.docx
+
+# Strong AES-256 cipher
+gpg -c --cipher-algo AES256 important.docx
 ```
 
 DeCrypt
@@ -28,7 +50,7 @@ DeCrypt
 gpg important.dox.gpg
 ```
 
-Source: [techrepublic](http://www.techrepublic.com/article/how-to-easily-encryptdecrypt-a-file-in-linux-with-gpg/)
+Source: https://www.gnupg.org/gph/en/manual/x110.html
 
 # GPG status flags
 
