@@ -146,6 +146,16 @@ Now, widen the columns enough so they're aligned:
 :setlocal tabstop=20
 ```
 
+To save this, make a session:
+```
+:mks /path/to/sess.vim (:mks! to overwrite if it exists)
+```
+
+Then to restore
+```
+:source /path/to/sess.vim
+```
+
 http://alangrow.com/blog/turn-vim-into-excel-tips-for-tabular-data-editing
 
 # Distro specific
