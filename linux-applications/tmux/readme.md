@@ -36,6 +36,13 @@ $ tmux source-file ~/.tmux.conf
 tmux attach -d
 ```
 
+## Swap window positions
+
+"Prefix :" (that is "Ctrl-B :" by default) brings you to the tmux-command prompt. There you enter:
+```
+swap-window -s 3 -t 1
+```
+
 # Useful links
 
 * [Screen and tmux commands comparison](http://hyperpolyglot.org/multiplexers)
