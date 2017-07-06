@@ -19,6 +19,11 @@ Tips and tricks for working with submodules
 
 # Updating submodules
 
+If submodules are not initialized from a recursive clone, isssue:
+```
+git submodule init
+```
+
 ## Pull in latest changes for all submodules
 ```
 git submodule update
