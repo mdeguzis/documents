@@ -246,6 +246,20 @@ else:
 geek = {"404": "clueless.From the web error message 404, meaning page not found."}
 ```
 
+## Write dicitonary to json file
+
+```
+import json
+with open('result.json', 'w') as fp:
+    json.dump(dictionary_var, fp)
+```
+
+In vim, this will help you view it correctly:
+```
+%!python -m json.tool
+```
+See: linux-applications/vim/formatting.md
+
 # Sorting
 
 ## Sorting lists
