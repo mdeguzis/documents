@@ -9,8 +9,7 @@
   - [Refined configuration](#refined-configuration)
   - [Advanced - console and log file](#advanced---console-and-log-file)
   - [Avanced - console handler only](#avanced---console-handler-only)
-- [Sample logging](#sample-logging)
-- [Log just stdout file](#log-just-stdout-file)
+  - [Adavanced - Log just stdout file](#log-just-stdout-file)
   - [Advanced - different levels of stdout logfile](#advanced---different-levels-of-stdout-logfile)
 - [Links](#links)
 
@@ -126,15 +125,14 @@ logger.error('error message')
 logger.critical('critical message')
 ```
 
-# Sample logging
-
+Sample logging
 ```
 logging.debug('This message should go to the log file')
 logging.info('So should this')
 logging.warning('And this, too')
 ```
 
-# Log just stdout file
+## Adanced - Log just stdout file
 
 ```
 # Log stdout to file with this handy class
