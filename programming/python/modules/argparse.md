@@ -16,6 +16,21 @@ formatter_class=lambda prog: argparse.HelpFormatter(prog,max_help_position=60,wi
 Source: [StackOverflow](https://stackoverflow.com/a/5464440)  
 See also [StackOverflow (metavar)](https://stackoverflow.com/questions/16968188/how-do-i-avoid-the-capital-placeholders-in-pythons-argparse-module), [StackOverflow (dest)](https://stackoverflow.com/questions/11999416/python-argparse-metavar-and-action-store-true-together)
 
+## Allowing help output to contain line breaks
+
+Use the `RawTextHelpFormatter` module
+```
+import from argparse import RawTextHelpFormatter
+
+aparser = argparse.ArgumentParser(description="My program,
+formatter_class=lambda prog: argparse.RawTextHelpFormatter(prog,max_help_position=80,width=100))
+aparser.add_argument('-dbg', '--debug', nargs='?', const=1, type=int, help="Enable debug output:\n" \
++ "level 0: Clean stdout to screen\n" \
++ "level 1: INFO messages from this script and modules it relies on\n" \
++ "level 2: DEBUG messages from this script and modules it relies on\n" \
+, metavar='')
+``
+
 # Resources
 
 * https://docs.python.org/3/library/argparse.html
