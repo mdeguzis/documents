@@ -152,6 +152,65 @@ sys.stdout = Logger(log_filename)
 
 Source: https://stackoverflow.com/a/5916874
 
+## Advanced - different levels of stdout logfile
+
+This is a nice method to use if you want your tool to do this by default:
+```
+Gathering data, please wait.
+Data collection complete, opening log file ...
+```
+
+If debug options are used, this:
+```
+DEBUG - msg text
+Gathering data, please wait.
+Data collection complete, opening log file ...
+INFO - log ready
+```
+
+Setup argparse:
+```
+aparser.add_argument('-dbg', '--debug', nargs='?', const=1, type=int, help="Enable debug output level 1,2, or 3")
+```
+
+logging setup:
+```
+# Show more output if debug requested
+# This will not be logged to the log file, only to screen
+if args.debug == 1:
+        log_formatting = '%(asctime)s - %(levelname)s - %(message)s'
+        logging.basicConfig(level=logging.INFO, format=log_formatting)
+elif args.debug == 2:
+        log_formatting = '%(asctime)s - %(levelname)s - %(message)s'
+        logging.basicConfig(level=logging.DEBUG, format=log_formatting)
+else:
+        log_formatting = '%(message)s'
+        logging.basicConfig(level=logging.ERROR, format=log_formatting)
+
+# Log stdout to file with this handy class
+# https://stackoverflow.com/a/5916874
+log_filename = str(os.environ['HOME']) + '/user-audit.log'
+
+class Logger(object):
+    def __init__(self, filename=log_filename):
+        self.terminal = sys.stdout
+        self.log = open(filename, "w")
+
+    def write(self, message):
+                # Do not write to terminal screen to keep output clean
+                # The log will be opened with a pager at the end
+                # If you wish to see stdout, use debug level 1
+                if args.debug == 0:
+                        self.terminal.write(message)
+                        self.log.write(message)
+                else:
+                        self.log.write(message)
+
+# Push to log
+print "Gathering data, please wait..."
+sys.stdout = Logger(log_filename)
+```
+
 # Links
 
 * [Log file format](https://docs.python.org/2/library/logging.html#logrecord-attributes)
