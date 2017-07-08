@@ -1,3 +1,11 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [SID vs. GUID](#sid-vs-guid)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # SID vs. GUID
 
 When a new domain user or group account is created, Active Directory stores the account's SID in the Object-SID (objectSID) property of a User or Group object. It also assigns the new object a globally unique identifier (GUID), which is a 128-bit value that is unique not only in the enterprise but also across the world. GUIDs are assigned to every object created by Active Directory, not just User and Group objects. Each object's GUID is stored in its Object-GUID (objectGUID) property.

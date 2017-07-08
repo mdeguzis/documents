@@ -6,6 +6,8 @@
 - [Reading ACLs](#reading-acls)
 - [Setting ACLS](#setting-acls)
 - [Troublehsooting](#troublehsooting)
+  - [Getting status codes](#getting-status-codes)
+    - [Example: Check()](#example-check)
   - ["Invalid Argument" when applying an ACL](#invalid-argument-when-applying-an-acl)
 - [Links](#links)
 

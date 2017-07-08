@@ -1,3 +1,14 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [Tips and tricks](#tips-and-tricks)
+  - [Formatting help width](#formatting-help-width)
+  - [Allowing help output to contain line breaks](#allowing-help-output-to-contain-line-breaks)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About
 
 The argparse module makes it easy to write user-friendly command-line interfaces. The program defines what arguments it requires, and argparse will figure out how to parse those out of sys.argv. The argparse module also automatically generates help and usage messages and issues errors when users give the program invalid arguments.

@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [python 2](#python-2)
+- [Python 3](#python-3)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About
 
 Below is a handy method for paging stdout / output from a python program. It's great for lengthy output that scrolls by too fast.

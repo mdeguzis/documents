@@ -10,6 +10,8 @@
   - [Querying a group](#querying-a-group)
   - [Querying group members](#querying-group-members)
   - [Query DN unit for group](#query-dn-unit-for-group)
+- [Advanced](#advanced)
+  - [Get upper range / schema](#get-upper-range--schema)
 - [Other](#other)
   - [Converting time stamps with w32tm.exe:](#converting-time-stamps-with-w32tmexe)
 

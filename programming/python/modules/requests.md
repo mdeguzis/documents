@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [Post JSON payloads](#post-json-payloads)
+- [Links](#links)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About
 
 Information and how-to with the requests module

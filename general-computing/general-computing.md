@@ -1,3 +1,12 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [Versioning](#versioning)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About
 
 This page is mainly for some non-specific general notes about computing or computing topics.

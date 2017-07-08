@@ -3,6 +3,9 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [About](#about)
+- [Encrypt and DeCrypt a file](#encrypt-and-decrypt-a-file)
+  - [When you are sharing documents](#when-you-are-sharing-documents)
+  - [When communicating the key to others is not needed](#when-communicating-the-key-to-others-is-not-needed)
 - [GPG status flags](#gpg-status-flags)
 - [Distributing keys](#distributing-keys)
 - [Adjusting key expiration and trust](#adjusting-key-expiration-and-trust)

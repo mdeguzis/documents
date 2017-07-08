@@ -4,10 +4,13 @@
 
 - [About](#about)
 - [Links](#links)
-- [Update a submodoule](#update-a-submodoule)
-  - [Pull in latest changes for submodule](#pull-in-latest-changes-for-submodule)
+- [Updating submodules](#updating-submodules)
+  - [Pull in latest changes for all submodules](#pull-in-latest-changes-for-all-submodules)
+  - [Pull in latest changes for all submodules (recursively)](#pull-in-latest-changes-for-all-submodules-recursively)
+  - [Pull in latest changes for specific submodule](#pull-in-latest-changes-for-specific-submodule)
 - [Creating a submodule](#creating-a-submodule)
 - [Have a sudmodule always track the HEAD of a branch](#have-a-sudmodule-always-track-the-head-of-a-branch)
+- [Removing submodule](#removing-submodule)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

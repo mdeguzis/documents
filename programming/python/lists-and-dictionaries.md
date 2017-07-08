@@ -24,6 +24,7 @@
   - [Traversing a dictionary](#traversing-a-dictionary)
   - [Testing for keys](#testing-for-keys)
   - [Example](#example)
+  - [Write dicitonary to json file](#write-dicitonary-to-json-file)
 - [Sorting](#sorting)
   - [Sorting lists](#sorting-lists)
   - [Sort list of dictionay items](#sort-list-of-dictionay-items)
