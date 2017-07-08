@@ -1,6 +1,6 @@
 # About
 
-Below is a handle method for paging stdout / output from a python program. It's great for lengthy output that scrolls by too fast.
+Below is a handy method for paging stdout / output from a python program. It's great for lengthy output that scrolls by too fast.
 
 # python 2
 
