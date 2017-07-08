@@ -62,7 +62,7 @@ logging.info("\n-------------------------\nEND LOG FILE\n-----------------------
 
 ## Advanced - console and log file
 
-The approach below is desirable for fine-grain control. The code set a console handler, and file handler. One handles what you see when the script is ran, the other, for the actual log file.
+The approach below is desirable for fine-grain control. The code set a console handler, and file handler. One handles what you see when the script is ran, the other, for the actual log file. I haven't found an elegant way yet to push the added debug options to the file as well, but i'm fairly happy with how it works.
 
 ```
 import logging
