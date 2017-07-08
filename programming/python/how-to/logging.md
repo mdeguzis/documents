@@ -211,6 +211,8 @@ print "Gathering data, please wait..."
 sys.stdout = Logger(log_filename)
 ```
 
+What this does, is allow you to control if the termianl output is displayed or not, control the logging level of the program and any modules that use the logging module, and push the terminal output to a log. This is a great method for information gather tools with lengthly output that you typically want to parse through at your own pace
+
 # Links
 
 * [Log file format](https://docs.python.org/2/library/logging.html#logrecord-attributes)
