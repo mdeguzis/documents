@@ -33,6 +33,13 @@ Useful notes on VIM
 
 # Editing
 
+## Show line  breaks
+
+:set list in Vim will show whitespace. End of lines show as '$' and carriage returns usually show as '^M'.
+```
+:set list
+```
+
 ## Indenting a block of text
 
 In normal mode, type `>>` to indent the current line, or `<<` to unindent. Each command can be used with a count. The operators `> `and `<` do the same for motions, text objects and visual selections. For all commands, pressing . repeats the operation.
