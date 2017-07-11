@@ -29,7 +29,13 @@ git submodule init
 
 ## Pull in latest changes for all submodules
 ```
-git submodule update
+# One module
+git pull --recurse-submodules
+git submodule update --remote <PATH/MODULE>
+
+# recursively
+git pull --recurse-submodules
+git submodule update --remote --recursive
 ```
 
 ## Pull in latest changes for all submodules (recursively)
