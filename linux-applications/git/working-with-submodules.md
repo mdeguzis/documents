@@ -36,6 +36,9 @@ git submodule update --remote <PATH/MODULE>
 # recursively
 git pull --recurse-submodules
 git submodule update --remote --recursive
+
+# All at once
+git submodule update --init --recursive --remote
 ```
 
 ## Pull in latest changes for all submodules (recursively)
