@@ -58,9 +58,17 @@ Always use `firewall-cmd --reload `. This will check the syntax of any XML files
 
 ```
 firewall-cmd --zone=<ZONE> --add-interface=<INTERFACE>
+firewall-cmd --reload
 ```
 
 You can omit the zone, which then fall back on default zone. The default interface may based on a device ID pattern.
+
+## Assign Zone without Network Restart
+
+```
+firewall-cmd --zone=<ZONE> --change-interface=<INTERFACE>
+firewall-cmd --reload
+```
 
 ## Enable portimmediately and permanently
 
