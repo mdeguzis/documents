@@ -114,6 +114,11 @@ git clean -f
 git push origin <BRANCH> --force
 ```
 
+Or
+```
+git reset --hard HEAD~
+```
+
 ## submodule
 
 ### Creating
