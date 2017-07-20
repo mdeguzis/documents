@@ -14,7 +14,7 @@ When raising from a exception handler where you don't want to show the context (
 
 In other words, Python sets a context on exceptions so you can introspect where an exception was raised, letting you see if another exception was replaced by it. You can also add a cause to an exception, making the traceback explicit about the other exception (use different wording), and the context is ignored (but can still be introspected when debugging). Using `raise ...` from None lets you suppress the context being printed.
 
-*See more:* [raise statement documenation](https://docs.python.org/3/reference/simple_stmts.html#raise):
+**See more:** [raise statement documenation](https://docs.python.org/3/reference/simple_stmts.html#raise):
 
 >The from clause is used for exception chaining: if given, the second expression must be another exception class or instance, which will then be attached to the raised exception as the __cause__ attribute (which is writable). If the raised exception is not handled, both exceptions will be printed:
 
@@ -27,7 +27,6 @@ In other words, Python sets a context on exceptions so you can introspect where 
 Traceback (most recent call last):
   File "<stdin>", line 2, in <module>
 ZeroDivisionError: int division or modulo by zero
-```
 
 The above exception was the direct cause of the following exception:
 
@@ -50,7 +49,6 @@ ZeroDivisionError: int division or modulo by zero
 
 During handling of the above exception, another exception occurred:
 
-```
 Traceback (most recent call last):
   File "<stdin>", line 4, in <module>
 RuntimeError: Something bad happened
