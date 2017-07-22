@@ -23,6 +23,6 @@ start = time.time()
 end = start = time.time()
 elapsed_time = int(now - start)
 
-str(timedelta(seconds=elapsed_Time))
+str(timedelta(seconds=elapsed_time))
 '0:00:00.233000'
 ```
