@@ -48,6 +48,26 @@ Close connection
 conn.close()
 ```
 
+# result meta data
+This requires an asynchronous DB connection
+```
+cursor.execute(sql, async=True)
+
+status = cursor.poll()
+
+while status.operationState not in [
+    hive.ttypes.TOperationState.FINISHED_STATE,
+    hive.ttypes.TOperationState.CANCELED_STATE,
+    hive.ttypes.TOperationState.CLOSED_STATE,
+    hive.ttypes.TOperationState.ERROR_STATE,
+]):
+
+    progress = status.progressUpdateResponse.progressedPercentage
+    # Do whatever you need with this progress info
+
+    status = cursor.poll()
+```
+
 # Links
 
 * http://pythonhosted.org/PyHive/
