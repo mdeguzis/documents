@@ -2,6 +2,10 @@
 
 This folder tree / page hold information for building / distributing / troubleshooting Flatpak.
 
+# Builds
+
+See: https://github.com/mdeguzis/libregeek-packaging
+
 # Documents
 
 * [Flatpak docs](http://flatpak.org/flatpak/flatpak-docs.html)
