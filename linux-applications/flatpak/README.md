@@ -9,6 +9,7 @@ See: https://github.com/mdeguzis/libregeek-packaging
 # Documents
 
 * [Flatpak docs](http://flatpak.org/flatpak/flatpak-docs.html)
+* [Building a simple flatpak](http://docs.flatpak.org/en/latest/building-simple-apps.html)
 * [Flatpak-builder](http://docs.flatpak.org/en/latest/flatpak-builder.html)
 * [Flathub on GitHub](https://github.com/flathub)
 * [Flathub buildbot](https://flathub.org/builds/)
