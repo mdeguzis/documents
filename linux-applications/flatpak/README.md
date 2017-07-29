@@ -90,14 +90,21 @@ flatpak build ../mrboom <COMMAND>
 If you need to depend on external libraries/packages, see [flatpak-builder.md](https://github.com/mdeguzis/documents/blob/master/linux-applications/flatpak/flatpak-builder.md), which will show you how to handle this. 
 
 ## Completing the build
+Once an application has been built, the build-finish command needs to be used to specify access to different parts of the host, such as networking and graphics sockets. This command is also used to specify the command that is used to run the app (done by modifying the metadata file), and to create the application’s exports directory. For example:
+
+```
+flatpak build-finish mrboom --socket=x11 --share=network --command=mrboom
+```
+
+This command below exports the app, creates a repository called tutorial-repo, installs the Dictionary application in the per-user installation area and runs it.
 ```
 flatpak build-export repo mrboom
-flatpak --user remote-add --no-gpg-verify --if-not-exists tutorial-repo repo
-flatpak --user install tutorial-repo org.libretro.MrBoom.Stanadalone
 ```
 
 ## Test
 ```
+flatpak --user remote-add --no-gpg-verify --if-not-exists tutorial-repo repo
+flatpak --user install tutorial-repo org.libretro.MrBoom.Stanadalone
 flatpak run oorg.libretro.MrBoom.Stanadalone
 ```
 
