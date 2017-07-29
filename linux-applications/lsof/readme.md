@@ -26,3 +26,16 @@ vim test.txt
 [user@HOST ~]$ lsof | grep "test.txt"
 vim       33047             user    5u      REG              253,4     12288   83893592 /home/user/tmp/test.txt.swp
 ```
+
+# Showing danling/unlinked files
+
+>+|-L [l]
+This option enables ('+') or disables ('-') the listing of file link counts, where they are available - e.g., they aren't available for sockets, or most FIFOs and pipes.
+
+>When
+>+L is specified without a following number, all link counts will be listed. When -L is specified (the default), no link counts will be listed.
+
+>When
+>+L is followed by a number, only files having a link count less than that number will be listed. (No number may follow -L.) A specification of the form ''+L1'' will select open files that have been unlinked. A specification of the form ''+aL1 <file_system>'' will select unlinked open files on the specified file system.
+
+See: https://linux.die.net/man/8/lsof
