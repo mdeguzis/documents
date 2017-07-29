@@ -7,18 +7,74 @@ This folder tree / page hold information for building / distributing / troublesh
 See: https://github.com/mdeguzis/libregeek-packaging
 
 # Example build
-Sourced from: http://docs.flatpak.org/en/latest/building-simple-apps.html
+
+## Details
+
+* Package: Mr. Boom
+* SDK: org.gnome.Sdk
+* SDK version: 3.24
+* Runtime: org.gnome.Platform
+* Sourced from: http://docs.flatpak.org/en/latest/building-simple-apps.html
 
 clone source code:
 ```
 git clone <URL>
 ```
 
-Build format:
+##  Build format
 ```
 flatpak build-init DIRECTORY APPNAME SDK RUNTIME [BRANCH]
 ```
 
+* **DIRECTORY** is the name of the directory that will be created to contain the application
+* **APPNAME** is the D-Bus name of the application. A nice format is:
+  ```
+  # Format
+  [website_suffix (com/org)].[organization_name].[application_name_camelcase][.[other]]
+  
+  # example
+  org.libretro.MrBoom.Standalone
+  ```
+* **SDK** is the name of the SDK that will be used to build the application
+* **RUNTIME** is the name of the runtime that will be required by the application
+* **BRANCH** is typically the version of the SDK and runtime that will be used
+
+add repository that contains the [runtime](http://flatpak.org/runtimes.html):
+```
+flatpak remote-add --from gnome https://sdk.gnome.org/gnome.flatpakrepo
+```
+
+##  Install/update runtime needed:
+```
+flatpak install gnome org.gnome.Platform//3.24 org.gnome.Sdk//3.24
+```
+
+##  Initalize the build flatpak build directory
+```
+flatpak build-init mrboom org.libretro.MrBoom.Stanadalone org.gnome.Sdk org.gnome.Platform
+```
+
+This should create a directory:
+```
+[mikeyd@archboxmtd build-mrboom-tmp]$ ls -la mrboom
+total 20
+drwxr-xr-x 4 mikeyd users 4096 Jul 29 10:33 .
+drwxr-xr-x 4 mikeyd users 4096 Jul 29 10:33 ..
+drwxr-xr-x 2 mikeyd users 4096 Jul 29 10:33 files
+-rw-r--r-- 1 mikeyd users  119 Jul 29 10:33 metadata
+drwxr-xr-x 3 mikeyd users 4096 Jul 29 10:33 var
+```
+
+## Add any needed files
+
+`flatpak build` is used to build an application using an SDK
+```
+flatpak build dictionary touch /app/some_file
+```
+
+# Notable flatpak repos and apps
+
+* [flatpak-gog](https://github.com/kujeger/flatpak-gog)
 
 # Documents
 
