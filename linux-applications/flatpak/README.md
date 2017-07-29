@@ -16,11 +16,6 @@ See: https://github.com/mdeguzis/libregeek-packaging
 * Runtime: org.gnome.Platform
 * Sourced from: http://docs.flatpak.org/en/latest/building-simple-apps.html
 
-clone source code:
-```
-git clone <URL>
-```
-
 ##  Build format
 ```
 flatpak build-init DIRECTORY APPNAME SDK RUNTIME [BRANCH]
@@ -65,11 +60,45 @@ drwxr-xr-x 2 mikeyd users 4096 Jul 29 10:33 files
 drwxr-xr-x 3 mikeyd users 4096 Jul 29 10:33 var
 ```
 
-## Add any needed files
+## Add any needed source files
+`flatpak build` is used to build an application using an SDK. This is where you can copy in your source code.
 
-`flatpak build` is used to build an application using an SDK
 ```
-flatpak build dictionary touch /app/some_file
+flatpak build dictionary touch /app/some_file.txt
+
+[mikeyd@archboxmtd build-mrboom-tmp]$ tree mrboom
+mrboom
+├── files
+│   └── some_file.txt
+├── metadata
+└── var
+    ├── run -> /run
+    └── tmp
+```
+
+We are going to now add our source files
+```
+git clone <URL> <DIR>
+cd <DIR>
+```
+## Run your build commands
+Run build commands in the same fashioon you would in debian/rules or via your build scripts.
+```
+flatpak build ../mrboom <COMMAND>
+```
+
+If you need to depend on external libraries/packages, see [flatpak-builder.md](https://github.com/mdeguzis/documents/blob/master/linux-applications/flatpak/flatpak-builder.md), which will show you how to handle this. 
+
+## Completing the build
+```
+flatpak build-export repo mrboom
+flatpak --user remote-add --no-gpg-verify --if-not-exists tutorial-repo repo
+flatpak --user install tutorial-repo org.libretro.MrBoom.Stanadalone
+```
+
+## Test
+```
+flatpak run oorg.libretro.MrBoom.Stanadalone
 ```
 
 # Notable flatpak repos and apps
