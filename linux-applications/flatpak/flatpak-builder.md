@@ -3,6 +3,8 @@ This page notes how to design and run a JSON file that tells flatpak how to buil
 
 # Design
 
+See `man flatpak-builder` for general design tips and `man flatpak-manifest` for field definitions, like the ones seen below.
+
 
 # Examples
 
