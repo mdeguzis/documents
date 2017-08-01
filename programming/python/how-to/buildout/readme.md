@@ -72,6 +72,18 @@ The bootstrap script makes it easy to install the buildout software. We’ll see
 
 # Topics
 
+## environment vars
+
+There are recipes that can provide you with functionality that you want, for example with https://pypi.python.org/pypi/gocept.recipe.env/ you can do following:
+```
+[buildout]
+parts += ...  env
+develop = ${env:HOME}/path/to/mytool/setup.py
+
+[env]
+recipe = gocept.recipe.env
+```
+
 ## Sections
 
 Details details for buildout pieces.
