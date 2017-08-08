@@ -10,7 +10,7 @@
 
 ```
 sudo -u <USER> /opt/TIDAL/Agent/bin/tagent <HOST> start
-``
+```
 
 # Finding job output
 
