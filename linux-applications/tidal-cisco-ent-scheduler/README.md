@@ -6,6 +6,12 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
+# Starting the agent on hosts
+
+```
+sudo -u <USER> /opt/TIDAL/Agent/bin/tagent <HOST> start
+``
+
 # Finding job output
 
 ```
