@@ -171,6 +171,24 @@ keys() | Returns a view of all the keys in a dictionary.
 values() | Returns a view of all the values in a dictionary.
 items() Returns a view of all the items in a dictionary. Each item is a two-elementtuple, where the first element is a key and the second element is the key’svalue.
 
+## Writing dictionaries
+
+### Typical use case
+
+```
+dictionary[key] = value
+```
+
+### Writing a list to a dictionary value
+
+Check if the key exits, append to list or start new list
+```
+if dictionary.has_key(key):
+  dictionary[key].append(value)
+else:
+  dictionary[key] = list()
+  dictionary[key].append(value)
+```
 
 ## Accessing values
 
