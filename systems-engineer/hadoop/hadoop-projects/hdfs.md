@@ -145,3 +145,11 @@ If you're interested in more background on garbage collection, then you might wa
 * `maxMemory()` Returns the maximum amount of memory that the Java virtual machine will attempt to use
 
 Max is going to be the `-Xmx` parameter from the service start command. The total memory main factor is the number of blocks in your HDFS cluster. The namenode requires ~150 bytes for each block, +16 bytes for each replica, and it must be kept in live memory. So a default replication factor of 3 gives you 182 bytes, and you have 7534776 blocks gives about 1.3GB. Plus all other non-file related memory in use in the namenode, 1.95GB sounds about right. I would say that your HDFS cluster size requires a bigger namenode, more RAM. If possible, increase namenode startup -Xmx. If maxed out, you'll need a bigger VM/physical box.
+
+# Troubleshooting
+
+## Benchmark HDFS speed
+
+```
+date && hadoop fs -ls /user &>/dev/null && date
+```
