@@ -19,11 +19,11 @@ This page outlines introductory material and comparison between different automa
 
 Most of the tools below are meant to be top / middle layer solutions that plug into other systems, such as Jenkins.
 
-Name | Foundation | Description         |    Deployment methods  
+Name | Foundation | Description         |    Deployment methods 
 -----|------------|---------------------|------------------------
 Ansible | Python | Ansible was developed to simplify complex orchestration and configuration management tasks | Server or client/server
 Chef | Ruby | End-to-end server deployment tool for Ops that can  manage server applications and utilities | Server/Application Management | client/server
-Puppet | Ruby | Puppet is a pioneering configuration automation and deployment orchestration solution for distributed apps and infrastructure. Agent/Master setup | Configuration managment, orchestration, provisioning, code management, access control | server/client
+Puppet | Ruby | Puppet is a pioneering configuration automation and deployment orchestration solution for distributed apps and infrastructure. Agent/Master setup | server/client
 SaltStack | Python | Salt was designed to enable low-latency and high-speed communication for data collection and remote execution in sysadmin environments | client/server
 
 ## Integration Testing
