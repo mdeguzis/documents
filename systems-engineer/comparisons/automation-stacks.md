@@ -19,7 +19,7 @@ This page outlines introductory material and comparison between different automa
 
 Name | Foundation | Description         |    Deployment methods 
 -----|------------|---------------------|------------------------
-Saltstack
+StackStorm | Python | Powerful open-source automation platform that wires together all of your apps, services and workflows. Integrates with any of the below tools | VM
 
 ## Infrastructure Management
 
