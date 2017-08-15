@@ -19,3 +19,10 @@ The sysconfig adapter script is typically updated when information is changed, s
 ls -la /etc/sysconfig/network-scripts/ifcfg-bond
 -rw-r--r--. 1 root root 330 Mar 02  2017 /etc/sysconfig/network-scripts/ifcfg-bond0
 ```
+
+# Check for RX/TX drop/hang
+
+```
+ifconfig bond0 | grep 'RX errors' | sort > `date +%Y-%m-%d-%H-%M`_network.txt
+diff -u0 2017-08-15-10-00_network.txt 2017-08-15-09-43_network.txt
+```
