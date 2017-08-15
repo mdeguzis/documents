@@ -28,8 +28,8 @@ Most of the tools below are meant to be top / middle layer solutions that plug i
 Name | Foundation | Description         |    Deployment methods 
 -----|------------|---------------------|------------------------
 Ansible | Python | Ansible was developed to simplify complex orchestration and configuration management tasks | Server or client/server
-Chef | Ruby | End-to-end server deployment tool for Ops that can  manage server applications and utilities | Server/Application Management | client/server
-Puppet | Ruby | Puppet is a pioneering configuration automation and deployment orchestration solution for distributed apps and infrastructure. Agent/Master setup | server/client
+Chef | Ruby | End-to-end server deployment tool for Ops that can  manage server applications and utilities. Script driven | Server/Application Management. script driven | client/server
+Puppet | Ruby | Puppet is a pioneering configuration automation and deployment orchestration solution for distributed apps and infrastructure. Agent/Master setup. agent-driven | server/client
 SaltStack | Python | Salt was designed to enable low-latency and high-speed communication for data collection and remote execution in sysadmin environments | client/server
 
 ## Integration Testing
