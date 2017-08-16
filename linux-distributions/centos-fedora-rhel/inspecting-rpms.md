@@ -22,6 +22,10 @@ How to unpack and inspect RPM packages
 
 ## List rpm installed size
 
+How are those values calculated?
+
+rpm calculates the RPMTAG_SIZE value as the simple summation of the sizes of all the files within the rpm. rpm calculates the RPMTAG_ARCHIVESIZE value as the value of the cpio archive within the rpm, after decompression. These values are often very close. As I said above the pkg.packagesize value for .rpm files is just that value returned by stat(2).
+
 The following command queries (-q) all packages (-a) and returns the result in the format defined by “–queryformat”. The format below says to print the size as the first element of each result line:
 ```
 rpm -qa --queryformat '%10{size} - %-25{name} \t %{version}\n' | sort -n
