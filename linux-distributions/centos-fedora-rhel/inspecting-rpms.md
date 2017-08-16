@@ -36,6 +36,11 @@ Top 10 (right aligned size)
 rpm -qa --queryformat "%-50{NAME} %10{SIZE}\n"
 ```
 
+RPM package size in Mb sorted from smallest to largest
+```
+rpm -qa --qf '%{SIZE} %{NAME}\n' | awk '{printf("%sMb %s\n", $1 / 1000 / 1000, $2)}' | sort -k1 -n
+```
+
 See: http://rpm5.org/docs/api/queryformat.html  
 See: http://rpm.org/user_doc/query_format.html
 
