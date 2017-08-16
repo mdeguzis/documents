@@ -22,6 +22,11 @@ How to unpack and inspect RPM packages
 
 ## List rpm installed size
 
+The following command queries (-q) all packages (-a) and returns the result in the format defined by “–queryformat”. The format below says to print the size as the first element of each result line:
+```
+rpm -qa --queryformat '%10{size} - %-25{name} \t %{version}\n' | sort -n
+```
+
 Top 10 (right aligned size)
 ```
 rpm -qa --queryformat "%-50{NAME} %10{SIZE}\n"
