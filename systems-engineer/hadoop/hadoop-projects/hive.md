@@ -47,6 +47,14 @@ Uses:
 
 * `CTRL+SPACE` will bring up suggested command completion
 
+# Hive 2 vs hiveserver2
+
+This is a comparison that can be confusion at first until you understand the origins. HiveServer2 is a JDBC frontend to Hive. Hive is an SQL engine for Hadoop that queries files on HDFS using SQL syntax.
+
+*Different components.*
+
+So HiveServer2 may be 3.0 while Hive could be 2.1 for example. 'hive2' is actually Hive 2.0., the 2 is not part of the component.
+
 # Managing tables
 
 operation| syntax
