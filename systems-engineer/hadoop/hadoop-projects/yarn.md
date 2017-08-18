@@ -17,3 +17,25 @@
   * ApplicationMaster for container makes resource request to resource manager
   * ResourceManager is also aware of the node specifications from the NodeManager.
   * ResoureceManager allocates available resources via the pluggable Scheduler
+
+# Use different version jar file with same name
+
+To use different version jar file with same name, clear cache on all NodeManager hosts to prevent the application using old jar
+Article
+
+To clear local file cache and user cache for yarn, perform the following:
+
+Find out the cache location by checking the value of the yarn.nodemanager.local-dirs property :
+```
+<property>       
+<name>yarn.nodemanager.local-dirs</name>       
+<value>/hadoop/yarn/local</value> 
+</property>
+```
+
+Remove filecache and usercache folder located inside the folders that is specified in yarn.nodemanager.local-dirs.
+```
+[yarn@node2 ~]$ cd /hadoop/yarn/local/ 
+[yarn@node2 local]$ ls filecache  nmPrivate  spark_shuffle  usercache 
+[yarn@node2 local]$ rm -rf filecache/ usercache/
+```
