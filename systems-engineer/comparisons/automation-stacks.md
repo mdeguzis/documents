@@ -48,9 +48,9 @@ StackStorm | Python | Powerful open-source automation platform that wires togeth
 
 Most of the tools below are meant to be top / middle layer solutions that plug into other systems, such as Jenkins.
 
-Name | Foundation | Description         |    Deployment methods 
------|------------|---------------------|------------------------
-Ansible | Python | Ansible was developed to simplify complex orchestration and configuration management tasks. script driven | Server or client/server
+Name | Foundation | Description         |    Deployment methods | Notes
+-----|------------|---------------------|-----------------------|-----------------------
+Ansible | Python | Ansible was developed to simplify complex orchestration and configuration management tasks. script driven | Server or client/server | Integration with RHEL
 Chef | Ruby | End-to-end server deployment tool for Ops that can  manage server applications and utilities. Script driven | Server/Application Management. script driven | client/server
 Puppet | Ruby | Puppet is a pioneering configuration automation and deployment orchestration solution for distributed apps and infrastructure. Agent/Master setup. agent-driven for target hosts | server/client
 SaltStack | Python | Salt was designed to enable low-latency and high-speed communication for data collection and remote execution in sysadmin environments | client/server
@@ -59,8 +59,8 @@ SaltStack | Python | Salt was designed to enable low-latency and high-speed comm
 
 These tools are best utilzed by more top-levle orchestration tools, such as as Puppet or StackStorm.
 
-Name | Foundation | Description         | Deployment methods  
------|------------|---------------------|------------------------------
+Name | Foundation | Description         | Deployment methods           | Notes
+-----|------------|---------------------|------------------------------|-----------------
 Buildbot | Python | Continuous integration tool which is trusted by the Mozilla Foundation for bringing excellence into their products, and is now used at Mozilla, Chromium, WebKit and many other projects. | client/server
 Jenkins | Java | Jenkins is the leading open source continuous integration tool. For the last few years it holds the top position in DevOps toolchains due to being free, open source and modular (although its baseline functionality is very limited, there are more than 1,000 plugins which extend Jenkins capabilities and provide extra integrations)| client/server
 
