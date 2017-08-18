@@ -1,3 +1,23 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [Builds](#builds)
+- [Example build](#example-build)
+  - [Details](#details)
+  - [Build format](#build-format)
+  - [Install/update runtime needed:](#installupdate-runtime-needed)
+  - [Initalize the build flatpak build directory](#initalize-the-build-flatpak-build-directory)
+  - [Add any needed source files](#add-any-needed-source-files)
+  - [Run your build commands](#run-your-build-commands)
+  - [Completing the build](#completing-the-build)
+  - [Test](#test)
+- [Notable flatpak repos and apps](#notable-flatpak-repos-and-apps)
+- [Documents](#documents)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About
 
 This folder tree / page hold information for building / distributing / troubleshooting Flatpak.

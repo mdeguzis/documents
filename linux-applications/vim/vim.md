@@ -4,6 +4,7 @@
 
 - [About](#about)
 - [Editing](#editing)
+  - [Show line  breaks](#show-line--breaks)
   - [Indenting a block of text](#indenting-a-block-of-text)
 - [Movement](#movement)
   - [Panes](#panes)

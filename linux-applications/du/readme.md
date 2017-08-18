@@ -6,6 +6,7 @@
 - [Show top level sizes](#show-top-level-sizes)
 - [List disk usage on a path, ignoring other filesystems.](#list-disk-usage-on-a-path-ignoring-other-filesystems)
 - [List disk summary with wildcard, skipping mounts](#list-disk-summary-with-wildcard-skipping-mounts)
+- [When du and df report diffenent usage](#when-du-and-df-report-diffenent-usage)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

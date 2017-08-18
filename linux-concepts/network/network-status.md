@@ -4,6 +4,7 @@
 
 - [About](#about)
 - [Check when an adapter address was last updated.](#check-when-an-adapter-address-was-last-updated)
+- [Check for RX/TX drop/hang](#check-for-rxtx-drophang)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

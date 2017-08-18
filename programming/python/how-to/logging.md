@@ -7,9 +7,10 @@
 - [Configuration](#configuration)
   - [Basic configuration](#basic-configuration)
   - [Refined configuration](#refined-configuration)
+  - [Advanced - Rotating logs](#advanced---rotating-logs)
   - [Advanced - console and log file](#advanced---console-and-log-file)
-  - [Avanced - console handler only](#avanced---console-handler-only)
-  - [Adavanced - Log just stdout file](#log-just-stdout-file)
+  - [Advanced - console handler only](#advanced---console-handler-only)
+  - [Adanced - Log just stdout file](#adanced---log-just-stdout-file)
   - [Advanced - different levels of stdout logfile](#advanced---different-levels-of-stdout-logfile)
 - [Links](#links)
 

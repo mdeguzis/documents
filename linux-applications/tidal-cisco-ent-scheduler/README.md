@@ -2,6 +2,7 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
+- [Starting the agent on hosts](#starting-the-agent-on-hosts)
 - [Finding job output](#finding-job-output)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->

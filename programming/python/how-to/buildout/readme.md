@@ -9,6 +9,7 @@
   - [Components](#components)
 - [Basic steps](#basic-steps)
 - [Topics](#topics)
+  - [environment vars](#environment-vars)
   - [Sections](#sections)
   - [Custom interpreters](#custom-interpreters)
   - [Rapid trials of new dependencies](#rapid-trials-of-new-dependencies)

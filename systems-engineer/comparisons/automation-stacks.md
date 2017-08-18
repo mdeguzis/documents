@@ -1,3 +1,26 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [Definitions](#definitions)
+- [Overview](#overview)
+  - [High level orchestration](#high-level-orchestration)
+  - [Infrastructure Management](#infrastructure-management)
+  - [Integration Testing](#integration-testing)
+- [Indepth](#indepth)
+  - [Infrastructure Management](#infrastructure-management-1)
+    - [Ansible](#ansible)
+    - [Chef](#chef)
+    - [Puppet](#puppet)
+    - [Saltstack](#saltstack)
+  - [Continuous Integration testing](#continuous-integration-testing)
+- [Conclusions](#conclusions)
+- [Videos](#videos)
+- [Links / Sources](#links--sources)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About 
 
 This page outlines introductory material and comparison between different automation stacks. The most important thing to remember here is most of these tools do not overlap. They interact and complement altogether. Everything here depends on your needs. 

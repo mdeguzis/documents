@@ -14,6 +14,8 @@
 - [Heap Usage](#heap-usage)
   - [Heap Usage](#heap-usage-1)
   - [Configuration gotchas](#configuration-gotchas)
+- [Troubleshooting](#troubleshooting)
+  - [Benchmark HDFS speed](#benchmark-hdfs-speed)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [Information gathering](#information-gathering)
+  - [Partition block size](#partition-block-size)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About
 
 Items of iterest around disks/SSD/storage

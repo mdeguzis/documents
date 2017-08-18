@@ -4,6 +4,7 @@
 
 - [About](#about)
 - [Useful tips and tricks](#useful-tips-and-tricks)
+- [Hive 2 vs hiveserver2](#hive-2-vs-hiveserver2)
 - [Managing tables](#managing-tables)
 - [Key points](#key-points)
 - [HiveQL (Hive Query Language)](#hiveql-hive-query-language)

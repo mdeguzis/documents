@@ -1,3 +1,12 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [raise vs raise from](#raise-vs-raise-from)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About 
 
 This page describes usage of 'raise', often seen with try/except.

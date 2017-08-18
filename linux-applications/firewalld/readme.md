@@ -8,6 +8,7 @@
 - [Service state changes](#service-state-changes)
 - [Examples](#examples)
   - [re-attach a corrupted zone after fixing a problem.](#re-attach-a-corrupted-zone-after-fixing-a-problem)
+  - [Assign Zone without Network Restart](#assign-zone-without-network-restart)
   - [Enable portimmediately and permanently](#enable-portimmediately-and-permanently)
 - [Links](#links)
 

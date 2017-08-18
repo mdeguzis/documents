@@ -4,6 +4,7 @@
 
 - [About](#about)
 - [Determine what has a file open](#determine-what-has-a-file-open)
+- [Showing danling/unlinked files](#showing-danlingunlinked-files)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
