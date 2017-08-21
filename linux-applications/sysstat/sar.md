@@ -1,25 +1,8 @@
 # About
 
-Notes on using sysstat utilities
+Notes on using sar. See also: [sysstat utilities](https://github.com/mdeguzis/documents/tree/master/linux-applications/sysstat)
 
-# utilities
-
-Utilities part of Sysstat
-
-Following are the other sysstat utilities.
-
-* `sar` collects and displays ALL system activities statistics.
-* `sadc` stands for “system activity data collector”. This is the sar backend tool that does the data collection.
-* `sa1` stores system activities in binary data file. sa1 depends on sadc for this purpose. sa1 runs from cron.
-* `sa2` creates daily summary of the collected statistics. sa2 runs from cron.
-* `sadf` can generate sar report in CSV, XML, and various other formats. Use this to integrate sar data with other tools.
-* `iostat` generates CPU, I/O statistics
-* `mpstat` displays CPU statistics.
-* `pidstat` reports statistics based on the process id (PID)
-* `nfsiostat` displays NFS I/O statistics.
-* `cifsiostat` generates CIFS statistics.
-
-## sar
+# sar
 
 Sar = Collect, report, or save system activity information. sar is a part of the sysstat utilities package. The sysstat utilities are a collection of performance monitoring tools for Linux. These include sar, sadf, mpstat, iostat, tapestat, pidstat, cifsiostat  and sa tools
 
