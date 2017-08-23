@@ -15,7 +15,7 @@ To change the environmental variable "permanently" you'll need to consider at le
 1. Login/Non-login shell
 2. Interactive/Non-interactive shell
 
-##bash
+## bash
 
 1. Bash as login shell will load /etc/profile, ~/.bash_profile, ~/.bash_login, ~/.profile in the order
 2. Bash as non-login interactive shell will load ~/.bashrc
