@@ -53,3 +53,21 @@ If you want to make it permanent for all users, you can edit /etc/profile or /et
 In this case follow the syntax you see already present in your file.
 
 Source: [stackexchange](http://unix.stackexchange.com/a/117470)
+
+# Setting aliases
+
+`.bashrc`
+```
+alias command="ls /path"
+```
+
+## Sourcing alias values
+
+```
+alias command
+```
+
+Just the value
+```
+echo ${BASH_ALIASES[CALL_BEELINE]} ; 
+```
