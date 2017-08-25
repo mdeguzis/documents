@@ -21,6 +21,11 @@
 
 Powershell information
 
+version:
+```
+$PSVersionTable.PSVersion
+```
+
 # Getting informatino for users and groups
 
 ## Logging output to a file
