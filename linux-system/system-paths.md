@@ -73,6 +73,23 @@ When an interactive shell that is not a login shell is started, bash reads and e
 
 You also have `/etc/environment` where you can set global environmental variables but that's read rather than sourced (commands inside it are not executed but variable definitions are set).
 
+### /etc/profile
+This is where global changes are made
+
+Remember that path munging occurs here as well. Consider this in your choices to modify your environment and PATH.
+
+```
+# Path manipulation
+if [ "$EUID" = "0" ]; then
+    pathmunge /usr/sbin
+    pathmunge /usr/local/sbin
+else
+    pathmunge /usr/local/bin after
+    pathmunge /usr/local/sbin after
+    pathmunge /usr/sbin after
+fi
+```
+
 ### /etc/profile.d
 
 `/etc/profile.d` is a directory where the individual initialization scripts are placed.
