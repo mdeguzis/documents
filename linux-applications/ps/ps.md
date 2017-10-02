@@ -88,7 +88,7 @@ $ ps aux --sort=-pcpu,+pmem
 
 Display the top 5 processes consuming most of the cpu.
 
-````
+```
 $ ps aux --sort=-pcpu | head -5
 USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
 root         1  2.6  0.7  51396  7644 ?        Ss   02:02   0:03 /usr/lib/systemd/systemd --switched-root --system --deserialize 23
