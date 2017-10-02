@@ -155,3 +155,21 @@ Max is going to be the `-Xmx` parameter from the service start command. The tota
 ```
 date && hadoop fs -ls /user &>/dev/null && date
 ```
+
+## Max open files
+
+https://community.hortonworks.com/articles/74208/ulimit-settings-not-respected-when-service-is-star.html
+
+```
+$sudo -u hdfs bash -c "ulimit -a" | grep open
+open files                      (-n) 128000
+
+$ cat /etc/security/limits.d/hdfs.conf | grep nofile
+hdfs   - nofile 128000
+
+$ pgrep -U hdfs
+2698
+
+$ sudo grep open /proc/2698/limits
+Max open files            4096                 4096                 files   
+```
