@@ -15,6 +15,17 @@
 
 Useful notes for Java
 
+# ENV
+
+To find java home:
+```
+java -XshowSettings:properties -version
+```
+
+Look for `java.home`
+
+See: http://sbndev.astro.umd.edu/wiki/Finding_and_Setting_JAVA_HOME
+
 # File types
 
 ## jar vs war
