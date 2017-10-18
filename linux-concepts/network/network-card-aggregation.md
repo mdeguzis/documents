@@ -17,6 +17,12 @@ Network card aggregation notes.
 ```
 cat /proc/net/bonding/bond0
 ```
+# Bonded interface and NetworkManager
+
+Don't set nm_controlled to yes; NetworkManager mangles bonded interfaces. It's probably the reason /etc/resolv.conf is empty as it sometimes trashes that file when there are network hiccups. Set that to 'no' so NetworkMangler doesn't trash your configuration. 
+
+NetworkManager is designed for simple network connections, it's more geared for laptops and desktops than servers, and doesn't work with more complicated structures. Especially in an environment when it detects network changes, it has a history of doing weird things. Vheck if you're uninstalling NetworkManager and should probably do so nodes with bonded interfaces so it isn't messing with config files.'
+
 # Links:
 
 * [Network Card Aggregation (RHEL)](http://panoramicsolution.com/blog/?p=388)
