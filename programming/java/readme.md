@@ -25,9 +25,16 @@ Check `java.home` under:
 java -XshowSettings:properties -version
 ```
 
-With some refinement:iif you dno't 
+With some refinement:if you dno't 
 ```
-java -XshowSettings:properties -version &> /tmp/java_out; cat /tmp/java_out | awk -F'=' '/java.home/ {print $2}'
+java -XshowSettings:properties -version &> /tmp/java_out; cat /tmp/java_out | awk '/java.home/ {print $3}'
+
+# Assigning to a var
+JAVA_HOME=$(java -XshowSettings:properties -version &> /tmp/java_out; cat /tmp/java_out | awk '/java.home/ {print $3}')
+
+# Double check for whitespace
+echo "'$JAVA_HOME'"
+'/usr/lib/jvm/java-1.8.0-oracle-1.8.0.141-1jpp.1.el7_3.x86_64/jre'
 ```
 
 Or:
