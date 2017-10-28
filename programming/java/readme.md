@@ -25,14 +25,14 @@ Check `java.home` under:
 java -XshowSettings:properties -version
 ```
 
-With some refinement:
+With some refinement:iif you dno't 
 ```
 java -XshowSettings:properties -version &> /tmp/java_out; cat /tmp/java_out | awk -F'=' '/java.home/ {print $2}'
 ```
 
 Or:
 ```
-echo $(dirname $(dirname $(readlink -f $(which javac))))
+echo "$(dirname $(dirname $(readlink -f $(which javac))))/jre"
 ```
 
 # Versions
