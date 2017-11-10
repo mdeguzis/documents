@@ -241,7 +241,7 @@ dict = {'tom': 'tom', 'bonnie': 'bonnie'}
     print key
 
 print dict.items()
-[('mtdeguzis', 'mtdeguzis'), ('vaalbers', 'vaalbers')]  
+[('mtdeguzis', 'mtdeguzis'), ('fpoleski', 'fpoleski')]  
 ```
 
 viewitems() - akin to items() in python 3, which returns a set-like view backed by the dict, like iteritems() but even better. 
@@ -251,7 +251,7 @@ dict = {'tom': 'tom', 'bonnie': 'bonnie'}
     print key
 
 print dict.viewitems()
-dict_items([('mtdeguzis', 'mtdeguzis'), ('vaalbers', 'vaalbers')]) 
+dict_items([('mtdeguzis', 'mtdeguzis'), ('fpoleski', 'fpoleski')]) 
 ```
 
 ## Testing for keys
