@@ -79,16 +79,21 @@ PUBKEY_USAGE_AUTH     A
 
 ```
 gpg --gen-key
-gpg --armour --export uid > my_pubkey.asc
+gpg --armour --export PUBKEY_ID > my_pubkey.asc
 ```
 
 # Adjusting key expiration and trust
 
-Edit the key, list the indexs, and choose the primary key/index 0. Adjust if necessary. You can also edit the trust with the command of the same name.
+Edit the key, list the indexs, and choose the primary key/index 0. Adjust if necessary. 
 ```
 gpg --edit-key <KEY_ID>
 gpg> list
 gpg> key 0
+gpg> expire
+```
+
+You can also edit the trust with the command of the same name.
+```
 gpg> trust
 ```
 
@@ -126,6 +131,20 @@ gpg --send-keys [key-id]
 
 When a key is generated using GPG 2.x+, you should see the revocation certificates in `$HOME/.gnupg/openpgp-revocs.d`
 
+# Sync keys to a public server
+
+```
+alice% gpg --keyserver pgp.mit.edu --recv-key 0xBB7576AC
+gpg: requesting key BB7576AC from pgp.mit.edu ...
+gpg: key BB7576AC: 1 new signature
+
+gpg: Total number processed: 1
+gpg:         new signatures: 1
+alice% gpg --keyserver pgp.mit.edu --send-key blake@cyb.org
+gpg: success sending to 'pgp.mit.edu' (status=200)
+```
+
+See: https://www.gnupg.org/gph/en/manual/x457.html
 
 # Tips
 
