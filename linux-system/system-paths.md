@@ -11,6 +11,7 @@
     - [Interactive shell](#interactive-shell)
     - [non-interactive shell](#non-interactive-shell)
     - [environment](#environment)
+    - [/etc/profile](#etcprofile)
     - [/etc/profile.d](#etcprofiled)
     - [Other env vars](#other-env-vars)
   - [What is my path](#what-is-my-path)

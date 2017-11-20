@@ -1,3 +1,16 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [sar](#sar)
+  - [Default Behavior](#default-behavior)
+  - [Files and directories](#files-and-directories)
+  - [Usage examples](#usage-examples)
+- [Docs](#docs)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About
 
 Notes on using sar. See also: [sysstat utilities](https://github.com/mdeguzis/documents/tree/master/linux-applications/sysstat)

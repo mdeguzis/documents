@@ -4,6 +4,7 @@
 
 - [About](#about)
 - [Bonding info](#bonding-info)
+- [Bonded interface and NetworkManager](#bonded-interface-and-networkmanager)
 - [Links:](#links)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->

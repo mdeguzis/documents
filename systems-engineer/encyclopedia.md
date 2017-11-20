@@ -3,6 +3,8 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [About](#about)
+- [Concepts](#concepts)
+  - [Serialization and Deserialization](#serialization-and-deserialization)
 - [Data](#data)
   - [DDL](#ddl)
   - [DML](#dml)

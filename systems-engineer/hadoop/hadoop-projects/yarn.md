@@ -3,6 +3,7 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [Yarn](#yarn)
+- [Use different version jar file with same name](#use-different-version-jar-file-with-same-name)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

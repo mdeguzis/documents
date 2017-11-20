@@ -3,6 +3,8 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [About](#about)
+- [Tips and Tricks](#tips-and-tricks)
+  - [Cloning all of organization repos with an OAuth Token](#cloning-all-of-organization-repos-with-an-oauth-token)
 - [Guides](#guides)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->

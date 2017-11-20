@@ -1,3 +1,22 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Note on syntax](#note-on-syntax)
+- [How to use ps command](#how-to-use-ps-command)
+  - [Display all processes](#display-all-processes)
+  - [Display process by user](#display-process-by-user)
+  - [Show process by name or process id](#show-process-by-name-or-process-id)
+  - [Sort process by cpu or memory usage](#sort-process-by-cpu-or-memory-usage)
+  - [Display process hierarchy in a tree style](#display-process-hierarchy-in-a-tree-style)
+  - [Display child processes of a parent process](#display-child-processes-of-a-parent-process)
+  - [Display threads of a process](#display-threads-of-a-process)
+  - [Change the columns to display](#change-the-columns-to-display)
+  - [Display elapsed time of processes](#display-elapsed-time-of-processes)
+  - [Turn ps into an realtime process viewer](#turn-ps-into-an-realtime-process-viewer)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Note on syntax
 
 The ps command comes with an unusual set of 2 syntax styles. That is BSD and UNIX both. New users are often confused with and mis-interpret the two styles. So here is some basic info to get it clear before moving on.
