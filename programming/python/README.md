@@ -24,27 +24,27 @@ Python tips and tricks. You can check your python version with `python --version
 
 # Getting help for python libs/modules
 
-**list help for module/lib**
+## list help for module/lib
 
 ```
 help(posix1e)
 ```
 
-**list help/docstring from function**
+## list help/docstring from function
 
 If the developer was kind enough to list helpful info in the docstring of a function, you can list that as so:
 ```
 obj.__doc__
 ```
 
-**list  methods**
+## list  methods
 
 You can use the below command to see all available methods/attributes.
 ```
 dir(<MODULE>) 
 ```
 
-You may have to build the object you are using a method on first:
+You may have to build the object you are using a method first:
 ```
 import posix1e
 b = posix1e.ACL(text="u:user:rwx,g:group:r,o::-")
@@ -80,7 +80,7 @@ See: [modules/future.md](https://github.com/mdeguzis/documents/blob/master/progr
 
 See: https://docs.python.org for a listing of what is included in the Python Standard Library. You can swap Python versions with the dropdown box at the top of the screen. This is an important resource to bookmark.
 
-## Listing all modules
+## Listing all standard modules
 
 Short way:
 
@@ -99,11 +99,6 @@ python
 #Now you will get the python prompt like this >>>, type the command help(“modules”) and press enter key
 
 help(“modules”)
-
-# Or search a specific module
-modules <MODULE_NAME>
-
-#CTRL+D press these key to exit from python prompt
 ```
 
 For example:
@@ -146,7 +141,7 @@ python -c "import sys; print('\n'.join("sys.path"))"
 
 # books and ebooks
 
-* [Python Programming for the Absolute Beginner, 3rd Edition](https://www.amazon.com/Python-Programming-Absolute-Beginner-3rd/dp/1435455002) - **Bookmark status:** - page 205
+* [Python Programming for the Absolute Beginner, 3rd Edition](https://www.amazon.com/Python-Programming-Absolute-Beginner-3rd/dp/1435455002) - **Bookmark status:** - page 217
 
 # Documentation
 
