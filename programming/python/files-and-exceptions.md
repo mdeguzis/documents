@@ -83,16 +83,18 @@ text_file.close()
 ## with open
 
 Reading the file. With example 2, notice how you assign the contents of the file to variable so lines are expanded. This is not how <FILE>.read() functions, so you must assign the contents of what it returns.
+
+example 1 - read entire file
 ```
-# example 1 - read entire file
 with open('read_it.txt', 'r') as file:
   file.read()
   
 Result: 
 'Line 1\nThis is line 2\nThat makes this line 3\n'
-
+```
   
-# example 2 - read entire file, expand newlines etc..
+example 2 - read entire file, expand newlines etc..
+```
 with open('read_it.txt', 'r') as file:
   entire_file = file.read()
   print entire_file
@@ -103,22 +105,20 @@ This is line 2
 That makes this line 3
 ```
 
-Reading the lines
+example 3 - read each line
+
+Depending on the contents of the file, you can read each elment or use string.realine()
+
 ```
-# example 2 - read each line
+def next_line(the_file):
+  """Return next line from the trivia file, formatted."""
+  line = the_file.readline()
+  line = line.replace("/", "\n")
+  return line
 
 with open('read_it.txt', 'r') as file:
   for element in file:
     print element
-
-# example 3 - read each line and do more
-with open ('text-file.txt, 'r') as file: 
-  for user in file:
-    # important to strip the newline here, otherwise you will end up with a directory
-    # name in /user that contains the newline. Very annoying to remove...
-    user = user.rstrip('\n')
-     path = "/home" + user
-     os.mkdir(path, 0755)
 ```
 
 # Writing to text files
