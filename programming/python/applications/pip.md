@@ -1,7 +1,7 @@
 # About
 
 
-# Installing? What about setup.py?
+# Working In Development Mode
 If you come from the traditional `python setup.py install` world, consider this with pip:
 
 ## Install from local folder

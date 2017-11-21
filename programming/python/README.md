@@ -132,6 +132,7 @@ python -c "import sys; print('\n'.join("sys.path"))"
 
 # Links
 
+* [Key Python Projects](https://packaging.python.org/key_projects/)
 * [Installing data files](https://docs.python.org/3/distutils/setupscript.html#installing-additional-files)
 * [Online IDE for practice](https://repl.it/languages)
 * [Python code sytle guide](https://www.python.org/dev/peps/pep-0008/)
