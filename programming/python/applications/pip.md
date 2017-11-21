@@ -1,5 +1,5 @@
 # About
-
+pip is a package management system used to install and manage software packages written in Python. Many packages can be found in the Python Package Index (PyPI). ... pip is a recursive acronym that can stand for either "Pip Installs Packages" or "Pip Installs Python".
 
 # Working In Development Mode
 If you come from the traditional `python setup.py install` world, consider this with pip:
