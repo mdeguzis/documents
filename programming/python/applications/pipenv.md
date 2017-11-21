@@ -6,8 +6,16 @@ Start usage info for pipenv
 
 quick start
 ```
+# Secific version
 pipenv --python 2.7
 pipenv install
+
+# Just python 2 or 3 that is available
+pipenv --two
+
+# Combine the commands
+pipenv install --python 2.7
+pipenv install --two
 ```
 
 # Notes
