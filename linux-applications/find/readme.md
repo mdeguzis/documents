@@ -48,3 +48,9 @@ sudo find /tmp/dir/* -not -newermt 2017-05-04 -printf "%T+\t%p\n" | sort
 # created newer than <DATE>
 sudo find /tmp/dir/* -newermt 2017-05-04 -printf "%T+\t%p\n" | sort
 ```
+
+# Find by UID
+
+```
+sudo find /tmp -uid <UID> -exec ls -ld {} \;
+```
