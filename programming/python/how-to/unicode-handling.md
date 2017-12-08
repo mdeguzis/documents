@@ -38,23 +38,18 @@ Consider this
 {u'unicode_sucks': u'unicode_sucks'}
 ```
 
+### json.dumps()
 Well, I don't want to show that unicode representation, right? Use json.dumps
 ```
 json.dumps(dict)
 '{"unicode_sucks": "unicode_sucks"}'
 ```
 
+## Unicode in dictionary example
+
 But what happens if my dictionary is changed to a string? Long story short, you should not end up with this if you handled your code correctly. The change from pure unicode from string had to have come from somewhere. Ideally, you want to write your dictionary values as you'd expect then, not dump string types of unicde into your dictionary.
-```
->>> x = str(dict)
->>> print type(x)
-<type 'str'>
 
->>> print x
-{u'unicode_sucks': u'unicode_sucks'}
-```
-
-However, if you must work with the unicode representation in your dict, consider this:
+Ideally, unicode in a dictionary can be handled like this:
 ```
 import ast
 import json
@@ -71,6 +66,38 @@ json.dumps(dd, encoding='ascii')
 ast.literal_eval(json.dumps(j,  encoding='ascii'))
 ast.literal_eval(json.dumps(dd, encoding='ascii'))
 ```
+
+If `dd` or `j` somehow has been turned into a string, turn it back into unicode
+```
+>>> x = "u'unicode_sucks'"
+>>> type(x)
+<type 'str'>
+>>> print x
+u'unicode_sucks'
+
+>>> dict = {}
+>>> dict[x] = x
+>>> dict
+{"u'unicode_sucks'": "u'unicode_sucks'"}
+
+# Make use of literal evail
+from ast import literal_eval
+
+>>> y = x
+>>> print y
+u'unicode_sucks'
+>>> type(y)
+<type 'str'>
+
+# test on one string
+>>> literal_eval(y).encode('ascii','ignore')
+'unicode_sucks'
+
+# Now lets handle this from a diciontary standpoint
+>>> literal_eval("".join(str(value) for value in dict.values())).encode('ascii','ignore')
+'unicode_sucks'
+```
+The above routine then would print the expected
 
 # Links
 
