@@ -142,7 +142,12 @@ python -c "import sys; print('\n'.join("sys.path"))"
 
 # books and ebooks
 
-* [Python Programming for the Absolute Beginner, 3rd Edition](https://www.amazon.com/Python-Programming-Absolute-Beginner-3rd/dp/1435455002) - **Bookmark status:** - page 217
+Note:  
+For any ebook, see the [python repo](https://github.com/mdeguzis/python/). Examples not under a python2 or python3 branch's "ebook-examples" folder, are those hand-typed, and have extra comments and such. This was a deliberate seperationm so examples were learned as I went on instead of looking only at pre-built examples.
+
+* [Python Programming for the Absolute Beginner, 3rd Edition](https://www.amazon.com/Python-Programming-Absolute-Beginner-3rd/dp/1435455002)
+  * Bookmark status: - page 232. 
+  * [book code examples](https://github.com/mdeguzis/python/tree/python3/ebook_examples/python-for-the-absolute-beginner)
 
 # Documentation
 
