@@ -15,25 +15,47 @@
 
 Compared with other programming languages, Python’s class mechanism adds classes with a minimum of new syntax and semantics. It is a mixture of the class mechanisms found in C++ and Modula-3. Python classes provide all the standard features of Object Oriented Programming: the class inheritance mechanism allows multiple base classes, a derived class can override any methods of its base class or classes, and a method can call the method of a base class with the same name. Objects can contain arbitrary amounts and kinds of data. As is true for modules, classes partake of the dynamic nature of Python: they are created at runtime, and can be modified further after creation.
 
-## Basic class
+# Written Examples
+
+* [critter-caretaker.py](https://github.com/mdeguzis/python/blob/python2/games/critter-caretaker.py)
+
+# Fundementals
+
+## Basics
+
+* Objects are instantiated from a definition called a class
+* This isn't an object, per se, but a blueprint for one
+
+## Creating a Class
+
+* Use a capital letter for your class name, per conventions
+* `object` below is what the class is based on, a built-in type. You can base a class on another if you like
+* The function definition below describes a method, a function associated with the object
+* Every method that every object of a class has—must have a special first parameter, that is why self is defined here 
+* `self` isn't actually used here, but a convention for classes. This parameter provides a way for a method to refer to the object itself.
 
 ```
-class employee:
+class Critter(object):
+	"""A virtual pet"""
+	
+	def talk(self):
+		print("Hi.'m an instance of class Critter.")
+	
+# main
+crit = Critter()
 
-  # instantiation operation
-	def __init__(self, username, password, role):
-		self.username=username
-		self.password=password
-		self.role=role
+crit.talk()
+input("\n\nPress the enter key to exit.")
 
-  # compute the “informal” string representation of this object
-	def __str__(self):
-		return str(self.username) + ',' + str(self.role)
 ```
 
-## Constructors
+## Using Constructors
 
 ### parameterized constructor
+
+* Invoked right after an object is created from a class
+* Usually used to set up the initial attribute values of an object
+* 
 
 Implementing a class with a parameterized constructor:
 ```
@@ -43,7 +65,7 @@ Implementing a class with a parameterized constructor:
   a.fetchAll('field')
 ```
 
-### ini file
+## ini file
 
 Using an ini file:
 ```
