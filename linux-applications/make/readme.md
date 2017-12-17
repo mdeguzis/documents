@@ -28,6 +28,23 @@ CONFIG_BASENAME = $(addsuffix .cfg, $(basename $(notdir $(CONFIG))))
 TARGET_DIR := $(patsubst %/,%,$(TARGET_DIR))
 ```
 
+# Makefiles
+
+## Setting variables
+
+Setting variables can be done a few ways, via shell, directly or expansion.
+
+```
+?=
+:
+::=
+```
+
+Documentation
+
+* https://www.gnu.org/software/make/manual/html_node/Setting.html
+
+
 # Tips and tricks
 
 ## Filtering out a CFLAG/CXXFLAG
