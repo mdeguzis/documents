@@ -1,3 +1,16 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [Working In Development Mode](#working-in-development-mode)
+  - [Install from local folder](#install-from-local-folder)
+  - [Install from local folder (editable mode)](#install-from-local-folder-editable-mode)
+- [Pipfile and Pipefile.lock](#pipfile-and-pipefilelock)
+- [Documents and Links](#documents-and-links)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About
 pip is a package management system used to install and manage software packages written in Python. Many packages can be found in the Python Package Index (PyPI). ... pip is a recursive acronym that can stand for either "Pip Installs Packages" or "Pip Installs Python".
 

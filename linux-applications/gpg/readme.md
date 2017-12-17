@@ -11,6 +11,7 @@
 - [Adjusting key expiration and trust](#adjusting-key-expiration-and-trust)
 - [Transitioning to a new key](#transitioning-to-a-new-key)
 - [Rovoking Keys](#rovoking-keys)
+- [Sync keys to a public server](#sync-keys-to-a-public-server)
 - [Tips](#tips)
 - [Links](#links)
 

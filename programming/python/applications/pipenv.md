@@ -1,3 +1,18 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [Quick start scratch notes](#quick-start-scratch-notes)
+- [Notes](#notes)
+- [Pros and Cons](#pros-and-cons)
+  - [Pros](#pros)
+- [Basic usefull commands](#basic-usefull-commands)
+- [Security](#security)
+- [pipenv known issues:](#pipenv-known-issues)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About
 
 Start usage info for pipenv
