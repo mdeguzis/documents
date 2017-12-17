@@ -1,3 +1,21 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [Testing](#testing)
+  - [Creating test unicode](#creating-test-unicode)
+- [Unicode with ASCII Characters](#unicode-with-ascii-characters)
+- [Unicode handling with different types](#unicode-handling-with-different-types)
+  - [dictionary](#dictionary)
+    - [json.dumps()](#jsondumps)
+  - [Unicode in dictionary example](#unicode-in-dictionary-example)
+    - [actual unicode objects in the dictionary](#actual-unicode-objects-in-the-dictionary)
+    - [dictionary made up of strings that look* like unicode](#dictionary-made-up-of-strings-that-look-like-unicode)
+- [Links](#links)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About
 
 Dealing with unicode sucks. This page attempts to detail working with unicde objects in Python

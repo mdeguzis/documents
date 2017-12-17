@@ -1,3 +1,21 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [Written Examples](#written-examples)
+- [Fundementals](#fundementals)
+  - [Basics](#basics)
+  - [Creating a Class](#creating-a-class)
+  - [Using Constructors](#using-constructors)
+    - [parameterized constructor](#parameterized-constructor)
+    - [Attributes](#attributes)
+    - [Class Attributes](#class-attributes)
+    - [parameterized constructor (ini file)](#parameterized-constructor-ini-file)
+- [Links](#links)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 
 
 # About

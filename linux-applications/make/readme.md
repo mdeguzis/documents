@@ -6,6 +6,8 @@
 - [Variables](#variables)
   - [Get basename of filepath](#get-basename-of-filepath)
   - [Strip dir trailing slash if user adds one](#strip-dir-trailing-slash-if-user-adds-one)
+- [Makefiles](#makefiles)
+  - [Setting variables](#setting-variables)
 - [Tips and tricks](#tips-and-tricks)
   - [Filtering out a CFLAG/CXXFLAG](#filtering-out-a-cflagcxxflag)
 

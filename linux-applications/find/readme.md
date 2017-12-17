@@ -7,6 +7,7 @@
   - [mtime and ctime explanation](#mtime-and-ctime-explanation)
   - [file age](#file-age)
   - [file age by date / time](#file-age-by-date--time)
+- [Find by UID](#find-by-uid)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
