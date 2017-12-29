@@ -12,6 +12,10 @@
 
 Main documentation page for Java docs
 
+# Education
+
+* Lynda.com: https://www.lynda.com/Java-training-tutorials/1077-0.html
+
 # Environement vars
 
 To see all properties:
