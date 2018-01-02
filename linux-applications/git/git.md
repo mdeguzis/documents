@@ -171,6 +171,22 @@ git commit -m "Make submodule tracking a branch"
 
 ## Reviewing
 
+### Git Diff
+
+```
+git diff HEAD^ HEAD
+```
+
+(HEAD^ means the previous version of head; leaving off the second HEAD would show any uncommitted changes lying around as well.)
+
+To limit to a particular file, in this case "midbucket.view.inc" in the directory from which we run the command:
+
+```
+git diff HEAD^ HEAD -- midbucket.view.inc
+```
+
+Reference
+
 ### Git logs
 
 Entire log
