@@ -24,3 +24,18 @@ According to my `/etc/syslog.conf`, default `/var/log/kern.log` captures only th
 Other insteresting standard logs managed by syslog are `/var/log/auth.log`, `/var/log/mail.log`.
 
 Source: [stackoverflow](http://askubuntu.com/questions/26237/difference-between-var-log-messages-var-log-syslog-and-var-log-kern-log)
+
+## syslog
+
+Usually this consists of 6 columns. Here is an example for summary request:
+
+```
+Column 1 = "May 11 10:00:39"               > Timestamp
+Column 2 = "scrooge"                       > Loghost
+Column 3 = "SG_child[808]:"                > Application/Process
+Column 4 = "[ID 748625 user.info]"         > Syslog facility.level
+Column 5 = "m:WR-SG-SUMMARY"               > Message ID
+Column 6 = "c:X  vhost:..."                > Message [including time statistics and rid, sid, ip]
+```
+
+Format: https://techzone.ergon.ch/syslog-message-format
