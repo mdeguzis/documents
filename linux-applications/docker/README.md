@@ -119,17 +119,23 @@ sudo docker run -d \
 
 Source: [StackOverflow](http://stackoverflow.com/questions/29755014/setup-secured-jenkins-master-with-docker)
 
-# Firewall
+# Networking
 
-## Exposing ports for the container firewall
+## Using Parent Hostnames
 
-### Opening a port
+As to why a hostname can be safely used as the hostname in this docker container; 172.17.x.x is a 'local subnet' IP that only exists on the host <HOSTNAME>. It is not routeable outside the host and all traffic heading from it to outside actually comes from <HOSTNAME>. It is only aliased within this local container, and to anyone connecting from outside traffic does in fact come from the parent host. 
+
+## Firewall
+
+### Exposing ports for the container firewall
+
+#### Opening a port
 
 ```
 --publish 443:8443
 ```
 
-### Locally
+#### Locally
 
 There is a way to bind a docker container to only local host, i.e. to forward a service via Apache on the local system. 
 
