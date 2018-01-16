@@ -41,3 +41,12 @@ Sat Feb 14 00:31:30 2009
 Please note that the printed time is formatted in the timezone in which your Linux system is configured. My system is configured in UTC+2, you can get another output for the same command.
 
 Source: [vanstechelman.eu](https://www.vanstechelman.eu/linux/time-conversion-using-bash)
+
+# Converting EPOCH timestamp
+
+This particular timestamp is in milliseconds since the epoch, not the standard seconds since the epoch. Divide by 1000:
+
+For example, "1516134388611"
+```
+date -d @$((1516134388611/1000))
+```
