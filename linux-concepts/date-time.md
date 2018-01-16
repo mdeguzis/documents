@@ -50,3 +50,23 @@ For example, "1516134388611"
 ```
 date -d @$((1516134388611/1000))
 ```
+
+Explanation:
+
+```
+$ date
+Tue Jan 16 18:48:38 EST 2018
+
+# This will give you the number of milliseconds since the epoch - current seconds plus the left three of the nanoseconds.
+$ date +%s%N | cut -b1-13
+1516146530679
+
+# Or this (dividing by 1000 only brings to microseconds)
+echo $(($(date +%s%N)/1000000))
+1516146530679
+
+$ date -d @$((1516146530679/1000))
+Tue Jan 16 18:48:50 EST 2018
+```
+
+Source: https://serverfault.com/a/151112
