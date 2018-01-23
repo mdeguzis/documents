@@ -238,6 +238,18 @@ Checking branch status info
 git log HEAD..origin/master
 ```
 
+# Reviewing Code
+
+Diff style:
+```
+git log --follow -p -- <filename>
+```
+
+Using `git blame`
+```
+git blame <FILE>
+```
+
 # Tools / Utilities
 
 ## dch
