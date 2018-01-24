@@ -42,6 +42,24 @@ General notes on LVM managment
 
 # LVM Data volume creation
 
+See: https://www.techrepublic.com/blog/linux-and-open-source/working-with-physical-volumes-logical-volumes-and-volume-groups-in-lvm/
+
+## General
+
+* Physical volume (PV):   
+A “physical volume” is LVM terminology for the underlying storage on which it puts data. Some typical examples of physical volumes include
+* Volume Group(VG):   
+A volume group is an intermediate abstraction layer between physical volumes (corresponding to the underlying storage) and logical volumes (each containing a filesystem (usually)). To “create volume group over a disk”, you need, by definition, to declare the disk as a physical volume for use by LVM.
+* Physical Extent (PE):  
+A Physical Extent is just a consecutive chunk of 4MB (by default) on an LVM physical volume. It's an LVM concept, not a disk concept.
+
+## Basic steps
+
+* Use fdisk (or gdisk, parted, etc.) to create a partition <DISK_DEVICE>.
+* Use pvcreate /dev/<DISK_DEVICE> to make the partition a physical volume.
+* Run vgcreate mystorage /dev/<DISK_DEVICE> to a volume group called <NAME> using the partition as storage space.
+* Run lvcreate … <NAME> for each of the logical volumes you want to create.
+
 ## Creating the partition
 
 First, partition the disk. You can use the shell prompt for parted over specifying the commands seperately. The command supplied to mkpart will create a partition that spans the entire disk and will not prompt for filesystem type. If you want to create the file system type ahead of time, you can supply that as an argument following primary.
@@ -65,15 +83,27 @@ print  Display the partition table.
 
 ## Creating the physical volume for LVM
 
+Check The existing Volumes and their free space. Chances are, you can use free space within a physical volume.
+```
+$ sudo pvs
+  PV         VG       Fmt  Attr PSize     PFree
+  /dev/sda2  rhel     lvm2 a--    <19.51g    40.00m
+  /dev/sdb1  vg_data1 lvm2 a--  <1024.00g        0
+  /dev/sdc1  vg_data2 lvm2 a--  <1024.00g        0
+  /dev/sdd1  vg_data1 lvm2 a--     <2.00t        0
+  /dev/sde1  vg_data1 lvm2 a--     <3.00t <1022.00g
+```
+
+Create the PV
 ```
 sudo pvcreate /dev/sdb
 ```
 
 After creation, review with `sudo pvdisplay`
 
-## Assign the created physical volume
+## Create the Volume Group
 
-This should be part of a new volume group so the system knows it's not used for system data, but for applications.
+Assign the created physical volume. This should be part of a new volume group so the system knows it's not used for system data, but for applications.
 
 ```
 sudo vgcreate vg_data_1 /dev/sdb
@@ -93,6 +123,21 @@ sudo lvcreate -n bulk_data_1 -l+100%FREE vg_data_1
  -n|--name LogicalVolume{Name|Path}
  -l|--extents LogicalExtentsNumber[%{VG|PVS|FREE|ORIGIN}]
 ```
+
+Another example:
+```
+sudo lvcreate -n <LV_NAME> -i 2 -I 4 -L500G <VG_NAME>
+```
+
+* `-i`  
+Number of stripes
+* `-I`  
+Stripe size [k|UNIT]
+* `-L`  
+Size [m|UNIT]
+* `VG_NAME`  
+The volume group name, such as "vg_data1"
+
 
 ## Format the LVM partition with a file system
 
