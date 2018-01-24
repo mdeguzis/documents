@@ -43,6 +43,7 @@ General notes on LVM managment
 # LVM Data volume creation
 
 See: https://www.techrepublic.com/blog/linux-and-open-source/working-with-physical-volumes-logical-volumes-and-volume-groups-in-lvm/
+See: https://siva2009.wordpress.com/2010/08/26/how-to-create-lvm-using-pvcreate-vgcreate-lvcreate-and-lvextend-commands/
 
 ## General
 
