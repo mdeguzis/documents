@@ -40,19 +40,36 @@ General notes on LVM managment
 * [pvscan](http://man7.org/linux/man-pages/man8/pvscan.8.html)
 * [vgcreate](http://man7.org/linux/man-pages/man8/vgcreate.8.htmle)
 
-# LVM Data volume creation
+# TEMP
+fix up notes from these links
 
+https://www.digitalocean.com/community/tutorials/an-introduction-to-lvm-concepts-terminology-and-operations
 See: https://www.techrepublic.com/blog/linux-and-open-source/working-with-physical-volumes-logical-volumes-and-volume-groups-in-lvm/
 See: https://siva2009.wordpress.com/2010/08/26/how-to-create-lvm-using-pvcreate-vgcreate-lvcreate-and-lvextend-commands/
 
-## General
+# LVM Architecture and Terminology
 
-* Physical volume (PV):   
-A “physical volume” is LVM terminology for the underlying storage on which it puts data. Some typical examples of physical volumes include
-* Volume Group(VG):   
-A volume group is an intermediate abstraction layer between physical volumes (corresponding to the underlying storage) and logical volumes (each containing a filesystem (usually)). To “create volume group over a disk”, you need, by definition, to declare the disk as a physical volume for use by LVM.
-* Physical Extent (PE):  
-A Physical Extent is just a consecutive chunk of 4MB (by default) on an LVM physical volume. It's an LVM concept, not a disk concept.
+## LVM Storage Management Structures
+
+LVM functions by layering abstractions on top of physical storage devices. The basic layers that LVM uses, starting with the most primitive, are.
+
+* **Physical Volumes:**  
+LVM utility prefix: pv...
+Description: Physical block devices or other disk-like devices (for example, other devices created by device mapper, like RAID arrays) are used by LVM as the raw building material for higher levels of abstraction. Physical volumes are regular storage devices. LVM writes a header to the device to allocate it for management.
+
+* **Volume Groups:**  
+LVM utility prefix: vg...
+Description: LVM combines physical volumes into storage pools known as volume groups. Volume groups abstract the characteristics of the underlying devices and function as a unified logical device with combined storage capacity of the component physical volumes.
+
+* **Logical Volumes:**    
+LVM utility prefix: lv... (generic LVM utilities might begin with lvm...)
+Description: A volume group can be sliced up into any number of logical volumes. Logical volumes are functionally equivalent to partitions on a physical disk, but with much more flexibility. Logical volumes are the primary component that users and applications will interact with.
+
+Source: https://www.digitalocean.com/community/tutorials/an-introduction-to-lvm-concepts-terminology-and-operations
+
+# LVM Data volume creation
+
+## General
 
 ## Basic steps
 
