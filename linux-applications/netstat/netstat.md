@@ -6,6 +6,28 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
+# Options
+
+| options | description |
+| ------- | ------------|
+|-a | Listing all ports (both TCP and UDP)|
+|-at | Listing only TCP (Transmission Control Protocol) port connections|
+|-au | Listing only UDP (User Datagram Protocol ) port connections|
+|-l | Listing all active listening ports connections |
+|-lt | Listing all active listening TCP ports |
+|-lu | Listing all active listening UDP |
+|-lx|Listing all active UNIX listening port|
+|-s|Displays statistics by protocol. By default, statistics are shown for the TCP, UDP, ICMP, and IP protocols.|
+|-st|Showing statistics of only TCP protocol|
+|-su|Showing Statistics by UDP Protocol|
+|-tp|Displaying service name with their PID number|
+|ac NUM| Displaying Promiscuous mode. print the selected information or refresh screen every NUM seconds|
+|-g|Displays multicast group membership information for both IPv4 and IPv6.|
+|-c|Print Netstat Information Continuously|
+|--verbose|Finding un-configured address families with some useful information.|
+|-ap|Find out how many listening programs running on a port.|
+|--statistics --raw|Displaying RAW Network Statistics|
+
 # Checking for service and port status
 
 There's a few parameters to netstat that are useful for this :
@@ -25,3 +47,7 @@ netstat -atun          # For both
 ```
 
 Source: [askubuntu](https://askubuntu.com/questions/538208/how-to-check-opened-closed-port-on-my-computer)
+
+# Documentation
+
+* https://www.tecmint.com/20-netstat-commands-for-linux-network-management/
