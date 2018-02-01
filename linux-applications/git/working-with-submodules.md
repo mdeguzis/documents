@@ -113,6 +113,11 @@ git rm --cached <submodule>
 rm -rf .git/modules/<submodule>
 ```
 
+Finally, clean up the .gitmodules file
+```
+git rm .gitmodules
+```
+
 **[deinit](https://git-scm.com/docs/git-submodule)**
 
 >Un-register the given submodules, i.e. remove the whole submodule.$name
