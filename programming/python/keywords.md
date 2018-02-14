@@ -16,7 +16,7 @@ When you create a list, you can read its items one by one. Reading its items one
 1
 2
 3
-``
+```
 
 mylist is an iterable. When you use a list comprehension, you create a list, and so an iterable:
 
