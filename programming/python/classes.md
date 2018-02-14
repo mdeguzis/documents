@@ -41,6 +41,7 @@ Compared with other programming languages, Python’s class mechanism adds class
 * The function definition below describes a method, a function associated with the object
 * Every method that every object of a class has—must have a special first parameter, that is why self is defined here 
 * `self` isn't actually used here, but a convention for classes. This parameter provides a way for a method to refer to the object itself.
+* See also: https://pythontips.com/2013/08/07/the-self-variable-in-python-explained/
 
 ```
 class Critter(object):
