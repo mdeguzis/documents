@@ -1,4 +1,4 @@
-# systemd reservice reports bad; vendor preset
+# systemd service reports bad; vendor preset
 
 * `bad` : It shows Systemd Unit files status
 * you will find this option in system which use systemd
