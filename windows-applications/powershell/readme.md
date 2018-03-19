@@ -28,6 +28,13 @@ $PSVersionTable.PSVersion
 
 # Getting informatino for users and groups
 
+## Current Logged In User
+
+```
+Get-WmiObject -Class win32_computersystem -ComputerName HOST_OR_IP | selec
+t username
+```
+
 ## Logging output to a file
 
 ```
