@@ -113,10 +113,7 @@ git rm --cached <submodule>
 rm -rf .git/modules/<submodule>
 ```
 
-Finally, clean up the .gitmodules file
-```
-git rm .gitmodules
-```
+Finally, clean up the entry in the .gitmodules file
 
 **[deinit](https://git-scm.com/docs/git-submodule)**
 
