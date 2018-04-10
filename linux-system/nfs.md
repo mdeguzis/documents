@@ -17,6 +17,16 @@
 
 Creating and utilizing NFS in Red Hat / Centos / Fedora
 
+# Logs and Stats
+
+```
+mount -l
+```
+
+```
+cat /proc/self/mountstats | less
+```
+
 # How to
 
 There are two ways to configure exports on an NFS server:
