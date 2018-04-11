@@ -95,6 +95,14 @@ This took a bit to figure out with sendmail. Another alternative is 'mailx'. Oth
 
 For more advanced dynamic checks, see the "Python email examples" in the links below.
 
+## If a process fails and you want to be notified
+
+```
+if ! some_command; then
+        echo "Subject: analyze failed" | sendmail -v user@email.com
+fi
+```
+
 # Links
 
 * [Python email examples (docs.python.org)](https://docs.python.org/3/library/email-examples.html)
