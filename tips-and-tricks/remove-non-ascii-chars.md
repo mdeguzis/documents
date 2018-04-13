@@ -16,3 +16,10 @@ tr -cd '[:print:]\n' < FILE > NEW_FILE
 ```
 https://stackoverflow.com/a/15035525
 
+
+## sed
+
+```
+sed -i 's/[\d128-\d255]//g' FILENAME
+```
+Note: May fail with older sed versions <= 4.2.2 GNU Sed
