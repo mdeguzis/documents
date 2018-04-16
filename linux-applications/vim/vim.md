@@ -131,6 +131,28 @@ If you want to delete 3 lines above and the current line (command only). You can
 `%s/\s\+$//e`  
 Remove trailing whitespace
 
+## folding
+
+If you put the lines:
+
+```
+set foldmethod=indent   
+set foldnestmax=10
+set nofoldenable
+set foldlevel=2
+```
+
+as indicated in the link you gave, in your ~/.vimrc, you don't have to type them every time you want to use folding in a file. The set nofoldenable makes sure that when opening, files are "normal", i.e. not folded.
+
+If you have trouble with indent, use:
+```
+set foldmethod=syntax
+```
+
+shareimprove this answer
+
+Source: https://unix.stackexchange.com/questions/141097/how-to-enable-and-use-code-folding-in-vim
+
 ## Maps
 
 Check the current maps (command mode)
