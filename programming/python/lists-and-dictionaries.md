@@ -58,7 +58,7 @@ insert(i, value) | Insertts \<value\> at position `i`
 pop([i]) | Returns value at position `i` and removes value from the list. Providing the position number `i` is optional. Without it, the last element in the list is removed and returned.
 remove(value) | Removes the first occurence of \<value\> from the list.
 
-# Working with list elements
+# Working with lists
 
 ## Deleting an element
 
@@ -68,6 +68,10 @@ del inventory[2]
 print("Your inventory is now:")
 print(inventory)
 ```
+
+## Splitting a List by chunks
+
+Source: https://www.geeksforgeeks.org/break-list-chunks-size-n-python
 
 # Working with indexes
 
