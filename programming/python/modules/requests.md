@@ -103,6 +103,35 @@ for vXUsers in xmlroot.iter('vXUsers'):
 
 ```
 
+# Exception Handling
+
+You can either catch the base-class exception, which will handle all cases:
+
+```
+try:
+    r = requests.get(url, params={'s': thing})
+except requests.exceptions.RequestException as e:  # This is the correct syntax
+    print e
+    sys.exit(1)
+```
+
+Or you can catch them separately and do different things.
+
+```
+try:
+    r = requests.get(url, params={'s': thing})
+except requests.exceptions.Timeout:
+    # Maybe set up for a retry, or continue in a retry loop
+except requests.exceptions.TooManyRedirects:
+    # Tell the user their URL was bad and try a different one
+except requests.exceptions.RequestException as e:
+    # catastrophic error. bail.
+    print e
+    sys.exit(1)
+```
+
+Exception docs: http://docs.python-requests.org/en/latest/user/quickstart/#errors-and-exceptions
+
 # Links
 
 * http://docs.python-requests.org/en/master/
