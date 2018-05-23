@@ -148,6 +148,35 @@ with open("write_it.txt", 'r') as text_file:
 
 ```
 
+# Rewritting a file
+
+It is suggested, especially with large files, to *not* edit a file in-place. Python 3 might have some good native approaches, but in my case I need python 2. You want to avoid loading file contents all into the buffer. Instead, write the lines as they are processed to a tmpfile. This way, the original file and new file are only open as long as they are needed.
+
+**bad**
+```
+f = open(filename, 'r+')
+text = f.read()
+text = re.sub('foobar', 'bar', text)
+f.seek(0)
+f.write(text)
+f.truncate()
+f.close()
+```
+
+**good*
+```
+tmpfile = open(filename + '.tmp', 'w')
+with open(filename, 'r') as origfile:
+	for line in origfile:
+		match = re.search(property, line)
+		if match:
+			line = re.sub('=.*', '=' + value, line)
+		tmpfile.write(line)
+	# close the file and overwrite old
+	tmpfile.close()
+	os.rename(tmpfile, filename)
+```
+
 ## object methods
 
 Method | Description
