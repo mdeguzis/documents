@@ -105,13 +105,15 @@ Permanently remove
 
 git submodule deinit <submodule>    
 git rm <submodule>
-```
-
-If you want to leave it in your working tree
-```
-git rm --cached <submodule>
 rm -rf .git/modules/<submodule>
 ```
+
+If you ned to remove it from your working tree after a git add
+```
+git rm --cached <submodule>
+```
+
+If need be, remove the section from the .gitmodules modules
 
 Finally, clean up the entry in the .gitmodules file
 
