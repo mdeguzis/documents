@@ -1,5 +1,13 @@
 # Some simple methods:
 
+## python
+join is is filtering, removing anything non-ASCII. Test the ordinal range.
+
+```
+x = ''.join([i if ord(i) < 128 else '' for i in x])
+```
+See: https://stackoverflow.com/a/20078869 
+
 ## perl
 
 Fix with:
