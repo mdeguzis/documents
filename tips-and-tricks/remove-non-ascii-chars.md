@@ -6,7 +6,9 @@ join is is filtering, removing anything non-ASCII. Test the ordinal range.
 ```
 x = ''.join([i if ord(i) < 128 else '' for i in x])
 ```
-See: https://stackoverflow.com/a/20078869 
+See: 
+* https://stackoverflow.com/a/20078869 
+* http://effbot.org/pyfaq/what-does-unicodeerror-ascii-decoding-encoding-error-ordinal-not-in-range-128-mean.htm
 
 ## perl
 
