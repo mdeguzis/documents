@@ -171,6 +171,12 @@ The following command shall display all the threads owned by the process with id
 $ ps -p 3150 -L
 ```
 
+## Display processes by human readable start time
+
+```
+ps -eo pid,lstart,cmd
+```
+
 ## Change the columns to display
 
 The ps command can be configured to show a selected list of columns only. There are a large number of columns to to show and the full list is available in the man pages.
@@ -239,6 +245,5 @@ Every 1.0s: ps -e -o pid,uname,cmd,pmem,pcpu --...  Sun Dec  1 18:16:08 2013
 The output would be updated every 1 second to refresh the stats. However do not think that this is similar to top.
 You would notice that the output of top/htop command changes much more frequently compared to the above ps command.
 This is because the top output sorts on a value that is a mix of cpu usage and memory usage. But the above ps command sorts in a more simpler manner, taking 1 column at a time (like school maths). So it would not update rapidly like top.
-
 
 Source: http://www.binarytides.com/linux-ps-command/
