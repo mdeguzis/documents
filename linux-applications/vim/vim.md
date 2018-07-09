@@ -34,6 +34,14 @@ Useful notes on VIM
 
 # Editing
 
+## Show everything that isn't whitespace
+Useful for revealing hidden chars
+```
+:set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
+:set list
+```
+https://askubuntu.com/questions/74485/how-to-display-hidden-characters-in-vim
+
 ## Show line  breaks
 
 :set list in Vim will show whitespace. End of lines show as '$' and carriage returns usually show as '^M'.
