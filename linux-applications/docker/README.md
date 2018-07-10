@@ -147,6 +147,57 @@ Use this syntax:
 This will bind the service's port 8080 in the docker container to 50111 on the local host only without punching a hole in the firewall.
 
 
+#How to cleanup (unused) resources
+
+Once in a while, you may need to cleanup resources (containers, volumes, images, networks) ...
+    
+## delete volumes
+ 
+```
+// see: https://github.com/chadoe/docker-cleanup-volumes
+
+sudo docker volume rm $(sudo docker volume ls -qf dangling=true)
+sudo docker volume ls -qf dangling=true | xargs -r sudo docker volume rm
+```
+
+## delete networks
+
+```
+$ sudo docker network ls  
+$ sudo docker network ls | grep "bridge"   
+$ sudo docker network rm $(sudo docker network ls | grep "bridge" | awk '/ / { print $1 }')
+```
+
+## remove docker images
+
+```
+// see: http://stackoverflow.com/questions/32723111/how-to-remove-old-and-unused-docker-images
+
+sudo docker images
+sudo docker rmi $(sudo docker images --filter "dangling=true" -q --no-trunc)
+
+sudo docker images | grep "none"
+sudo docker rmi $(sudo docker images | grep "none" | awk '/ / { print $3 }')
+```
+
+## remove docker containers
+
+```
+// see: http://stackoverflow.com/questions/32723111/how-to-remove-old-and-unused-docker-images
+
+sudo docker ps
+sudo docker ps -a
+sudo docker rm $(sudo docker ps -qa --no-trunc --filter "status=exited")
+```
+
+## Resize disk space for docker vm
+
+```
+sudo docker-machine create --driver virtualbox --virtualbox-disk-size "40000" default
+```
+
+Source: https://gist.github.com/bastman/5b57ddb3c11942094f8d0a97d461b430
+
 # Tag and upload
 
 See: https://docs.docker.com/engine/getstarted/step_six/
