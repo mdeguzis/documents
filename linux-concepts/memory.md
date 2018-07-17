@@ -14,3 +14,4 @@ Notes on Linux memory and memory management.
 # Links
 
 * http://www.linuxatemyram.com/
+* https://stackoverflow.com/questions/13052930/linux-memory-usage-history (historical look)
