@@ -64,3 +64,23 @@ sudo find /tmp -uid <UID> -exec ls -ld {} \;
 find /etc/hadoop/java -type l -exec realpath {} \; | grep -v "^$(pwd)"
 /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.161-0.b14.el7_4.x86_64
 ```
+
+## Getting the symlink/dir chain using namei
+
+```
+$ namei /etc/hadoop/java
+f: /etc/hadoop/java
+ d /
+ d etc
+ d hadoop
+ l java -> /etc/alternatives/java_sdk_1.8.0_openjdk
+   d /
+   d etc
+   d alternatives
+   l java_sdk_1.8.0_openjdk -> /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.161-0.b14.el7_4.x86_64
+     d /
+     d usr
+     d lib
+     d jvm
+     d java-1.8.0-openjdk-1.8.0.161-0.b14.el7_4.x86_64
+```
