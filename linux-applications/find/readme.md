@@ -55,3 +55,12 @@ sudo find /tmp/dir/* -newermt 2017-05-04 -printf "%T+\t%p\n" | sort
 ```
 sudo find /tmp -uid <UID> -exec ls -ld {} \;
 ```
+
+# Symlinks
+
+## Get real path
+
+```
+find /etc/hadoop/java -type l -exec realpath {} \; | grep -v "^$(pwd)"
+/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.161-0.b14.el7_4.x86_64
+```
