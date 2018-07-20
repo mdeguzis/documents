@@ -214,6 +214,11 @@ Now, widen the columns enough so they're aligned:
 :setlocal tabstop=20
 ```
 
+If you want to change this bahavior while in the editor:
+```
+set tabstop=4 softtabstop=0 expandtab shiftwidth=2 smarttab
+```
+
 To save this, make a session:
 ```
 :mks /path/to/sess.vim (:mks! to overwrite if it exists)
