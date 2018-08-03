@@ -108,7 +108,7 @@ git rm <submodule>
 rm -rf .git/modules/<submodule>
 ```
 
-If you ned to remove it from your working tree after a git add
+If you need to remove it from your working tree after a git add
 ```
 git rm --cached <submodule>
 ```
