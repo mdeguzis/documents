@@ -42,3 +42,27 @@ This is what one of the messages received by tcpdump looks like:
 The last three lines of this output detail the IP header, UDP header and the data in the packet.
 
 Source: http://www.markhneedham.com/blog/2012/07/15/tcpdump-learning-how-to-read-udp-packets/
+
+# Save tdcpdump data to a file
+
+```
+-w file
+Write the raw packets to file rather than parsing and printing them out. They can later be printed with the -r option. Standard output is used if file is ``-''.
+This output will be buffered if written to a file or pipe, so a program reading from the file or pipe may not see packets for an arbitrary amount of time after they are received. Use the -U flag to cause packets to be written as soon as they are received.
+The MIME type application/vnd.tcpdump.pcap has been registered with IANA for pcap files. The filename extension .pcap appears to be the most commonly used along with .cap and .dmp. Tcpdump itself doesn't check the extension when reading capture files and doesn't add an extension when writing them (it uses magic numbers in the file header instead). However, many operating systems and applications will use the extension if it is present and adding one (e.g. .pcap) is recommended.
+See pcap-savefile(5) for a description of the file format.
+```
+
+Basic invocation
+```
+sudo tcpdump -vvv -w ouput.log -i docker0 port 5148
+```
+
+This produces a binary file, so be careful when reading it:
+```
+cat output.log | strings | less
+```
+
+# Docs
+
+* https://www.tcpdump.org/manpages/tcpdump.1.html
