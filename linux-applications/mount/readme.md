@@ -19,7 +19,7 @@
 # Detect stale mounts
 
 ```
-rep -v tracefs /proc/mounts | cut -d' ' -f2 | \
+grep -v tracefs /proc/mounts | cut -d' ' -f2 | \
   while read m; do \
     timeout --signal=KILL 1 ls -d $m > /dev/null || echo "$m"; \
   done
