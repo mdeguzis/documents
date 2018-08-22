@@ -5,6 +5,7 @@
 - [About](#about)
 - [Post JSON payloads](#post-json-payloads)
 - [Handling XML responses](#handling-xml-responses)
+- [Exception Handling](#exception-handling)
 - [Links](#links)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->

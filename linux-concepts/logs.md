@@ -4,6 +4,7 @@
 
 - [About](#about)
 - [dmesg, syslog, messages](#dmesg-syslog-messages)
+  - [syslog](#syslog)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

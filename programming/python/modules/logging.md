@@ -8,10 +8,8 @@
   - [Basic configuration](#basic-configuration)
   - [Refined configuration](#refined-configuration)
   - [Advanced - Rotating logs](#advanced---rotating-logs)
-  - [Advanced - console and log file](#advanced---console-and-log-file)
-  - [Advanced - console handler only](#advanced---console-handler-only)
-  - [Adanced - Log just stdout file](#adanced---log-just-stdout-file)
-  - [Advanced - different levels of stdout logfile](#advanced---different-levels-of-stdout-logfile)
+  - [Advanced - Separated Console and log file](#advanced---separated-console-and-log-file)
+    - [Logging class structure](#logging-class-structure)
 - [Links](#links)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->

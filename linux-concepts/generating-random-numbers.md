@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [Using bash shell $RANDOM](#using-bash-shell-random)
+- [Using /dev/urandom and /dev/random](#using-devurandom-and-devrandom)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About
 This page describes several methods of generating random numbers
 

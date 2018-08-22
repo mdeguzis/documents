@@ -1,3 +1,25 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Main points](#main-points)
+- [Methods](#methods)
+- [Working with lists](#working-with-lists)
+  - [Deleting an element](#deleting-an-element)
+  - [Removing Item From List during iteration](#removing-item-from-list-during-iteration)
+  - [Splitting a List by chunks](#splitting-a-list-by-chunks)
+- [Working with indexes](#working-with-indexes)
+  - [Assiging a new list element by index](#assiging-a-new-list-element-by-index)
+- [Working with slices](#working-with-slices)
+  - [Assingn a new list slice](#assingn-a-new-list-slice)
+  - [Delete a list slice](#delete-a-list-slice)
+  - [Functions](#functions)
+    - [len()](#len)
+- [Examples](#examples)
+- [Shared references](#shared-references)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Main points
 
 * Uses square brackets instead of parenthesis (used for tuples)

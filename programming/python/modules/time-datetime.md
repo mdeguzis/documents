@@ -4,6 +4,7 @@
 
 - [About](#about)
 - [Elapsed time](#elapsed-time)
+- [Subtracing time between two 24hr / UTC times](#subtracing-time-between-two-24hr--utc-times)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

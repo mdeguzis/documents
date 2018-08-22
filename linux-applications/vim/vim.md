@@ -4,6 +4,7 @@
 
 - [About](#about)
 - [Editing](#editing)
+  - [Show everything that isn't whitespace](#show-everything-that-isnt-whitespace)
   - [Show line  breaks](#show-line--breaks)
   - [Indenting a block of text](#indenting-a-block-of-text)
 - [Movement](#movement)
@@ -15,6 +16,7 @@
   - [Colors](#colors)
     - [Override colorscheme](#override-colorscheme)
   - [Editing](#editing-1)
+  - [folding](#folding)
   - [Maps](#maps)
   - [Clearning settings](#clearning-settings)
   - [Searching](#searching)

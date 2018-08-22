@@ -3,6 +3,7 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [Mount USB as rw](#mount-usb-as-rw)
+- [Detect stale mounts](#detect-stale-mounts)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

@@ -3,6 +3,7 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [About](#about)
+- [Education](#education)
 - [Environement vars](#environement-vars)
 - [Versions](#versions)
 

@@ -1,3 +1,15 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [Yield](#yield)
+  - [Iterables](#iterables)
+  - [Generators](#generators)
+  - [Yield](#yield-1)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About
 A list of useful and imporant python keywords
 

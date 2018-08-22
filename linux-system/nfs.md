@@ -3,6 +3,7 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [About](#about)
+- [Logs and Stats](#logs-and-stats)
 - [How to](#how-to)
 - [IMPORTANT](#important)
 - [The exportfs Command](#the-exportfs-command)

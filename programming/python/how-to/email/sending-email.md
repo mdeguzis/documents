@@ -8,6 +8,7 @@
   - [Basic email](#basic-email)
   - [Using attachments](#using-attachments)
   - [Using attachments (advanced)](#using-attachments-advanced)
+  - [If a process fails and you want to be notified](#if-a-process-fails-and-you-want-to-be-notified)
 - [Links](#links)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->

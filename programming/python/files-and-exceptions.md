@@ -9,6 +9,7 @@
   - [open](#open)
   - [with open](#with-open)
 - [Writing to text files](#writing-to-text-files)
+- [Rewritting a file](#rewritting-a-file)
   - [object methods](#object-methods)
 - [Storing complex data in files](#storing-complex-data-in-files)
   - [Binary fie access modes](#binary-fie-access-modes)

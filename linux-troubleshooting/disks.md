@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [Startup Failures](#startup-failures)
+  - [Failed to start file system check on /dev/disk/by-uuid](#failed-to-start-file-system-check-on-devdiskby-uuid)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About
 
 General troublehooting tips for disks

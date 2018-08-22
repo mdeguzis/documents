@@ -4,6 +4,7 @@
 
 - [About](#about)
 - [Getting informatino for users and groups](#getting-informatino-for-users-and-groups)
+  - [Current Logged In User](#current-logged-in-user)
   - [Logging output to a file](#logging-output-to-a-file)
   - [Query a user](#query-a-user)
   - [Query a user's group memberships](#query-a-users-group-memberships)

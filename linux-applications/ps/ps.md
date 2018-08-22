@@ -11,6 +11,7 @@
   - [Display process hierarchy in a tree style](#display-process-hierarchy-in-a-tree-style)
   - [Display child processes of a parent process](#display-child-processes-of-a-parent-process)
   - [Display threads of a process](#display-threads-of-a-process)
+  - [Display processes by human readable start time](#display-processes-by-human-readable-start-time)
   - [Change the columns to display](#change-the-columns-to-display)
   - [Display elapsed time of processes](#display-elapsed-time-of-processes)
   - [Turn ps into an realtime process viewer](#turn-ps-into-an-realtime-process-viewer)

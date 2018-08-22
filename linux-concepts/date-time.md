@@ -4,6 +4,7 @@
 
 - [Obtain UNIX epoch time using bash](#obtain-unix-epoch-time-using-bash)
 - [Converting UNIX epoch time to human readable time](#converting-unix-epoch-time-to-human-readable-time)
+- [Converting EPOCH timestamp](#converting-epoch-timestamp)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

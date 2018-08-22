@@ -1,3 +1,11 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Method 1](#method-1)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Method 1
 
 A directory contains files of many sizes. Which are the smallest and largest files? With the "os" module, we can list the files and get their sizes with getsize. We use a list of tuples.
