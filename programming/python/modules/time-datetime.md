@@ -35,3 +35,19 @@ elapsed_time = int(now - start)
 str(timedelta(seconds=elapsed_time))
 '0:00:00.233000'
 ```
+
+# Subtracing time between two 24hr / UTC times
+
+```
+>>> import datetime
+>>> t1 = datetime.datetime.strptime('13:21', '%H:%M')
+>>> t2 = datetime.datetime.strptime('23:08', '%H:%M')
+>>> t1
+datetime.datetime(1900, 1, 1, 13, 21)
+>>> t2
+datetime.datetime(1900, 1, 1, 23, 8)
+>>> t2 - t1
+datetime.timedelta(0, 35220)
+>>> str(t2 - t1)
+'9:47:00'
+```
