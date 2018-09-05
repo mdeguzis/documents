@@ -15,6 +15,16 @@ Some notes about yum
 
 # Useful commands
 
+## List repos
+```
+sudo yum repolist
+```
+
+## Check packages for a specific repo
+```
+sudo yum --disablerepo="*" --enablerepo="SOME_REPO" list available
+```
+
 # FAQ
 
 ## @ symbol in package list sources
