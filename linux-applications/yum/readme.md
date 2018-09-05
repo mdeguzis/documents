@@ -33,3 +33,9 @@ Man page for yum says this under List Options -
 >name.arch [epoch:]version-release repo or @installed-from-repo. 
 
 It means that the particular package is either available on that repo or installed from that repo.
+
+# Documents
+
+* https://access.redhat.com/sites/default/files/attachments/rh_yum_cheatsheet_1214_jcs_print-1.pdf
+* https://access.redhat.com/articles/yum-cheat-sheet
+* 
