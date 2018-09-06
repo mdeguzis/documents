@@ -17,7 +17,7 @@ General tips on creating, applying, and working with patches.
 
 # Patching (set of files)
 
-Generally, it is always good to edit the original and new file in a clean directory, or in a copy of the origianl source code.
+Generally, it is always good to edit the original and new file in a clean directory, or in a copy of the original source code.
 
 
 ```
@@ -88,6 +88,12 @@ directory where the file to be patch is. The patch itself can be in another dire
 
 ```
 patch -p1 mychanges.patch
+```
+
+If you have issues with stdin or the above, you may want to use the "-i" argument to pass the file in:
+```
+cd /path/to/files
+patch -i mychanges.patch
 ```
 
 # Links
