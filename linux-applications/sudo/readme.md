@@ -21,6 +21,13 @@
 
 Notes about using sudo
 
+# Granting Access
+**NOTE:**: only grant sudo access once! It seems some distributions run into some kind of conflict if you have this in more than one file:
+
+```
+user   ALL=(ALL)       ALL
+```
+
 # Impersonating users
 
 **NEVER** use `su - <USER>`! This drops to root then becomes the user. It's a security hole.
