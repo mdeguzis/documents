@@ -20,6 +20,52 @@ Tips and tricks for working with submodules
 # Links
 [Git Submofule (official)](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
 
+
+# Adding submodules
+
+## Basic usage
+
+```
+git submodule add <URL>
+```
+
+## Add specific tag/revision
+
+Step 1 : Add the submodule
+Once the module is checked out, I need to add the QUnit submodule.  First grab the GitHub url for my QUnit fork (eventually this will be replaced with the main QUnit repo) and execute the “add” command from within your local repository root.
+
+git submodule add git://github.com/asynchrony/qunit.git qunit
+Afterward there will be two modified and staged objects in your repo: .gitmodules will contain the submodule’s local path and source URL and a new folder named qunit which contains a full clone of your source repository.
+
+** Fraser Speirs has a good writeup on what is going on behind the scenes with the Git internals and how the key to all of this is in the index files of each repo and the modes the changes are committed with. **
+
+Step 2 : Fix the submodule to a particular commit
+By default the new submodule will be tracking HEAD of the master branch but will NOT be updated as you update your primary repo.  In order to change the submodule to track a particular commit or different branch change directory to the submodule folder and switch branches just like you would in a normal repo.
+
+```
+git checkout -b dev_branch origin/dev_branch
+```
+
+Now the submodule is fixed on the development branch instead of HEAD of master.  Just easily I could set it to specific commit or tag.
+
+Step 3 : Commit everything
+Now from your primary repository you still have two modified objects: .gitmodules file and qunit folder.  Commiting these changes will persist the new submodule tracking your desired branch.
+
+Step 4 : Clone Recursive
+The next time you (or someone else) clones this repo, they will need to do one of two things.
+
+A) Add the –recursive flag to their git clone command
+```
+git clone REPO_URL --recursive
+```
+B) manually initialize and the submodules after the clone
+```
+git clone REPO_URL
+git submodule update --init --recursive
+```
+
+See: https://twoguysarguing.wordpress.com/2010/11/14/tie-git-submodules-to-a-particular-commit-or-branch/
+
 # Updating submodules
 
 If submodules are not initialized from a recursive clone, isssue:
