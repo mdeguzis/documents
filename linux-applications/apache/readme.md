@@ -86,3 +86,12 @@ Listen 8080
 or any other port of your choice such as port > 1024 and the selected port is not used by another process.
 
 Source: https://askubuntu.com/a/338239
+
+## ProxyPass vs ProxyPassReverse
+
+The ProxyPassReverse is used to change the headers sent to Apache from a proxied app server, before Apache sends it to the browser. For example, if the app sits at Page on localhost:8080, and it tries to redirect the browser to, say, /new_path/, then it will respond with a redirect and location header of http://localhost:8080/new_path/, and Apache will take this and send it off to the browser. The issue is that the browser will then try to send a request to Page on localhost:8080and receive an error. 
+
+What ProxyPassReverse can do is intercept those headers, and rewrite them to match the Apache proxy server . 
+
+So if my apache server is hosting http://example.null/ and I have a ProxyPass that points / to http://localhost:8080/, if the application sitting at localhost:8080 returns a redirect to http://localhost:8080/new_location/, I'll need to use ProxyPassReverse so that it gets rewritten to http://example.null/new_path/ by Apache before sending the request back to the browser.
+
