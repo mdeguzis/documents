@@ -27,6 +27,23 @@ Python tips and tricks. You can check your python version with `python --version
 
 # Getting help for python libs/modules
 
+## Get version of Python library
+
+### Using version string (if available):
+```
+python -c 'import setuptools; print setuptools.__version__'
+```
+
+### Using the module script loader
+This depends on how the library is structured. To illustrate:
+```
+python -m easy_install --version
+setuptools 40.4.3 from /usr/lib/python2.7/site-packages (Python 2.7)
+
+python -m setuptools --version
+/usr/bin/python: No module named setuptools.__main__; 'setuptools' is a package and cannot be directly executed
+```
+
 ## list help for module/lib
 
 ```
