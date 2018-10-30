@@ -175,3 +175,43 @@ section from .git/config together with their work tree.
 >If --force is specified, the submodule’s work tree will be removed even if it contains local modifications.
 
 Source: [StackOverflow](https://stackoverflow.com/questions/29850029/what-is-the-current-way-to-remove-a-git-submodule)  
+
+# Troubleshooting
+
+## git command update of a submodule fails with "Failed to recurse into submodule path"
+
+```
+git submodule update --init --recursive somepath/some_submodule
+Submodule path 'somepath/some_submodule': checked out '6cb356e7f7f2638c9b78a4aa0b0c9c35a0e4cb41'
+No submodule mapping found in .gitmodules for path 'somepath/some_submodule'
+Failed to recurse into submodule path 'somepath/some_submodule'
+```
+
+Git is referencing a path that has no .gitmodules mapping
+ 
+Update your submodule(s) to the last commit after removing the offending folder:
+
+```
+# available since git 1.8
+git submodule update --remote --merge
+
+# check status
+git status
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#       modified:   somepath/some_submodule (new commits)
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+
+# commit the changes
+git add somepath/some_submodule
+git commit
+
+```
+git push
+
+
+The cleanest thing to do then, is to reclone the repository so everything is fresh. If you cannot do that, you will likely need to clean up old folders that the error is referencing
