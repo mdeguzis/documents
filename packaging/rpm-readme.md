@@ -121,8 +121,64 @@ Unpacking an RPM package:
 ```
  rpm2cpio <PACKAGE> | cpio -id 
  ```
- 
- # GPG signing
+
+# How to create an RPM repository
+
+This is for Redhat 64 bit versions of Linux. You can create your own RPM repository # to host your custom RPM packages.
+See "How to create an RPM from source with spec file" for more information.
+https://gist.github.com/1376973
+
+## Step: 1 Install createrepo
+```
+yum install -y createrepo
+```
+
+## Step: 2 Create repo directories for hosting your rpms.
+
+Create your repository inside your base directory. You will also need some rpms for
+your repo. For this example, I am using RHEL6 and /var/www/repo as base directory.
+
+```
+mkdir -p /var/www/repo/rhel/6/{SRPMS,x86_64}
+```
+
+## Step: 3 Create `create-repo-metadata` executable file
+
+Use the `create-repo-metadata` command, which can create by downloading a shell
+script and making it an executable file. Make sure this file is in a directory in
+your $PATH. Run the command `echo $PATH` to list them. Install in /usr/local/bin
+
+IMPORTANT: In the script above, replace the path in 'DESTDIR' with:
+/var/www/repo/rhel/6
+```
+curl http://bit.ly/sZpx8f > /usr/local/bin/create-repo-metadata
+chmod +x /usr/local/bin/create-repo-metadata
+```
+
+## Step: 4 Create the repository metadata
+
+After creating the metadata, your repository will be ready for use
+```
+create-repo-metadata
+```
+
+Tip!
+
+If you have made this repo publicly available, others can use this yum repo config
+file to update their own systems.
+
+Run `vi /etc/yum.repos.d/my.repo` to create the file
+
+```
+[myrepo]
+name=My Repository
+baseurl=http://mywebsite.com/rhel/6/$basesearch
+enabled=1
+```
+
+Then simply run `yum update` to install the rpms.
+
+# GPG signing
  
 The following commands will initiate GPG key creation and export it in a format suitable for distributing to client systems. The created key should be stored safely and backed up, and its passphrase should be known only by trusted administrators.
 
