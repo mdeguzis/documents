@@ -98,6 +98,53 @@ You can also edit the trust with the command of the same name.
 gpg> trust
 ```
 
+# Renewing an Expired Key You OWn
+
+First, if you need to, find the key in question:
+```
+W: GPG error: http://packages.libregeek.org brewmaster InRelease: The following signatures were invalid: KEYEXPIRED 1542673611 KEYEXPIRED 1542673611 KEYEXPIRED 1542673611
+```
+
+On Debian-based systems you can use `apt-key` here:
+```
+desktop@steamos:~/steamos-tools$ sudo apt-key list | grep -A 1 -B 2 "expired: "
+/etc/apt/trusted.gpg.d/libregeek-archive-keyring.gpg
+----------------------------------------------------
+pub   4096R/7113232D 2016-11-23 [expired: 2018-11-20]
+uid                  Michael DeGuzis <mdeguzis@gmail.com>
+
+pub   4096R/34C589A7 2015-09-17 [expired: 2018-11-20]
+uid                  SteamOS-Tools Signing Key (SteamOS-Tools repository signing key) <mdeguzis@gmail.com>
+
+pub   4096R/57655DD5 2016-11-04 [expired: 2018-11-20]
+uid                  LibreGeek Signing Key <mdeguzis@gmail.com>
+```
+
+On the original machine that hosts your public and private key, confirm it's existance:
+```
+[mikeyd@archboxmtd: ~]$ gpg --list-keys 7113232D
+pub   rsa4096 2016-11-23 [SC] [expired: 2018-11-20]
+      786FACA94AF4CD9E43AA3CC705ACDA747113232D
+uid           [ expired] Michael DeGuzis <mdeguzis@gmail.com>
+```
+
+Edit the key, list the indexs, and choose the primary key/index 0. Adjust if necessary. 
+```
+gpg --edit-key <KEY_ID>
+gpg> list
+gpg> key 0
+gpg> expire
+```
+
+If you receive this message, ensure your subkey (ssb when using `list` above) is also changed:
+```
+gpg: WARNING: Your encryption subkey expires soon.
+gpg: You may want to change its expiration date too.
+gpg> 
+```
+
+Sync you keys (see public syncing below).
+
 Source [g-loaded.eu](https://www.g-loaded.eu/2010/11/01/change-expiration-date-gpg-key/)
 
 See [this page](https://www.g-loaded.eu/2010/11/01/change-expiration-date-gpg-key/) for more.
@@ -127,7 +174,6 @@ gpg --import [revocation-certificate-file]
 
 # After doing so, send the keys back to the key servers again:
 gpg --send-keys [key-id]
-
 ```
 
 When a key is generated using GPG 2.x+, you should see the revocation certificates in `$HOME/.gnupg/openpgp-revocs.d`
@@ -135,16 +181,18 @@ When a key is generated using GPG 2.x+, you should see the revocation certificat
 # Sync keys to a public server
 
 ```
-alice% gpg --keyserver pgp.mit.edu --recv-key 0xBB7576AC
-gpg: requesting key BB7576AC from pgp.mit.edu ...
-gpg: key BB7576AC: 1 new signature
-
+[mikeyd@archboxmtd: ~]$ gpg --keyserver pgp.mit.edu --recv-key 7113232D
+gpg: key 05ACDA747113232D: "Michael DeGuzis <mdeguzis@gmail.com>" 1 new signature
+gpg: marginals needed: 3  completes needed: 1  trust model: pgp
+gpg: depth: 0  valid:   5  signed:   0  trust: 0-, 0q, 0n, 0m, 0f, 5u
+gpg: next trustdb check due at 2023-11-23
 gpg: Total number processed: 1
 gpg:         new signatures: 1
-alice% gpg --keyserver pgp.mit.edu --send-key blake@cyb.org
-gpg: success sending to 'pgp.mit.edu' (status=200)
 ```
 
+Visit the keyserver to confirm your key has been updated (may take some time). Per the above example, search for `05ACDA747113232D`. You may have to prepend the key search, such as `0x05acda747113232d`.
+
+Remeber!: https://lists.gnupg.org/pipermail/gnupg-users/2004-February/021832.html
 See: https://www.gnupg.org/gph/en/manual/x457.html
 
 # Tips
