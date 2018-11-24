@@ -76,6 +76,47 @@ PUBKEY_USAGE_ENC      E
 PUBKEY_USAGE_AUTH     A
 ```
 
+# Creating a basic GPG key
+
+```
+gpg --gen-key
+```
+
+# Creating a master key and subkeys
+
+If a thief gets ahold of the laptop with your private key on it, it’s pretty much game over. The thief can not only decrypt messages intended for you, they can also impersonate you by signing messages with your private key. Your only recourse would be to revoke your key, but that would mean losing years of signatures on that key and basically creating a massive inconvenience for yourself.
+
+Part of the answer to this problem is the concept of subkeys. Subkeys can’t prevent a thief from decrypting messages intended for your private key. But they can help mitigate the damage to your identity should your key be lost or stolen.
+
+The concept behind this technique is as follows:
+
+1. Create a regular GPG keypair. By default GPG creates one signing subkey (your identity) and one encryption subkey (how you receive messages intended for you).
+
+2. Use GPG to add an additional signing subkey to your keypair. This new subkey is linked to the first signing key. Now we have three subkeys.
+
+3. This keypair is your master keypair. Store it in a protected place like your house or a safe-deposit box. Your master keypair is the one whose loss would be truly catastrophic.
+
+4. Copy your master keypair to your laptop. Then use GPG to remove the original signing subkey, leaving only the new signing subkey and the encryption subkey. This transforms your master keypair into your laptop keypair.
+
+First, create the key if you have not already:
+```
+gpg --gen-key
+```
+
+Next, add the subkey:
+```
+gpg --list-keys
+gpg --edit-key <KEY_ID>
+```
+
+At the gpg> prompt, enter the command addkey. Select RSA (sign only) and 4096 for the keysize. Don’t forget to save at the last gpg> prompt.
+
+```
+gpg> save
+```
+
+Source: https://alexcabal.com/creating-the-perfect-gpg-keypair
+
 # Distributing keys
 
 ```
