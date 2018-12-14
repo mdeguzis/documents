@@ -6,6 +6,23 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
+# Finding and Replacing Unicode Characters
+
+Using range in a [] character class in your search, you ought to be able to exclude the ASCII hexadecimal character range, therefore highlighting (assuming you have hlsearch enabled) all other characters lying outside the ASCII range:
+
+```
+/[^\x00-\x7F]
+```
+This will do a negative match (via [^]) for characters between ASCII 0x00 and ASCII 0x7F (0-127), and appears to work in my simple test. For extended ASCII, of course, extend the range up to \xFF instead of \x7F using /[^\x00-\xFF].
+
+You may also express it in decimal via \d:
+
+```
+/[^\d0-\d127]
+```
+
+If you need something more specific, like exclusion of non-printable characters, you will need to add those ranges into the character class []
+
 # json
 
 If your script/program dumps valid json, you can tee this to a log and use the `%!python -m json.tool` command to expand the structure into a more readable format.
