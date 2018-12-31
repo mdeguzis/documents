@@ -58,6 +58,14 @@ MAILTO=""
 ##   Set where to look for executable files
 PATH=/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/sbin:/usr/local/bin:$PATH
 ```
+# Testing cron
+I have seen a ton of methods out there, but starting cron in debug mode is the simplest and easiest to monitor:
+
+First make your cron job run every minute, then run cron as non-daemon (temporarily, just kill any crond that may have already started) with test logging:
+
+```
+crond -nx test
+```
 
 # Useful commands
 
