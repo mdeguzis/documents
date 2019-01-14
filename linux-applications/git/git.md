@@ -57,6 +57,19 @@ ssh
 git clone ssh://git@github.com/username/
 ```
 
+## push
+
+### push as another user
+
+Just to add to this: The `--author` option mentioned in the accepted answer will only override the author, not the committer information of the commit.
+
+That is the correct behavior in most cases, but if for some reason you need to manually override the committer information as well, use the GIT_COMMITTER_NAME and GIT_COMMITTER_EMAIL environment variables (there is a GIT_COMMITTER_DATE as well). See Git-Internals-Environment-Variables
+
+```
+$ GIT_COMMITTER_NAME="New Name" GIT_COMMITTER_EMAIL="name@email.com" git commit --author="New Name <name@email.com>"
+```
+This will make the commit look like it was authored and committed by the specified user.
+
 ## Log
 
 ### Committed changes to be pushed
