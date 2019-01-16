@@ -1,4 +1,4 @@
-# Write `jq` output to fill
+# Write `jq` output to file
 
 Just calling jq will throw errors if stdout isn't a terminal
 
