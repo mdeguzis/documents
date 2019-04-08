@@ -29,3 +29,56 @@ Occasionally, a system administrator might need to take one offline. That’s wh
 The way it works now, swapoff looks at each swapped out memory page in the swap partition, and tries to find all the programs that use it. If it can’t find them right away, it will look at the page tables of every program that’s running to find them. In the worst case, it will check all the page tables for every swapped out page in the partition. That’s right–the same page tables get checked over and over again. This is a huge waste of effort. One user said it took over four hours for swapoff to run.
 
 Source: [salticidoftheearth](https://salticidoftheearth.com/2014/01/09/why-swapoff-is-so-darned-slow/)
+
+# Analyzign Swap Usage
+
+Type the following bash for loop command to see swap space usage per process:
+
+```
+## bash for loop ##
+for file in /proc/*/status ; do awk '/VmSwap|Name/{printf $2 " " $3}END{ print ""}' $file; done
+```
+
+Type the following command to sort out output:
+```
+## Get swap space in Linux using bash for loop ##
+for file in /proc/*/status ; do awk '/VmSwap|Name/{printf $2 " " $3}END{ print ""}' $file; done | sort -k 2 -n -r | less
+```
+
+Sample outputs:
+```
+php-cgi 11964 kB
+php-cgi 11016 kB
+php-cgi 10392 kB
+php-cgi 10336 kB
+php-cgi 9844 kB
+php-cgi 9780 kB
+php-cgi 8584 kB
+php-cgi 7996 kB
+php-cgi 7960 kB
+php-cgi 7956 kB
+php-cgi 7796 kB
+php-cgi 7540 kB
+php-cgi 6884 kB
+squid 6864 kB
+php-cgi 6640 kB
+php-cgi 6556 kB
+php-cgi 5848 kB
+php-cgi 5744 kB
+php-cgi 5636 kB
+php-cgi 5592 kB
+php-cgi 5488 kB
+php-cgi 5132 kB
+php-cgi 4584 kB
+php-cgi 4508 kB
+php-cgi 4388 kB
+lighttpd 4100 kB
+php-cgi 3984 kB
+php-cgi 3644 kB
+php-cgi 3616 kB
+php-cgi 3604 kB
+rpc.mountd 3580 kB
+....
+```
+
+Source: https://www.cyberciti.biz/faq/linux-which-process-is-using-swap/
