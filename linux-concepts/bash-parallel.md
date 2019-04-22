@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Putting jobs in background](#putting-jobs-in-background)
+- [bash for loop](#bash-for-loop)
+- [GNU parallel](#gnu-parallel)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Putting jobs in background
 The syntax is:
 

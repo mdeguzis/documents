@@ -18,6 +18,7 @@
   - [Shelving pickled data](#shelving-pickled-data)
   - [Shelving explained](#shelving-explained)
   - [Syncing](#syncing)
+- [So, if you need random access to pickled objects, create a shelf.](#so-if-you-need-random-access-to-pickled-objects-create-a-shelf)
   - [Shelve access modes](#shelve-access-modes)
   - [Real world application](#real-world-application)
 - [Handling exceptions](#handling-exceptions)

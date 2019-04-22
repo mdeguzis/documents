@@ -1,3 +1,12 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [RANDOM SAMPLING IN HIVE](#random-sampling-in-hive)
+- [RANDOM SAMPLING IN HIVE](#random-sampling-in-hive-1)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 [\
 ](http://www.joefkelley.com/index.xml)[](mailto:joe@joefkelley.com)[](https://github.com/jfkelley "Github")[](http://stackoverflow.com/users/854793/joe-k "Stack Overflow")[](https://linkedin.com/in/joe-kelley-41827746/ "LinkedIn")[](https://medium.com/@joefkelley_24697 "Medium")[](https://facebook.com/jfkelley "Facebook")[](https://reddit.com/user/OffPiste18 "Reddit")[CV](http://www.joefkelley.com/cv.pdf "CV")
 

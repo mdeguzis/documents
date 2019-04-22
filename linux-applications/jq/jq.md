@@ -1,3 +1,11 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Write `jq` output to file](#write-jq-output-to-file)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Write `jq` output to file
 
 Just calling jq will throw errors if stdout isn't a terminal

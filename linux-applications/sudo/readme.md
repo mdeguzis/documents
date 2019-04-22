@@ -3,6 +3,7 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [About](#about)
+- [Granting Access](#granting-access)
 - [Impersonating users](#impersonating-users)
 - [Editing sudoers](#editing-sudoers)
 - [Syntax](#syntax)

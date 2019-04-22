@@ -5,6 +5,7 @@
 - [About](#about)
 - [What is swap space?](#what-is-swap-space)
 - [Why Swapoff is So Darned Slow](#why-swapoff-is-so-darned-slow)
+- [Analyzign Swap Usage](#analyzign-swap-usage)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

@@ -9,6 +9,9 @@
 - [The exportfs Command](#the-exportfs-command)
 - [Using exportfs with NFSv4](#using-exportfs-with-nfsv4)
 - [Troubleshooting](#troubleshooting)
+  - [Startup failures](#startup-failures)
+  - [Owner/group shows as 'nobody'](#ownergroup-shows-as-nobody)
+  - [These commands are what I did on CentOS Linux release 7.2.1511 (Core)](#these-commands-are-what-i-did-on-centos-linux-release-721511-core)
 - [Discovering NFS exports](#discovering-nfs-exports)
 - [Links](#links)
 

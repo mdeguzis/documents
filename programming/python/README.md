@@ -4,6 +4,9 @@
 
 - [About](#about)
 - [Getting help for python libs/modules](#getting-help-for-python-libsmodules)
+  - [Get version of Python library](#get-version-of-python-library)
+    - [Using version string (if available):](#using-version-string-if-available)
+    - [Using the module script loader](#using-the-module-script-loader)
   - [list help for module/lib](#list-help-for-modulelib)
   - [list help/docstring from function](#list-helpdocstring-from-function)
   - [list  methods](#list--methods)

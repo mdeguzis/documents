@@ -3,6 +3,7 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [About](#about)
+- [Sharing a tmux session](#sharing-a-tmux-session)
 - [Tips and tricks](#tips-and-tricks)
   - [Reloading config](#reloading-config)
   - [Tmux window is small when resuming session](#tmux-window-is-small-when-resuming-session)

@@ -7,6 +7,8 @@
   - [Checkout](#checkout)
     - [Reset a file you deleted/modified](#reset-a-file-you-deletedmodified)
   - [clone](#clone)
+  - [push](#push)
+    - [push as another user](#push-as-another-user)
   - [Log](#log)
     - [Committed changes to be pushed](#committed-changes-to-be-pushed)
   - [stash](#stash)

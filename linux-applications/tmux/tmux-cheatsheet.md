@@ -25,6 +25,7 @@
     - [Reloading config](#reloading-config)
     - [Force a reload of the config file on C-a r:](#force-a-reload-of-the-config-file-on-c-a-r)
     - [Some other settings that I use:](#some-other-settings-that-i-use)
+- [colors](#colors)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

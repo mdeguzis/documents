@@ -5,6 +5,7 @@
 - [About](#about)
 - [Cron execution and paths](#cron-execution-and-paths)
 - [Visualization of cron setup](#visualization-of-cron-setup)
+- [Testing cron](#testing-cron)
 - [Useful commands](#useful-commands)
   - [Listing all jobs for all users](#listing-all-jobs-for-all-users)
   - [Viewing cronjobs for specific user](#viewing-cronjobs-for-specific-user)

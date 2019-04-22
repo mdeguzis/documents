@@ -3,6 +3,7 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [About](#about)
+- [Memory Consumption](#memory-consumption)
 - [Links](#links)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->

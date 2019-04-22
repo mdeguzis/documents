@@ -1,3 +1,11 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Regarding secure-boot password](#regarding-secure-boot-password)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Regarding secure-boot password
 
 This mainly is an issue when your user password is out of sync with the secure FileVault due to chaning a password wrong

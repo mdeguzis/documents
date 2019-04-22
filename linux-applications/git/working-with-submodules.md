@@ -4,6 +4,9 @@
 
 - [About](#about)
 - [Links](#links)
+- [Adding submodules](#adding-submodules)
+  - [Basic usage](#basic-usage)
+  - [Add specific tag/revision](#add-specific-tagrevision)
 - [Updating submodules](#updating-submodules)
   - [Pull in latest changes for all submodules](#pull-in-latest-changes-for-all-submodules)
   - [Pull in latest changes for all submodules (recursively)](#pull-in-latest-changes-for-all-submodules-recursively)
@@ -11,6 +14,8 @@
 - [Creating a submodule](#creating-a-submodule)
 - [Have a sudmodule always track the HEAD of a branch](#have-a-sudmodule-always-track-the-head-of-a-branch)
 - [Removing submodule](#removing-submodule)
+- [Troubleshooting](#troubleshooting)
+  - [git command update of a submodule fails with "Failed to recurse into submodule path"](#git-command-update-of-a-submodule-fails-with-failed-to-recurse-into-submodule-path)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

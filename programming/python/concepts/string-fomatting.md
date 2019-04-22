@@ -1,3 +1,27 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [% (String Formatting Operator)](#%25-string-formatting-operator)
+  - [Description](#description)
+  - [Syntax](#syntax)
+  - [Conversion Flags](#conversion-flags)
+  - [Conversion Types](#conversion-types)
+  - [Remarks](#remarks)
+  - [Example 1](#example-1)
+  - [Example 2](#example-2)
+  - [Example 3](#example-3)
+  - [Example 4](#example-4)
+  - [Example 5](#example-5)
+  - [Example 6](#example-6)
+  - [Example 7](#example-7)
+  - [Example 8](#example-8)
+  - [Example 9](#example-9)
+  - [Example 10](#example-10)
+  - [Example 11](#example-11)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ==============================
 % (String Formatting Operator)
 ==============================

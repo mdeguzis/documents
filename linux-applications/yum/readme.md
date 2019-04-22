@@ -4,8 +4,17 @@
 
 - [About](#about)
 - [Useful commands](#useful-commands)
+  - [List repos](#list-repos)
+  - [Check packages for a specific repo](#check-packages-for-a-specific-repo)
+- [How to Use 'Yum History' to Find Out Installed or Removed Packages Info](#how-to-use-yum-history-to-find-out-installed-or-removed-packages-info)
+    - [View Complete YUM History](#view-complete-yum-history)
+    - [Use Yum to Find Package Info](#use-yum-to-find-package-info)
+    - [Use Yum History to Find Package Transaction Info](#use-yum-history-to-find-package-transaction-info)
+    - [Use Yum to Rollback Packages](#use-yum-to-rollback-packages)
+    - [Find Yum History Database and Sources Info](#find-yum-history-database-and-sources-info)
 - [FAQ](#faq)
   - [@ symbol in package list sources](#-symbol-in-package-list-sources)
+- [Documents](#documents)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

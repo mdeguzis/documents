@@ -6,6 +6,7 @@
 - [Editing](#editing)
   - [Show everything that isn't whitespace](#show-everything-that-isnt-whitespace)
   - [Show line  breaks](#show-line--breaks)
+  - [Commenting out a block of text](#commenting-out-a-block-of-text)
   - [Indenting a block of text](#indenting-a-block-of-text)
 - [Movement](#movement)
   - [Panes](#panes)
