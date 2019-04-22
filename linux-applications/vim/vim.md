@@ -51,6 +51,43 @@ https://askubuntu.com/questions/74485/how-to-display-hidden-characters-in-vim
 :set list
 ```
 
+## Commenting out a block of text
+
+Sometimes I'm shelled into a remote box where my plugins and .vimrc cannot help me, or sometimes NerdCommenter gets it wrong (eg JavaScript embedded inside HTML).
+
+In these cases a low-tech alternative is the built-in norm command, which just runs any arbitrary vim commands at each line in your specified range. For example:
+
+Commenting with #:
+
+1. visually select the text rows (using V as usual)
+2. `:norm i#`
+This inserts `#` at the start of each line. Note that when you type `:` the range will be filled in, so it will really look like `:'<,'>norm i#`
+
+Uncommenting #:
+
+1. visually select the text as before (or type gv to re-select the previous selection)
+2. :norm x
+This deletes the first character of each line. If I had used a 2-char comment such as // then I'd simply do :norm xx to delete both chars.
+
+If the comments are indented as in the OP's question, then you can anchor your deletion like this:
+
+```
+:norm ^x
+```
+
+which means "go to the first non-space character, then delete one character". Note that unlike block selection, this technique works even if the comments have uneven indentation!
+
+Note: Since norm is literally just executing regular vim commands, you're not limited to comments, you could also do some complex editing to each line. If you need the escape character as part of your command sequence, type ctrl-v then hit the escape key (or even easier, just record a quick macro and then use norm to execute that macro on each line).
+
+Note 2: You could of course also add a mapping if you find yourself using norm a lot. Eg putting the following line in `~/.vimrc` lets you type ctrl-n instead of :norm after making your visual selection
+
+```
+vnoremap <C-n> :norm
+```
+
+Note 3: Bare-bones vim sometimes doesn't have the norm command compiled into it, so be sure to use the beefed up version, ie typically /usr/bin/vim, not /bin/vi
+
+
 ## Indenting a block of text
 
 In normal mode, type `>>` to indent the current line, or `<<` to unindent. Each command can be used with a count. The operators `> `and `<` do the same for motions, text objects and visual selections. For all commands, pressing . repeats the operation.
