@@ -39,4 +39,6 @@ Explore more about: [Keyboard Shortcuts][2], [Mac Tricks][3].
 [2]: https://www.makeuseof.com/tags/hotkey/ "Keyboard Shortcuts Tag"
 [3]: https://www.makeuseof.com/tags/mac-tricks/ "Mac Tricks Tag"
 
-  
+# How this works
+
+Under Keyboard > Shortcuts > App Shortcuts, what you enter here is an "override" in a way. Normally in an OS X menu, you'll see "Paste","Copy", or "Paste and Match Style". Matching this entry allows you to specify a shortcut for it.
