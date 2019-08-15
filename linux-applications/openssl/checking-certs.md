@@ -1,11 +1,23 @@
-# Simple
+# How To
 
-Save site certificate:
+## Save remote site certificate
 ```
 openssl s_client -showcerts -connect server.edu:443 </dev/null 2>/dev/null|openssl x509 -outform PEM >mycertfile.pem
 ```
 
-# Advanced
+## Certificate Fingerprint 
+
+Remote
+```
+$ openssl s_client -connect <HOST>:>PORT> < /dev/null 2>/dev/null | openssl x509 -noout -fingerprint -in /dev/stdin
+```
+
+Local:
+```
+openssl x509 -noout -fingerprint -sha1 -inform pem -in <CERT>
+```
+
+# All the Details!
 
 If you deal with SSL/TLS long enough you will run into situations where you need to examine what certificates are being presented by a server to the client. The best way to examine the raw output is via (what else but) OpenSSL.[1](https://langui.sh/2009/03/14/checking-a-remote-certificate-chain-with-openssl/#fn:1)
 
