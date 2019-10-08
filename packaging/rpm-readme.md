@@ -219,7 +219,7 @@ See: [Red Hat Satellite Documentation](https://access.redhat.com/documentation/e
 
 ## General
 
-* [How to create an RPM pacakge (fedora)](https://fedoraproject.org/wiki/How_to_create_an_RPM_package)
+* https://docs.fedoraproject.org/en-US/quick-docs/creating-rpm-packages/index.html
 * [How to create an RPM package (tldp)](http://www.tldp.org/HOWTO/RPM-HOWTO/build.html)
 * [Fedora maintainers resources](https://fedoraproject.org/wiki/Category:Package_Maintainers?rd=PackageMaintainers#Procedures.2C_Policies_and_Guides)
 * [Man page rpmbuild](http://www.rpm.org/max-rpm-snapshot/rpmbuild.8.html)
