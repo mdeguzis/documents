@@ -62,8 +62,23 @@ WantedBy=local.target
 
 Unit files are loaded from two locations. From lowest to highest precedence they are:
 
-* `/usr/lib/systemd/system/`: units provided by installed packages
-* `/etc/systemd/system/`: units installed by the system administrator
+UNIT LOAD PATH
+Unit files are loaded from a set of paths determined during compilation, described in the two tables below. Unit files found in directories listed earlier
+
+override files with the same name in directories lower in the list.
+from `man systemd.unit`
+
+* `/etc/systemd/system`: Local configuration 
+* `/run/systemd/system`: Runtime units
+* `/usr/lib/systemd/system`:  Units of installed packages
+
+# Troubleshooting and Gotchas
+
+## Using symlinks in `/etc/systemd/system`
+> Lennart Poettering 2016-06-07 10:34:10 UTC
+> So, current systemd versions will actually follow symlinks in "systemctl enable", but only if they are located in /usr, but not when located in /etc. This is because "systemctl enable" is about creating and removing symlinks in /etc, and we really won't want bsae our decisions what symlinks to create or remove on the symlinks that were created before. Closing as fixed hence.
+
+Source: https://bugs.freedesktop.org/show_bug.cgi?id=54560
 
 # Tips and tricks
 
@@ -77,6 +92,7 @@ Unit files are loaded from two locations. From lowest to highest precedence they
 
 # Education
 
+* [Digital Ocean tutorials](https://www.digitalocean.com/community/tutorials/systemd-essentials-working-with-services-units-and-the-journal)
 * [Ace Attorney Debian init cases (all)](https://www.phoronix.com/forums/forum/software/distributions/45968-debian-init-discussion-in-phoenix-wright-format)
 * [Ace Attorney Debian init case (part1)](http://aceattorney.sparklin.org/jeu.php?id_proces=57684)
  
