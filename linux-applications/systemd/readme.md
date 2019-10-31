@@ -89,6 +89,7 @@ Source: https://bugs.freedesktop.org/show_bug.cgi?id=54560
 * [Writing unit files (docker)](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux_atomic_host/7/html/managing_containers/using_systemd_with_containers)
 * [systemd service (freedesktop.org)](https://www.freedesktop.org/software/systemd/man/systemd.service.html)
 * [systemd (Arch Linux)](https://wiki.archlinux.org/index.php/systemd)
+* [RedHat managing_services_with_systemd-unit_files](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/sect-managing_services_with_systemd-unit_files)
 
 # Education
 
