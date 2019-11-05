@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [What is the reason for the try-except-else to exist?](#what-is-the-reason-for-the-try-except-else-to-exist)
+  - [Example](#example)
+  - [finally](#finally)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # What is the reason for the try-except-else to exist?
 A try block allows you to handle an expected error. The except block should only catch exceptions you are prepared to handle. If you handle an unexpected error, your code may do the wrong thing and hide bugs.
 

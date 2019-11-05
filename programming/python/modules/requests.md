@@ -6,6 +6,8 @@
 - [Post JSON payloads](#post-json-payloads)
 - [Handling XML responses](#handling-xml-responses)
 - [Exception Handling](#exception-handling)
+- [self signed certs](#self-signed-certs)
+  - [Disable specifc warning for self-signed cert verification](#disable-specifc-warning-for-self-signed-cert-verification)
 - [Links](#links)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->

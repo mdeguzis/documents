@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [How to install an Intermediate CA cert in Apache?](#how-to-install-an-intermediate-ca-cert-in-apache)
+  - [Standard one-way HTTPS](#standard-one-way-https)
+  - [Two-way SSL (Client Authentication)](#two-way-ssl-client-authentication)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # How to install an Intermediate CA cert in Apache?
 
 You need to install an Intermediate CA certificate. How to do it in Apache?

@@ -7,6 +7,8 @@
 - [Unit files](#unit-files)
   - [Simple unit file](#simple-unit-file)
   - [Installation](#installation)
+- [Troubleshooting and Gotchas](#troubleshooting-and-gotchas)
+  - [Using symlinks in `/etc/systemd/system`](#using-symlinks-in-etcsystemdsystem)
 - [Tips and tricks](#tips-and-tricks)
 - [Documentation](#documentation)
 - [Education](#education)

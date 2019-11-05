@@ -9,7 +9,10 @@
   - [Refined configuration](#refined-configuration)
   - [Advanced - Rotating logs](#advanced---rotating-logs)
   - [Advanced - Separated Console and log file](#advanced---separated-console-and-log-file)
+    - [Approach 1](#approach-1)
     - [Logging class structure](#logging-class-structure)
+    - [Approach 2](#approach-2)
+  - [Seperate log handling by scope](#seperate-log-handling-by-scope)
 - [Links](#links)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->

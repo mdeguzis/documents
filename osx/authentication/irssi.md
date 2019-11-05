@@ -1,3 +1,11 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Michal Zuber - poznatky, návody a skúsenosti: Couldn't find cacert.pem & irssi SSL struggling](#michal-zuber---poznatky-n%C3%A1vody-a-sk%C3%BAsenosti-couldnt-find-cacertpem--irssi-ssl-struggling)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 
 [Source](http://michalzuber.blogspot.com/2014/02/couldnt-find-cacertpem-irssi-ssl.html "Permalink to Michal Zuber - poznatky, návody a skúsenosti: Couldn't find cacert.pem & irssi SSL struggling")
 

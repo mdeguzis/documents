@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [OpenSSL: Check SSL Certificate Expiration Date and More](#openssl-check-ssl-certificate-expiration-date-and-more)
+  - [Check SSL Certificate Expiration Date](#check-ssl-certificate-expiration-date)
+  - [OpenSSL: Check SSL Certificate – Additional Information](#openssl-check-ssl-certificate--additional-information)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 
 [Source](https://www.shellhacks.com/openssl-check-ssl-certificate-expiration-date/ "Permalink to OpenSSL: Check SSL Certificate Expiration Date and More")
 

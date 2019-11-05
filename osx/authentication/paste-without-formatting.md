@@ -1,3 +1,14 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [How to Always Copy & Paste Text Without Formatting in Mac](#how-to-always-copy--paste-text-without-formatting-in-mac)
+  - [How to Paste Everything as Plain Text](#how-to-paste-everything-as-plain-text)
+  - [It Works Everywhere Except…](#it-works-everywhere-except)
+- [How this works](#how-this-works)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 
 [Source](https://www.makeuseof.com/tag/copy-paste-text-without-formatting-mac/ "Permalink to How to Always Copy & Paste Text Without Formatting in Mac")
 

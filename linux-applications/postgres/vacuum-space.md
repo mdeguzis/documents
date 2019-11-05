@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [postgresql - VACUUM returning disk space to operating system](#postgresql---vacuum-returning-disk-space-to-operating-system)
+    - [Prepare empty pages at the end of a table for testing](#prepare-empty-pages-at-the-end-of-a-table-for-testing)
+    - [Disk full](#disk-full)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 
 [Source](https://dba.stackexchange.com/questions/37028/vacuum-returning-disk-space-to-operating-system "Permalink to postgresql - VACUUM returning disk space to operating system")
 
