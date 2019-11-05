@@ -133,6 +133,15 @@ except requests.exceptions.RequestException as e:
 
 Exception docs: http://docs.python-requests.org/en/latest/user/quickstart/#errors-and-exceptions
 
+# self signed certs
+
+## Disable specifc warning for self-signed cert verification
+This is provided you know it's ok internally.
+```
+import urllib3
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+```
+
 # Links
 
 * http://docs.python-requests.org/en/master/
