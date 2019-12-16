@@ -14,6 +14,14 @@ Information on using curl
 
 # Testing websites
 
+* `-L` is for follow redirects
+
+## Response code only
+```
+curl -L -s -o /dev/null -w "%{http_code}\n" http://HOST:PORT
+```
+
+## Up or down
 ```
 curl https://google.com -s -f -o /dev/null && echo “Website up”|| echo "Website down."
 ```
