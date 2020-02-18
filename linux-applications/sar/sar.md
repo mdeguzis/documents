@@ -10,6 +10,17 @@ The sar command extracts and writes to standard output records previously saved 
 sar -f /var/log/sa/<sa_file>
 ```
 
+## By Process
+Useful for history logging:
+```
+$ egrep '^(Vm|Rss)' /proc/<SOME_PID>/status
+VmPeak: 13018456 kB
+VmSize: 13016736 kB
+VmLck:         0 kB
+VmPin:         0 kB
+VmHWM:    175100 kB
+```
+
 ## Other nice options:
 
 * `-q`: Report queue length and load averages. 
