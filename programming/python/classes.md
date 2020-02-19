@@ -22,6 +22,37 @@
 
 Compared with other programming languages, Python’s class mechanism adds classes with a minimum of new syntax and semantics. It is a mixture of the class mechanisms found in C++ and Modula-3. Python classes provide all the standard features of Object Oriented Programming: the class inheritance mechanism allows multiple base classes, a derived class can override any methods of its base class or classes, and a method can call the method of a base class with the same name. Objects can contain arbitrary amounts and kinds of data. As is true for modules, classes partake of the dynamic nature of Python: they are created at runtime, and can be modified further after creation.
 
+# When Should I Use a Class?
+In general, built in collections / data handling is fine on it's own, but if you need to encapsulate functionality, consider a class. A class also removes ambiguity and clarifies relationships between the data while keeping everything cohesively under one roof (provided it makes sense to do so). A good example of this is a class call myCharacter, that defines attributes with functions such as myCharacter.health or myCharacter.armor.
+
+If you need to preserve some state between function calls, use class with this function as a method.
+
+## Viewpoint 1
+
+I find that classes are taught to beginners very badly -- a lot of toy examples that demonstrate how, but not why (or, even worse, give completely the wrong idea of why). It took me several years of programming to have an epiphany about what classes are actually for.
+
+Classes are for combining related data and functions that act on that data. They make the relationship more unambiguous, and help you to make sure that you use the right functions with the right data (in a program where you might have different kinds of data and functions that go with them).
+
+In Python you can get away with using lists, dictionaries, tuples, numpy arrays and other common collections to group data, without having to write a custom class just for storage. Do you really need a special geographical coordinate class, or can you just use a tuple? Do you need a 3D point class, or can you use numpy arrays? Do you really need a Person class, or can you just put a bunch of key/value pairs in a dictionary? If your code is very simple, sometimes it's totally fine to use built-in types for this.
+
+The point at which I usually start thinking about classes is when I have multiple kinds of data, and multiple functions to go with each kind, and the code is growing, and I really want to couple related elements more closely instead of leaving them all to swim in an unstructured soup.
+
+I don't want to write a novel here, but the basic progression is collections plus functions -> classes.
+
+## Viewpoint 2
+
+I think classes are difficult for new users to understand. My view is: a class can encapsulate both functionality and data. Then we can make instances of this class, each holding their own data and interacting with the outside (or internally) via methods.
+
+If you only need to encapsulate functionality, use a function.
+
+Use a class when there isn't a data type in Python which fully expresses the thing you are trying to represent. For example, if I'm calculating someone's age, I would just use int, as it's fine for my needs. If you need to represent something like an Enemy in a game, you could create a class Enemy which contains data such as health and armor, and contains functionality such as fire_weapon for when it shoots you. 
+
+Source: https://www.reddit.com/r/Python/comments/7nn912/when_should_we_avoid_classes/
+
+See also:
+* https://www.geeksforgeeks.org/class-method-vs-static-method-python/
+* https://docs.python.org/3.8/tutorial/classes.html
+
 # Written Examples
 
 * [critter-caretaker.py](https://github.com/mdeguzis/python/blob/python2/games/critter-caretaker.py)
