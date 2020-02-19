@@ -52,6 +52,11 @@ Enter container
 docker run -t -i <repository_or_name>:<tag> /bin/bash
 ```
 
+If you have trouble with terminal column width, try the following:
+```
+docker exec -e COLUMNS="`tput cols`" -e LINES="`tput lines`" -it <CONTAINER> <COMMAND>
+```
+
 run command in container
 
 ```
