@@ -16,6 +16,69 @@
 
 Information and how-to with the requests module
 
+# Certificate Verification
+
+## Method 1: valid SSL with CA via 'ssl'
+Dyanamic detaction and setting for self-signed or externally signed (.e.g. Entrust) certificates:
+```
+import ssl
+import socket
+
+ctx = ssl.create_default_context()
+s = ctx.wrap_socket(socket.socket(), server_hostname=ambari_srv)
+s.connect((ambari_srv, 8443))
+cert = s.getpeercert()
+issuer = dict(x[0] for x in cert['issuer'])['commonName']
+```
+
+## Method 2: Reading content from public cert
+
+You can use this in hdpcommon (rough draft). 
+```
+import json
+import ssl
+import OpenSSL
+
+def get_cert(server, port):
+        """ Collect remote server certificate details """
+        # Docs: https://www.pyopenssl.org/en/stable/api/crypto.html
+        # See also: https://www.programcreek.com/python/example/62606/ssl.get_server_certificate
+
+        cert_obj = {}
+        cert_obj[server] = {}
+        cert_pem = ssl.get_server_certificate((server,port))
+        cert_der = ssl.PEM_cert_to_DER_cert(cert_pem)
+        x509 = OpenSSL.crypto.load_certificate(OpenSSL.crypto.FILETYPE_PEM, cert_pem)
+
+        fingerprint = x509.digest('sha1')
+        fingerprint = ':'.join(fingerprint[pos:pos+2] for pos in xrange(0,len(fingerprint),2))
+        subject = x509.get_subject()
+
+        # Build data
+        cert_obj[server]['sha1_fingerprint'] = fingerprint
+        cert_obj[server]['serial_number'] = x509.get_serial_number()
+        cert_obj[server]['common_name'] = subject.CN
+        cert_obj[server]['organization'] = subject.O
+        cert_obj[server]['cert_issued'] = x509.get_notBefore()
+        cert_obj[server]['cert_expire'] = x509.get_notAfter()
+        cert_obj[server]['issuer'] = x509.get_issuer().commonName
+
+        # Optional with arg? save cert pem
+        #cert_out = open('cert.txt','wb')
+        #cert_out.write(cert_pem)
+        #cert_out.close() 
+
+        return cert_obj
+
+# Test
+cert_dict = get_cert(host.domain.com',443)
+print(json.dumps(cert_dict, indent = 4)) 
+```
+
+Sources:
+* https://www.pyopenssl.org/en/stable/api/crypto.html
+* https://www.programcreek.com/python/example/62606/ssl.get_server_certificate
+
 # Post JSON payloads
 
 Example for Hadoop Ambari service checks
