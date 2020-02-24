@@ -33,11 +33,35 @@ unset password
 # adldap
 $ ldapsearch -H ldaps://adldapserver -D user@host.com -W "(sAMAccountName=bsmith)" employeeNumber employeeID | grep "\(dn\|employee\)"
 Enter LDAP Password:
-# requesting: employeeNumber employeeID
+
+### requesting: employeeNumber employeeID
 dn: CN=Bob\, Smith,OU=Non-Employee,OU=Managed Users,DC=host,DC=com
 employeeNumber: 00111000 
 
-# openldap
+## Checking for disabled accounts
+# Example disabled account
+$ ldapsearch -H ldaps://lapsearch.domain.com -D $USER@domain.com -b "OU=whatever,DC=domain,DC=com" -W cn -E pr=1000/noprompt | grep "search_term" | grep cn:
+Enter LDAP Password:
+cn: user/host.domain.com
+
+
+dn: user/host.domain.com
+userAccountControl: 66048
+sAMAccountName: user
+
+# Good account (remember 1 is true, 0 is false here)
+# https://www.linux.com/tutorials/logical-ampersand-bash/
+$ echo $(( 66048 & 2 ))
+0
+
+
+# Test on disabled account value
+echo $(( 66050 && 2 ))
+1
+```
+
+### openldap
+```
 ldapsearch -H ldaps://ldaphost -D uid=user1,ou=people,dc=domain,dc=com -W "(&(objectClass=posixAccount)(uid=username))"
 ```
 
