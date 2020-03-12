@@ -24,6 +24,15 @@ Some notes about yum
 
 # Useful commands
 
+## List OS info vars
+```
+python -c 'import yum, pprint; yb = yum.YumBase(); pprint.pprint(yb.conf.yumvar, width=1)'
+{'arch': 'ia32e',
+ 'basearch': 'x86_64',
+ 'releasever': '7Server',
+ 'uuid': '40eb2a6a-d8af-4141-99f0-ad74d72f7e9d'}
+```
+
 ## List repos
 ```
 sudo yum repolist
