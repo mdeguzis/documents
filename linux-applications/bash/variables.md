@@ -95,3 +95,29 @@ if [ -z "$parameter_name" ]; then parameter_name=value; fi
 ```
 
 Source: [Stack Exchange](http://unix.stackexchange.com/questions/25425/what-does-param-value-mean)
+
+# 
+
+Say I want to dynamically assign a variable based on changing conditions. A use case may be that you want to run the same code in Jenkins
+in parallel or sequentially, without changing / copying a ton of code.
+
+```
+export PY2_RPM_DEPS='python-requests'
+export PY3_RPM_DEPS='python36-requests'
+export PY='2'
+eval echo \${PY${PY}_RPM_DEPS}
+python36-requests
+```
+
+Another simple example:
+```
+export X7='blah'
+export X9='bleh'
+export Y='7'
+eval echo \${X${Y}}
+blah
+
+export Y='9'
+eval echo \${X${Y}}
+bleh
+```
