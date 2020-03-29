@@ -50,6 +50,20 @@ netstat -atun          # For both
 
 Source: [askubuntu](https://askubuntu.com/questions/538208/how-to-check-opened-closed-port-on-my-computer)
 
+# Common commands I like
+
+```
+netstat -tulnp
+```
+
+# Troubleshooting
+## Having issues looking for a already bound port?
+Make sure to also NOT look at listening ports (`-l` option). There may be a stuck process of sorts. For example (porr 1234):
+```
+tcp        1      0 111.222.333.444:1234       111.222.333.444:5678        CLOSE_WAIT  36461/java 
+```
+Here the process stuck the port open with a CLOSE_WAIT.
+
 # Documentation
 
 * https://www.tecmint.com/20-netstat-commands-for-linux-network-management/
