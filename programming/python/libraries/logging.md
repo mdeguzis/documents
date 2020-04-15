@@ -231,6 +231,69 @@ def initialize_logger(log_level=logging.INFO, log_filename=None, scope=None):
 
 Source: [aykutakin.wordpress.com](https://aykutakin.wordpress.com/2013/08/06/logging-to-console-and-file-in-python/)
 
+## Advanced - Main logger and custom independent loggers in modules
+This is useful if you have a main script that instantiates other modules that also use logging. Turning off propogation keeps the handlers 
+that are added in each phase from attaching to the root logger (avoiding in double messages)
+
+```
+def initialize_logger(log_level=logging.INFO, log_filename=None, scope=None, 
+                    formatter="%(asctime)s - %(levelname)s - %(message)s"):
+    """ Initalizes a logger for both stdout and to-file
+    Returns the logger incase a scope of non root is used
+
+    Keyword arguments:
+    log_level:      Allows the end-user to override the log file level by 
+                    specifying a compatible integer in the form of 
+                    logging.SOMELEVEL (must be upperase)
+                    (default: logging.INFO)
+    log_filename -- String to represent the log filename (Default: none)
+    scope -- A string name for the logger to set it's scope (default: 'root')
+    formatter:      Allows Addjusting log message format
+    """
+
+    # Set scope
+    logger = logging.getLogger(scope)
+    logger.setLevel(log_level)
+    # Do no propogate logger so that routines with multiple
+    # loggers (modules, unittests), do not repeat messages
+    # https://docs.python.org/3/library/logging.html#logging.Logger.propagate
+    logger.propagate = False
+
+    if not logger.handlers:
+        # create console handler and set level to info
+        console_handler = logging.StreamHandler()
+        console_handler.setLevel(log_level)
+
+        # Set console handling formatting
+        console_formatter = logging.Formatter(formatter)
+        console_handler.setFormatter(console_formatter)
+        logger.addHandler(console_handler)
+
+    if log_filename != None:
+        # create file handler for typical logs
+        if len(log_filename) < 4 or log_filename[-4:] == ".log":
+            this_log_filename = log_filename
+        else:
+            this_log_filename = log_filename + ".log"
+
+        # Set file_handler to taret level
+        file_handler = logging.FileHandler(this_log_filename,"w", encoding=None, delay="true")
+        file_handler.setLevel(log_level)
+
+        # Set formatting
+        file_formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
+        file_handler.setFormatter(file_formatter)
+        logger.addHandler(file_handler)
+
+    return logger
+```
+
+Add this to main/modules to scope them per the filename or given-string:
+```
+logger = udacommon.initialize_logger(log_level=logging.WARNING, \
+    log_filename=None, scope=os.path.basename(__file__))
+```
+
 ## Seperate log handling by scope
 
 ```
