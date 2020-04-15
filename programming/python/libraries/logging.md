@@ -237,7 +237,7 @@ that are added in each phase from attaching to the root logger (avoiding in doub
 
 ```
 def initialize_logger(log_level=logging.INFO, log_filename=None, scope=None, 
-                    formatter="%(asctime)s - %(levelname)s - %(message)s"):
+                     propagate=False, formatter="%(asctime)s - %(levelname)s - %(message)s"):
     """ Initalizes a logger for both stdout and to-file
     Returns the logger incase a scope of non root is used
 
@@ -247,6 +247,7 @@ def initialize_logger(log_level=logging.INFO, log_filename=None, scope=None,
                     logging.SOMELEVEL (must be upperase)
                     (default: logging.INFO)
     log_filename -- String to represent the log filename (Default: none)
+    propagate       Propagate this to the root logger
     scope -- A string name for the logger to set it's scope (default: 'root')
     formatter:      Allows Addjusting log message format
     """
@@ -257,7 +258,7 @@ def initialize_logger(log_level=logging.INFO, log_filename=None, scope=None,
     # Do no propogate logger so that routines with multiple
     # loggers (modules, unittests), do not repeat messages
     # https://docs.python.org/3/library/logging.html#logging.Logger.propagate
-    logger.propagate = False
+    logger.propagate = propagate
 
     if not logger.handlers:
         # create console handler and set level to info
@@ -290,8 +291,28 @@ def initialize_logger(log_level=logging.INFO, log_filename=None, scope=None,
 
 Add this to main/modules to scope them per the filename or given-string:
 ```
-logger = udacommon.initialize_logger(log_level=logging.WARNING, \
+logger = initialize_logger(log_level=logging.WARNING, \
     log_filename=None, scope=os.path.basename(__file__))
+```
+
+If you are doing unit tests and want your normal modules to be suppressed to ERROR so that your tests are quiet, but STILL want to have your parent
+runniner have its own logger, that's DOABLE!. Obviously this is not for every sitaution, but what you would do is this:
+
+* Set the root logger before any imports of classes/modules
+* Set a scoped-logger, non-propagate in your parent runner
+* Set a scoped-logger, non-propagate in your test modules
+
+```
+# Before any imports
+# Set a scoped logger for this parent runner
+initialize_logger(log_level=logging.ERROR, \
+    log_filename=None, scope=None, propagate=True, \
+    formatter="%(message)s")
+
+# Test runnner and any test module
+logger = initialize_logger(log_level=logging.INFO, \
+    log_filename=None, scope=os.path.basename(__file__), \
+    propagate=False, formatter="%(message)s")
 ```
 
 ## Seperate log handling by scope
