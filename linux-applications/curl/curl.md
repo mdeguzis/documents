@@ -4,6 +4,8 @@
 
 - [About](#about)
 - [Testing websites](#testing-websites)
+  - [Response code only](#response-code-only)
+  - [Up or down](#up-or-down)
 - [Links](#links)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->

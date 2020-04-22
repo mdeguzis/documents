@@ -1,3 +1,11 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Multiple logical operators, `((A || B) && C)`](#multiple-logical-operators-a--b--c)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Multiple logical operators, `((A || B) && C)`
 
 The syntax of bash is not C-like, even if a little part of it is inspired by C. You can't simply try to write C code and expect it to work.

@@ -1,3 +1,17 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [About](#about)
+- [Techniques](#techniques)
+  - [Throwing and Catching](#throwing-and-catching)
+  - [Logging Exceptions](#logging-exceptions)
+  - [Cleaning Up and Re-raising](#cleaning-up-and-re-raising)
+  - [Preserving Tracebacks](#preserving-tracebacks)
+- [Documentation](#documentation)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # About
 Handling exceptions in Python
 

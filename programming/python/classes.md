@@ -3,6 +3,9 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [About](#about)
+- [When Should I Use a Class?](#when-should-i-use-a-class)
+  - [Viewpoint 1](#viewpoint-1)
+  - [Viewpoint 2](#viewpoint-2)
 - [Written Examples](#written-examples)
 - [Fundementals](#fundementals)
   - [Basics](#basics)

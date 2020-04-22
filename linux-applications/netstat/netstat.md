@@ -4,6 +4,9 @@
 
 - [Options](#options)
 - [Checking for service and port status](#checking-for-service-and-port-status)
+- [Common commands I like](#common-commands-i-like)
+- [Troubleshooting](#troubleshooting)
+  - [Having issues looking for a already bound port?](#having-issues-looking-for-a-already-bound-port)
 - [Documentation](#documentation)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->

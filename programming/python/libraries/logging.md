@@ -12,6 +12,7 @@
     - [Approach 1](#approach-1)
     - [Logging class structure](#logging-class-structure)
     - [Approach 2](#approach-2)
+  - [Advanced - Main logger and custom independent loggers in modules](#advanced---main-logger-and-custom-independent-loggers-in-modules)
   - [Seperate log handling by scope](#seperate-log-handling-by-scope)
 - [Links](#links)
 

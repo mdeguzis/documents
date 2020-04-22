@@ -4,6 +4,7 @@
 
 - [About](#about)
 - [Useful commands](#useful-commands)
+  - [List OS info vars](#list-os-info-vars)
   - [List repos](#list-repos)
   - [Check packages for a specific repo](#check-packages-for-a-specific-repo)
 - [How to Use 'Yum History' to Find Out Installed or Removed Packages Info](#how-to-use-yum-history-to-find-out-installed-or-removed-packages-info)

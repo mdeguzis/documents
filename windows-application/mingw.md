@@ -1,3 +1,11 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Issues with Python Interactive Mode](#issues-with-python-interactive-mode)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Issues with Python Interactive Mode
 Things like `getpass` may fail under mingw64.
 

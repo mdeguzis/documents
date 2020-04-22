@@ -3,11 +3,16 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [About](#about)
+- [Certificate Verification](#certificate-verification)
+  - [Method 1: valid SSL with CA via 'ssl'](#method-1-valid-ssl-with-ca-via-ssl)
+  - [Method 2: Reading content from public cert](#method-2-reading-content-from-public-cert)
 - [Post JSON payloads](#post-json-payloads)
 - [Handling XML responses](#handling-xml-responses)
 - [Exception Handling](#exception-handling)
 - [self signed certs](#self-signed-certs)
   - [Disable specifc warning for self-signed cert verification](#disable-specifc-warning-for-self-signed-cert-verification)
+- [Advanced](#advanced)
+  - [Disable / Change Logging Level](#disable--change-logging-level)
 - [Links](#links)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->

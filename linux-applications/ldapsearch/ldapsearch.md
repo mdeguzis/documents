@@ -5,6 +5,7 @@
 - [About](#about)
   - [Setting a password for automatic password entry](#setting-a-password-for-automatic-password-entry)
   - [Users](#users)
+    - [openldap](#openldap)
   - [Groups](#groups)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->

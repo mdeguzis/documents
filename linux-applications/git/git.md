@@ -4,7 +4,9 @@
 
 - [About](#about)
 - [Commands](#commands)
-  - [Checkout](#checkout)
+  - [branch](#branch)
+    - [Rename your local branch.](#rename-your-local-branch)
+  - [checkout](#checkout)
     - [Reset a file you deleted/modified](#reset-a-file-you-deletedmodified)
   - [clone](#clone)
   - [push](#push)

@@ -1,3 +1,11 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Loading External Module Data During PyInstaller Bundling](#loading-external-module-data-during-pyinstaller-bundling)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Loading External Module Data During PyInstaller Bundling
 This annoyed me quite a bit. One pitfall of "automagic" tools like PyInstaller, is corner-cases. While many of them, PyInstaller included, have ways around this, it's often a hunt for the right answer. Below is a method for loading data in a single-file PyInstaller binary bundle, wherein the external libaries "getopsconfig()" expects this normally under the package folder some_data:
 

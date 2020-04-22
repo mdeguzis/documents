@@ -3,6 +3,8 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [About](#about)
+- [Scripted Pipelines](#scripted-pipelines)
+  - [Dynamically setting script vars](#dynamically-setting-script-vars)
 - [Links](#links)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
