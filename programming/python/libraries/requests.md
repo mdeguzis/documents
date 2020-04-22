@@ -207,6 +207,23 @@ import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 ```
 
+# Advanced
+
+## Disable / Change Logging Level
+This  done via the standard logging module. You can decide to configure it to not log messages unless they are at least warnings:
+
+```
+import logging
+logging.getLogger("requests").setLevel(logging.WARNING)
+```
+
+If you wish to apply this setting for the urllib3 library (typically used by requests) too, add the following:
+```
+logging.getLogger("urllib3").setLevel(logging.WARNING)
+```
+
+Source:https://stackoverflow.com/a/11029841
+
 # Links
 
 * http://docs.python-requests.org/en/master/
