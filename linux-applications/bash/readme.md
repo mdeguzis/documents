@@ -16,6 +16,9 @@
 # About
 Useful info for working with bash
 
+# Style Guide
+* https://google.github.io/styleguide/shellguide.html
+
 # General links
 
 * [Bash pitfalls](http://mywiki.wooledge.org/BashPitfalls)
