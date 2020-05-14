@@ -24,6 +24,16 @@ Some consider this stylistically dubious, but I find it practical sometimes.
 
 Source: https://stackoverflow.com/a/2436623
 
+Another way to do this is by joining your list into a valid regex statment:
+```
+# Check if string matches regex list 
+# Using join regex + loop + re.match() 
+test_list = ["gee*", "gf*", "df.*", "re"] 
+regex_stmt = '(?:{})'.format('|'.join(test_list)) 
+res = False
+if re.match(regex_stmt, test_str): 
+    res = True
+```
 
 # Links
 
