@@ -15,6 +15,11 @@
 
 Some practices for handling fetch/merge/pull code review
 
+# Git Mergetool
+
+Helps with messy conflicts/merges.
+See: git-mergetool.md in this directory
+
 # The "code review workflow" 
 
 ```
