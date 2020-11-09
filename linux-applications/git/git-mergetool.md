@@ -172,9 +172,9 @@ Hooray now you can claim that you can collaborate with others with Git without m
 * [Improving Vimdiff as a Git mergetool](http://vim.wikia.com/wiki/A_better_Vimdiff_Git_mergetool)
 
 
-# Update (2020/09/20)
-Thanks to @ekalosak's [comment](https://gist.github.com/karenyyng/f19ff75c60f18b4b8149#gistcomment-2916782), I have fixed a mistake confusing the difference branches.
-
 [back to top](#table-of-content)
 
+# Additional Resources
+
+* https://www.rosipov.com/blog/use-vimdiff-as-git-mergetool/ 
 
