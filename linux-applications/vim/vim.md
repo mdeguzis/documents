@@ -45,6 +45,20 @@ Useful for revealing hidden chars
 ```
 https://askubuntu.com/questions/74485/how-to-display-hidden-characters-in-vim
 
+## Show filetype
+
+```
+set filetype?
+```
+
+## Show loaded scripts
+To find out which files Vim has actually loaded, execute
+
+
+```
+:scriptnames
+```
+
 ## Show line  breaks
 
 :set list in Vim will show whitespace. End of lines show as '$' and carriage returns usually show as '^M'.
