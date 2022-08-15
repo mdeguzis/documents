@@ -24,6 +24,18 @@ lode@srv-debian6:~$ date "+%s" -d "02/20/2013 08:41:15"
 1361346075
 ```
 
+# Get date with milliseconds:
+
+```
+date +%s%3N
+```
+
+On other OS's, like OSX, `%N` may not work, so you can use:
+```
+python -c 'import time; print(int(time.time() * 1000))'
+```
+https://serverfault.com/questions/151109/how-do-i-get-the-current-unix-time-in-milliseconds-in-bash
+
 # Converting UNIX epoch time to human readable time
 Even though I didn't find it in the date manual, it is possible to use the date command to reformat a UNIX epoch time into a human readable time. The syntax is the following:
 
