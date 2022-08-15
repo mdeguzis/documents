@@ -18,6 +18,49 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
+# Use /proc for capturing commands properly!
+
+For example, run:
+```
+vim --cmd "set pythonthreehome=/usr/bin/python3" /tmp/a 
+```
+
+Then check ps:
+```
+ ps -auwwx | grep vim
+deguzim  52230  0.3  0.0 164936 12452 pts/0    S+   17:47   0:00 vim --cmd set pythonthreehome=/usr/bin/python3 /tmp/a   
+```
+
+They ideally need to use /proc/<PID>/cmdline:
+```
+$ for i in /proc/5348*/ 
+do
+    basename "$i"
+    < $i/cmdline xargs -0 zsh -c 'printf "\t%q" "$0" "$@"'
+    printf '\n'
+done
+```
+
+Or just one PID:
+```
+cat /proc/53482/cmdline | xargs -0 zsh -c 'printf "\t%q" "$0" "$@"
+```
+
+Output:
+```
+53482
+        vim     --cmd   set\ pythonthreehome=/apollo/env/envImprovement/python3.8       /tmp/a
+```
+
+This is a valid command:
+```
+vim     --cmd   set\ pythonthreehome=/apollo/env/envImprovement/python3.8       /tmp/a
+```
+                                           
+                                           ># man printf
+>%q     ARGUMENT is printed in a format that can be reused as shell input, escaping non-print‐
+>          able characters with the proposed POSIX $'' syntax.
+
 # Note on syntax
 
 The ps command comes with an unusual set of 2 syntax styles. That is BSD and UNIX both. New users are often confused with and mis-interpret the two styles. So here is some basic info to get it clear before moving on.
