@@ -1,7 +1,8 @@
 ## Function docstring
 
 ```
-"""Gets and prints the spreadsheet's header columns
+"""
+Gets and prints the spreadsheet's header columns
 
 Parameters
 ----------
